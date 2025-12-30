@@ -126,13 +126,13 @@ The contact form currently shows a success message but doesn't actually send ema
 ### Update Phone Number
 
 Replace the placeholder phone number in all HTML files:
-- Search for: `(608) 555-0123`
+- Search for: `(608) 284-7333`
 - Replace with: Your actual phone number
 
 ### Update Email Address
 
 Verify the email address is correct:
-- Search for: `hello@matthewcarlsonconsulting.com`
+- Search for: `contact@matthewcarlsonconsulting.com`
 - Update if needed
 
 ### Set Up SSL (HTTPS)
@@ -211,4 +211,4 @@ To add new articles to the blog:
 
 If you need help with deployment, contact:
 - GoDaddy Support: https://www.godaddy.com/help
-- Or reach out at hello@matthewcarlsonconsulting.com
+- Or reach out at contact@matthewcarlsonconsulting.com
