@@ -122,39 +122,8 @@
     // ========================================
     // Contact Form Handling
     // ========================================
-
-    const contactForm = document.getElementById('contact-form');
-
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-
-            const formData = new FormData(contactForm);
-            const data = Object.fromEntries(formData.entries());
-
-            // Here you would typically send the data to your backend
-            // For now, we'll show a success message
-            console.log('Form submitted:', data);
-
-            // Show success message
-            const submitBtn = contactForm.querySelector('button[type="submit"]');
-            const originalText = submitBtn.innerHTML;
-
-            submitBtn.innerHTML = `
-                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <polyline points="20 6 9 17 4 12"/>
-                </svg>
-                Message Sent!
-            `;
-            submitBtn.disabled = true;
-
-            setTimeout(() => {
-                submitBtn.innerHTML = originalText;
-                submitBtn.disabled = false;
-                contactForm.reset();
-            }, 3000);
-        });
-    }
+    // Form now submits directly to send-mail.php via HTML form action
+    // Success/error handling is done via URL parameters in contact.html
 
     // ========================================
     // Counter Animation
