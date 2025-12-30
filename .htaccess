@@ -1,0 +1,18 @@
+# Force index.html to load before index.php
+DirectoryIndex index.html index.php
+
+# Enable rewrite engine
+RewriteEngine On
+
+# Force HTTPS (uncomment after SSL is confirmed working)
+# RewriteCond %{HTTPS} off
+# RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Prevent directory browsing
+Options -Indexes
+
+# Set proper MIME types
+AddType text/html .html
+AddType text/css .css
+AddType application/javascript .js
+AddType image/svg+xml .svg
