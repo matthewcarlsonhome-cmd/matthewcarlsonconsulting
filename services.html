@@ -27,6 +27,418 @@
 
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+    <style>
+        /* Services Page Premium Styles */
+
+        .services-hero {
+            position: relative;
+            min-height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+        }
+
+        .services-hero-bg {
+            position: absolute;
+            inset: 0;
+            overflow: hidden;
+        }
+
+        .services-hero-bg::before {
+            content: '';
+            position: absolute;
+            width: 150%;
+            height: 150%;
+            top: -25%;
+            left: -25%;
+            background:
+                radial-gradient(ellipse 80% 50% at 20% 40%, rgba(59, 130, 246, 0.15) 0%, transparent 50%),
+                radial-gradient(ellipse 60% 40% at 80% 60%, rgba(6, 182, 212, 0.12) 0%, transparent 50%),
+                radial-gradient(ellipse 50% 30% at 50% 80%, rgba(139, 92, 246, 0.1) 0%, transparent 50%);
+            animation: heroFloat 20s ease-in-out infinite;
+        }
+
+        @keyframes heroFloat {
+            0%, 100% { transform: translate(0, 0) rotate(0deg); }
+            33% { transform: translate(2%, 1%) rotate(1deg); }
+            66% { transform: translate(-1%, 2%) rotate(-1deg); }
+        }
+
+        .services-hero-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            max-width: 900px;
+            padding: 0 2rem;
+        }
+
+        .services-hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            background: rgba(59, 130, 246, 0.1);
+            border: 1px solid rgba(59, 130, 246, 0.3);
+            border-radius: 100px;
+            padding: 0.5rem 1.25rem;
+            margin-bottom: 2rem;
+            font-size: 0.875rem;
+            color: #60a5fa;
+            font-weight: 500;
+        }
+
+        .services-hero-badge::before {
+            content: '';
+            width: 8px;
+            height: 8px;
+            background: #3b82f6;
+            border-radius: 50%;
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.5; transform: scale(1.2); }
+        }
+
+        .services-hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(3rem, 8vw, 5rem);
+            font-weight: 600;
+            color: #fff;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+        }
+
+        .services-hero h1 span {
+            background: linear-gradient(135deg, #3b82f6 0%, #06b6d4 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .services-hero-description {
+            font-size: 1.25rem;
+            color: #94a3b8;
+            line-height: 1.7;
+            max-width: 700px;
+            margin: 0 auto 3rem;
+        }
+
+        .services-nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        .services-nav a {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.875rem 1.5rem;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            color: #e2e8f0;
+            font-weight: 500;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .services-nav a:hover {
+            background: rgba(59, 130, 246, 0.1);
+            border-color: rgba(59, 130, 246, 0.3);
+            color: #fff;
+            transform: translateY(-2px);
+        }
+
+        .services-nav a svg {
+            width: 20px;
+            height: 20px;
+            opacity: 0.7;
+        }
+
+        /* Service Showcase Sections */
+        .service-showcase {
+            position: relative;
+            padding: 8rem 0;
+            overflow: hidden;
+        }
+
+        .service-showcase:nth-child(odd) {
+            background: #fff;
+        }
+
+        .service-showcase:nth-child(even) {
+            background: linear-gradient(180deg, #f8fafc 0%, #f1f5f9 100%);
+        }
+
+        .service-showcase-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 6rem;
+            align-items: center;
+        }
+
+        .service-showcase:nth-child(even) .service-showcase-container {
+            direction: rtl;
+        }
+
+        .service-showcase:nth-child(even) .service-showcase-container > * {
+            direction: ltr;
+        }
+
+        .service-showcase-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .service-showcase-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: #3b82f6;
+            margin-bottom: 1rem;
+        }
+
+        .service-showcase-tag::before {
+            content: '';
+            width: 24px;
+            height: 2px;
+            background: linear-gradient(90deg, #3b82f6, #06b6d4);
+            border-radius: 1px;
+        }
+
+        .service-showcase h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 600;
+            color: #0f172a;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+        }
+
+        .service-showcase-description {
+            font-size: 1.125rem;
+            color: #475569;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+        }
+
+        .service-features-grid {
+            display: grid;
+            gap: 1.25rem;
+        }
+
+        .service-feature-item {
+            display: flex;
+            gap: 1rem;
+            align-items: flex-start;
+        }
+
+        .service-feature-icon {
+            flex-shrink: 0;
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(6, 182, 212, 0.1) 100%);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .service-feature-icon svg {
+            width: 24px;
+            height: 24px;
+            stroke: #3b82f6;
+        }
+
+        .service-feature-content h4 {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #1e293b;
+            margin-bottom: 0.25rem;
+        }
+
+        .service-feature-content p {
+            font-size: 0.9375rem;
+            color: #64748b;
+            line-height: 1.6;
+        }
+
+        /* Visual Showcase Area */
+        .service-showcase-visual {
+            position: relative;
+            aspect-ratio: 4/3;
+            border-radius: 24px;
+            overflow: hidden;
+        }
+
+        .visual-container {
+            position: absolute;
+            inset: 0;
+            border-radius: 24px;
+            overflow: hidden;
+        }
+
+        /* AI Automation Visual */
+        .ai-visual {
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 3rem;
+        }
+
+        .ai-visual svg {
+            width: 100%;
+            height: 100%;
+            max-width: 500px;
+        }
+
+        /* Google Shopping Visual */
+        .shopping-visual {
+            background: linear-gradient(135deg, #059669 0%, #0d9488 50%, #0891b2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 3rem;
+        }
+
+        /* Performance Max Visual */
+        .pmax-visual {
+            background: linear-gradient(135deg, #7c3aed 0%, #2563eb 50%, #0891b2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 3rem;
+        }
+
+        /* Meta Ads Visual */
+        .meta-visual {
+            background: linear-gradient(135deg, #db2777 0%, #9333ea 50%, #4f46e5 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 3rem;
+        }
+
+        /* Campaign Builder Visual */
+        .campaign-visual {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 3rem;
+        }
+
+        /* Floating decorative elements */
+        .float-element {
+            position: absolute;
+            border-radius: 50%;
+            opacity: 0.1;
+            animation: floatSlow 8s ease-in-out infinite;
+        }
+
+        @keyframes floatSlow {
+            0%, 100% { transform: translate(0, 0); }
+            50% { transform: translate(10px, -15px); }
+        }
+
+        /* CTA Section Enhancement */
+        .services-cta {
+            position: relative;
+            padding: 8rem 2rem;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .services-cta::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background:
+                radial-gradient(ellipse 50% 80% at 20% 50%, rgba(59, 130, 246, 0.15) 0%, transparent 50%),
+                radial-gradient(ellipse 50% 80% at 80% 50%, rgba(6, 182, 212, 0.1) 0%, transparent 50%);
+        }
+
+        .services-cta-content {
+            position: relative;
+            z-index: 2;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .services-cta h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            color: #fff;
+            margin-bottom: 1.5rem;
+        }
+
+        .services-cta p {
+            font-size: 1.25rem;
+            color: #94a3b8;
+            margin-bottom: 2.5rem;
+            line-height: 1.7;
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .service-showcase-container {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+
+            .service-showcase:nth-child(even) .service-showcase-container {
+                direction: ltr;
+            }
+
+            .service-showcase-visual {
+                aspect-ratio: 16/10;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .services-hero {
+                min-height: 60vh;
+                padding: 6rem 0 4rem;
+            }
+
+            .services-nav {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .services-nav a {
+                width: 100%;
+                max-width: 280px;
+                justify-content: center;
+            }
+
+            .service-showcase {
+                padding: 4rem 0;
+            }
+
+            .service-showcase-visual {
+                aspect-ratio: 1;
+            }
+        }
+    </style>
 </head>
 <body>
     <a href="#main-content" class="skip-link">Skip to main content</a>
@@ -52,114 +464,188 @@
         </div>
     </nav>
 
-    <!-- Page Header -->
-    <header class="page-header" id="main-content">
-        <div class="container">
-            <h1 class="page-title">Our Services</h1>
-            <p class="page-description">
-                AI automation and digital marketing solutions designed for speed to market.
-                Serving Madison, Wisconsin businesses and marketing agencies.
+    <!-- Services Hero -->
+    <header class="services-hero" id="main-content">
+        <div class="services-hero-bg"></div>
+        <div class="services-hero-content">
+            <div class="services-hero-badge">Professional Solutions</div>
+            <h1>Transform Your Business with <span>AI & Automation</span></h1>
+            <p class="services-hero-description">
+                From intelligent document systems to multi-platform ad campaigns, we build
+                custom solutions that deliver measurable results. Serving Madison, Wisconsin
+                businesses and marketing agencies nationwide.
             </p>
+            <div class="services-nav">
+                <a href="#ai-automation">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v2m0 18v2M4.22 4.22l1.42 1.42m12.72 12.72l1.42 1.42M1 12h2m18 0h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+                    AI Automation
+                </a>
+                <a href="#google-shopping">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                    Google Shopping
+                </a>
+                <a href="#pmax">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                    Performance Max
+                </a>
+                <a href="#meta-ads">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+                    Meta Ads
+                </a>
+                <a href="#campaign-builders">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+                    Campaign Builders
+                </a>
+            </div>
         </div>
     </header>
 
     <!-- AI Automation Section -->
-    <section class="service-detail" id="ai-automation">
-        <div class="container">
-            <div class="service-detail-grid">
-                <div class="service-detail-content">
-                    <span class="section-tag">Core Offering</span>
-                    <h2>AI Automation Solutions</h2>
-                    <p>
-                        Transform repetitive, time-consuming tasks into automated workflows.
-                        We build custom AI systems that integrate with your existing tools and processes,
-                        delivering immediate productivity gains.
-                    </p>
-                    <p>
-                        From document retrieval and semantic search to automated report generation
-                        and intelligent research assistants—we architect solutions that work the way
-                        your business works.
-                    </p>
-                    <ul class="service-features-list">
-                        <li>
-                            <span class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>
-                            <span class="feature-text"><strong>Vector Database & Semantic Search:</strong> Find information by meaning, not just keywords</span>
-                        </li>
-                        <li>
-                            <span class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>
-                            <span class="feature-text"><strong>Document Retrieval Systems:</strong> Instant access to relevant documents across your organization</span>
-                        </li>
-                        <li>
-                            <span class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>
-                            <span class="feature-text"><strong>AI Research Assistants:</strong> Accelerate competitive intelligence and market research</span>
-                        </li>
-                        <li>
-                            <span class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>
-                            <span class="feature-text"><strong>Automated Report Generation:</strong> Turn data into insights automatically</span>
-                        </li>
-                        <li>
-                            <span class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>
-                            <span class="feature-text"><strong>Custom AI Copywriters:</strong> On-brand content generation at scale</span>
-                        </li>
-                    </ul>
+    <section class="service-showcase" id="ai-automation">
+        <div class="service-showcase-container">
+            <div class="service-showcase-content">
+                <span class="service-showcase-tag">Core Technology</span>
+                <h2>AI Automation Solutions</h2>
+                <p class="service-showcase-description">
+                    Transform repetitive tasks into intelligent workflows. We build custom AI systems
+                    that integrate seamlessly with your existing tools, delivering immediate productivity
+                    gains and competitive advantage.
+                </p>
+                <div class="service-features-grid">
+                    <div class="service-feature-item">
+                        <div class="service-feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+                        </div>
+                        <div class="service-feature-content">
+                            <h4>Semantic Search & Vector Databases</h4>
+                            <p>Find information by meaning, not just keywords. Natural language queries across your entire knowledge base.</p>
+                        </div>
+                    </div>
+                    <div class="service-feature-item">
+                        <div class="service-feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                        </div>
+                        <div class="service-feature-content">
+                            <h4>Document Retrieval Systems</h4>
+                            <p>Instant access to relevant documents across your organization with intelligent categorization.</p>
+                        </div>
+                    </div>
+                    <div class="service-feature-item">
+                        <div class="service-feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+                        </div>
+                        <div class="service-feature-content">
+                            <h4>AI Content Generation</h4>
+                            <p>On-brand copy, reports, and research summaries generated at scale with your unique voice.</p>
+                        </div>
+                    </div>
+                    <div class="service-feature-item">
+                        <div class="service-feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                        </div>
+                        <div class="service-feature-content">
+                            <h4>Automated Report Generation</h4>
+                            <p>Turn raw data into actionable insights automatically with custom reporting pipelines.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="service-detail-visual" style="background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); padding: 3rem; border-radius: 1.5rem;">
-                    <svg viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <!-- Neural Network AI Illustration -->
+            </div>
+            <div class="service-showcase-visual">
+                <div class="visual-container ai-visual">
+                    <svg viewBox="0 0 500 400" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <defs>
-                            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
-                                <stop offset="0%" style="stop-color:#3b82f6"/>
-                                <stop offset="100%" style="stop-color:#06b6d4"/>
+                            <linearGradient id="aiGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#3b82f6"/>
+                                <stop offset="100%" stop-color="#06b6d4"/>
                             </linearGradient>
-                            <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%">
-                                <stop offset="0%" style="stop-color:#8b5cf6"/>
-                                <stop offset="100%" style="stop-color:#06b6d4"/>
+                            <linearGradient id="aiGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#8b5cf6"/>
+                                <stop offset="100%" stop-color="#06b6d4"/>
                             </linearGradient>
+                            <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+                                <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+                                <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+                            </filter>
                         </defs>
-                        <!-- Connection Lines -->
-                        <g stroke="url(#grad1)" stroke-width="1.5" opacity="0.4">
-                            <line x1="80" y1="80" x2="160" y2="60"/>
-                            <line x1="80" y1="80" x2="160" y2="120"/>
-                            <line x1="80" y1="150" x2="160" y2="60"/>
-                            <line x1="80" y1="150" x2="160" y2="120"/>
-                            <line x1="80" y1="150" x2="160" y2="180"/>
-                            <line x1="80" y1="220" x2="160" y2="120"/>
-                            <line x1="80" y1="220" x2="160" y2="180"/>
-                            <line x1="80" y1="220" x2="160" y2="240"/>
-                            <line x1="160" y1="60" x2="240" y2="100"/>
-                            <line x1="160" y1="60" x2="240" y2="150"/>
-                            <line x1="160" y1="120" x2="240" y2="100"/>
-                            <line x1="160" y1="120" x2="240" y2="150"/>
-                            <line x1="160" y1="120" x2="240" y2="200"/>
-                            <line x1="160" y1="180" x2="240" y2="150"/>
-                            <line x1="160" y1="180" x2="240" y2="200"/>
-                            <line x1="160" y1="240" x2="240" y2="200"/>
-                            <line x1="240" y1="100" x2="320" y2="150"/>
-                            <line x1="240" y1="150" x2="320" y2="150"/>
-                            <line x1="240" y1="200" x2="320" y2="150"/>
+
+                        <!-- Central Brain/Neural Network -->
+                        <g filter="url(#glow)">
+                            <!-- Outer ring -->
+                            <circle cx="250" cy="200" r="120" fill="none" stroke="url(#aiGrad1)" stroke-width="1" opacity="0.3"/>
+                            <circle cx="250" cy="200" r="100" fill="none" stroke="url(#aiGrad1)" stroke-width="1" opacity="0.4"/>
+                            <circle cx="250" cy="200" r="80" fill="none" stroke="url(#aiGrad1)" stroke-width="2" opacity="0.5"/>
+
+                            <!-- Core -->
+                            <circle cx="250" cy="200" r="50" fill="#1e293b" stroke="url(#aiGrad1)" stroke-width="3"/>
+                            <circle cx="250" cy="200" r="30" fill="url(#aiGrad1)" opacity="0.3"/>
+                            <circle cx="250" cy="200" r="15" fill="url(#aiGrad1)"/>
                         </g>
-                        <!-- Input Layer Nodes -->
-                        <circle cx="80" cy="80" r="16" fill="url(#grad1)" opacity="0.9"/>
-                        <circle cx="80" cy="150" r="16" fill="url(#grad1)" opacity="0.9"/>
-                        <circle cx="80" cy="220" r="16" fill="url(#grad1)" opacity="0.9"/>
-                        <!-- Hidden Layer 1 -->
-                        <circle cx="160" cy="60" r="14" fill="url(#grad2)" opacity="0.8"/>
-                        <circle cx="160" cy="120" r="14" fill="url(#grad2)" opacity="0.8"/>
-                        <circle cx="160" cy="180" r="14" fill="url(#grad2)" opacity="0.8"/>
-                        <circle cx="160" cy="240" r="14" fill="url(#grad2)" opacity="0.8"/>
-                        <!-- Hidden Layer 2 -->
-                        <circle cx="240" cy="100" r="14" fill="url(#grad1)" opacity="0.8"/>
-                        <circle cx="240" cy="150" r="14" fill="url(#grad1)" opacity="0.8"/>
-                        <circle cx="240" cy="200" r="14" fill="url(#grad1)" opacity="0.8"/>
-                        <!-- Output Node -->
-                        <circle cx="320" cy="150" r="20" fill="url(#grad2)"/>
-                        <circle cx="320" cy="150" r="12" fill="#0f172a"/>
-                        <circle cx="320" cy="150" r="6" fill="#06b6d4"/>
-                        <!-- Decorative Elements -->
-                        <circle cx="320" cy="150" r="30" stroke="url(#grad1)" stroke-width="1" fill="none" opacity="0.3"/>
-                        <circle cx="320" cy="150" r="40" stroke="url(#grad1)" stroke-width="1" fill="none" opacity="0.2"/>
-                        <!-- Label -->
-                        <text x="200" y="285" fill="#64748b" font-family="Inter, sans-serif" font-size="12" text-anchor="middle">AI Neural Processing</text>
+
+                        <!-- Neural Connections -->
+                        <g stroke="url(#aiGrad1)" stroke-width="2" opacity="0.6">
+                            <!-- Top nodes -->
+                            <line x1="250" y1="120" x2="180" y2="60"/>
+                            <line x1="250" y1="120" x2="250" y2="40"/>
+                            <line x1="250" y1="120" x2="320" y2="60"/>
+
+                            <!-- Right nodes -->
+                            <line x1="330" y1="200" x2="400" y2="140"/>
+                            <line x1="330" y1="200" x2="420" y2="200"/>
+                            <line x1="330" y1="200" x2="400" y2="260"/>
+
+                            <!-- Bottom nodes -->
+                            <line x1="250" y1="280" x2="180" y2="340"/>
+                            <line x1="250" y1="280" x2="250" y2="360"/>
+                            <line x1="250" y1="280" x2="320" y2="340"/>
+
+                            <!-- Left nodes -->
+                            <line x1="170" y1="200" x2="100" y2="140"/>
+                            <line x1="170" y1="200" x2="80" y2="200"/>
+                            <line x1="170" y1="200" x2="100" y2="260"/>
+                        </g>
+
+                        <!-- Node circles -->
+                        <g filter="url(#glow)">
+                            <!-- Top -->
+                            <circle cx="180" cy="60" r="18" fill="#1e293b" stroke="url(#aiGrad2)" stroke-width="2"/>
+                            <circle cx="180" cy="60" r="8" fill="url(#aiGrad2)"/>
+                            <circle cx="250" cy="40" r="22" fill="#1e293b" stroke="url(#aiGrad1)" stroke-width="2"/>
+                            <circle cx="250" cy="40" r="10" fill="url(#aiGrad1)"/>
+                            <circle cx="320" cy="60" r="18" fill="#1e293b" stroke="url(#aiGrad2)" stroke-width="2"/>
+                            <circle cx="320" cy="60" r="8" fill="url(#aiGrad2)"/>
+
+                            <!-- Right -->
+                            <circle cx="400" cy="140" r="16" fill="#1e293b" stroke="url(#aiGrad1)" stroke-width="2"/>
+                            <circle cx="400" cy="140" r="7" fill="url(#aiGrad1)"/>
+                            <circle cx="420" cy="200" r="20" fill="#1e293b" stroke="url(#aiGrad2)" stroke-width="2"/>
+                            <circle cx="420" cy="200" r="9" fill="url(#aiGrad2)"/>
+                            <circle cx="400" cy="260" r="16" fill="#1e293b" stroke="url(#aiGrad1)" stroke-width="2"/>
+                            <circle cx="400" cy="260" r="7" fill="url(#aiGrad1)"/>
+
+                            <!-- Bottom -->
+                            <circle cx="180" cy="340" r="18" fill="#1e293b" stroke="url(#aiGrad2)" stroke-width="2"/>
+                            <circle cx="180" cy="340" r="8" fill="url(#aiGrad2)"/>
+                            <circle cx="250" cy="360" r="22" fill="#1e293b" stroke="url(#aiGrad1)" stroke-width="2"/>
+                            <circle cx="250" cy="360" r="10" fill="url(#aiGrad1)"/>
+                            <circle cx="320" cy="340" r="18" fill="#1e293b" stroke="url(#aiGrad2)" stroke-width="2"/>
+                            <circle cx="320" cy="340" r="8" fill="url(#aiGrad2)"/>
+
+                            <!-- Left -->
+                            <circle cx="100" cy="140" r="16" fill="#1e293b" stroke="url(#aiGrad1)" stroke-width="2"/>
+                            <circle cx="100" cy="140" r="7" fill="url(#aiGrad1)"/>
+                            <circle cx="80" cy="200" r="20" fill="#1e293b" stroke="url(#aiGrad2)" stroke-width="2"/>
+                            <circle cx="80" cy="200" r="9" fill="url(#aiGrad2)"/>
+                            <circle cx="100" cy="260" r="16" fill="#1e293b" stroke="url(#aiGrad1)" stroke-width="2"/>
+                            <circle cx="100" cy="260" r="7" fill="url(#aiGrad1)"/>
+                        </g>
+
+                        <!-- Floating data particles -->
+                        <g fill="url(#aiGrad1)" opacity="0.6">
+                            <circle cx="150" cy="100" r="4"><animate attributeName="cy" values="100;90;100" dur="3s" repeatCount="indefinite"/></circle>
+                            <circle cx="350" cy="100" r="3"><animate attributeName="cy" values="100;85;100" dur="2.5s" repeatCount="indefinite"/></circle>
+                            <circle cx="150" cy="300" r="3"><animate attributeName="cy" values="300;310;300" dur="2.8s" repeatCount="indefinite"/></circle>
+                            <circle cx="350" cy="300" r="4"><animate attributeName="cy" values="300;315;300" dur="3.2s" repeatCount="indefinite"/></circle>
+                        </g>
                     </svg>
                 </div>
             </div>
@@ -167,87 +653,119 @@
     </section>
 
     <!-- Google Shopping Section -->
-    <section class="service-detail" id="google-shopping">
-        <div class="container">
-            <div class="service-detail-grid">
-                <div class="service-detail-content">
-                    <span class="section-tag">E-Commerce</span>
-                    <h2>Google Shopping & Local Inventory Ads</h2>
-                    <p>
-                        Your product feed is the foundation of Shopping campaign success.
-                        We build automated feed systems that keep your data fresh, accurate,
-                        and optimized for maximum visibility.
-                    </p>
-                    <p>
-                        For retailers with physical locations, Local Inventory Ads connect
-                        online shoppers to your in-store inventory—driving foot traffic and sales.
-                    </p>
-                    <ul class="service-features-list">
-                        <li>
-                            <span class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>
-                            <span class="feature-text"><strong>Shopping Feed Development:</strong> Clean, compliant feeds optimized for Google Merchant Center</span>
-                        </li>
-                        <li>
-                            <span class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>
-                            <span class="feature-text"><strong>Local Inventory Ad Feeds:</strong> Connect online and in-store inventory seamlessly</span>
-                        </li>
-                        <li>
-                            <span class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>
-                            <span class="feature-text"><strong>Automated Feed Updates:</strong> Real-time inventory and pricing synchronization</span>
-                        </li>
-                        <li>
-                            <span class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>
-                            <span class="feature-text"><strong>Title & Description Optimization:</strong> AI-enhanced product copy for better visibility</span>
-                        </li>
-                        <li>
-                            <span class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>
-                            <span class="feature-text"><strong>Custom Label Strategy:</strong> Smart segmentation for campaign optimization</span>
-                        </li>
-                    </ul>
+    <section class="service-showcase" id="google-shopping">
+        <div class="service-showcase-container">
+            <div class="service-showcase-content">
+                <span class="service-showcase-tag">E-Commerce Growth</span>
+                <h2>Google Shopping & Local Inventory</h2>
+                <p class="service-showcase-description">
+                    Your product feed is the foundation of Shopping campaign success. We build
+                    automated feed systems that keep your data fresh, accurate, and optimized
+                    for maximum visibility and conversions.
+                </p>
+                <div class="service-features-grid">
+                    <div class="service-feature-item">
+                        <div class="service-feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+                        </div>
+                        <div class="service-feature-content">
+                            <h4>Shopping Feed Development</h4>
+                            <p>Clean, compliant feeds optimized for Google Merchant Center with automatic validation.</p>
+                        </div>
+                    </div>
+                    <div class="service-feature-item">
+                        <div class="service-feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        </div>
+                        <div class="service-feature-content">
+                            <h4>Local Inventory Ads</h4>
+                            <p>Connect online and in-store inventory seamlessly to drive foot traffic and local sales.</p>
+                        </div>
+                    </div>
+                    <div class="service-feature-item">
+                        <div class="service-feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+                        </div>
+                        <div class="service-feature-content">
+                            <h4>Real-Time Sync</h4>
+                            <p>Automated inventory and pricing updates keep your listings accurate 24/7.</p>
+                        </div>
+                    </div>
+                    <div class="service-feature-item">
+                        <div class="service-feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                        </div>
+                        <div class="service-feature-content">
+                            <h4>Custom Label Strategy</h4>
+                            <p>Smart segmentation for campaign optimization and performance reporting.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="service-detail-visual" style="background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); padding: 3rem; border-radius: 1.5rem;">
-                    <svg viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <!-- Google Shopping / E-commerce Illustration -->
+            </div>
+            <div class="service-showcase-visual">
+                <div class="visual-container shopping-visual">
+                    <svg viewBox="0 0 500 400" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <defs>
-                            <linearGradient id="shopGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
-                                <stop offset="0%" style="stop-color:#3b82f6"/>
-                                <stop offset="100%" style="stop-color:#06b6d4"/>
-                            </linearGradient>
-                            <linearGradient id="shopGrad2" x1="0%" y1="0%" x2="0%" y2="100%">
-                                <stop offset="0%" style="stop-color:#10b981"/>
-                                <stop offset="100%" style="stop-color:#059669"/>
+                            <linearGradient id="shopGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#fff" stop-opacity="0.9"/>
+                                <stop offset="100%" stop-color="#fff" stop-opacity="0.7"/>
                             </linearGradient>
                         </defs>
-                        <!-- Shopping Cart -->
-                        <rect x="60" y="60" width="120" height="140" rx="8" fill="#1e293b" stroke="url(#shopGrad1)" stroke-width="2"/>
-                        <rect x="75" y="80" width="90" height="60" rx="4" fill="#334155"/>
-                        <circle cx="120" cy="110" r="15" fill="url(#shopGrad1)" opacity="0.6"/>
-                        <path d="M112 110l6 6 12-12" stroke="#fff" stroke-width="2" fill="none"/>
-                        <rect x="75" y="150" width="90" height="8" rx="2" fill="#475569"/>
-                        <rect x="75" y="165" width="60" height="8" rx="2" fill="#475569"/>
-                        <!-- Data Flow Arrows -->
-                        <path d="M190 130 L220 130" stroke="url(#shopGrad1)" stroke-width="3" stroke-dasharray="6 4"/>
-                        <polygon points="225,130 215,124 215,136" fill="url(#shopGrad1)"/>
-                        <!-- Google Icon Representation -->
-                        <circle cx="290" cy="100" r="35" fill="#1e293b" stroke="url(#shopGrad1)" stroke-width="2"/>
-                        <text x="290" y="108" fill="url(#shopGrad1)" font-family="Arial" font-size="28" font-weight="bold" text-anchor="middle">G</text>
-                        <!-- Price Tags -->
-                        <g transform="translate(250, 160)">
-                            <rect width="80" height="35" rx="4" fill="#334155" stroke="url(#shopGrad2)" stroke-width="1.5"/>
-                            <text x="40" y="23" fill="#10b981" font-family="Inter" font-size="14" font-weight="bold" text-anchor="middle">$24.99</text>
+
+                        <!-- Product Cards -->
+                        <g>
+                            <!-- Card 1 -->
+                            <rect x="50" y="80" width="140" height="180" rx="12" fill="white" opacity="0.95"/>
+                            <rect x="60" y="90" width="120" height="90" rx="8" fill="#e2e8f0"/>
+                            <circle cx="120" cy="135" r="25" fill="#cbd5e1"/>
+                            <rect x="60" y="190" width="80" height="12" rx="4" fill="#94a3b8"/>
+                            <rect x="60" y="210" width="50" height="10" rx="3" fill="#cbd5e1"/>
+                            <text x="60" y="245" fill="#059669" font-family="Inter" font-size="18" font-weight="700">$49.99</text>
+
+                            <!-- Card 2 -->
+                            <rect x="210" y="50" width="140" height="180" rx="12" fill="white"/>
+                            <rect x="220" y="60" width="120" height="90" rx="8" fill="#e2e8f0"/>
+                            <rect x="250" y="85" width="60" height="40" rx="4" fill="#cbd5e1"/>
+                            <rect x="220" y="160" width="90" height="12" rx="4" fill="#94a3b8"/>
+                            <rect x="220" y="180" width="60" height="10" rx="3" fill="#cbd5e1"/>
+                            <text x="220" y="215" fill="#059669" font-family="Inter" font-size="18" font-weight="700">$129.00</text>
+
+                            <!-- Card 3 -->
+                            <rect x="310" y="150" width="140" height="180" rx="12" fill="white" opacity="0.9"/>
+                            <rect x="320" y="160" width="120" height="90" rx="8" fill="#e2e8f0"/>
+                            <polygon points="380,185 360,230 400,230" fill="#cbd5e1"/>
+                            <rect x="320" y="260" width="70" height="12" rx="4" fill="#94a3b8"/>
+                            <rect x="320" y="280" width="45" height="10" rx="3" fill="#cbd5e1"/>
+                            <text x="320" y="315" fill="#059669" font-family="Inter" font-size="18" font-weight="700">$79.99</text>
                         </g>
-                        <g transform="translate(250, 205)">
-                            <rect width="80" height="35" rx="4" fill="#334155" stroke="url(#shopGrad2)" stroke-width="1.5"/>
-                            <text x="40" y="23" fill="#10b981" font-family="Inter" font-size="14" font-weight="bold" text-anchor="middle">$49.99</text>
+
+                        <!-- Google G Badge -->
+                        <g transform="translate(380, 50)">
+                            <circle cx="30" cy="30" r="30" fill="white"/>
+                            <text x="30" y="42" fill="#4285f4" font-family="Arial" font-size="36" font-weight="700" text-anchor="middle">G</text>
                         </g>
-                        <!-- Feed Lines -->
-                        <g stroke="#475569" stroke-width="1" opacity="0.5">
-                            <line x1="60" y1="250" x2="340" y2="250"/>
-                            <line x1="60" y1="260" x2="300" y2="260"/>
-                            <line x1="60" y1="270" x2="260" y2="270"/>
+
+                        <!-- Data Flow Lines -->
+                        <g stroke="white" stroke-width="2" stroke-dasharray="8 4" opacity="0.5">
+                            <path d="M120 270 Q 120 320 200 340 T 380 300"/>
+                            <path d="M280 240 Q 320 280 380 280"/>
                         </g>
-                        <!-- Label -->
-                        <text x="200" y="290" fill="#64748b" font-family="Inter, sans-serif" font-size="12" text-anchor="middle">Product Feed Automation</text>
+
+                        <!-- Checkmarks / Success indicators -->
+                        <g>
+                            <circle cx="175" cy="100" r="14" fill="#10b981"/>
+                            <path d="M169 100 l4 4 8-8" stroke="white" stroke-width="2.5" fill="none"/>
+
+                            <circle cx="335" cy="70" r="14" fill="#10b981"/>
+                            <path d="M329 70 l4 4 8-8" stroke="white" stroke-width="2.5" fill="none"/>
+                        </g>
+
+                        <!-- Location Pin for Local -->
+                        <g transform="translate(60, 290)">
+                            <circle cx="20" cy="20" r="20" fill="white" opacity="0.9"/>
+                            <path d="M20 8 C14 8 10 13 10 18 C10 26 20 32 20 32 C20 32 30 26 30 18 C30 13 26 8 20 8Z" fill="#ef4444"/>
+                            <circle cx="20" cy="17" r="4" fill="white"/>
+                        </g>
                     </svg>
                 </div>
             </div>
@@ -255,99 +773,118 @@
     </section>
 
     <!-- Performance Max Section -->
-    <section class="service-detail" id="pmax">
-        <div class="container">
-            <div class="service-detail-grid">
-                <div class="service-detail-content">
-                    <span class="section-tag">Google Ads</span>
-                    <h2>Performance Max Campaigns</h2>
-                    <p>
-                        Performance Max is Google's most powerful campaign type—and its most complex.
-                        We help you structure, launch, and optimize PMax campaigns that deliver measurable ROAS.
-                    </p>
-                    <p>
-                        From asset creation to audience signals to ongoing optimization,
-                        we handle the complexity so you can focus on results.
-                    </p>
-                    <ul class="service-features-list">
-                        <li>
-                            <span class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>
-                            <span class="feature-text"><strong>Campaign Structure Strategy:</strong> Optimized organization for your goals</span>
-                        </li>
-                        <li>
-                            <span class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>
-                            <span class="feature-text"><strong>Asset Group Development:</strong> Compelling creative across all formats</span>
-                        </li>
-                        <li>
-                            <span class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>
-                            <span class="feature-text"><strong>Audience Signal Optimization:</strong> Guide Google's AI to your best customers</span>
-                        </li>
-                        <li>
-                            <span class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>
-                            <span class="feature-text"><strong>Performance Analysis:</strong> Deep insights beyond standard reporting</span>
-                        </li>
-                    </ul>
+    <section class="service-showcase" id="pmax">
+        <div class="service-showcase-container">
+            <div class="service-showcase-content">
+                <span class="service-showcase-tag">Google Ads</span>
+                <h2>Performance Max Campaigns</h2>
+                <p class="service-showcase-description">
+                    Performance Max is Google's most powerful campaign type—and its most complex.
+                    We help you structure, launch, and optimize PMax campaigns that deliver
+                    measurable ROAS across all Google properties.
+                </p>
+                <div class="service-features-grid">
+                    <div class="service-feature-item">
+                        <div class="service-feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+                        </div>
+                        <div class="service-feature-content">
+                            <h4>Campaign Structure Strategy</h4>
+                            <p>Optimized organization aligned with your business goals and product categories.</p>
+                        </div>
+                    </div>
+                    <div class="service-feature-item">
+                        <div class="service-feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+                        </div>
+                        <div class="service-feature-content">
+                            <h4>Asset Group Development</h4>
+                            <p>Compelling creative across all formats—images, video, headlines, and descriptions.</p>
+                        </div>
+                    </div>
+                    <div class="service-feature-item">
+                        <div class="service-feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                        </div>
+                        <div class="service-feature-content">
+                            <h4>Audience Signal Optimization</h4>
+                            <p>Guide Google's AI to your best customers with strategic audience signals.</p>
+                        </div>
+                    </div>
+                    <div class="service-feature-item">
+                        <div class="service-feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+                        </div>
+                        <div class="service-feature-content">
+                            <h4>Performance Analysis</h4>
+                            <p>Deep insights beyond standard reporting with actionable optimization recommendations.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="service-detail-visual" style="background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); padding: 3rem; border-radius: 1.5rem;">
-                    <svg viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <!-- Performance Max / Growth Chart -->
+            </div>
+            <div class="service-showcase-visual">
+                <div class="visual-container pmax-visual">
+                    <svg viewBox="0 0 500 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Grid Background -->
+                        <g stroke="white" stroke-width="1" opacity="0.1">
+                            <line x1="50" y1="350" x2="450" y2="350"/>
+                            <line x1="50" y1="280" x2="450" y2="280" stroke-dasharray="4 4"/>
+                            <line x1="50" y1="210" x2="450" y2="210" stroke-dasharray="4 4"/>
+                            <line x1="50" y1="140" x2="450" y2="140" stroke-dasharray="4 4"/>
+                            <line x1="50" y1="70" x2="450" y2="70" stroke-dasharray="4 4"/>
+                        </g>
+
+                        <!-- Area Chart Fill -->
                         <defs>
-                            <linearGradient id="pmaxGrad1" x1="0%" y1="100%" x2="0%" y2="0%">
-                                <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:0.1"/>
-                                <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:0.6"/>
-                            </linearGradient>
-                            <linearGradient id="pmaxGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
-                                <stop offset="0%" style="stop-color:#3b82f6"/>
-                                <stop offset="100%" style="stop-color:#06b6d4"/>
-                            </linearGradient>
-                            <linearGradient id="pmaxGrad3" x1="0%" y1="0%" x2="100%" y2="0%">
-                                <stop offset="0%" style="stop-color:#8b5cf6"/>
-                                <stop offset="100%" style="stop-color:#ec4899"/>
+                            <linearGradient id="pmaxArea" x1="0%" y1="0%" x2="0%" y2="100%">
+                                <stop offset="0%" stop-color="white" stop-opacity="0.4"/>
+                                <stop offset="100%" stop-color="white" stop-opacity="0.05"/>
                             </linearGradient>
                         </defs>
-                        <!-- Grid Lines -->
-                        <g stroke="#334155" stroke-width="1" opacity="0.3">
-                            <line x1="60" y1="60" x2="60" y2="240"/>
-                            <line x1="60" y1="240" x2="360" y2="240"/>
-                            <line x1="60" y1="180" x2="360" y2="180" stroke-dasharray="4 4"/>
-                            <line x1="60" y1="120" x2="360" y2="120" stroke-dasharray="4 4"/>
-                            <line x1="60" y1="60" x2="360" y2="60" stroke-dasharray="4 4"/>
-                        </g>
-                        <!-- Area Fill -->
-                        <path d="M60 240 L100 200 L150 180 L200 140 L250 120 L300 80 L350 50 L350 240 Z" fill="url(#pmaxGrad1)"/>
+                        <path d="M50 350 L100 300 L170 260 L240 200 L310 150 L380 100 L450 60 L450 350 Z" fill="url(#pmaxArea)"/>
+
                         <!-- Main Line -->
-                        <path d="M60 240 L100 200 L150 180 L200 140 L250 120 L300 80 L350 50" stroke="url(#pmaxGrad2)" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M50 350 L100 300 L170 260 L240 200 L310 150 L380 100 L450 60" stroke="white" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
                         <!-- Data Points -->
-                        <circle cx="100" cy="200" r="8" fill="#1e293b" stroke="url(#pmaxGrad2)" stroke-width="3"/>
-                        <circle cx="150" cy="180" r="8" fill="#1e293b" stroke="url(#pmaxGrad2)" stroke-width="3"/>
-                        <circle cx="200" cy="140" r="8" fill="#1e293b" stroke="url(#pmaxGrad2)" stroke-width="3"/>
-                        <circle cx="250" cy="120" r="8" fill="#1e293b" stroke="url(#pmaxGrad2)" stroke-width="3"/>
-                        <circle cx="300" cy="80" r="8" fill="#1e293b" stroke="url(#pmaxGrad2)" stroke-width="3"/>
-                        <circle cx="350" cy="50" r="10" fill="url(#pmaxGrad2)"/>
-                        <!-- Channel Icons -->
-                        <g transform="translate(80, 255)">
-                            <rect width="50" height="25" rx="4" fill="#334155"/>
-                            <text x="25" y="17" fill="#64748b" font-size="10" text-anchor="middle">Search</text>
+                        <g>
+                            <circle cx="100" cy="300" r="10" fill="#1e293b" stroke="white" stroke-width="3"/>
+                            <circle cx="170" cy="260" r="10" fill="#1e293b" stroke="white" stroke-width="3"/>
+                            <circle cx="240" cy="200" r="12" fill="#1e293b" stroke="white" stroke-width="3"/>
+                            <circle cx="310" cy="150" r="10" fill="#1e293b" stroke="white" stroke-width="3"/>
+                            <circle cx="380" cy="100" r="10" fill="#1e293b" stroke="white" stroke-width="3"/>
+                            <circle cx="450" cy="60" r="14" fill="white"/>
                         </g>
-                        <g transform="translate(145, 255)">
-                            <rect width="50" height="25" rx="4" fill="#334155"/>
-                            <text x="25" y="17" fill="#64748b" font-size="10" text-anchor="middle">Display</text>
+
+                        <!-- Channel Labels -->
+                        <g font-family="Inter" font-size="11" fill="white" opacity="0.8">
+                            <rect x="60" y="365" width="60" height="24" rx="4" fill="white" fill-opacity="0.15"/>
+                            <text x="90" y="381" text-anchor="middle">Search</text>
+
+                            <rect x="140" y="365" width="60" height="24" rx="4" fill="white" fill-opacity="0.15"/>
+                            <text x="170" y="381" text-anchor="middle">Display</text>
+
+                            <rect x="220" y="365" width="65" height="24" rx="4" fill="white" fill-opacity="0.15"/>
+                            <text x="252" y="381" text-anchor="middle">YouTube</text>
+
+                            <rect x="305" y="365" width="65" height="24" rx="4" fill="white" fill-opacity="0.15"/>
+                            <text x="337" y="381" text-anchor="middle">Shopping</text>
+
+                            <rect x="390" y="365" width="55" height="24" rx="4" fill="white" fill-opacity="0.15"/>
+                            <text x="417" y="381" text-anchor="middle">Gmail</text>
                         </g>
-                        <g transform="translate(210, 255)">
-                            <rect width="55" height="25" rx="4" fill="#334155"/>
-                            <text x="27" y="17" fill="#64748b" font-size="10" text-anchor="middle">YouTube</text>
-                        </g>
-                        <g transform="translate(280, 255)">
-                            <rect width="55" height="25" rx="4" fill="#334155"/>
-                            <text x="27" y="17" fill="#64748b" font-size="10" text-anchor="middle">Shopping</text>
-                        </g>
+
                         <!-- ROAS Badge -->
-                        <g transform="translate(300, 30)">
-                            <rect width="60" height="30" rx="6" fill="url(#pmaxGrad3)"/>
-                            <text x="30" y="20" fill="#fff" font-size="11" font-weight="bold" text-anchor="middle">+247%</text>
+                        <g transform="translate(380, 30)">
+                            <rect width="80" height="40" rx="8" fill="white"/>
+                            <text x="40" y="18" fill="#7c3aed" font-family="Inter" font-size="10" font-weight="600" text-anchor="middle">ROAS</text>
+                            <text x="40" y="33" fill="#0f172a" font-family="Inter" font-size="16" font-weight="700" text-anchor="middle">+247%</text>
                         </g>
-                        <!-- Label -->
-                        <text x="200" y="295" fill="#64748b" font-family="Inter, sans-serif" font-size="12" text-anchor="middle">Cross-Channel Performance</text>
+
+                        <!-- Upward Arrow -->
+                        <g transform="translate(420, 70)">
+                            <path d="M10 30 L10 5 M5 10 L10 5 L15 10" stroke="white" stroke-width="3" fill="none" stroke-linecap="round"/>
+                        </g>
                     </svg>
                 </div>
             </div>
@@ -355,81 +892,120 @@
     </section>
 
     <!-- Meta Ads Section -->
-    <section class="service-detail" id="meta-ads">
-        <div class="container">
-            <div class="service-detail-grid">
-                <div class="service-detail-content">
-                    <span class="section-tag">Social Advertising</span>
-                    <h2>Meta Dynamic Product Ads</h2>
-                    <p>
-                        Facebook and Instagram remain powerful channels for e-commerce.
-                        Dynamic Product Ads automatically show users the products most relevant to them—
-                        we make sure your catalog and campaigns are optimized for performance.
-                    </p>
-                    <ul class="service-features-list">
-                        <li>
-                            <span class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>
-                            <span class="feature-text"><strong>Product Catalog Setup:</strong> Properly configured catalogs for dynamic ads</span>
-                        </li>
-                        <li>
-                            <span class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>
-                            <span class="feature-text"><strong>Dynamic Ad Feed Development:</strong> Optimized feeds for Facebook and Instagram</span>
-                        </li>
-                        <li>
-                            <span class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>
-                            <span class="feature-text"><strong>Campaign Architecture:</strong> Retargeting and prospecting structures that scale</span>
-                        </li>
-                        <li>
-                            <span class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>
-                            <span class="feature-text"><strong>Creative Automation:</strong> Dynamic overlays and personalized ad experiences</span>
-                        </li>
-                    </ul>
+    <section class="service-showcase" id="meta-ads">
+        <div class="service-showcase-container">
+            <div class="service-showcase-content">
+                <span class="service-showcase-tag">Social Advertising</span>
+                <h2>Meta Dynamic Product Ads</h2>
+                <p class="service-showcase-description">
+                    Facebook and Instagram remain powerful channels for e-commerce. Dynamic Product Ads
+                    automatically show users the products most relevant to them—we make sure your catalog
+                    and campaigns are optimized for maximum performance.
+                </p>
+                <div class="service-features-grid">
+                    <div class="service-feature-item">
+                        <div class="service-feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+                        </div>
+                        <div class="service-feature-content">
+                            <h4>Product Catalog Setup</h4>
+                            <p>Properly configured catalogs optimized for dynamic ads with automatic updates.</p>
+                        </div>
+                    </div>
+                    <div class="service-feature-item">
+                        <div class="service-feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        </div>
+                        <div class="service-feature-content">
+                            <h4>Dynamic Feed Development</h4>
+                            <p>Optimized feeds for Facebook and Instagram with enhanced product attributes.</p>
+                        </div>
+                    </div>
+                    <div class="service-feature-item">
+                        <div class="service-feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+                        </div>
+                        <div class="service-feature-content">
+                            <h4>Campaign Architecture</h4>
+                            <p>Retargeting and prospecting structures designed to scale efficiently.</p>
+                        </div>
+                    </div>
+                    <div class="service-feature-item">
+                        <div class="service-feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        </div>
+                        <div class="service-feature-content">
+                            <h4>Creative Automation</h4>
+                            <p>Dynamic overlays and personalized ad experiences at scale.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="service-detail-visual" style="background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); padding: 3rem; border-radius: 1.5rem;">
-                    <svg viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <!-- Meta / Social Ads Illustration -->
+            </div>
+            <div class="service-showcase-visual">
+                <div class="visual-container meta-visual">
+                    <svg viewBox="0 0 500 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Phone Frame -->
+                        <rect x="140" y="40" width="180" height="320" rx="24" fill="#1e293b" stroke="white" stroke-width="2" stroke-opacity="0.3"/>
+                        <rect x="150" y="60" width="160" height="280" rx="8" fill="#0f172a"/>
+
+                        <!-- Screen Content - Instagram Style -->
+                        <!-- Header -->
+                        <rect x="150" y="60" width="160" height="40" fill="#1e293b"/>
+                        <circle cx="175" cy="80" r="12" fill="#475569"/>
+                        <rect x="195" y="74" width="60" height="6" rx="3" fill="#64748b"/>
+                        <rect x="195" y="84" width="40" height="4" rx="2" fill="#475569"/>
+
+                        <!-- Image Area -->
+                        <rect x="150" y="100" width="160" height="140" fill="linear-gradient(135deg, #ec4899 0%, #8b5cf6 100%)"/>
                         <defs>
-                            <linearGradient id="metaGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
-                                <stop offset="0%" style="stop-color:#3b82f6"/>
-                                <stop offset="100%" style="stop-color:#8b5cf6"/>
-                            </linearGradient>
-                            <linearGradient id="metaGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
-                                <stop offset="0%" style="stop-color:#ec4899"/>
-                                <stop offset="100%" style="stop-color:#f97316"/>
+                            <linearGradient id="metaImgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#fce7f3"/>
+                                <stop offset="100%" stop-color="#ddd6fe"/>
                             </linearGradient>
                         </defs>
-                        <!-- Phone Frame -->
-                        <rect x="80" y="40" width="140" height="240" rx="16" fill="#1e293b" stroke="#475569" stroke-width="2"/>
-                        <rect x="90" y="55" width="120" height="200" rx="4" fill="#0f172a"/>
-                        <!-- Ad Content -->
-                        <rect x="100" y="65" width="100" height="80" rx="4" fill="url(#metaGrad2)" opacity="0.8"/>
-                        <rect x="100" y="155" width="80" height="10" rx="2" fill="#475569"/>
-                        <rect x="100" y="170" width="60" height="8" rx="2" fill="#334155"/>
-                        <rect x="100" y="190" width="100" height="30" rx="4" fill="url(#metaGrad1)"/>
-                        <text x="150" y="210" fill="#fff" font-size="11" font-weight="bold" text-anchor="middle">Shop Now</text>
-                        <!-- Engagement Icons -->
-                        <circle cx="110" cy="235" r="8" fill="#334155"/>
-                        <circle cx="135" cy="235" r="8" fill="#334155"/>
-                        <circle cx="160" cy="235" r="8" fill="#334155"/>
-                        <!-- Connection Lines to Audience -->
-                        <g stroke="url(#metaGrad1)" stroke-width="1.5" opacity="0.5" stroke-dasharray="4 3">
-                            <line x1="220" y1="100" x2="270" y2="70"/>
-                            <line x1="220" y1="130" x2="280" y2="130"/>
-                            <line x1="220" y1="160" x2="270" y2="190"/>
+                        <rect x="150" y="100" width="160" height="140" fill="url(#metaImgGrad)" opacity="0.3"/>
+                        <circle cx="230" cy="160" r="30" fill="white" opacity="0.9"/>
+                        <path d="M220 160 L245 175 L245 145 Z" fill="#9333ea"/>
+
+                        <!-- Product Info -->
+                        <rect x="160" y="250" width="100" height="10" rx="3" fill="#64748b"/>
+                        <rect x="160" y="265" width="70" height="8" rx="2" fill="#475569"/>
+                        <text x="160" y="295" fill="#fff" font-family="Inter" font-size="16" font-weight="700">$89.00</text>
+
+                        <!-- CTA Button -->
+                        <rect x="160" y="305" width="130" height="28" rx="6" fill="white"/>
+                        <text x="225" y="324" fill="#0f172a" font-family="Inter" font-size="12" font-weight="600" text-anchor="middle">Shop Now</text>
+
+                        <!-- Audience Circles -->
+                        <g opacity="0.8">
+                            <circle cx="80" cy="120" r="35" fill="#1e293b" stroke="white" stroke-width="2" stroke-opacity="0.4"/>
+                            <circle cx="80" cy="120" r="15" fill="white" opacity="0.3"/>
+
+                            <circle cx="60" cy="220" r="28" fill="#1e293b" stroke="white" stroke-width="2" stroke-opacity="0.4"/>
+                            <circle cx="60" cy="220" r="12" fill="white" opacity="0.3"/>
+
+                            <circle cx="90" cy="310" r="32" fill="#1e293b" stroke="white" stroke-width="2" stroke-opacity="0.4"/>
+                            <circle cx="90" cy="310" r="14" fill="white" opacity="0.3"/>
+
+                            <circle cx="420" cy="100" r="30" fill="#1e293b" stroke="white" stroke-width="2" stroke-opacity="0.4"/>
+                            <circle cx="420" cy="100" r="13" fill="white" opacity="0.3"/>
+
+                            <circle cx="400" cy="200" r="38" fill="#1e293b" stroke="white" stroke-width="2" stroke-opacity="0.4"/>
+                            <circle cx="400" cy="200" r="16" fill="white" opacity="0.3"/>
+
+                            <circle cx="430" cy="300" r="25" fill="#1e293b" stroke="white" stroke-width="2" stroke-opacity="0.4"/>
+                            <circle cx="430" cy="300" r="10" fill="white" opacity="0.3"/>
                         </g>
-                        <!-- Audience Nodes -->
-                        <circle cx="290" cy="60" r="20" fill="#1e293b" stroke="url(#metaGrad1)" stroke-width="2"/>
-                        <circle cx="290" cy="60" r="10" fill="url(#metaGrad1)" opacity="0.5"/>
-                        <circle cx="310" cy="130" r="25" fill="#1e293b" stroke="url(#metaGrad2)" stroke-width="2"/>
-                        <circle cx="310" cy="130" r="12" fill="url(#metaGrad2)" opacity="0.5"/>
-                        <circle cx="290" cy="200" r="22" fill="#1e293b" stroke="url(#metaGrad1)" stroke-width="2"/>
-                        <circle cx="290" cy="200" r="11" fill="url(#metaGrad1)" opacity="0.5"/>
-                        <!-- Smaller audience dots -->
-                        <circle cx="340" cy="80" r="10" fill="#334155"/>
-                        <circle cx="355" cy="150" r="12" fill="#334155"/>
-                        <circle cx="340" cy="220" r="8" fill="#334155"/>
-                        <!-- Label -->
-                        <text x="200" y="290" fill="#64748b" font-family="Inter, sans-serif" font-size="12" text-anchor="middle">Dynamic Audience Targeting</text>
+
+                        <!-- Connection Lines -->
+                        <g stroke="white" stroke-width="1.5" stroke-dasharray="6 4" opacity="0.3">
+                            <line x1="115" y1="120" x2="150" y2="150"/>
+                            <line x1="88" y1="220" x2="150" y2="200"/>
+                            <line x1="122" y1="310" x2="150" y2="280"/>
+                            <line x1="390" y1="100" x2="310" y2="140"/>
+                            <line x1="362" y1="200" x2="310" y2="190"/>
+                            <line x1="405" y1="300" x2="310" y2="270"/>
+                        </g>
                     </svg>
                 </div>
             </div>
@@ -437,94 +1013,140 @@
     </section>
 
     <!-- Campaign Builders Section -->
-    <section class="service-detail" id="campaign-builders">
-        <div class="container">
-            <div class="service-detail-grid">
-                <div class="service-detail-content">
-                    <span class="section-tag">Automation</span>
-                    <h2>AI Campaign Builders</h2>
-                    <p>
-                        Automate campaign creation across platforms. Our AI-powered tools generate
-                        campaigns, ad copy, and audience targeting based on your products, goals, and historical data.
-                    </p>
-                    <p>
-                        We also build custom solutions for Pinterest, TikTok, and LinkedIn advertising—
-                        extending your reach to new audiences with platform-optimized campaigns.
-                    </p>
-                    <ul class="service-features-list">
-                        <li>
-                            <span class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>
-                            <span class="feature-text"><strong>Multi-Platform Campaign Generation:</strong> Build campaigns across channels efficiently</span>
-                        </li>
-                        <li>
-                            <span class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>
-                            <span class="feature-text"><strong>AI Copy Generation:</strong> On-brand ad copy at scale</span>
-                        </li>
-                        <li>
-                            <span class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>
-                            <span class="feature-text"><strong>Media Mix Modeling:</strong> Data-driven budget allocation across channels</span>
-                        </li>
-                        <li>
-                            <span class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>
-                            <span class="feature-text"><strong>Pinterest, TikTok, LinkedIn:</strong> Extend your reach to additional platforms</span>
-                        </li>
-                    </ul>
+    <section class="service-showcase" id="campaign-builders">
+        <div class="service-showcase-container">
+            <div class="service-showcase-content">
+                <span class="service-showcase-tag">Multi-Platform</span>
+                <h2>AI Campaign Builders</h2>
+                <p class="service-showcase-description">
+                    Automate campaign creation across platforms. Our AI-powered tools generate campaigns,
+                    ad copy, and audience targeting based on your products, goals, and historical performance data.
+                </p>
+                <div class="service-features-grid">
+                    <div class="service-feature-item">
+                        <div class="service-feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                        </div>
+                        <div class="service-feature-content">
+                            <h4>Multi-Platform Generation</h4>
+                            <p>Build campaigns across Google, Meta, Pinterest, TikTok, and LinkedIn efficiently.</p>
+                        </div>
+                    </div>
+                    <div class="service-feature-item">
+                        <div class="service-feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+                        </div>
+                        <div class="service-feature-content">
+                            <h4>AI Copy Generation</h4>
+                            <p>On-brand ad copy at scale that resonates with your target audience.</p>
+                        </div>
+                    </div>
+                    <div class="service-feature-item">
+                        <div class="service-feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"/><path d="M22 12A10 10 0 0 0 12 2v10z"/></svg>
+                        </div>
+                        <div class="service-feature-content">
+                            <h4>Media Mix Modeling</h4>
+                            <p>Data-driven budget allocation recommendations across all channels.</p>
+                        </div>
+                    </div>
+                    <div class="service-feature-item">
+                        <div class="service-feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                        </div>
+                        <div class="service-feature-content">
+                            <h4>Rapid Deployment</h4>
+                            <p>Launch campaigns in hours instead of days with automated workflows.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="service-detail-visual" style="background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); padding: 3rem; border-radius: 1.5rem;">
-                    <svg viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <!-- Multi-Platform Campaign Builder -->
+            </div>
+            <div class="service-showcase-visual">
+                <div class="visual-container campaign-visual">
+                    <svg viewBox="0 0 500 400" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <defs>
-                            <linearGradient id="campGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
-                                <stop offset="0%" style="stop-color:#3b82f6"/>
-                                <stop offset="100%" style="stop-color:#06b6d4"/>
+                            <linearGradient id="campGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#3b82f6"/>
+                                <stop offset="100%" stop-color="#06b6d4"/>
                             </linearGradient>
-                            <linearGradient id="campGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
-                                <stop offset="0%" style="stop-color:#10b981"/>
-                                <stop offset="100%" style="stop-color:#06b6d4"/>
-                            </linearGradient>
+                            <filter id="campGlow" x="-50%" y="-50%" width="200%" height="200%">
+                                <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+                                <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+                            </filter>
                         </defs>
+
                         <!-- Central Hub -->
-                        <circle cx="200" cy="150" r="45" fill="#1e293b" stroke="url(#campGrad1)" stroke-width="3"/>
-                        <circle cx="200" cy="150" r="30" fill="url(#campGrad1)" opacity="0.3"/>
-                        <text x="200" y="145" fill="#fff" font-size="11" font-weight="bold" text-anchor="middle">AI</text>
-                        <text x="200" y="160" fill="#94a3b8" font-size="9" text-anchor="middle">Engine</text>
-                        <!-- Connection Lines -->
-                        <g stroke="url(#campGrad1)" stroke-width="2" opacity="0.5">
-                            <line x1="200" y1="105" x2="200" y2="50"/>
-                            <line x1="245" y1="150" x2="310" y2="150"/>
-                            <line x1="155" y1="150" x2="90" y2="150"/>
-                            <line x1="230" y1="120" x2="280" y2="70"/>
-                            <line x1="170" y1="120" x2="120" y2="70"/>
-                            <line x1="230" y1="180" x2="280" y2="230"/>
-                            <line x1="170" y1="180" x2="120" y2="230"/>
+                        <g filter="url(#campGlow)">
+                            <circle cx="250" cy="200" r="60" fill="#1e293b" stroke="url(#campGrad)" stroke-width="3"/>
+                            <circle cx="250" cy="200" r="45" fill="url(#campGrad)" opacity="0.2"/>
+                            <circle cx="250" cy="200" r="30" fill="url(#campGrad)" opacity="0.3"/>
+                            <text x="250" y="195" fill="white" font-family="Inter" font-size="14" font-weight="700" text-anchor="middle">AI</text>
+                            <text x="250" y="212" fill="#94a3b8" font-family="Inter" font-size="10" text-anchor="middle">ENGINE</text>
                         </g>
+
+                        <!-- Orbital Rings -->
+                        <circle cx="250" cy="200" r="100" fill="none" stroke="url(#campGrad)" stroke-width="1" opacity="0.2"/>
+                        <circle cx="250" cy="200" r="140" fill="none" stroke="url(#campGrad)" stroke-width="1" opacity="0.15"/>
+
+                        <!-- Connection Lines -->
+                        <g stroke="url(#campGrad)" stroke-width="2" opacity="0.4">
+                            <line x1="250" y1="140" x2="250" y2="60"/>
+                            <line x1="310" y1="200" x2="390" y2="200"/>
+                            <line x1="190" y1="200" x2="110" y2="200"/>
+                            <line x1="293" y1="157" x2="350" y2="100"/>
+                            <line x1="207" y1="157" x2="150" y2="100"/>
+                            <line x1="293" y1="243" x2="350" y2="300"/>
+                            <line x1="207" y1="243" x2="150" y2="300"/>
+                        </g>
+
                         <!-- Platform Icons -->
                         <!-- Google -->
-                        <circle cx="200" cy="40" r="25" fill="#1e293b" stroke="#4285f4" stroke-width="2"/>
-                        <text x="200" y="45" fill="#4285f4" font-size="16" font-weight="bold" text-anchor="middle">G</text>
-                        <!-- Meta -->
-                        <circle cx="320" cy="150" r="25" fill="#1e293b" stroke="#0668E1" stroke-width="2"/>
-                        <text x="320" y="155" fill="#0668E1" font-size="14" font-weight="bold" text-anchor="middle">f</text>
+                        <g transform="translate(225, 35)">
+                            <circle cx="25" cy="25" r="28" fill="#1e293b" stroke="#4285f4" stroke-width="2"/>
+                            <text x="25" y="33" fill="#4285f4" font-family="Arial" font-size="22" font-weight="700" text-anchor="middle">G</text>
+                        </g>
+
+                        <!-- Meta/Facebook -->
+                        <g transform="translate(365, 175)">
+                            <circle cx="25" cy="25" r="28" fill="#1e293b" stroke="#1877f2" stroke-width="2"/>
+                            <text x="25" y="33" fill="#1877f2" font-family="Arial" font-size="22" font-weight="700" text-anchor="middle">f</text>
+                        </g>
+
                         <!-- LinkedIn -->
-                        <circle cx="80" cy="150" r="25" fill="#1e293b" stroke="#0A66C2" stroke-width="2"/>
-                        <text x="80" y="156" fill="#0A66C2" font-size="14" font-weight="bold" text-anchor="middle">in</text>
+                        <g transform="translate(60, 175)">
+                            <circle cx="25" cy="25" r="28" fill="#1e293b" stroke="#0a66c2" stroke-width="2"/>
+                            <text x="25" y="32" fill="#0a66c2" font-family="Arial" font-size="16" font-weight="700" text-anchor="middle">in</text>
+                        </g>
+
                         <!-- TikTok -->
-                        <circle cx="290" cy="60" r="22" fill="#1e293b" stroke="#ff0050" stroke-width="2"/>
-                        <text x="290" y="65" fill="#fff" font-size="10" font-weight="bold" text-anchor="middle">TT</text>
+                        <g transform="translate(325, 75)">
+                            <circle cx="22" cy="22" r="24" fill="#1e293b" stroke="#ff0050" stroke-width="2"/>
+                            <text x="22" y="28" fill="#fff" font-family="Arial" font-size="12" font-weight="700" text-anchor="middle">TT</text>
+                        </g>
+
                         <!-- Pinterest -->
-                        <circle cx="110" cy="60" r="22" fill="#1e293b" stroke="#E60023" stroke-width="2"/>
-                        <text x="110" y="65" fill="#E60023" font-size="14" font-weight="bold" text-anchor="middle">P</text>
+                        <g transform="translate(108, 75)">
+                            <circle cx="22" cy="22" r="24" fill="#1e293b" stroke="#e60023" stroke-width="2"/>
+                            <text x="22" y="30" fill="#e60023" font-family="Arial" font-size="20" font-weight="700" text-anchor="middle">P</text>
+                        </g>
+
                         <!-- Instagram -->
-                        <circle cx="290" cy="240" r="22" fill="#1e293b" stroke="#E4405F" stroke-width="2"/>
-                        <text x="290" y="245" fill="#E4405F" font-size="12" font-weight="bold" text-anchor="middle">IG</text>
+                        <g transform="translate(325, 275)">
+                            <circle cx="22" cy="22" r="24" fill="#1e293b" stroke="#e4405f" stroke-width="2"/>
+                            <text x="22" y="28" fill="#e4405f" font-family="Arial" font-size="12" font-weight="700" text-anchor="middle">IG</text>
+                        </g>
+
                         <!-- YouTube -->
-                        <circle cx="110" cy="240" r="22" fill="#1e293b" stroke="#FF0000" stroke-width="2"/>
-                        <text x="110" y="245" fill="#FF0000" font-size="10" font-weight="bold" text-anchor="middle">YT</text>
-                        <!-- Animated Pulses -->
-                        <circle cx="200" cy="150" r="55" stroke="url(#campGrad1)" stroke-width="1" fill="none" opacity="0.3"/>
-                        <circle cx="200" cy="150" r="65" stroke="url(#campGrad1)" stroke-width="1" fill="none" opacity="0.2"/>
-                        <!-- Label -->
-                        <text x="200" y="290" fill="#64748b" font-family="Inter, sans-serif" font-size="12" text-anchor="middle">Multi-Platform Campaign Automation</text>
+                        <g transform="translate(108, 275)">
+                            <circle cx="22" cy="22" r="24" fill="#1e293b" stroke="#ff0000" stroke-width="2"/>
+                            <text x="22" y="28" fill="#ff0000" font-family="Arial" font-size="11" font-weight="700" text-anchor="middle">YT</text>
+                        </g>
+
+                        <!-- Animated pulses -->
+                        <circle cx="250" cy="200" r="70" fill="none" stroke="url(#campGrad)" stroke-width="1" opacity="0.3">
+                            <animate attributeName="r" values="70;90;70" dur="3s" repeatCount="indefinite"/>
+                            <animate attributeName="opacity" values="0.3;0.1;0.3" dur="3s" repeatCount="indefinite"/>
+                        </circle>
                     </svg>
                 </div>
             </div>
@@ -532,27 +1154,19 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="cta">
-        <div class="cta-bg">
-            <div class="cta-gradient"></div>
-            <div class="cta-pattern"></div>
-        </div>
-        <div class="container">
-            <div class="cta-content">
-                <h2 class="cta-title">Ready to Get Started?</h2>
-                <p class="cta-description">
-                    Let's discuss your specific needs and build a solution that delivers results.
-                    Free consultation for Madison-area businesses.
-                </p>
-                <div class="cta-actions">
-                    <a href="contact.html" class="btn btn-white">
-                        Schedule a Call
-                        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M5 12h14M12 5l7 7-7 7"/>
-                        </svg>
-                    </a>
-                </div>
-            </div>
+    <section class="services-cta">
+        <div class="services-cta-content">
+            <h2>Ready to Transform Your Business?</h2>
+            <p>
+                Let's discuss your specific needs and build a solution that delivers measurable results.
+                Free consultation for Madison-area businesses.
+            </p>
+            <a href="contact.html" class="btn btn-white">
+                Schedule Your Free Consultation
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </a>
         </div>
     </section>
 
