@@ -133,7 +133,15 @@
                 </div>
 
                 <div class="contact-form-wrapper">
-                    <form class="contact-form" id="contact-form">
+                    <!-- Success/Error Messages -->
+                    <div id="form-status" class="form-status" style="display: none;"></div>
+
+                    <form class="contact-form" id="contact-form" action="send-mail.php" method="POST">
+                        <!-- Honeypot field for spam prevention - do not fill -->
+                        <div style="position: absolute; left: -9999px;" aria-hidden="true">
+                            <input type="text" name="website" tabindex="-1" autocomplete="off">
+                        </div>
+
                         <div class="form-group">
                             <label for="name" class="form-label">Name *</label>
                             <input type="text" id="name" name="name" class="form-input" placeholder="Your name" required>
@@ -235,5 +243,30 @@
     </footer>
 
     <script src="js/main.js"></script>
+    <script>
+        // Handle form submission status from URL parameters
+        document.addEventListener('DOMContentLoaded', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const status = urlParams.get('status');
+            const message = urlParams.get('message');
+            const statusDiv = document.getElementById('form-status');
+            const form = document.getElementById('contact-form');
+
+            if (status === 'success') {
+                statusDiv.className = 'form-status success';
+                statusDiv.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><div><strong>Message sent!</strong><br>Thank you for reaching out. I\'ll get back to you within 1-2 business days.</div>';
+                statusDiv.style.display = 'flex';
+                form.style.display = 'none';
+                // Clean URL
+                window.history.replaceState({}, document.title, window.location.pathname);
+            } else if (status === 'error') {
+                statusDiv.className = 'form-status error';
+                statusDiv.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg><div><strong>Something went wrong.</strong><br>' + (message || 'Please try again or email us directly at contact@matthewcarlsonconsulting.com') + '</div>';
+                statusDiv.style.display = 'flex';
+                // Clean URL
+                window.history.replaceState({}, document.title, window.location.pathname);
+            }
+        });
+    </script>
 </body>
 </html>

@@ -1522,6 +1522,48 @@ a.method-value:hover {
     box-shadow: var(--shadow-lg);
 }
 
+/* Form Status Messages */
+.form-status {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-md);
+    padding: var(--space-lg);
+    border-radius: var(--radius-lg);
+    margin-bottom: var(--space-lg);
+}
+
+.form-status svg {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.form-status.success {
+    background: #ecfdf5;
+    border: 1px solid #10b981;
+    color: #065f46;
+}
+
+.form-status.success svg {
+    stroke: #10b981;
+}
+
+.form-status.error {
+    background: #fef2f2;
+    border: 1px solid #ef4444;
+    color: #991b1b;
+}
+
+.form-status.error svg {
+    stroke: #ef4444;
+}
+
+.form-status strong {
+    display: block;
+    margin-bottom: 4px;
+}
+
 .contact-form {
     display: grid;
     grid-template-columns: 1fr 1fr;

@@ -47,6 +47,7 @@ upload_file "articles.html" "$REMOTE_PATH/"
 upload_file "article.html" "$REMOTE_PATH/"
 upload_file "privacy.html" "$REMOTE_PATH/"
 upload_file "terms.html" "$REMOTE_PATH/"
+upload_file "send-mail.php" "$REMOTE_PATH/"
 
 # Upload .htaccess
 echo ""
