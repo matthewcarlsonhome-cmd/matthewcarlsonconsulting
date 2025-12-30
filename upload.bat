@@ -31,6 +31,8 @@ curl -s -T "contact.html" "ftp://%FTP_HOST%%REMOTE_PATH%/" --user "%FTP_USER%:%F
 curl -s -T "faq.html" "ftp://%FTP_HOST%%REMOTE_PATH%/" --user "%FTP_USER%:%FTP_PASS%" && echo   [OK] faq.html || echo   [FAIL] faq.html
 curl -s -T "articles.html" "ftp://%FTP_HOST%%REMOTE_PATH%/" --user "%FTP_USER%:%FTP_PASS%" && echo   [OK] articles.html || echo   [FAIL] articles.html
 curl -s -T "article.html" "ftp://%FTP_HOST%%REMOTE_PATH%/" --user "%FTP_USER%:%FTP_PASS%" && echo   [OK] article.html || echo   [FAIL] article.html
+curl -s -T "privacy.html" "ftp://%FTP_HOST%%REMOTE_PATH%/" --user "%FTP_USER%:%FTP_PASS%" && echo   [OK] privacy.html || echo   [FAIL] privacy.html
+curl -s -T "terms.html" "ftp://%FTP_HOST%%REMOTE_PATH%/" --user "%FTP_USER%:%FTP_PASS%" && echo   [OK] terms.html || echo   [FAIL] terms.html
 
 echo.
 echo --- Uploading .htaccess ---
