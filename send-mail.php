@@ -79,7 +79,7 @@ $email_body .= "Sent from: matthewcarlsonconsulting.com contact form\n";
 $email_body .= "Submitted: " . date("F j, Y, g:i a T") . "\n";
 
 // Email headers
-$headers = "From: website@matthewcarlsonconsulting.com\r\n";
+$headers = "From: contact@matthewcarlsonconsulting.com\r\n";
 $headers .= "Reply-To: " . $_POST['email'] . "\r\n";
 $headers .= "X-Mailer: PHP/" . phpversion() . "\r\n";
 $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
