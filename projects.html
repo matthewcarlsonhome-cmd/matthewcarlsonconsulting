@@ -1,0 +1,1321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Projects | AI Development & Engineering Portfolio | Matthew Carlson Consulting</title>
+    <meta name="description" content="Explore innovative AI development projects showcasing full-stack engineering, AI-assisted development, and production-ready SaaS applications built by Matthew Carlson Consulting.">
+    <link rel="canonical" href="https://matthewcarlsonconsulting.com/projects.html">
+
+    <!-- Local SEO -->
+    <meta name="geo.region" content="US-WI">
+    <meta name="geo.placename" content="Madison">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Projects | Matthew Carlson Consulting">
+    <meta property="og:description" content="Innovative AI development projects showcasing full-stack engineering and production-ready SaaS applications.">
+    <meta property="og:url" content="https://matthewcarlsonconsulting.com/projects.html">
+    <meta property="og:type" content="website">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+    <style>
+        /* Projects Page Specific Styles */
+
+        /* Hero Section for Projects */
+        .projects-hero {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+            padding: calc(120px + var(--space-4xl)) 0 var(--space-5xl);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .projects-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background:
+                radial-gradient(ellipse at 20% 20%, rgba(37, 99, 235, 0.15) 0%, transparent 50%),
+                radial-gradient(ellipse at 80% 80%, rgba(6, 182, 212, 0.1) 0%, transparent 50%);
+            pointer-events: none;
+        }
+
+        .projects-hero .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .projects-hero-content {
+            max-width: 800px;
+        }
+
+        .projects-hero .section-tag {
+            color: var(--color-accent);
+            margin-bottom: var(--space-lg);
+        }
+
+        .projects-hero h1 {
+            font-family: var(--font-display);
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 700;
+            color: var(--color-white);
+            line-height: 1.1;
+            margin-bottom: var(--space-xl);
+        }
+
+        .projects-hero p {
+            font-size: 1.25rem;
+            color: var(--color-gray-300);
+            line-height: 1.7;
+        }
+
+        /* Project Card - Expandable Architecture */
+        .project-section {
+            padding: var(--space-5xl) 0;
+            border-bottom: 1px solid var(--color-gray-100);
+        }
+
+        .project-section:last-of-type {
+            border-bottom: none;
+        }
+
+        .project-section:nth-child(even) {
+            background: var(--color-gray-50);
+        }
+
+        /* Project Header */
+        .project-header {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: var(--space-2xl);
+            align-items: start;
+            margin-bottom: var(--space-3xl);
+        }
+
+        @media (max-width: 768px) {
+            .project-header {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .project-title-group h2 {
+            font-family: var(--font-display);
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 700;
+            color: var(--color-gray-900);
+            margin-bottom: var(--space-md);
+        }
+
+        .project-subtitle {
+            font-size: 1.125rem;
+            color: var(--color-gray-600);
+            max-width: 600px;
+        }
+
+        .project-links {
+            display: flex;
+            gap: var(--space-md);
+        }
+
+        .project-link {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-sm);
+            padding: var(--space-md) var(--space-xl);
+            background: var(--gradient-primary);
+            color: var(--color-white);
+            font-weight: 600;
+            border-radius: var(--radius-lg);
+            transition: all var(--transition-base);
+            box-shadow: var(--shadow-md);
+        }
+
+        .project-link:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg), var(--shadow-glow);
+        }
+
+        .project-link svg {
+            width: 18px;
+            height: 18px;
+        }
+
+        .project-link-secondary {
+            background: var(--color-white);
+            color: var(--color-gray-700);
+            border: 1px solid var(--color-gray-200);
+        }
+
+        .project-link-secondary:hover {
+            background: var(--color-gray-50);
+            box-shadow: var(--shadow-lg);
+        }
+
+        /* Stats Grid */
+        .project-stats {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: var(--space-lg);
+            margin-bottom: var(--space-4xl);
+        }
+
+        @media (max-width: 992px) {
+            .project-stats {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .project-stats {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .stat-card {
+            background: var(--color-white);
+            border-radius: var(--radius-xl);
+            padding: var(--space-xl);
+            text-align: center;
+            box-shadow: var(--shadow-md);
+            border: 1px solid var(--color-gray-100);
+            transition: all var(--transition-base);
+        }
+
+        .stat-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .stat-value {
+            font-size: 2.5rem;
+            font-weight: 800;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1.2;
+            margin-bottom: var(--space-xs);
+        }
+
+        .stat-label {
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: var(--color-gray-500);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        /* Problem/Solution Section */
+        .project-overview {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--space-3xl);
+            margin-bottom: var(--space-4xl);
+        }
+
+        @media (max-width: 768px) {
+            .project-overview {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .overview-card {
+            background: var(--color-white);
+            border-radius: var(--radius-xl);
+            padding: var(--space-2xl);
+            box-shadow: var(--shadow-md);
+            border: 1px solid var(--color-gray-100);
+        }
+
+        .overview-card h3 {
+            display: flex;
+            align-items: center;
+            gap: var(--space-md);
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--color-gray-900);
+            margin-bottom: var(--space-lg);
+        }
+
+        .overview-card h3 svg {
+            width: 28px;
+            height: 28px;
+            color: var(--color-primary);
+        }
+
+        .overview-card p {
+            color: var(--color-gray-600);
+            line-height: 1.8;
+        }
+
+        /* Screenshots Section */
+        .screenshots-section {
+            margin-bottom: var(--space-4xl);
+        }
+
+        .screenshots-section h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--color-gray-900);
+            margin-bottom: var(--space-2xl);
+            text-align: center;
+        }
+
+        .screenshots-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: var(--space-xl);
+        }
+
+        @media (max-width: 992px) {
+            .screenshots-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 640px) {
+            .screenshots-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .screenshot-card {
+            background: var(--color-white);
+            border-radius: var(--radius-xl);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+            border: 1px solid var(--color-gray-100);
+            transition: all var(--transition-base);
+        }
+
+        .screenshot-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-2xl);
+        }
+
+        .screenshot-image {
+            aspect-ratio: 16/10;
+            background: linear-gradient(135deg, var(--color-gray-100), var(--color-gray-200));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-gray-400);
+            font-size: 0.875rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .screenshot-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .screenshot-placeholder {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: var(--space-sm);
+        }
+
+        .screenshot-placeholder svg {
+            width: 48px;
+            height: 48px;
+            opacity: 0.5;
+        }
+
+        .screenshot-content {
+            padding: var(--space-lg);
+        }
+
+        .screenshot-title {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--color-gray-900);
+            margin-bottom: var(--space-sm);
+        }
+
+        .screenshot-description {
+            font-size: 0.875rem;
+            color: var(--color-gray-600);
+            line-height: 1.6;
+        }
+
+        /* Capabilities Section */
+        .capabilities-section {
+            margin-bottom: var(--space-4xl);
+        }
+
+        .capabilities-section > h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--color-gray-900);
+            margin-bottom: var(--space-2xl);
+        }
+
+        .capabilities-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: var(--space-xl);
+        }
+
+        @media (max-width: 992px) {
+            .capabilities-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 640px) {
+            .capabilities-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .capability-card {
+            background: var(--color-white);
+            border-radius: var(--radius-xl);
+            padding: var(--space-xl);
+            box-shadow: var(--shadow-md);
+            border: 1px solid var(--color-gray-100);
+        }
+
+        .capability-card h4 {
+            display: flex;
+            align-items: center;
+            gap: var(--space-sm);
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: var(--color-gray-900);
+            margin-bottom: var(--space-lg);
+        }
+
+        .capability-card h4 span {
+            font-size: 1.5rem;
+        }
+
+        .capability-list {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-sm);
+        }
+
+        .capability-item {
+            display: flex;
+            align-items: flex-start;
+            gap: var(--space-sm);
+            font-size: 0.9rem;
+            color: var(--color-gray-600);
+        }
+
+        .capability-item strong {
+            color: var(--color-gray-800);
+            font-weight: 500;
+        }
+
+        .capability-item svg {
+            width: 16px;
+            height: 16px;
+            color: var(--color-success);
+            flex-shrink: 0;
+            margin-top: 3px;
+        }
+
+        /* Technical Architecture */
+        .architecture-section {
+            margin-bottom: var(--space-4xl);
+        }
+
+        .architecture-section > h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--color-gray-900);
+            margin-bottom: var(--space-2xl);
+        }
+
+        .architecture-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--space-2xl);
+        }
+
+        @media (max-width: 768px) {
+            .architecture-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .architecture-card {
+            background: var(--color-gray-900);
+            border-radius: var(--radius-xl);
+            padding: var(--space-xl);
+            color: var(--color-white);
+        }
+
+        .architecture-card h4 {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--color-accent);
+            margin-bottom: var(--space-lg);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .architecture-diagram {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.75rem;
+            line-height: 1.6;
+            white-space: pre;
+            color: var(--color-gray-300);
+            overflow-x: auto;
+        }
+
+        /* Tech Stack */
+        .tech-stack-section {
+            margin-bottom: var(--space-4xl);
+        }
+
+        .tech-stack-section > h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--color-gray-900);
+            margin-bottom: var(--space-2xl);
+        }
+
+        .tech-stack-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: var(--space-md);
+        }
+
+        @media (max-width: 992px) {
+            .tech-stack-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        .tech-item {
+            display: flex;
+            align-items: center;
+            gap: var(--space-md);
+            background: var(--color-white);
+            border-radius: var(--radius-lg);
+            padding: var(--space-lg);
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--color-gray-100);
+        }
+
+        .tech-label {
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--color-gray-400);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .tech-value {
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: var(--color-gray-800);
+        }
+
+        /* Development Approach */
+        .development-section {
+            margin-bottom: var(--space-4xl);
+        }
+
+        .development-section > h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--color-gray-900);
+            margin-bottom: var(--space-2xl);
+        }
+
+        .development-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--space-2xl);
+        }
+
+        @media (max-width: 768px) {
+            .development-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .development-card {
+            background: var(--color-white);
+            border-radius: var(--radius-xl);
+            padding: var(--space-2xl);
+            box-shadow: var(--shadow-md);
+            border: 1px solid var(--color-gray-100);
+        }
+
+        .development-card h4 {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--color-gray-900);
+            margin-bottom: var(--space-lg);
+        }
+
+        .velocity-stats {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-md);
+        }
+
+        .velocity-item {
+            display: flex;
+            align-items: center;
+            gap: var(--space-md);
+        }
+
+        .velocity-icon {
+            width: 32px;
+            height: 32px;
+            background: var(--color-primary);
+            border-radius: var(--radius-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-white);
+            font-size: 0.875rem;
+        }
+
+        .velocity-text {
+            font-size: 0.9rem;
+            color: var(--color-gray-700);
+        }
+
+        .velocity-text strong {
+            color: var(--color-gray-900);
+        }
+
+        .commit-chart {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-md);
+        }
+
+        .commit-week {
+            display: flex;
+            align-items: center;
+            gap: var(--space-md);
+        }
+
+        .commit-label {
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: var(--color-gray-600);
+            width: 70px;
+            flex-shrink: 0;
+        }
+
+        .commit-bar-container {
+            flex: 1;
+            height: 24px;
+            background: var(--color-gray-100);
+            border-radius: var(--radius-md);
+            overflow: hidden;
+        }
+
+        .commit-bar {
+            height: 100%;
+            background: var(--gradient-primary);
+            border-radius: var(--radius-md);
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding-right: var(--space-sm);
+        }
+
+        .commit-count {
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--color-white);
+        }
+
+        .commit-description {
+            font-size: 0.75rem;
+            color: var(--color-gray-500);
+            margin-left: var(--space-sm);
+        }
+
+        /* Key Takeaway */
+        .takeaway-section {
+            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent) 100%);
+            border-radius: var(--radius-2xl);
+            padding: var(--space-3xl);
+            text-align: center;
+            color: var(--color-white);
+            margin-bottom: var(--space-4xl);
+        }
+
+        .takeaway-section blockquote {
+            font-family: var(--font-display);
+            font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+            font-weight: 600;
+            font-style: italic;
+            line-height: 1.5;
+            margin-bottom: var(--space-xl);
+        }
+
+        .takeaway-section p {
+            font-size: 1rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.7;
+        }
+
+        /* Project Completed Date */
+        .project-meta {
+            text-align: center;
+            padding-top: var(--space-xl);
+            border-top: 1px solid var(--color-gray-200);
+        }
+
+        .project-date {
+            font-size: 0.875rem;
+            color: var(--color-gray-500);
+            font-style: italic;
+        }
+
+        /* More Projects Coming */
+        .more-projects {
+            padding: var(--space-4xl) 0;
+            text-align: center;
+            background: var(--color-gray-50);
+        }
+
+        .more-projects h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--color-gray-900);
+            margin-bottom: var(--space-md);
+        }
+
+        .more-projects p {
+            color: var(--color-gray-600);
+            max-width: 500px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">
+                <span class="logo-mark">MC</span>
+                <span class="logo-text">Matthew Carlson<span class="logo-sub">Consulting</span></span>
+            </a>
+            <div class="nav-menu" id="nav-menu">
+                <a href="/" class="nav-link">Home</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="projects.html" class="nav-link active">Projects</a>
+                <a href="faq.html" class="nav-link">FAQ</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link nav-cta">Contact</a>
+            </div>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="projects-hero" id="main-content">
+        <div class="container">
+            <div class="projects-hero-content">
+                <span class="section-tag">Portfolio</span>
+                <h1>Projects & Case Studies</h1>
+                <p>
+                    Real-world applications demonstrating AI-assisted development, full-stack engineering,
+                    and production-ready SaaS platforms. Each project showcases innovative approaches to
+                    solving complex problems.
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <!-- SkillEngine Project -->
+    <section class="project-section" id="skillengine">
+        <div class="container">
+            <!-- Project Header -->
+            <div class="project-header">
+                <div class="project-title-group">
+                    <h2>SkillEngine</h2>
+                    <p class="project-subtitle">
+                        AI Career Productivity Platform — A full-scale SaaS application built in 31 days
+                        using AI-assisted development with Claude Code.
+                    </p>
+                </div>
+                <div class="project-links">
+                    <a href="https://aicareerskills.netlify.app/" target="_blank" rel="noopener noreferrer" class="project-link">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                            <polyline points="15 3 21 3 21 9"/>
+                            <line x1="10" y1="14" x2="21" y2="3"/>
+                        </svg>
+                        Live Application
+                    </a>
+                </div>
+            </div>
+
+            <!-- Stats -->
+            <div class="project-stats">
+                <div class="stat-card">
+                    <div class="stat-value">31</div>
+                    <div class="stat-label">Days to Build</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">125K+</div>
+                    <div class="stat-label">Lines of Code</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">277+</div>
+                    <div class="stat-label">AI Skills</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">48</div>
+                    <div class="stat-label">App Pages</div>
+                </div>
+            </div>
+
+            <!-- Second Row Stats -->
+            <div class="project-stats">
+                <div class="stat-card">
+                    <div class="stat-value">24</div>
+                    <div class="stat-label">Workflows</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">27</div>
+                    <div class="stat-label">Role Templates</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">311</div>
+                    <div class="stat-label">Git Commits</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">$0</div>
+                    <div class="stat-label">Monthly Hosting</div>
+                </div>
+            </div>
+
+            <!-- Problem / Solution -->
+            <div class="project-overview">
+                <div class="overview-card">
+                    <h3>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <line x1="12" y1="8" x2="12" y2="12"/>
+                            <line x1="12" y1="16" x2="12.01" y2="16"/>
+                        </svg>
+                        The Problem
+                    </h3>
+                    <p>
+                        Most people use AI the same way every time: open ChatGPT, explain what they need,
+                        get a response, close the tab. Tomorrow they start over with zero memory of what worked.
+                        Valuable prompts are lost, and professionals waste time re-explaining context repeatedly.
+                    </p>
+                </div>
+                <div class="overview-card">
+                    <h3>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                            <polyline points="22 4 12 14.01 9 11.01"/>
+                        </svg>
+                        The Solution
+                    </h3>
+                    <p>
+                        SkillEngine saves your best prompts as reusable <strong>Skills</strong> — complete with
+                        expert personas, structured outputs, and industry-specific context. Run them with one click
+                        instead of re-explaining yourself constantly. Build once, use forever.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Screenshots -->
+            <div class="screenshots-section">
+                <h3>User Experience Flow</h3>
+                <div class="screenshots-grid">
+                    <div class="screenshot-card">
+                        <div class="screenshot-image">
+                            <div class="screenshot-placeholder">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                                    <circle cx="8.5" cy="8.5" r="1.5"/>
+                                    <polyline points="21 15 16 10 5 21"/>
+                                </svg>
+                                <span>Screenshot</span>
+                            </div>
+                        </div>
+                        <div class="screenshot-content">
+                            <div class="screenshot-title">Home Dashboard</div>
+                            <div class="screenshot-description">
+                                Skill categories, quick-start workflows, and recent activity at a glance.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="screenshot-card">
+                        <div class="screenshot-image">
+                            <div class="screenshot-placeholder">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                                    <circle cx="8.5" cy="8.5" r="1.5"/>
+                                    <polyline points="21 15 16 10 5 21"/>
+                                </svg>
+                                <span>Screenshot</span>
+                            </div>
+                        </div>
+                        <div class="screenshot-content">
+                            <div class="screenshot-title">Skill Library</div>
+                            <div class="screenshot-description">
+                                Browse 277+ skills with filtering by category, role, and use case.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="screenshot-card">
+                        <div class="screenshot-image">
+                            <div class="screenshot-placeholder">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                                    <circle cx="8.5" cy="8.5" r="1.5"/>
+                                    <polyline points="21 15 16 10 5 21"/>
+                                </svg>
+                                <span>Screenshot</span>
+                            </div>
+                        </div>
+                        <div class="screenshot-content">
+                            <div class="screenshot-title">Skill Runner</div>
+                            <div class="screenshot-description">
+                                Configure inputs, select AI provider, and execute skills with one click.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="screenshot-card">
+                        <div class="screenshot-image">
+                            <div class="screenshot-placeholder">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                                    <circle cx="8.5" cy="8.5" r="1.5"/>
+                                    <polyline points="21 15 16 10 5 21"/>
+                                </svg>
+                                <span>Screenshot</span>
+                            </div>
+                        </div>
+                        <div class="screenshot-content">
+                            <div class="screenshot-title">Real-Time Results</div>
+                            <div class="screenshot-description">
+                                Streaming output with execution summary, token usage, and export options.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="screenshot-card">
+                        <div class="screenshot-image">
+                            <div class="screenshot-placeholder">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                                    <circle cx="8.5" cy="8.5" r="1.5"/>
+                                    <polyline points="21 15 16 10 5 21"/>
+                                </svg>
+                                <span>Screenshot</span>
+                            </div>
+                        </div>
+                        <div class="screenshot-content">
+                            <div class="screenshot-title">Workflow Runner</div>
+                            <div class="screenshot-description">
+                                Multi-step workflows that chain skills together automatically.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="screenshot-card">
+                        <div class="screenshot-image">
+                            <div class="screenshot-placeholder">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                                    <circle cx="8.5" cy="8.5" r="1.5"/>
+                                    <polyline points="21 15 16 10 5 21"/>
+                                </svg>
+                                <span>Screenshot</span>
+                            </div>
+                        </div>
+                        <div class="screenshot-content">
+                            <div class="screenshot-title">Settings & API</div>
+                            <div class="screenshot-description">
+                                Configure AI providers with platform or personal API keys.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Core Capabilities -->
+            <div class="capabilities-section">
+                <h3>Core Capabilities</h3>
+                <div class="capabilities-grid">
+                    <div class="capability-card">
+                        <h4><span>🎯</span> For Job Seekers</h4>
+                        <div class="capability-list">
+                            <div class="capability-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                                <span><strong>Job Readiness Scorer</strong> — Match analysis for roles</span>
+                            </div>
+                            <div class="capability-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                                <span><strong>Resume Customizer</strong> — Tailored bullet points</span>
+                            </div>
+                            <div class="capability-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                                <span><strong>ATS Keyword Optimizer</strong> — Pass screening</span>
+                            </div>
+                            <div class="capability-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                                <span><strong>Interview Prep</strong> — STAR-format answers</span>
+                            </div>
+                            <div class="capability-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                                <span><strong>Salary Coach</strong> — Negotiation guidance</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="capability-card">
+                        <h4><span>💼</span> For Professionals (27 Roles)</h4>
+                        <div class="capability-list">
+                            <div class="capability-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                                <span><strong>Software Engineer</strong> — Code review, specs</span>
+                            </div>
+                            <div class="capability-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                                <span><strong>Financial Analyst</strong> — Reports, forecasts</span>
+                            </div>
+                            <div class="capability-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                                <span><strong>Marketing Manager</strong> — Campaigns, strategy</span>
+                            </div>
+                            <div class="capability-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                                <span><strong>Project Manager</strong> — Status, risk assessment</span>
+                            </div>
+                            <div class="capability-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                                <span><strong>+ 22 more roles</strong> with 4-12 skills each</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="capability-card">
+                        <h4><span>🏢</span> Enterprise Operations</h4>
+                        <div class="capability-list">
+                            <div class="capability-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                                <span><strong>Contract Review</strong> — Risk identification</span>
+                            </div>
+                            <div class="capability-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                                <span><strong>Compliance</strong> — Program development</span>
+                            </div>
+                            <div class="capability-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                                <span><strong>AI Governance</strong> — Implementation</span>
+                            </div>
+                            <div class="capability-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                                <span><strong>Tech Debt</strong> — Assessment & planning</span>
+                            </div>
+                            <div class="capability-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                                <span><strong>RFP Response</strong> — Automation</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Technical Architecture -->
+            <div class="architecture-section">
+                <h3>Technical Architecture</h3>
+                <div class="architecture-grid">
+                    <div class="architecture-card">
+                        <h4>Multi-Provider AI Interface</h4>
+                        <div class="architecture-diagram">┌─────────────────────────────────────────┐
+│          Unified AI Interface           │
+├─────────────┬─────────────┬─────────────┤
+│   Gemini    │   Claude    │   ChatGPT   │
+│  • 2.0 Flash│  • Haiku    │  • GPT-4o   │
+│             │  • Sonnet   │  • 4o-mini  │
+│             │  • Opus     │  • o1       │
+└─────────────┴─────────────┴─────────────┘
+
+Switch providers with one click. Model-specific
+token limits and streaming handled automatically.</div>
+                    </div>
+                    <div class="architecture-card">
+                        <h4>Local-First Data Architecture</h4>
+                        <div class="architecture-diagram">┌─────────────────────────────────────────┐
+│            User's Browser               │
+│  ┌─────────────────────────────────────┐│
+│  │     IndexedDB (Primary Storage)     ││
+│  │  • Workspaces    • Skill history    ││
+│  │  • Custom skills • Preferences      ││
+│  └─────────────────────────────────────┘│
+└─────────────────────────────────────────┘
+                    │ Optional sync
+                    ▼
+┌─────────────────────────────────────────┐
+│         Supabase (Cloud Sync)           │
+│  • Community skills • User profiles    │
+└─────────────────────────────────────────┘</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tech Stack -->
+            <div class="tech-stack-section">
+                <h3>Technology Stack</h3>
+                <div class="tech-stack-grid">
+                    <div class="tech-item">
+                        <div>
+                            <div class="tech-label">Frontend</div>
+                            <div class="tech-value">React 18, TypeScript</div>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <div>
+                            <div class="tech-label">Styling</div>
+                            <div class="tech-value">Tailwind CSS</div>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <div>
+                            <div class="tech-label">Build</div>
+                            <div class="tech-value">Vite</div>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <div>
+                            <div class="tech-label">Routing</div>
+                            <div class="tech-value">React Router</div>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <div>
+                            <div class="tech-label">Local DB</div>
+                            <div class="tech-value">IndexedDB</div>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <div>
+                            <div class="tech-label">Backend</div>
+                            <div class="tech-value">Supabase</div>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <div>
+                            <div class="tech-label">Hosting</div>
+                            <div class="tech-value">Netlify</div>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <div>
+                            <div class="tech-label">Testing</div>
+                            <div class="tech-value">Vitest</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Development Approach -->
+            <div class="development-section">
+                <h3>AI-Assisted Development with Claude Code</h3>
+                <div class="development-grid">
+                    <div class="development-card">
+                        <h4>Daily Development Velocity</h4>
+                        <div class="velocity-stats">
+                            <div class="velocity-item">
+                                <div class="velocity-icon">📝</div>
+                                <div class="velocity-text"><strong>4,000+</strong> lines of production code per day</div>
+                            </div>
+                            <div class="velocity-item">
+                                <div class="velocity-icon">🎯</div>
+                                <div class="velocity-text"><strong>9</strong> new AI skills created daily</div>
+                            </div>
+                            <div class="velocity-item">
+                                <div class="velocity-icon">📦</div>
+                                <div class="velocity-text"><strong>10</strong> git commits per day average</div>
+                            </div>
+                            <div class="velocity-item">
+                                <div class="velocity-icon">📄</div>
+                                <div class="velocity-text"><strong>1.5</strong> application pages completed daily</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="development-card">
+                        <h4>Commit Distribution by Week</h4>
+                        <div class="commit-chart">
+                            <div class="commit-week">
+                                <span class="commit-label">Week 1</span>
+                                <div class="commit-bar-container">
+                                    <div class="commit-bar" style="width: 75%;">
+                                        <span class="commit-count">86</span>
+                                    </div>
+                                </div>
+                                <span class="commit-description">Core architecture</span>
+                            </div>
+                            <div class="commit-week">
+                                <span class="commit-label">Week 2</span>
+                                <div class="commit-bar-container">
+                                    <div class="commit-bar" style="width: 100%;">
+                                        <span class="commit-count">114</span>
+                                    </div>
+                                </div>
+                                <span class="commit-description">Skills + Roles</span>
+                            </div>
+                            <div class="commit-week">
+                                <span class="commit-label">Week 3</span>
+                                <div class="commit-bar-container">
+                                    <div class="commit-bar" style="width: 53%;">
+                                        <span class="commit-count">61</span>
+                                    </div>
+                                </div>
+                                <span class="commit-description">Workflows</span>
+                            </div>
+                            <div class="commit-week">
+                                <span class="commit-label">Week 4</span>
+                                <div class="commit-bar-container">
+                                    <div class="commit-bar" style="width: 44%;">
+                                        <span class="commit-count">50</span>
+                                    </div>
+                                </div>
+                                <span class="commit-description">Polish + Keys</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Key Takeaway -->
+            <div class="takeaway-section">
+                <blockquote>
+                    "The cost and time equation for building software has fundamentally changed."
+                </blockquote>
+                <p>
+                    This project — 48 pages, 277 skills, 24 workflows, full authentication, multi-provider AI integration —
+                    would traditionally require a team of 3-4 developers working 2-3 months. Built solo in 31 days.
+                    Hosting cost: $0/month. The tools are here. The question is who learns to use them effectively.
+                </p>
+            </div>
+
+            <!-- Project Meta -->
+            <div class="project-meta">
+                <p class="project-date">Project completed December 2025</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- More Projects Coming -->
+    <section class="more-projects">
+        <div class="container">
+            <h3>More Projects Coming Soon</h3>
+            <p>
+                Additional case studies and development projects will be added regularly.
+                Check back for updates on AI automation implementations and full-stack applications.
+            </p>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="cta-bg">
+            <div class="cta-gradient"></div>
+            <div class="cta-pattern"></div>
+        </div>
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Have a Project in Mind?</h2>
+                <p class="cta-description">
+                    Whether you need AI-assisted development, automation solutions, or a complete
+                    SaaS platform — let's discuss how to bring your vision to life.
+                </p>
+                <div class="cta-actions">
+                    <a href="contact.html" class="btn btn-white">
+                        Start a Conversation
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="/" class="footer-logo">
+                        <span class="logo-mark">MC</span>
+                        <span class="logo-text">Matthew Carlson Consulting</span>
+                    </a>
+                    <p class="footer-tagline">
+                        AI automation and digital marketing solutions for Madison, Wisconsin
+                        and beyond. Fast deployment. Measurable results.
+                    </p>
+                    <div class="footer-location">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                        <span>Madison, Wisconsin</span>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4 class="footer-heading">Services</h4>
+                        <a href="services.html#ai-automation">AI Automation</a>
+                        <a href="services.html#google-shopping">Google Shopping Feeds</a>
+                        <a href="services.html#meta-ads">Meta Dynamic Ads</a>
+                        <a href="services.html#pmax">Performance Max</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4 class="footer-heading">Company</h4>
+                        <a href="about.html">About</a>
+                        <a href="projects.html">Projects</a>
+                        <a href="faq.html">FAQ</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4 class="footer-heading">Connect</h4>
+                        <a href="https://www.linkedin.com/in/matthewcarlsonconsulting/" target="_blank" rel="noopener">LinkedIn</a>
+                        <a href="https://x.com/MatthewDCarlson" target="_blank" rel="noopener">X</a>
+                        <a href="mailto:contact@matthewcarlsonconsulting.com">Email Us</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">&copy; <span id="current-year">2024</span> Matthew Carlson Consulting. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

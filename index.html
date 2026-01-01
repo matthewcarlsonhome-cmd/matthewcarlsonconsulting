@@ -186,7 +186,7 @@
             <div class="nav-menu" id="nav-menu">
                 <a href="/" class="nav-link active">Home</a>
                 <a href="services.html" class="nav-link">Services</a>
-                <a href="articles.html" class="nav-link">Articles</a>
+                <a href="projects.html" class="nav-link">Projects</a>
                 <a href="faq.html" class="nav-link">FAQ</a>
                 <a href="about.html" class="nav-link">About</a>
                 <a href="contact.html" class="nav-link nav-cta">Contact</a>
@@ -589,24 +589,63 @@
         </div>
     </section>
 
-    <!-- Latest Articles Preview -->
-    <section class="articles-preview" aria-labelledby="articles-heading">
+    <!-- Featured Projects Preview -->
+    <section class="articles-preview" aria-labelledby="projects-heading">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">Insights</span>
-                <h2 id="articles-heading" class="section-title">Latest Articles</h2>
+                <span class="section-tag">Portfolio</span>
+                <h2 id="projects-heading" class="section-title">Featured Projects</h2>
                 <p class="section-description">
-                    Practical guides on AI automation, digital marketing, and business technology.
+                    Real-world applications showcasing AI-assisted development and full-stack engineering.
                 </p>
             </div>
 
-            <div class="articles-grid" id="latest-articles">
-                <!-- Articles loaded dynamically -->
+            <div class="articles-grid">
+                <!-- SkillEngine Project Card -->
+                <article class="article-card" style="grid-column: span 3;">
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: center;">
+                        <div style="background: linear-gradient(135deg, #0f172a, #1e293b); border-radius: 1rem; padding: 2rem; color: white;">
+                            <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; text-align: center;">
+                                <div>
+                                    <div style="font-size: 2rem; font-weight: 800; background: linear-gradient(135deg, #2563eb, #06b6d4); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">31</div>
+                                    <div style="font-size: 0.75rem; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.05em;">Days</div>
+                                </div>
+                                <div>
+                                    <div style="font-size: 2rem; font-weight: 800; background: linear-gradient(135deg, #2563eb, #06b6d4); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">125K+</div>
+                                    <div style="font-size: 0.75rem; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.05em;">Lines of Code</div>
+                                </div>
+                                <div>
+                                    <div style="font-size: 2rem; font-weight: 800; background: linear-gradient(135deg, #2563eb, #06b6d4); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">277+</div>
+                                    <div style="font-size: 0.75rem; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.05em;">AI Skills</div>
+                                </div>
+                                <div>
+                                    <div style="font-size: 2rem; font-weight: 800; background: linear-gradient(135deg, #2563eb, #06b6d4); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">$0</div>
+                                    <div style="font-size: 0.75rem; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.05em;">Monthly Hosting</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <span style="display: inline-block; background: #dbeafe; color: #1d4ed8; font-size: 0.75rem; font-weight: 600; padding: 0.25rem 0.75rem; border-radius: 9999px; margin-bottom: 1rem;">AI Platform</span>
+                            <h3 style="font-size: 1.75rem; font-weight: 700; color: #0f172a; margin-bottom: 0.75rem;">SkillEngine</h3>
+                            <p style="color: #475569; line-height: 1.7; margin-bottom: 1.5rem;">
+                                A full-scale SaaS application transforming how professionals use AI —
+                                turning one-time prompts into reusable, shareable skills. Built in 31 days
+                                using AI-assisted development with Claude Code.
+                            </p>
+                            <a href="projects.html#skillengine" style="display: inline-flex; align-items: center; gap: 0.5rem; color: #2563eb; font-weight: 600; text-decoration: none;">
+                                View Case Study
+                                <svg style="width: 16px; height: 16px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </article>
             </div>
 
             <div class="articles-cta">
-                <a href="articles.html" class="btn btn-outline">
-                    View All Articles
+                <a href="projects.html" class="btn btn-outline">
+                    View All Projects
                     <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                     </svg>
@@ -680,7 +719,7 @@
                     <div class="footer-column">
                         <h4 class="footer-heading">Company</h4>
                         <a href="about.html">About</a>
-                        <a href="articles.html">Articles</a>
+                        <a href="projects.html">Projects</a>
                         <a href="faq.html">FAQ</a>
                         <a href="contact.html">Contact</a>
                     </div>
@@ -706,6 +745,5 @@
 
     <!-- Scripts -->
     <script src="js/main.js"></script>
-    <script src="js/articles.js"></script>
 </body>
 </html>
