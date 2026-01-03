@@ -710,6 +710,365 @@
             max-width: 500px;
             margin: 0 auto;
         }
+
+        /* Project Index */
+        .project-index {
+            background: var(--color-gray-50);
+            padding: var(--space-2xl) 0;
+            border-bottom: 1px solid var(--color-gray-200);
+        }
+
+        .project-index-title {
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: var(--color-gray-500);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: var(--space-lg);
+        }
+
+        .project-index-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--space-lg);
+        }
+
+        .project-index-card {
+            background: var(--color-white);
+            border-radius: var(--radius-xl);
+            padding: var(--space-xl);
+            box-shadow: var(--shadow-md);
+            border: 1px solid var(--color-gray-100);
+            text-decoration: none;
+            transition: all var(--transition-base);
+            display: block;
+        }
+
+        .project-index-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-xl);
+            border-color: var(--color-primary);
+        }
+
+        .project-index-card h3 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--color-gray-900);
+            margin-bottom: var(--space-sm);
+        }
+
+        .project-index-card p {
+            font-size: 0.9rem;
+            color: var(--color-gray-600);
+            margin-bottom: var(--space-md);
+            line-height: 1.6;
+        }
+
+        .project-index-meta {
+            display: flex;
+            gap: var(--space-lg);
+            font-size: 0.8rem;
+        }
+
+        .project-index-meta span {
+            color: var(--color-primary);
+            font-weight: 600;
+        }
+
+        /* Project Tables */
+        .project-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: var(--space-2xl);
+            background: var(--color-white);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+        }
+
+        .project-table th,
+        .project-table td {
+            padding: var(--space-md) var(--space-lg);
+            text-align: left;
+            border-bottom: 1px solid var(--color-gray-100);
+        }
+
+        .project-table th {
+            background: var(--color-gray-50);
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--color-gray-500);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .project-table td {
+            font-size: 0.9rem;
+            color: var(--color-gray-700);
+        }
+
+        .project-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .project-table tr:hover td {
+            background: var(--color-gray-50);
+        }
+
+        .table-highlight {
+            font-weight: 700;
+            color: var(--color-primary);
+        }
+
+        .table-verdict {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: var(--radius-sm);
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        .table-verdict.success {
+            background: #dcfce7;
+            color: #166534;
+        }
+
+        .table-verdict.warning {
+            background: #fef3c7;
+            color: #92400e;
+        }
+
+        /* Metrics Grid for compact stats */
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: var(--space-md);
+            margin-bottom: var(--space-3xl);
+        }
+
+        @media (max-width: 768px) {
+            .metrics-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .metrics-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .metric-card {
+            background: var(--color-white);
+            border-radius: var(--radius-lg);
+            padding: var(--space-lg);
+            text-align: center;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--color-gray-100);
+        }
+
+        .metric-card .metric-value {
+            font-size: 1.75rem;
+            font-weight: 800;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1.2;
+        }
+
+        .metric-card .metric-label {
+            font-size: 0.75rem;
+            color: var(--color-gray-500);
+            margin-top: var(--space-xs);
+        }
+
+        /* Build Timeline */
+        .build-timeline {
+            background: var(--color-white);
+            border-radius: var(--radius-xl);
+            padding: var(--space-xl);
+            box-shadow: var(--shadow-md);
+            margin-bottom: var(--space-2xl);
+        }
+
+        .build-timeline h4 {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--color-gray-900);
+            margin-bottom: var(--space-lg);
+        }
+
+        .timeline-row {
+            display: flex;
+            align-items: center;
+            padding: var(--space-sm) 0;
+            border-bottom: 1px solid var(--color-gray-100);
+        }
+
+        .timeline-row:last-child {
+            border-bottom: none;
+            font-weight: 600;
+            background: var(--color-gray-50);
+            margin: var(--space-md) calc(-1 * var(--space-xl));
+            padding: var(--space-md) var(--space-xl);
+            border-radius: 0 0 var(--radius-xl) var(--radius-xl);
+        }
+
+        .timeline-phase {
+            flex: 2;
+            font-size: 0.9rem;
+            color: var(--color-gray-700);
+        }
+
+        .timeline-duration {
+            flex: 1;
+            font-size: 0.875rem;
+            color: var(--color-primary);
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .timeline-output {
+            flex: 2;
+            font-size: 0.8rem;
+            color: var(--color-gray-500);
+            text-align: right;
+        }
+
+        /* Two Column Layout */
+        .two-column-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--space-2xl);
+            margin-bottom: var(--space-3xl);
+        }
+
+        @media (max-width: 900px) {
+            .two-column-section {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .column-card {
+            background: var(--color-white);
+            border-radius: var(--radius-xl);
+            padding: var(--space-xl);
+            box-shadow: var(--shadow-md);
+            border: 1px solid var(--color-gray-100);
+        }
+
+        .column-card h4 {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--color-gray-900);
+            margin-bottom: var(--space-lg);
+        }
+
+        .column-card ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .column-card li {
+            padding: var(--space-sm) 0;
+            font-size: 0.9rem;
+            color: var(--color-gray-600);
+            border-bottom: 1px solid var(--color-gray-100);
+        }
+
+        .column-card li:last-child {
+            border-bottom: none;
+        }
+
+        /* Production Path Cards */
+        .production-path {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--space-xl);
+            margin-bottom: var(--space-3xl);
+        }
+
+        @media (max-width: 768px) {
+            .production-path {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .path-card {
+            background: var(--color-white);
+            border-radius: var(--radius-xl);
+            padding: var(--space-xl);
+            border: 2px solid var(--color-gray-200);
+        }
+
+        .path-card.current {
+            border-color: var(--color-primary);
+        }
+
+        .path-card.future {
+            border-color: var(--color-accent);
+        }
+
+        .path-card h4 {
+            font-size: 1.125rem;
+            font-weight: 700;
+            color: var(--color-gray-900);
+            margin-bottom: var(--space-md);
+        }
+
+        .path-card h4 span {
+            display: inline-block;
+            font-size: 0.7rem;
+            font-weight: 600;
+            padding: 2px 8px;
+            border-radius: var(--radius-sm);
+            margin-left: var(--space-sm);
+            vertical-align: middle;
+        }
+
+        .path-card.current h4 span {
+            background: #dbeafe;
+            color: #1d4ed8;
+        }
+
+        .path-card.future h4 span {
+            background: #d1fae5;
+            color: #047857;
+        }
+
+        .path-card ul {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 var(--space-lg) 0;
+        }
+
+        .path-card li {
+            padding: var(--space-xs) 0;
+            font-size: 0.9rem;
+            color: var(--color-gray-600);
+            display: flex;
+            align-items: center;
+            gap: var(--space-sm);
+        }
+
+        .path-card li::before {
+            content: '✓';
+            color: var(--color-success);
+            font-weight: bold;
+        }
+
+        .path-card .price {
+            font-size: 0.875rem;
+            color: var(--color-gray-500);
+            padding-top: var(--space-md);
+            border-top: 1px solid var(--color-gray-200);
+        }
+
+        .path-card .price strong {
+            color: var(--color-gray-900);
+        }
     </style>
 </head>
 <body>
@@ -750,6 +1109,33 @@
             </div>
         </div>
     </header>
+
+    <!-- Project Index -->
+    <section class="project-index">
+        <div class="container">
+            <div class="project-index-title">Jump to Project</div>
+            <div class="project-index-grid">
+                <a href="#skillengine" class="project-index-card">
+                    <h3>SkillEngine</h3>
+                    <p>AI Career Productivity Platform — Full-scale SaaS built in 31 days with Claude Code.</p>
+                    <div class="project-index-meta">
+                        <span>125K+ lines</span>
+                        <span>277+ AI skills</span>
+                        <span>48 pages</span>
+                    </div>
+                </a>
+                <a href="#resume-intelligence-search" class="project-index-card">
+                    <h3>Resume Intelligence Search</h3>
+                    <p>RAG-powered semantic search application built from scratch in under 2 hours.</p>
+                    <div class="project-index-meta">
+                        <span>&lt;2 hours</span>
+                        <span>RAG architecture</span>
+                        <span>Claude API</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
 
     <!-- SkillEngine Project -->
     <section class="project-section" id="skillengine">
@@ -1184,13 +1570,237 @@ token limits and streaming handled automatically.</div>
         </div>
     </section>
 
-    <!-- More Projects Coming -->
+    <!-- Resume Intelligence Search Project -->
+    <section class="project-section" id="resume-intelligence-search">
+        <div class="container">
+            <!-- Project Header -->
+            <div class="project-header">
+                <div class="project-title-group">
+                    <h2>Resume Intelligence Search</h2>
+                    <p class="project-subtitle">
+                        A fully functional RAG (Retrieval-Augmented Generation) application built from scratch
+                        in under 2 hours using Claude Code — demonstrating just how fast AI-assisted development
+                        can turn ideas into working software.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Key Metrics -->
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-value">&lt;2 hrs</div>
+                    <div class="metric-label">Total Build Time</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">RAG</div>
+                    <div class="metric-label">Architecture</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">~500</div>
+                    <div class="metric-label">Lines of Code</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">LanceDB</div>
+                    <div class="metric-label">Vector Database</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">Claude</div>
+                    <div class="metric-label">AI Synthesis</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">FastAPI</div>
+                    <div class="metric-label">Backend</div>
+                </div>
+            </div>
+
+            <!-- Build Timeline -->
+            <div class="build-timeline">
+                <h4>Build Timeline</h4>
+                <div class="timeline-row">
+                    <span class="timeline-phase">Requirements + Scaffold</span>
+                    <span class="timeline-duration">15 min</span>
+                    <span class="timeline-output">FastAPI project + LanceDB setup</span>
+                </div>
+                <div class="timeline-row">
+                    <span class="timeline-phase">Embedding pipeline</span>
+                    <span class="timeline-duration">20 min</span>
+                    <span class="timeline-output">Sentence-transformer → LanceDB table</span>
+                </div>
+                <div class="timeline-row">
+                    <span class="timeline-phase">Search endpoint + Claude synthesis</span>
+                    <span class="timeline-duration">25 min</span>
+                    <span class="timeline-output">/search API with RAG retrieval</span>
+                </div>
+                <div class="timeline-row">
+                    <span class="timeline-phase">Minimal HTML/JS UI</span>
+                    <span class="timeline-duration">30 min</span>
+                    <span class="timeline-output">Full working prototype</span>
+                </div>
+                <div class="timeline-row">
+                    <span class="timeline-phase">Testing + bug fixes</span>
+                    <span class="timeline-duration">20 min</span>
+                    <span class="timeline-output">Production-ready state</span>
+                </div>
+                <div class="timeline-row">
+                    <span class="timeline-phase"><strong>Total</strong></span>
+                    <span class="timeline-duration"><strong>110 min</strong></span>
+                    <span class="timeline-output"><strong>Fully functional RAG app</strong></span>
+                </div>
+            </div>
+
+            <!-- Screenshots -->
+            <div class="screenshots-section">
+                <h3>Application in Action</h3>
+                <div class="screenshots-grid">
+                    <div class="screenshot-card">
+                        <div class="screenshot-image">
+                            <img src="assets/projects/resume_intelligence_search_home.png" alt="Resume Intelligence Search home interface" loading="lazy">
+                        </div>
+                        <div class="screenshot-content">
+                            <div class="screenshot-title">Home Interface</div>
+                            <div class="screenshot-description">
+                                Clean, simple search interface for natural language queries against resume data.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="screenshot-card">
+                        <div class="screenshot-image">
+                            <img src="assets/projects/resume_search_output_1.png" alt="Resume search output showing synthesized results" loading="lazy">
+                        </div>
+                        <div class="screenshot-content">
+                            <div class="screenshot-title">Search Output</div>
+                            <div class="screenshot-description">
+                                RAG-synthesized answer with context retrieved from the resume vector database.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="screenshot-card">
+                        <div class="screenshot-image">
+                            <img src="assets/projects/resume_search_output_percent.png" alt="Resume search with percentage match scores" loading="lazy">
+                        </div>
+                        <div class="screenshot-content">
+                            <div class="screenshot-title">Match Analysis</div>
+                            <div class="screenshot-description">
+                                Detailed matching with percentage relevance scores for retrieved resume sections.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Two Column: Tech Stack + Contrast -->
+            <div class="two-column-section">
+                <div class="column-card">
+                    <h4>Technology Stack</h4>
+                    <ul>
+                        <li><strong>Backend:</strong> FastAPI (Python)</li>
+                        <li><strong>Vector DB:</strong> LanceDB (embedded, ~10MB)</li>
+                        <li><strong>Embeddings:</strong> sentence-transformers (all-MiniLM-L6-v2)</li>
+                        <li><strong>Synthesis:</strong> Claude API (claude-3-haiku)</li>
+                        <li><strong>Frontend:</strong> Vanilla HTML/JS</li>
+                    </ul>
+                </div>
+                <div class="column-card">
+                    <h4>Traditional Build Estimate</h4>
+                    <ul>
+                        <li>Data modeling + API design → 4-8 hours</li>
+                        <li>Embedding pipeline + testing → 4-6 hours</li>
+                        <li>Search logic + integration → 4-6 hours</li>
+                        <li>UI + polish → 4-8 hours</li>
+                        <li><strong>Total:</strong> 16-28 hours (2-3 days)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- RAG Comparison Table -->
+            <table class="project-table">
+                <thead>
+                    <tr>
+                        <th>Aspect</th>
+                        <th>Traditional Approach</th>
+                        <th>AI-Assisted (Claude Code)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Time to MVP</td>
+                        <td>2-3 days</td>
+                        <td class="table-highlight">&lt;2 hours</td>
+                    </tr>
+                    <tr>
+                        <td>Library selection</td>
+                        <td>Manual research, trial & error</td>
+                        <td class="table-highlight">Claude recommends optimal stack</td>
+                    </tr>
+                    <tr>
+                        <td>Boilerplate</td>
+                        <td>Copy-paste from docs</td>
+                        <td class="table-highlight">Generated + tested instantly</td>
+                    </tr>
+                    <tr>
+                        <td>Debugging</td>
+                        <td>Stack Overflow + trial & error</td>
+                        <td class="table-highlight">AI pinpoints & fixes</td>
+                    </tr>
+                    <tr>
+                        <td>Verdict</td>
+                        <td><span class="table-verdict warning">Slow</span></td>
+                        <td><span class="table-verdict success">10-15x faster</span></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Production Path -->
+            <h3 style="margin-bottom: var(--space-xl);">Production Path</h3>
+            <div class="production-path">
+                <div class="path-card current">
+                    <h4>Prototype (Current) <span>COMPLETED</span></h4>
+                    <ul>
+                        <li>Local LanceDB</li>
+                        <li>Single-file codebase</li>
+                        <li>Basic HTML/JS UI</li>
+                        <li>Claude API key in env</li>
+                    </ul>
+                    <p class="price">Hosting: <strong>$0</strong> (runs locally)</p>
+                </div>
+                <div class="path-card future">
+                    <h4>SaaS Version <span>POTENTIAL</span></h4>
+                    <ul>
+                        <li>Hosted vector DB (Pinecone/Weaviate)</li>
+                        <li>User auth + multi-tenant</li>
+                        <li>React/Tailwind UI</li>
+                        <li>Stripe integration</li>
+                    </ul>
+                    <p class="price">Estimated build: <strong>2-3 additional days</strong> with Claude Code</p>
+                </div>
+            </div>
+
+            <!-- Key Takeaway -->
+            <div class="takeaway-section">
+                <blockquote>
+                    "The barrier to building AI-powered applications has collapsed."
+                </blockquote>
+                <p>
+                    What previously required specialized ML expertise and days of development can now be built
+                    in under 2 hours. This isn't about replacing developers — it's about removing friction
+                    between ideas and working software.
+                </p>
+            </div>
+
+            <!-- Project Meta -->
+            <div class="project-meta">
+                <p class="project-date">Project completed January 2026</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- More Projects Section -->
     <section class="more-projects">
         <div class="container">
-            <h3>More Projects Coming Soon</h3>
+            <h3>Explore More Projects</h3>
             <p>
-                Additional case studies and development projects will be added regularly.
-                Check back for updates on AI automation implementations and full-stack applications.
+                Additional case studies and development projects are added regularly.
+                Each project demonstrates AI-assisted development methodologies and production-ready solutions.
             </p>
         </div>
     </section>
