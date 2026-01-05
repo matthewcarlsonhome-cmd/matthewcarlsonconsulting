@@ -199,8 +199,24 @@ ul, ol {
     display: flex;
     align-items: center;
     gap: var(--space-sm);
+    text-decoration: none;
 }
 
+.nav-logo img {
+    height: 48px;
+    width: auto;
+    transition: opacity var(--transition-base);
+}
+
+.nav-logo:hover img {
+    opacity: 0.9;
+}
+
+.navbar.scrolled .nav-logo img {
+    filter: brightness(0.9);
+}
+
+/* Legacy text logo - keeping for fallback */
 .logo-mark {
     display: flex;
     align-items: center;
@@ -1319,8 +1335,15 @@ section {
     align-items: center;
     gap: var(--space-sm);
     margin-bottom: var(--space-lg);
+    text-decoration: none;
 }
 
+.footer-logo img {
+    height: 44px;
+    width: auto;
+}
+
+/* Legacy text logo fallback */
 .footer-logo .logo-mark {
     width: 40px;
     height: 40px;
