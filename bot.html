@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W2PZBSP7J8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-W2PZBSP7J8');
+    </script>
+
+    <!-- SEO Meta Tags -->
+    <title>SkillEngine Bot | Matthew Carlson Consulting</title>
+    <meta name="description" content="Launch ready-to-run AI skills with the SkillEngine bot. Get structured deliverables for audits, landing pages, and automation ideas.">
+    <meta name="keywords" content="SkillEngine bot, AI skills, prompt automation, Madison WI AI consulting">
+    <meta name="author" content="Matthew Carlson Consulting">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://matthewcarlsonconsulting.com/bot.html">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="SkillEngine Bot | Matthew Carlson Consulting">
+    <meta property="og:description" content="Launch ready-to-run AI skills with structured outputs for audits, landing pages, and automation ideas.">
+    <meta property="og:url" content="https://matthewcarlsonconsulting.com/bot.html">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="/" class="nav-logo" aria-label="Matthew Carlson Consulting - Home">
+                <img src="assets/logo.png" alt="Matthew Carlson Consulting" width="200" height="48">
+            </a>
+            <div class="nav-menu" id="nav-menu">
+                <a href="/" class="nav-link">Home</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="faq.html" class="nav-link">FAQ</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link nav-cta">Contact</a>
+            </div>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header" id="main-content">
+        <div class="container">
+            <h1 class="page-title">SkillEngine Bot</h1>
+            <p class="page-description">
+                Pick a skill and get a structured plan in seconds.
+            </p>
+        </div>
+    </header>
+
+    <section class="bot-section">
+        <div class="container">
+            <div class="bot-card">
+                <div class="bot-header">
+                    <div>
+                        <span class="section-tag">Default Skills</span>
+                        <h2 class="section-title">Run a Skill</h2>
+                        <p class="bot-subtitle">
+                            Tap a skill chip or describe a custom request to generate inputs, steps, and deliverables.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="skill-chips" aria-label="Skill prompts">
+                    <button class="skill-chip" type="button" data-skill="Audit my Google Shopping feed">Audit my Google Shopping feed</button>
+                    <button class="skill-chip" type="button" data-skill="Draft a Madison SEO landing page">Draft a Madison SEO landing page</button>
+                    <button class="skill-chip" type="button" data-skill="Automate client onboarding">Automate client onboarding</button>
+                    <button class="skill-chip" type="button" data-skill="Outline a local inventory ads launch plan">Outline a local inventory ads launch plan</button>
+                    <button class="skill-chip" type="button" data-skill="Create a reporting dashboard requirements list">Create a reporting dashboard requirements list</button>
+                </div>
+
+                <div class="bot-messages" id="bot-messages" aria-live="polite">
+                    <div class="bot-message assistant">
+                        Share a goal and I will respond with a Skill format: inputs, steps, and deliverables.
+                    </div>
+                </div>
+
+                <form class="bot-input" id="bot-form">
+                    <input
+                        type="text"
+                        id="bot-input"
+                        name="message"
+                        class="bot-input-field"
+                        placeholder="Describe what you want the skill to do..."
+                        aria-label="Describe your request"
+                        required
+                    >
+                    <button type="submit" class="btn btn-primary">Send</button>
+                </form>
+
+                <p class="bot-powered">
+                    Powered by <a href="projects.html#skillengine">SkillEngine</a>.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="/" class="footer-logo" aria-label="Matthew Carlson Consulting - Home">
+                        <img src="assets/logo.png" alt="Matthew Carlson Consulting" width="180" height="44">
+                    </a>
+                    <p class="footer-tagline">
+                        AI automation and digital marketing solutions for Madison, Wisconsin
+                        and beyond. Fast deployment. Measurable results.
+                    </p>
+                    <div class="footer-location">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                        <span>Madison, Wisconsin</span>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4 class="footer-heading">Services</h4>
+                        <a href="services.html#ai-automation">AI Automation</a>
+                        <a href="services.html#google-shopping">Google Shopping Feeds</a>
+                        <a href="services.html#meta-ads">Meta Dynamic Ads</a>
+                        <a href="services.html#pmax">Performance Max</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4 class="footer-heading">Company</h4>
+                        <a href="about.html">About</a>
+                        <a href="projects.html">Projects</a>
+                        <a href="faq.html">FAQ</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4 class="footer-heading">Connect</h4>
+                        <a href="https://www.linkedin.com/in/matthewcarlsonconsulting/" target="_blank" rel="noopener">LinkedIn</a>
+                        <a href="mailto:contact@matthewcarlsonconsulting.com">Email Us</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">&copy; <span id="current-year">2024</span> Matthew Carlson Consulting. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/bot.js"></script>
+</body>
+</html>

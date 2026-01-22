@@ -2144,6 +2144,140 @@ a.method-value:hover {
     animation: fadeIn 0.6s ease-out forwards;
 }
 
+/* ========================================
+   SkillEngine Bot
+   ======================================== */
+
+.bot-section {
+    padding: var(--space-5xl) 0;
+    background: var(--color-gray-50);
+}
+
+.bot-card {
+    background: #fff;
+    border: 1px solid var(--color-gray-200);
+    border-radius: 24px;
+    padding: clamp(2rem, 4vw, 3rem);
+    box-shadow: 0 30px 60px -45px rgba(15, 23, 42, 0.25);
+}
+
+.bot-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: var(--space-xl);
+    margin-bottom: var(--space-xl);
+}
+
+.bot-subtitle {
+    color: var(--color-gray-600);
+    font-size: 1.05rem;
+    margin-top: var(--space-sm);
+}
+
+.skill-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-sm);
+    margin-bottom: var(--space-xl);
+}
+
+.skill-chip {
+    border: 1px solid var(--color-gray-200);
+    background: var(--color-gray-100);
+    color: var(--color-gray-700);
+    font-size: 0.9rem;
+    padding: 0.45rem 0.9rem;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.skill-chip:hover,
+.skill-chip:focus-visible {
+    background: var(--color-primary-50);
+    border-color: var(--color-primary-200);
+    color: var(--color-primary-700);
+}
+
+.bot-messages {
+    border: 1px solid var(--color-gray-200);
+    border-radius: 18px;
+    padding: var(--space-lg);
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+    max-height: 360px;
+    overflow-y: auto;
+    margin-bottom: var(--space-lg);
+}
+
+.bot-message {
+    max-width: 85%;
+    padding: 0.85rem 1rem;
+    border-radius: 16px;
+    line-height: 1.6;
+    white-space: pre-wrap;
+}
+
+.bot-message.user {
+    align-self: flex-end;
+    background: var(--color-primary-600);
+    color: #fff;
+}
+
+.bot-message.assistant {
+    align-self: flex-start;
+    background: var(--color-gray-100);
+    color: var(--color-gray-700);
+    border: 1px solid var(--color-gray-200);
+}
+
+.bot-message.loading {
+    opacity: 0.7;
+    font-style: italic;
+}
+
+.bot-input {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-sm);
+}
+
+.bot-input-field {
+    flex: 1;
+    min-width: 220px;
+    border: 1px solid var(--color-gray-200);
+    border-radius: 12px;
+    padding: 0.85rem 1rem;
+    font-size: 1rem;
+    background: #fff;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.bot-input-field:focus {
+    outline: none;
+    border-color: var(--color-primary-400);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+.bot-powered {
+    margin-top: var(--space-lg);
+    font-size: 0.9rem;
+    color: var(--color-gray-600);
+}
+
+.bot-powered a {
+    color: var(--color-primary-600);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.bot-powered a:hover {
+    text-decoration: underline;
+}
+
 /* Staggered animations */
 .stagger-1 { animation-delay: 0.1s; }
 .stagger-2 { animation-delay: 0.2s; }
