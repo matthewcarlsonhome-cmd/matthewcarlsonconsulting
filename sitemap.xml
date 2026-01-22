@@ -48,6 +48,22 @@
         <priority>0.6</priority>
     </url>
 
+    <!-- AI Assistant - Interactive AI marketing assistant -->
+    <url>
+        <loc>https://matthewcarlsonconsulting.com/ai-bot.html</loc>
+        <lastmod>2026-01-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- SkillEngine Bot - AI skills launcher -->
+    <url>
+        <loc>https://matthewcarlsonconsulting.com/bot.html</loc>
+        <lastmod>2026-01-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
     <!-- Privacy Policy -->
     <url>
         <loc>https://matthewcarlsonconsulting.com/privacy.html</loc>
