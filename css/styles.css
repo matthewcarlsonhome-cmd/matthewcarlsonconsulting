@@ -1709,17 +1709,9 @@ section {
 }
 
 .footer-phone {
-    display: flex;
-    align-items: center;
-    gap: var(--space-sm);
     font-size: 0.875rem;
-    margin-top: var(--space-sm);
-}
-
-.footer-phone svg {
-    width: 18px;
-    height: 18px;
-    color: var(--color-primary);
+    color: var(--color-gray-400);
+    margin-top: var(--space-xs);
 }
 
 .footer-phone a {
