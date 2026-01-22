@@ -4,6 +4,12 @@
  * Receives chat prompts, applies guardrails, and proxies requests to the LLM API.
  */
 
+// Load API configuration if config.php exists (for environments where .htaccess SetEnv doesn't work)
+$configPath = __DIR__ . '/config.php';
+if (file_exists($configPath)) {
+    require_once $configPath;
+}
+
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     http_response_code(405);
     header('Content-Type: application/json; charset=utf-8');
