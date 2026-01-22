@@ -195,7 +195,7 @@
                     <!-- Success/Error Messages -->
                     <div id="form-status" class="form-status" style="display: none;"></div>
 
-                    <form class="contact-form" id="contact-form" action="send-mail.php" method="POST">
+                    <form class="contact-form" id="contact-form" action="send-mail.php" method="POST" onsubmit="trackContactFormSubmission('contact-page')">
                         <!-- Honeypot field for spam prevention - do not fill -->
                         <div style="position: absolute; left: -9999px;" aria-hidden="true">
                             <input type="text" name="website" tabindex="-1" autocomplete="off">

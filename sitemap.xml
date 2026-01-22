@@ -3,64 +3,64 @@
     <!-- Homepage -->
     <url>
         <loc>https://matthewcarlsonconsulting.com/</loc>
-        <lastmod>2026-01-05</lastmod>
+        <lastmod>2026-01-22</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
 
-    <!-- Services -->
+    <!-- Services - High priority, key conversion page -->
     <url>
         <loc>https://matthewcarlsonconsulting.com/services.html</loc>
-        <lastmod>2026-01-05</lastmod>
+        <lastmod>2026-01-22</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
 
-    <!-- Projects -->
+    <!-- Projects/Portfolio - Showcases work -->
     <url>
         <loc>https://matthewcarlsonconsulting.com/projects.html</loc>
-        <lastmod>2026-01-05</lastmod>
+        <lastmod>2026-01-22</lastmod>
         <changefreq>weekly</changefreq>
-        <priority>0.9</priority>
+        <priority>0.8</priority>
     </url>
 
-    <!-- About -->
+    <!-- About - Trust building page -->
     <url>
         <loc>https://matthewcarlsonconsulting.com/about.html</loc>
-        <lastmod>2026-01-05</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-
-    <!-- Contact -->
-    <url>
-        <loc>https://matthewcarlsonconsulting.com/contact.html</loc>
-        <lastmod>2026-01-05</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-
-    <!-- FAQ -->
-    <url>
-        <loc>https://matthewcarlsonconsulting.com/faq.html</loc>
-        <lastmod>2026-01-05</lastmod>
+        <lastmod>2026-01-22</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
+    </url>
+
+    <!-- Contact - Critical conversion page -->
+    <url>
+        <loc>https://matthewcarlsonconsulting.com/contact.html</loc>
+        <lastmod>2026-01-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- FAQ - SEO/AEO value, answers common questions -->
+    <url>
+        <loc>https://matthewcarlsonconsulting.com/faq.html</loc>
+        <lastmod>2026-01-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
     </url>
 
     <!-- Privacy Policy -->
     <url>
         <loc>https://matthewcarlsonconsulting.com/privacy.html</loc>
-        <lastmod>2026-01-05</lastmod>
+        <lastmod>2026-01-22</lastmod>
         <changefreq>yearly</changefreq>
-        <priority>0.3</priority>
+        <priority>0.2</priority>
     </url>
 
     <!-- Terms of Service -->
     <url>
         <loc>https://matthewcarlsonconsulting.com/terms.html</loc>
-        <lastmod>2026-01-05</lastmod>
+        <lastmod>2026-01-22</lastmod>
         <changefreq>yearly</changefreq>
-        <priority>0.3</priority>
+        <priority>0.2</priority>
     </url>
 </urlset>

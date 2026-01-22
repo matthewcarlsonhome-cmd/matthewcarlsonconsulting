@@ -3,6 +3,99 @@
  * Main JavaScript
  */
 
+// ========================================
+// Google Analytics 4 Event Tracking
+// ========================================
+
+/**
+ * Track contact form submissions
+ * @param {string} formLocation - Where the form is located (e.g., 'contact-page', 'footer')
+ */
+function trackContactFormSubmission(formLocation = 'contact-page') {
+    if (typeof gtag === 'function') {
+        gtag('event', 'form_submission', {
+            'event_category': 'engagement',
+            'event_label': formLocation,
+            'form_type': 'contact'
+        });
+    }
+}
+
+/**
+ * Track service card clicks
+ * @param {string} serviceName - The service that was clicked
+ */
+function trackServiceClick(serviceName) {
+    if (typeof gtag === 'function') {
+        gtag('event', 'service_click', {
+            'event_category': 'engagement',
+            'event_label': serviceName,
+            'service_name': serviceName
+        });
+    }
+}
+
+/**
+ * Track CTA button clicks
+ * @param {string} buttonLocation - Where the button is located
+ * @param {string} buttonText - The button text or identifier
+ */
+function trackCTAClick(buttonLocation, buttonText = '') {
+    if (typeof gtag === 'function') {
+        gtag('event', 'cta_click', {
+            'event_category': 'engagement',
+            'event_label': buttonLocation,
+            'button_text': buttonText
+        });
+    }
+}
+
+/**
+ * Track outbound link clicks
+ * @param {string} url - The destination URL
+ */
+function trackOutboundClick(url) {
+    if (typeof gtag === 'function') {
+        gtag('event', 'click', {
+            'event_category': 'outbound',
+            'event_label': url,
+            'transport_type': 'beacon'
+        });
+    }
+}
+
+/**
+ * Track page scroll depth
+ */
+function trackScrollDepth() {
+    let scrollMarks = [25, 50, 75, 100];
+    let scrollTracked = new Set();
+
+    window.addEventListener('scroll', function() {
+        const scrollPercent = Math.round((window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100);
+
+        scrollMarks.forEach(mark => {
+            if (scrollPercent >= mark && !scrollTracked.has(mark)) {
+                scrollTracked.add(mark);
+                if (typeof gtag === 'function') {
+                    gtag('event', 'scroll_depth', {
+                        'event_category': 'engagement',
+                        'event_label': mark + '%',
+                        'percent_scrolled': mark
+                    });
+                }
+            }
+        });
+    });
+}
+
+// Initialize scroll tracking
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', trackScrollDepth);
+} else {
+    trackScrollDepth();
+}
+
 (function() {
     'use strict';
 
