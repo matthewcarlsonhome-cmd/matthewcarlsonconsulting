@@ -161,7 +161,20 @@ curl_close($ch);
 
 if ($httpCode >= 400) {
     http_response_code($httpCode);
-    echo json_encode(['error' => 'AI service error.']);
+    $errorData = json_decode($response, true);
+    $errorMsg = 'AI service error.';
+
+    if ($httpCode === 401) {
+        $errorMsg = 'API authentication failed. Please check the API key configuration.';
+    } elseif ($httpCode === 429) {
+        $errorMsg = 'OpenAI rate limit exceeded. Please try again later.';
+    } elseif ($httpCode === 500 || $httpCode === 502 || $httpCode === 503) {
+        $errorMsg = 'OpenAI service temporarily unavailable.';
+    } elseif (isset($errorData['error']['message'])) {
+        $errorMsg = $errorData['error']['message'];
+    }
+
+    echo json_encode(['error' => $errorMsg]);
     exit;
 }
 
