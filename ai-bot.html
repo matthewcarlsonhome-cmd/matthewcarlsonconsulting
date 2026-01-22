@@ -13,9 +13,9 @@
         gtag('config', 'G-W2PZBSP7J8');
     </script>
 
-    <title>Madison AI Marketing Assistant | Matthew Carlson Consulting</title>
-    <meta name="description" content="Chat with our Madison, WI digital marketing + AI automation assistant. Get ideas for campaigns, automation workflows, and analytics—fast, safe, and local-first.">
-    <meta name="keywords" content="Madison AI assistant, digital marketing AI Madison WI, marketing automation Madison, AI marketing consultant Wisconsin">
+    <title>AI Assistant | Matthew Carlson Consulting - Madison WI</title>
+    <meta name="description" content="Try our AI Assistant for digital marketing and automation guidance. Get ideas for Google Shopping feeds, workflow automation, campaign strategy, and more—built for Madison businesses.">
+    <meta name="keywords" content="AI assistant Madison WI, digital marketing AI, marketing automation assistant, AI consulting Wisconsin">
     <meta name="author" content="Matthew Carlson Consulting">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://matthewcarlsonconsulting.com/ai-bot.html">
@@ -25,8 +25,8 @@
     <meta name="geo.position" content="43.0731;-89.4012">
     <meta name="ICBM" content="43.0731, -89.4012">
 
-    <meta property="og:title" content="Madison AI Marketing Assistant">
-    <meta property="og:description" content="Get local-first digital marketing + AI automation guidance from our Madison, WI assistant.">
+    <meta property="og:title" content="AI Assistant | Matthew Carlson Consulting">
+    <meta property="og:description" content="Get AI-powered guidance for digital marketing and automation. Built for Madison businesses and agencies.">
     <meta property="og:url" content="https://matthewcarlsonconsulting.com/ai-bot.html">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="en_US">
@@ -37,6 +37,463 @@
 
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+    <style>
+        /* AI Assistant Page Specific Styles */
+        .ai-hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 120px var(--container-padding) var(--space-4xl);
+            overflow: hidden;
+        }
+
+        .ai-hero-bg {
+            position: absolute;
+            inset: 0;
+            z-index: -1;
+        }
+
+        .ai-hero-gradient {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+        }
+
+        .ai-hero-grid-pattern {
+            position: absolute;
+            inset: 0;
+            background-image:
+                linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+            background-size: 60px 60px;
+            mask-image: radial-gradient(ellipse at center, black 0%, transparent 70%);
+        }
+
+        .ai-hero-orbs {
+            position: absolute;
+            inset: 0;
+            overflow: hidden;
+        }
+
+        .ai-orb {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(80px);
+            opacity: 0.3;
+            animation: float 20s ease-in-out infinite;
+        }
+
+        .ai-orb-1 {
+            width: 500px;
+            height: 500px;
+            background: var(--color-primary);
+            top: -150px;
+            right: -150px;
+        }
+
+        .ai-orb-2 {
+            width: 350px;
+            height: 350px;
+            background: var(--color-accent);
+            bottom: -100px;
+            left: -100px;
+            animation-delay: -7s;
+        }
+
+        .ai-hero-content {
+            max-width: var(--container-max);
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .ai-hero-layout {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: var(--space-4xl);
+            align-items: start;
+        }
+
+        .ai-hero-copy {
+            padding-top: var(--space-2xl);
+        }
+
+        .ai-hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-sm);
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            padding: var(--space-sm) var(--space-lg);
+            border-radius: var(--radius-full);
+            font-size: 0.875rem;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: var(--space-xl);
+            backdrop-filter: blur(10px);
+        }
+
+        .ai-badge-dot {
+            width: 8px;
+            height: 8px;
+            background: var(--color-success);
+            border-radius: 50%;
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        .ai-hero-title {
+            font-family: var(--font-display);
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 600;
+            line-height: 1.2;
+            color: var(--color-white);
+            margin-bottom: var(--space-lg);
+        }
+
+        .ai-title-accent {
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .ai-hero-description {
+            font-size: 1.125rem;
+            color: rgba(255, 255, 255, 0.75);
+            line-height: 1.7;
+            margin-bottom: var(--space-xl);
+        }
+
+        .ai-hero-features {
+            display: grid;
+            gap: var(--space-md);
+            margin-bottom: var(--space-xl);
+        }
+
+        .ai-hero-features li {
+            display: flex;
+            align-items: center;
+            gap: var(--space-md);
+            color: rgba(255, 255, 255, 0.85);
+            font-size: 0.9375rem;
+        }
+
+        .ai-feature-icon {
+            width: 20px;
+            height: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(16, 185, 129, 0.2);
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+
+        .ai-feature-icon svg {
+            width: 12px;
+            height: 12px;
+            color: var(--color-success);
+        }
+
+        .ai-disclaimer {
+            background: rgba(15, 23, 42, 0.6);
+            border: 1px solid rgba(148, 163, 184, 0.25);
+            border-radius: var(--radius-lg);
+            padding: var(--space-md) var(--space-lg);
+            font-size: 0.875rem;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .ai-disclaimer strong {
+            color: var(--color-accent);
+        }
+
+        /* Chat Interface Card */
+        .ai-chat-wrapper {
+            background: linear-gradient(135deg, rgba(37, 99, 235, 0.5), rgba(6, 182, 212, 0.3));
+            padding: 2px;
+            border-radius: var(--radius-2xl);
+            box-shadow: var(--shadow-2xl);
+        }
+
+        .ai-chat-card {
+            background: rgba(15, 23, 42, 0.95);
+            border-radius: calc(var(--radius-2xl) - 2px);
+            padding: var(--space-xl);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(16px);
+        }
+
+        .ai-chat-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: var(--space-lg);
+            padding-bottom: var(--space-md);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .ai-chat-title {
+            font-weight: 600;
+            color: var(--color-white);
+            font-size: 1.125rem;
+        }
+
+        .ai-chat-subtitle {
+            font-size: 0.8125rem;
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        .ai-chat-status {
+            display: flex;
+            align-items: center;
+            gap: var(--space-xs);
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--color-success);
+            background: rgba(16, 185, 129, 0.15);
+            border: 1px solid rgba(16, 185, 129, 0.4);
+            padding: 0.25rem 0.6rem;
+            border-radius: var(--radius-full);
+        }
+
+        .ai-chat-status-dot {
+            width: 6px;
+            height: 6px;
+            background: var(--color-success);
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+
+        /* Skill Chips */
+        .ai-skill-chips {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--space-sm);
+            margin-bottom: var(--space-lg);
+        }
+
+        .ai-skill-chip {
+            background: rgba(59, 130, 246, 0.15);
+            border: 1px solid rgba(59, 130, 246, 0.35);
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 0.8125rem;
+            padding: 0.5rem 0.85rem;
+            border-radius: var(--radius-full);
+            cursor: pointer;
+            transition: all var(--transition-fast);
+        }
+
+        .ai-skill-chip:hover {
+            background: rgba(59, 130, 246, 0.25);
+            border-color: rgba(59, 130, 246, 0.5);
+            transform: translateY(-1px);
+        }
+
+        /* Chat Log */
+        .ai-chat-log {
+            background: rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: var(--radius-lg);
+            padding: var(--space-lg);
+            height: 320px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-md);
+            margin-bottom: var(--space-lg);
+        }
+
+        .ai-chat-message {
+            display: flex;
+            gap: var(--space-md);
+            max-width: 90%;
+        }
+
+        .ai-chat-message.user {
+            flex-direction: row-reverse;
+            align-self: flex-end;
+        }
+
+        .ai-chat-avatar {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.7rem;
+            font-weight: 600;
+            flex-shrink: 0;
+        }
+
+        .ai-chat-message.assistant .ai-chat-avatar {
+            background: var(--gradient-primary);
+            color: var(--color-white);
+        }
+
+        .ai-chat-message.user .ai-chat-avatar {
+            background: rgba(255, 255, 255, 0.15);
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .ai-chat-bubble {
+            padding: var(--space-md);
+            border-radius: var(--radius-lg);
+            line-height: 1.6;
+            font-size: 0.9375rem;
+            white-space: pre-wrap;
+        }
+
+        .ai-chat-message.assistant .ai-chat-bubble {
+            background: rgba(15, 23, 42, 0.8);
+            color: rgba(255, 255, 255, 0.85);
+            border: 1px solid rgba(148, 163, 184, 0.2);
+        }
+
+        .ai-chat-message.user .ai-chat-bubble {
+            background: rgba(59, 130, 246, 0.2);
+            color: rgba(255, 255, 255, 0.95);
+            border: 1px solid rgba(59, 130, 246, 0.35);
+        }
+
+        /* Chat Form */
+        .ai-chat-form {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-md);
+        }
+
+        .ai-chat-input {
+            width: 100%;
+            background: rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: var(--radius-lg);
+            padding: var(--space-md);
+            color: var(--color-white);
+            font-size: 0.9375rem;
+            min-height: 80px;
+            resize: vertical;
+            transition: all var(--transition-fast);
+        }
+
+        .ai-chat-input::placeholder {
+            color: rgba(255, 255, 255, 0.4);
+        }
+
+        .ai-chat-input:focus {
+            outline: none;
+            border-color: var(--color-primary);
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+        }
+
+        .ai-chat-actions {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: var(--space-md);
+        }
+
+        .ai-chat-form-status {
+            font-size: 0.875rem;
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        .ai-chat-form-status.error {
+            color: var(--color-error);
+        }
+
+        /* How It Works Section */
+        .ai-how-it-works {
+            padding: var(--space-5xl) 0;
+            background: var(--color-gray-50);
+        }
+
+        .ai-how-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: var(--space-xl);
+        }
+
+        .ai-how-card {
+            background: var(--color-white);
+            border: 1px solid var(--color-gray-200);
+            border-radius: var(--radius-xl);
+            padding: var(--space-xl);
+            text-align: center;
+            transition: all var(--transition-base);
+        }
+
+        .ai-how-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--color-primary);
+        }
+
+        .ai-how-icon {
+            width: 56px;
+            height: 56px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, rgba(37, 99, 235, 0.1) 0%, rgba(6, 182, 212, 0.1) 100%);
+            border-radius: var(--radius-lg);
+            color: var(--color-primary);
+            margin: 0 auto var(--space-lg);
+        }
+
+        .ai-how-icon svg {
+            width: 28px;
+            height: 28px;
+        }
+
+        .ai-how-card h3 {
+            font-size: 1.125rem;
+            font-weight: 700;
+            color: var(--color-gray-900);
+            margin-bottom: var(--space-sm);
+        }
+
+        .ai-how-card p {
+            color: var(--color-gray-600);
+            font-size: 0.9375rem;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 1024px) {
+            .ai-hero-layout {
+                grid-template-columns: 1fr;
+                gap: var(--space-2xl);
+            }
+
+            .ai-hero-copy {
+                padding-top: 0;
+                text-align: center;
+            }
+
+            .ai-hero-features {
+                max-width: 400px;
+                margin: 0 auto var(--space-xl);
+            }
+
+            .ai-disclaimer {
+                max-width: 500px;
+                margin: 0 auto;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .ai-hero {
+                padding-top: 110px;
+            }
+
+            .ai-how-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
     <a href="#main-content" class="skip-link">Skip to main content</a>
@@ -66,110 +523,231 @@
     </nav>
 
     <main id="main-content">
-        <header class="ai-bot-hero">
-            <div class="container ai-bot-hero-grid">
-                <div class="ai-bot-hero-content">
-                    <span class="section-tag">Madison, WI • Digital Marketing + AI Automation</span>
-                    <h1 class="section-title">Meet the Madison Marketing + Automation AI Assistant</h1>
-                    <p class="section-subtitle">
-                        Ask questions about campaign strategy, local SEO, analytics, and workflow automation.
-                        This assistant is designed for Madison-area brands and agencies—no fluff, just practical guidance.
-                    </p>
-                    <ul class="ai-bot-highlights">
-                        <li>Local-first recommendations for Dane County businesses</li>
-                        <li>Ideas for Google Ads, Meta, email, and content strategy</li>
-                        <li>Automation tips for lead intake, reporting, and CRM cleanup</li>
-                    </ul>
-                    <div class="ai-bot-disclaimer">
-                        <strong>Privacy first:</strong> Please avoid sharing personal or confidential data. This assistant is for high-level guidance only.
-                    </div>
+        <!-- Hero Section with Chat -->
+        <section class="ai-hero">
+            <div class="ai-hero-bg">
+                <div class="ai-hero-gradient"></div>
+                <div class="ai-hero-grid-pattern"></div>
+                <div class="ai-hero-orbs">
+                    <div class="ai-orb ai-orb-1"></div>
+                    <div class="ai-orb ai-orb-2"></div>
                 </div>
-
-                <section class="chat-card" aria-labelledby="chat-heading">
-                    <div class="chat-card-header">
-                        <div>
-                            <p class="chat-card-title" id="chat-heading">MCC AI Chat</p>
-                            <p class="chat-card-subtitle">Ask about marketing, automation, or analytics.</p>
-                        </div>
-                        <span class="chat-card-badge">Online</span>
-                    </div>
-
-                    <div class="chat-log" id="chat-log" role="log" aria-live="polite">
-                        <div class="chat-message assistant">
-                            <div class="chat-avatar">AI</div>
-                            <div class="chat-bubble">
-                                Hi! I'm your Madison-based digital marketing + AI automation assistant. What are you working on today?
-                            </div>
-                        </div>
-                    </div>
-
-                    <form class="chat-form" id="chat-form" data-endpoint="api/ai-chat.php">
-                        <label class="sr-only" for="chat-input">Your message</label>
-                        <textarea id="chat-input" name="message" rows="3" placeholder="Ask about ad strategy, automation ideas, analytics, etc." required></textarea>
-                        <div class="chat-actions">
-                            <p class="chat-status" id="chat-status" role="status" aria-live="polite"></p>
-                            <button type="submit" class="btn btn-primary">Send</button>
-                        </div>
-                    </form>
-                </section>
             </div>
-        </header>
 
-        <section class="ai-bot-explainer">
+            <div class="ai-hero-content">
+                <div class="ai-hero-layout">
+                    <div class="ai-hero-copy">
+                        <div class="ai-hero-badge">
+                            <span class="ai-badge-dot"></span>
+                            <span>AI-Powered</span>
+                            <span style="opacity: 0.4;">|</span>
+                            <span>Madison, WI</span>
+                        </div>
+
+                        <h1 class="ai-hero-title">
+                            Try the <span class="ai-title-accent">AI Assistant</span>
+                        </h1>
+
+                        <p class="ai-hero-description">
+                            Get instant guidance on digital marketing strategy, workflow automation,
+                            and AI implementation. Ask questions or try a pre-built skill to see what's possible.
+                        </p>
+
+                        <ul class="ai-hero-features">
+                            <li>
+                                <span class="ai-feature-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </span>
+                                Google Shopping & feed optimization
+                            </li>
+                            <li>
+                                <span class="ai-feature-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </span>
+                                N8N workflow automation ideas
+                            </li>
+                            <li>
+                                <span class="ai-feature-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </span>
+                                Campaign strategy for Madison businesses
+                            </li>
+                        </ul>
+
+                        <div class="ai-disclaimer">
+                            <strong>Note:</strong> This assistant provides general guidance only.
+                            Avoid sharing sensitive business data. For custom solutions,
+                            <a href="contact.html" style="color: var(--color-accent);">schedule a consultation</a>.
+                        </div>
+                    </div>
+
+                    <!-- Chat Interface -->
+                    <div class="ai-chat-wrapper">
+                        <div class="ai-chat-card">
+                            <div class="ai-chat-header">
+                                <div>
+                                    <p class="ai-chat-title">MCC AI Assistant</p>
+                                    <p class="ai-chat-subtitle">Marketing & Automation Guidance</p>
+                                </div>
+                                <span class="ai-chat-status">
+                                    <span class="ai-chat-status-dot"></span>
+                                    Online
+                                </span>
+                            </div>
+
+                            <!-- Skill Chips -->
+                            <div class="ai-skill-chips" aria-label="Quick skill prompts">
+                                <button class="ai-skill-chip" type="button" data-skill="Audit my Google Shopping feed for common issues">Audit Shopping Feed</button>
+                                <button class="ai-skill-chip" type="button" data-skill="Create a lead intake automation workflow">Lead Automation</button>
+                                <button class="ai-skill-chip" type="button" data-skill="Outline a local SEO strategy for Madison">Local SEO Strategy</button>
+                                <button class="ai-skill-chip" type="button" data-skill="Suggest KPIs for a marketing dashboard">Dashboard KPIs</button>
+                            </div>
+
+                            <div class="ai-chat-log" id="chat-log" role="log" aria-live="polite">
+                                <div class="ai-chat-message assistant">
+                                    <div class="ai-chat-avatar">AI</div>
+                                    <div class="ai-chat-bubble">Hi! I'm here to help with digital marketing and automation questions. Try one of the skills above, or ask me anything about Google Shopping feeds, workflow automation, or campaign strategy.</div>
+                                </div>
+                            </div>
+
+                            <form class="ai-chat-form" id="chat-form" data-endpoint="api/ai-chat.php">
+                                <label class="sr-only" for="chat-input">Your message</label>
+                                <textarea
+                                    class="ai-chat-input"
+                                    id="chat-input"
+                                    name="message"
+                                    rows="3"
+                                    placeholder="Ask about marketing, automation, or AI implementation..."
+                                    required
+                                ></textarea>
+                                <div class="ai-chat-actions">
+                                    <p class="ai-chat-form-status" id="chat-status" role="status" aria-live="polite"></p>
+                                    <button type="submit" class="btn btn-primary">Send Message</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section class="ai-how-it-works" aria-labelledby="how-heading">
             <div class="container">
-                <div class="ai-bot-explainer-header">
-                    <span class="section-tag">How it helps</span>
-                    <h2 class="section-title">What the assistant can do for Madison teams</h2>
-                    <p class="section-subtitle">
-                        Use this chat to brainstorm, validate ideas, and spot automation wins before you invest in full build-outs.
+                <div class="section-header centered">
+                    <span class="section-tag">How It Helps</span>
+                    <h2 id="how-heading" class="section-title">Get actionable guidance instantly</h2>
+                    <p class="section-description">
+                        Use the AI Assistant to explore ideas, validate approaches, and get started
+                        on marketing and automation projects.
                     </p>
                 </div>
-                <div class="ai-bot-explainer-grid">
-                    <div class="ai-bot-card">
-                        <h3>Campaign ideation</h3>
-                        <p>Generate channel-specific ideas for local search, paid social, and seasonal promotions.</p>
-                    </div>
-                    <div class="ai-bot-card">
-                        <h3>Automation playbooks</h3>
-                        <p>Map lightweight workflows for intake forms, KPI dashboards, and client reporting.</p>
-                    </div>
-                    <div class="ai-bot-card">
-                        <h3>Measurement clarity</h3>
-                        <p>Get guidance on KPIs, tracking plans, and attribution basics before you launch.</p>
+
+                <div class="ai-how-grid">
+                    <article class="ai-how-card">
+                        <div class="ai-how-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                            </svg>
+                        </div>
+                        <h3>Explore Solutions</h3>
+                        <p>Describe your challenge and get tailored recommendations for tools, workflows, and implementation approaches.</p>
+                    </article>
+
+                    <article class="ai-how-card">
+                        <div class="ai-how-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                <polyline points="14 2 14 8 20 8"></polyline>
+                                <line x1="16" y1="13" x2="8" y2="13"></line>
+                                <line x1="16" y1="17" x2="8" y2="17"></line>
+                                <polyline points="10 9 9 9 8 9"></polyline>
+                            </svg>
+                        </div>
+                        <h3>Generate Plans</h3>
+                        <p>Get structured outputs with inputs needed, step-by-step processes, and expected deliverables for any project.</p>
+                    </article>
+
+                    <article class="ai-how-card">
+                        <div class="ai-how-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                        </div>
+                        <h3>Validate Ideas</h3>
+                        <p>Test your marketing and automation concepts before investing time and resources in full implementation.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta" aria-labelledby="cta-heading">
+            <div class="cta-bg">
+                <div class="cta-gradient"></div>
+                <div class="cta-pattern"></div>
+            </div>
+            <div class="container">
+                <div class="cta-content">
+                    <h2 id="cta-heading" class="cta-title">Ready for a Custom Solution?</h2>
+                    <p class="cta-description">
+                        The AI Assistant is just a preview. For full implementations,
+                        let's discuss your specific needs and build something tailored.
+                    </p>
+                    <div class="cta-actions">
+                        <a href="contact.html" class="btn btn-white">
+                            Schedule Consultation
+                            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                        <a href="services.html" class="btn btn-ghost">
+                            View All Services
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="footer">
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
                     <a href="/" class="footer-logo" aria-label="Matthew Carlson Consulting - Home">
-                        <img src="assets/logo.png" alt="Matthew Carlson Consulting" width="200" height="48">
+                        <img src="assets/logo.png" alt="Matthew Carlson Consulting" width="180" height="44">
                     </a>
                     <p class="footer-tagline">
-                        Madison's AI automation and digital marketing consultancy. Deploying custom AI and workflow
-                        solutions for agencies and businesses in Wisconsin.
+                        AI automation and digital marketing solutions for Madison, Wisconsin
+                        and beyond. Fast deployment. Measurable results.
                     </p>
                     <div class="footer-location">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <path d="M10 10.8333C11.3807 10.8333 12.5 9.71404 12.5 8.33333C12.5 6.95262 11.3807 5.83333 10 5.83333C8.61929 5.83333 7.5 6.95262 7.5 8.33333C7.5 9.71404 8.61929 10.8333 10 10.8333Z" />
-                            <path d="M10 18.3333C13.3333 15 16.6667 12.0153 16.6667 8.33333C16.6667 4.65132 13.6819 1.66666 10 1.66666C6.3181 1.66666 3.33333 4.65132 3.33333 8.33333C3.33333 12.0153 6.66667 15 10 18.3333Z" />
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                            <circle cx="12" cy="10" r="3"/>
                         </svg>
-                        <span>Madison, WI</span>
+                        <span>Madison, Wisconsin</span>
                     </div>
                 </div>
 
                 <div class="footer-links">
                     <div class="footer-column">
                         <h4 class="footer-heading">Services</h4>
-                        <a href="services.html">AI Automation</a>
-                        <a href="services.html">Google Shopping Feeds</a>
-                        <a href="services.html">Workflow Automation</a>
-                        <a href="services.html">Website Development</a>
+                        <a href="services.html#ai-automation">AI Automation</a>
+                        <a href="services.html#google-shopping">Google Shopping Feeds</a>
+                        <a href="services.html#workflow-automation">Workflow Automation</a>
+                        <a href="services.html#website-development">Website Development</a>
                     </div>
+
                     <div class="footer-column">
                         <h4 class="footer-heading">Company</h4>
                         <a href="about.html">About</a>
@@ -177,21 +755,128 @@
                         <a href="faq.html">FAQ</a>
                         <a href="contact.html">Contact</a>
                     </div>
+
                     <div class="footer-column">
-                        <h4 class="footer-heading">Legal</h4>
-                        <a href="privacy.html">Privacy Policy</a>
-                        <a href="terms.html">Terms of Service</a>
+                        <h4 class="footer-heading">Connect</h4>
+                        <a href="https://www.linkedin.com/in/matthewcarlsonconsulting/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                        <a href="https://x.com/MatthewDCarlson" target="_blank" rel="noopener noreferrer">X</a>
+                        <a href="mailto:contact@matthewcarlsonconsulting.com">Email Us</a>
                     </div>
                 </div>
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; 2025 Matthew Carlson Consulting. All rights reserved.</p>
+                <p class="copyright">&copy; <span id="current-year">2025</span> Matthew Carlson Consulting. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                </div>
             </div>
         </div>
     </footer>
 
     <script src="js/main.js"></script>
-    <script src="js/ai-bot.js"></script>
+    <script>
+        // AI Assistant Chat and Skill Chip Functionality
+        document.addEventListener('DOMContentLoaded', () => {
+            const chatForm = document.getElementById('chat-form');
+            const chatInput = document.getElementById('chat-input');
+            const chatLog = document.getElementById('chat-log');
+            const chatStatus = document.getElementById('chat-status');
+            const skillChips = document.querySelectorAll('.ai-skill-chip');
+
+            let isSending = false;
+
+            const setStatus = (message, type = 'info') => {
+                chatStatus.textContent = message;
+                chatStatus.classList.remove('error');
+                if (type === 'error') {
+                    chatStatus.classList.add('error');
+                }
+            };
+
+            const scrollToBottom = () => {
+                chatLog.scrollTop = chatLog.scrollHeight;
+            };
+
+            const createMessage = (role, text) => {
+                const message = document.createElement('div');
+                message.className = `ai-chat-message ${role}`;
+
+                const avatar = document.createElement('div');
+                avatar.className = 'ai-chat-avatar';
+                avatar.textContent = role === 'user' ? 'You' : 'AI';
+
+                const bubble = document.createElement('div');
+                bubble.className = 'ai-chat-bubble';
+                bubble.textContent = text;
+
+                message.appendChild(avatar);
+                message.appendChild(bubble);
+                chatLog.appendChild(message);
+                scrollToBottom();
+
+                return bubble;
+            };
+
+            const sendMessage = async (prompt) => {
+                if (isSending || !prompt.trim()) return;
+
+                isSending = true;
+                chatInput.disabled = true;
+                chatForm.querySelector('button[type="submit"]').disabled = true;
+                setStatus('');
+
+                // Add user message
+                createMessage('user', prompt);
+                chatInput.value = '';
+
+                // Add thinking message
+                const thinkingBubble = createMessage('assistant', 'Thinking...');
+
+                try {
+                    const endpoint = chatForm.dataset.endpoint || 'api/ai-chat.php';
+                    const response = await fetch(endpoint, {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({ message: prompt })
+                    });
+
+                    const data = await response.json();
+
+                    if (!response.ok) {
+                        throw new Error(data.error || 'Request failed');
+                    }
+
+                    thinkingBubble.textContent = data.message || data.reply || 'No response received.';
+                } catch (error) {
+                    thinkingBubble.textContent = 'Sorry, I encountered an issue. Please try again in a moment.';
+                    setStatus(error.message || 'Something went wrong.', 'error');
+                } finally {
+                    isSending = false;
+                    chatInput.disabled = false;
+                    chatForm.querySelector('button[type="submit"]').disabled = false;
+                    chatInput.focus();
+                    scrollToBottom();
+                }
+            };
+
+            // Form submission
+            chatForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                sendMessage(chatInput.value);
+            });
+
+            // Skill chip clicks
+            skillChips.forEach(chip => {
+                chip.addEventListener('click', () => {
+                    const skill = chip.dataset.skill || chip.textContent;
+                    sendMessage(skill);
+                });
+            });
+        });
+    </script>
 </body>
 </html>
