@@ -45,6 +45,7 @@
     {
         "@context": "https://schema.org",
         "@type": "ProfessionalService",
+        "@id": "https://matthewcarlsonconsulting.com/#business",
         "name": "Matthew Carlson Consulting",
         "description": "AI automation and digital marketing consulting specializing in custom AI solutions, Google Shopping feed development, semantic search systems, and marketing campaign automation.",
         "url": "https://matthewcarlsonconsulting.com",
@@ -56,6 +57,7 @@
             "@type": "PostalAddress",
             "addressLocality": "Madison",
             "addressRegion": "WI",
+            "postalCode": "53703",
             "addressCountry": "US"
         },
         "geo": {
@@ -109,7 +111,7 @@
                 "position": 1,
                 "name": "AI Automation Solutions",
                 "description": "Custom AI implementations including document retrieval systems, vector database semantic search, research assistants, and report generation automation.",
-                "provider": {"@type": "Organization", "name": "Matthew Carlson Consulting"},
+                "provider": {"@type": "Organization", "@id": "https://matthewcarlsonconsulting.com/#business", "name": "Matthew Carlson Consulting"},
                 "areaServed": "Madison, Wisconsin"
             },
             {
@@ -117,7 +119,7 @@
                 "position": 2,
                 "name": "Google Shopping & Local Inventory Ads",
                 "description": "Professional Google Shopping feed development and Local Inventory Ad feed management for retail and e-commerce businesses.",
-                "provider": {"@type": "Organization", "name": "Matthew Carlson Consulting"},
+                "provider": {"@type": "Organization", "@id": "https://matthewcarlsonconsulting.com/#business", "name": "Matthew Carlson Consulting"},
                 "areaServed": "Madison, Wisconsin"
             },
             {
@@ -125,7 +127,7 @@
                 "position": 3,
                 "name": "Meta Dynamic Product Advertising",
                 "description": "Facebook and Instagram dynamic product ad feed development and campaign optimization.",
-                "provider": {"@type": "Organization", "name": "Matthew Carlson Consulting"},
+                "provider": {"@type": "Organization", "@id": "https://matthewcarlsonconsulting.com/#business", "name": "Matthew Carlson Consulting"},
                 "areaServed": "Madison, Wisconsin"
             },
             {
@@ -133,7 +135,7 @@
                 "position": 4,
                 "name": "Performance Max Campaigns",
                 "description": "Google Performance Max campaign strategy, setup, and ongoing optimization for maximum ROI.",
-                "provider": {"@type": "Organization", "name": "Matthew Carlson Consulting"},
+                "provider": {"@type": "Organization", "@id": "https://matthewcarlsonconsulting.com/#business", "name": "Matthew Carlson Consulting"},
                 "areaServed": "Madison, Wisconsin"
             }
         ]
@@ -145,8 +147,12 @@
     {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
+        "@id": "https://matthewcarlsonconsulting.com/#business",
         "name": "Matthew Carlson Consulting",
         "description": "AI automation and digital marketing consulting in Madison, Wisconsin",
+        "url": "https://matthewcarlsonconsulting.com/",
+        "telephone": "+1-608-284-7333",
+        "email": "contact@matthewcarlsonconsulting.com",
         "address": {
             "@type": "PostalAddress",
             "addressLocality": "Madison",
@@ -159,12 +165,21 @@
             "latitude": 43.0731,
             "longitude": -89.4012
         },
+        "areaServed": [
+            {"@type": "City", "name": "Madison"},
+            {"@type": "AdministrativeArea", "name": "Dane County"},
+            {"@type": "State", "name": "Wisconsin"}
+        ],
         "hasMap": "https://maps.google.com/?q=Madison,+WI",
         "aggregateRating": {
             "@type": "AggregateRating",
             "ratingValue": "5",
             "reviewCount": "47"
-        }
+        },
+        "sameAs": [
+            "https://linkedin.com/in/matthewcarlsonconsulting",
+            "https://x.com/MatthewDCarlson"
+        ]
     }
     </script>
 
