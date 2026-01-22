@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W2PZBSP7J8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-W2PZBSP7J8');
+    </script>
+
+    <title>Madison AI Marketing Assistant | Matthew Carlson Consulting</title>
+    <meta name="description" content="Chat with our Madison, WI digital marketing + AI automation assistant. Get ideas for campaigns, automation workflows, and analytics—fast, safe, and local-first.">
+    <meta name="keywords" content="Madison AI assistant, digital marketing AI Madison WI, marketing automation Madison, AI marketing consultant Wisconsin">
+    <meta name="author" content="Matthew Carlson Consulting">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://matthewcarlsonconsulting.com/ai-bot.html">
+
+    <meta name="geo.region" content="US-WI">
+    <meta name="geo.placename" content="Madison">
+    <meta name="geo.position" content="43.0731;-89.4012">
+    <meta name="ICBM" content="43.0731, -89.4012">
+
+    <meta property="og:title" content="Madison AI Marketing Assistant">
+    <meta property="og:description" content="Get local-first digital marketing + AI automation guidance from our Madison, WI assistant.">
+    <meta property="og:url" content="https://matthewcarlsonconsulting.com/ai-bot.html">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <a href="/" class="nav-logo" aria-label="Matthew Carlson Consulting - Home">
+                <img src="assets/logo.png" alt="Matthew Carlson Consulting" width="200" height="48">
+            </a>
+
+            <div class="nav-menu" id="nav-menu">
+                <a href="/" class="nav-link">Home</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="faq.html" class="nav-link">FAQ</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link nav-cta">Contact</a>
+            </div>
+
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main id="main-content">
+        <header class="ai-bot-hero">
+            <div class="container ai-bot-hero-grid">
+                <div class="ai-bot-hero-content">
+                    <span class="section-tag">Madison, WI • Digital Marketing + AI Automation</span>
+                    <h1 class="section-title">Meet the Madison Marketing + Automation AI Assistant</h1>
+                    <p class="section-subtitle">
+                        Ask questions about campaign strategy, local SEO, analytics, and workflow automation.
+                        This assistant is designed for Madison-area brands and agencies—no fluff, just practical guidance.
+                    </p>
+                    <ul class="ai-bot-highlights">
+                        <li>Local-first recommendations for Dane County businesses</li>
+                        <li>Ideas for Google Ads, Meta, email, and content strategy</li>
+                        <li>Automation tips for lead intake, reporting, and CRM cleanup</li>
+                    </ul>
+                    <div class="ai-bot-disclaimer">
+                        <strong>Privacy first:</strong> Please avoid sharing personal or confidential data. This assistant is for high-level guidance only.
+                    </div>
+                </div>
+
+                <section class="chat-card" aria-labelledby="chat-heading">
+                    <div class="chat-card-header">
+                        <div>
+                            <p class="chat-card-title" id="chat-heading">MCC AI Chat</p>
+                            <p class="chat-card-subtitle">Ask about marketing, automation, or analytics.</p>
+                        </div>
+                        <span class="chat-card-badge">Online</span>
+                    </div>
+
+                    <div class="chat-log" id="chat-log" role="log" aria-live="polite">
+                        <div class="chat-message assistant">
+                            <div class="chat-avatar">AI</div>
+                            <div class="chat-bubble">
+                                Hi! I'm your Madison-based digital marketing + AI automation assistant. What are you working on today?
+                            </div>
+                        </div>
+                    </div>
+
+                    <form class="chat-form" id="chat-form" data-endpoint="api/ai-chat.php">
+                        <label class="sr-only" for="chat-input">Your message</label>
+                        <textarea id="chat-input" name="message" rows="3" placeholder="Ask about ad strategy, automation ideas, analytics, etc." required></textarea>
+                        <div class="chat-actions">
+                            <p class="chat-status" id="chat-status" role="status" aria-live="polite"></p>
+                            <button type="submit" class="btn btn-primary">Send</button>
+                        </div>
+                    </form>
+                </section>
+            </div>
+        </header>
+
+        <section class="ai-bot-explainer">
+            <div class="container">
+                <div class="ai-bot-explainer-header">
+                    <span class="section-tag">How it helps</span>
+                    <h2 class="section-title">What the assistant can do for Madison teams</h2>
+                    <p class="section-subtitle">
+                        Use this chat to brainstorm, validate ideas, and spot automation wins before you invest in full build-outs.
+                    </p>
+                </div>
+                <div class="ai-bot-explainer-grid">
+                    <div class="ai-bot-card">
+                        <h3>Campaign ideation</h3>
+                        <p>Generate channel-specific ideas for local search, paid social, and seasonal promotions.</p>
+                    </div>
+                    <div class="ai-bot-card">
+                        <h3>Automation playbooks</h3>
+                        <p>Map lightweight workflows for intake forms, KPI dashboards, and client reporting.</p>
+                    </div>
+                    <div class="ai-bot-card">
+                        <h3>Measurement clarity</h3>
+                        <p>Get guidance on KPIs, tracking plans, and attribution basics before you launch.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="/" class="footer-logo" aria-label="Matthew Carlson Consulting - Home">
+                        <img src="assets/logo.png" alt="Matthew Carlson Consulting" width="200" height="48">
+                    </a>
+                    <p class="footer-tagline">
+                        Madison's AI automation and digital marketing consultancy. Deploying custom AI and workflow
+                        solutions for agencies and businesses in Wisconsin.
+                    </p>
+                    <div class="footer-location">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M10 10.8333C11.3807 10.8333 12.5 9.71404 12.5 8.33333C12.5 6.95262 11.3807 5.83333 10 5.83333C8.61929 5.83333 7.5 6.95262 7.5 8.33333C7.5 9.71404 8.61929 10.8333 10 10.8333Z" />
+                            <path d="M10 18.3333C13.3333 15 16.6667 12.0153 16.6667 8.33333C16.6667 4.65132 13.6819 1.66666 10 1.66666C6.3181 1.66666 3.33333 4.65132 3.33333 8.33333C3.33333 12.0153 6.66667 15 10 18.3333Z" />
+                        </svg>
+                        <span>Madison, WI</span>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4 class="footer-heading">Services</h4>
+                        <a href="services.html">AI Automation</a>
+                        <a href="services.html">Google Shopping Feeds</a>
+                        <a href="services.html">Workflow Automation</a>
+                        <a href="services.html">Website Development</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4 class="footer-heading">Company</h4>
+                        <a href="about.html">About</a>
+                        <a href="projects.html">Projects</a>
+                        <a href="faq.html">FAQ</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4 class="footer-heading">Legal</h4>
+                        <a href="privacy.html">Privacy Policy</a>
+                        <a href="terms.html">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Matthew Carlson Consulting. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/ai-bot.js"></script>
+</body>
+</html>
