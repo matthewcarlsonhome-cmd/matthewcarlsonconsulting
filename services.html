@@ -271,6 +271,41 @@
             opacity: 0.7;
         }
 
+        .services-intro {
+            background: #ffffff;
+            padding: 4.5rem 0 2rem;
+        }
+
+        .services-intro .service-showcase-container {
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+        }
+
+        .services-intro h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2rem, 4vw, 2.75rem);
+            font-weight: 600;
+            color: #0f172a;
+            margin-bottom: 1rem;
+        }
+
+        .services-intro p {
+            font-size: 1.05rem;
+            color: #334155;
+            line-height: 1.7;
+            margin-bottom: 1rem;
+        }
+
+        .services-intro a {
+            color: #2563eb;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .services-intro a:hover {
+            text-decoration: underline;
+        }
+
         /* Service Showcase Sections */
         .service-showcase {
             position: relative;
@@ -616,6 +651,28 @@
             </div>
         </div>
     </header>
+
+    <section class="services-intro" aria-labelledby="madison-consulting">
+        <div class="service-showcase-container">
+            <div>
+                <h2 id="madison-consulting">Madison, Wisconsin AI Automation &amp; Digital Marketing Consulting</h2>
+                <p>
+                    We partner with teams across Madison and the broader Dane County region to build practical digital
+                    marketing systems that feel modern, measurable, and easy to operate. Every engagement is tailored to
+                    Wisconsin-based business goals, not generic playbooks.
+                </p>
+                <p>
+                    Our focus spans AI automation and marketing automation that reduce busywork, improve campaign velocity,
+                    and give agency support when you need extra execution capacity. If you want to see real examples, browse
+                    our <a href="projects.html">client project highlights</a>.
+                </p>
+                <p>
+                    Have questions about timelines or fit? Visit the <a href="faq.html">consulting FAQ for Madison businesses</a>
+                    or reach out through the <a href="contact.html">contact form to start a conversation</a>.
+                </p>
+            </div>
+        </div>
+    </section>
 
     <!-- AI Automation Section -->
     <section class="service-showcase" id="ai-automation">
