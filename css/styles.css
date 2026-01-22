@@ -2152,6 +2152,225 @@ a.method-value:hover {
 .stagger-5 { animation-delay: 0.5s; }
 
 /* ========================================
+   AI Bot Page
+   ======================================== */
+
+.ai-bot-hero {
+    padding: calc(var(--space-5xl) + 4rem) 0 var(--space-4xl);
+    background: var(--gradient-hero);
+    color: var(--color-white);
+}
+
+.ai-bot-hero-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-3xl);
+    align-items: start;
+}
+
+.ai-bot-hero .section-tag {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.ai-bot-hero .section-title {
+    color: var(--color-white);
+    margin-bottom: var(--space-lg);
+}
+
+.ai-bot-hero .section-subtitle {
+    color: rgba(255, 255, 255, 0.75);
+    margin-bottom: var(--space-xl);
+}
+
+.ai-bot-highlights {
+    display: grid;
+    gap: var(--space-sm);
+    margin-bottom: var(--space-xl);
+}
+
+.ai-bot-highlights li {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.ai-bot-highlights li::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--color-accent);
+    flex-shrink: 0;
+}
+
+.ai-bot-disclaimer {
+    background: rgba(15, 23, 42, 0.6);
+    border: 1px solid rgba(148, 163, 184, 0.3);
+    border-radius: var(--radius-lg);
+    padding: var(--space-md) var(--space-lg);
+    font-size: 0.95rem;
+}
+
+.chat-card {
+    background: var(--color-white);
+    border-radius: var(--radius-2xl);
+    padding: var(--space-xl);
+    box-shadow: var(--shadow-xl);
+    color: var(--color-gray-700);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+}
+
+.chat-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-lg);
+}
+
+.chat-card-title {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: var(--color-gray-900);
+}
+
+.chat-card-subtitle {
+    color: var(--color-gray-500);
+    font-size: 0.95rem;
+}
+
+.chat-card-badge {
+    background: rgba(16, 185, 129, 0.12);
+    color: var(--color-success);
+    font-weight: 600;
+    padding: 0.35rem 0.8rem;
+    border-radius: var(--radius-full);
+    font-size: 0.85rem;
+}
+
+.chat-log {
+    background: var(--color-gray-50);
+    border: 1px solid var(--color-gray-200);
+    border-radius: var(--radius-lg);
+    padding: var(--space-lg);
+    height: 320px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+}
+
+.chat-message {
+    display: flex;
+    gap: var(--space-md);
+}
+
+.chat-message.user {
+    flex-direction: row-reverse;
+}
+
+.chat-avatar {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: var(--color-primary);
+    color: var(--color-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    font-weight: 600;
+    flex-shrink: 0;
+}
+
+.chat-message.user .chat-avatar {
+    background: var(--color-gray-300);
+    color: var(--color-gray-800);
+}
+
+.chat-bubble {
+    background: var(--color-white);
+    padding: var(--space-md);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    max-width: 100%;
+    white-space: pre-wrap;
+}
+
+.chat-message.user .chat-bubble {
+    background: rgba(37, 99, 235, 0.12);
+}
+
+.chat-form textarea {
+    width: 100%;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--color-gray-200);
+    padding: var(--space-md);
+    min-height: 90px;
+    resize: vertical;
+}
+
+.chat-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-md);
+    margin-top: var(--space-md);
+}
+
+.chat-status {
+    font-size: 0.9rem;
+    color: var(--color-gray-500);
+}
+
+.chat-status.error {
+    color: var(--color-error);
+}
+
+.ai-bot-explainer {
+    padding: var(--space-4xl) 0;
+    background: var(--color-gray-50);
+}
+
+.ai-bot-explainer-header {
+    text-align: center;
+    max-width: 720px;
+    margin: 0 auto var(--space-3xl);
+}
+
+.ai-bot-explainer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: var(--space-xl);
+}
+
+.ai-bot-card {
+    background: var(--color-white);
+    border-radius: var(--radius-lg);
+    padding: var(--space-xl);
+    box-shadow: var(--shadow-md);
+}
+
+.ai-bot-card h3 {
+    margin-bottom: var(--space-sm);
+    color: var(--color-gray-900);
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* ========================================
    Utility Classes
    ======================================== */
 
