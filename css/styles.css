@@ -1287,6 +1287,102 @@ section {
 }
 
 /* ========================================
+   Recruiter Highlights
+   ======================================== */
+
+.recruiter-highlight {
+    background: var(--color-gray-50);
+}
+
+.recruiter-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--space-xl);
+    margin-top: var(--space-2xl);
+}
+
+.recruiter-card {
+    background: var(--color-white);
+    border: 1px solid var(--color-gray-200);
+    border-radius: var(--radius-lg);
+    padding: var(--space-xl);
+    box-shadow: var(--shadow-sm);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+}
+
+.card-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-xs);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--color-primary);
+    background: rgba(37, 99, 235, 0.1);
+    border-radius: var(--radius-full);
+    padding: 0.35rem 0.75rem;
+    width: fit-content;
+}
+
+.recruiter-card-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--color-gray-900);
+}
+
+.recruiter-card-description {
+    color: var(--color-gray-600);
+    line-height: 1.7;
+}
+
+.recruiter-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: var(--space-sm);
+}
+
+.recruiter-list li {
+    position: relative;
+    padding-left: 1.5rem;
+    color: var(--color-gray-600);
+    line-height: 1.6;
+}
+
+.recruiter-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: var(--color-primary);
+    font-weight: 700;
+}
+
+.recruiter-actions {
+    margin-top: var(--space-2xl);
+    display: flex;
+    justify-content: center;
+    gap: var(--space-md);
+    flex-wrap: wrap;
+}
+
+@media (max-width: 1024px) {
+    .recruiter-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .recruiter-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ========================================
    AI Assistant Promo Section
    ======================================== */
 
@@ -1486,6 +1582,101 @@ section {
     line-height: 1.7;
 }
 
+.process-summary {
+    margin-top: var(--space-2xl);
+    background: var(--color-gray-50);
+    border: 1px solid var(--color-gray-200);
+    border-radius: var(--radius-lg);
+    padding: var(--space-2xl);
+    display: grid;
+    grid-template-columns: minmax(0, 1.3fr) minmax(0, 0.7fr);
+    gap: var(--space-2xl);
+}
+
+.summary-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-xs);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--color-primary);
+    margin-bottom: var(--space-sm);
+}
+
+.summary-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-gray-900);
+    margin-bottom: var(--space-md);
+}
+
+.summary-description {
+    color: var(--color-gray-600);
+    line-height: 1.7;
+    margin-bottom: var(--space-lg);
+}
+
+.process-summary-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: var(--space-sm);
+}
+
+.process-summary-list li {
+    padding-left: 1.5rem;
+    position: relative;
+    color: var(--color-gray-600);
+    line-height: 1.6;
+}
+
+.process-summary-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: var(--color-primary);
+    font-weight: 700;
+}
+
+.process-summary-card {
+    background: var(--color-white);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--color-gray-200);
+    padding: var(--space-xl);
+    display: grid;
+    gap: var(--space-lg);
+    align-content: start;
+    box-shadow: var(--shadow-sm);
+}
+
+.summary-stat {
+    display: grid;
+    gap: var(--space-xs);
+}
+
+.summary-stat-label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--color-gray-500);
+}
+
+.summary-stat-value {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--color-gray-900);
+}
+
+@media (max-width: 900px) {
+    .process-summary {
+        grid-template-columns: 1fr;
+    }
+}
+
 @media (max-width: 640px) {
     .timeline-line {
         left: 30px;
@@ -1499,6 +1690,10 @@ section {
 
     .process-step {
         gap: var(--space-lg);
+    }
+
+    .process-summary {
+        padding: var(--space-xl);
     }
 }
 
