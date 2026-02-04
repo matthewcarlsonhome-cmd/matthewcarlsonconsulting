@@ -80,6 +80,15 @@
                 {
                     "@type": "SoftwareApplication",
                     "position": 4,
+                    "name": "Media Mix Model Platform",
+                    "description": "Bayesian media mix modeling platform with multi-platform data connectors, rigorous data hygiene, and budget scenario planning.",
+                    "applicationCategory": "BusinessApplication",
+                    "operatingSystem": "Web",
+                    "author": {"@type": "Person", "name": "Matthew Carlson"}
+                },
+                {
+                    "@type": "SoftwareApplication",
+                    "position": 5,
                     "name": "Resume Intelligence Search",
                     "description": "RAG-powered semantic search application built in under 2 hours. Demonstrates rapid AI-assisted development with LanceDB, FastAPI, and Claude API.",
                     "applicationCategory": "BusinessApplication",
@@ -389,6 +398,12 @@
         }
 
         .screenshot-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .screenshot-image video {
             width: 100%;
             height: 100%;
             object-fit: cover;
@@ -1212,6 +1227,15 @@
                         <span>15 checks</span>
                         <span>33 routes</span>
                         <span>PII detection</span>
+                    </div>
+                </a>
+                <a href="#media-mix-model" class="project-index-card">
+                    <h3>Media Mix Model Platform</h3>
+                    <p>Bayesian MMM with multi-platform connectors, data hygiene, and budget scenario planning.</p>
+                    <div class="project-index-meta">
+                        <span>Bayesian modeling</span>
+                        <span>Data validation</span>
+                        <span>Scenario planning</span>
                     </div>
                 </a>
                 <a href="#resume-intelligence-search" class="project-index-card">
@@ -2044,6 +2068,253 @@ token limits and streaming handled automatically.</div>
             <!-- Project Meta -->
             <div class="project-meta">
                 <p class="project-date">Project completed February 2026</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Media Mix Model Project -->
+    <section class="project-section" id="media-mix-model">
+        <div class="container">
+            <!-- Project Header -->
+            <div class="project-header">
+                <div class="project-title-group">
+                    <h2>Media Mix Model (MMM) Platform</h2>
+                    <p class="project-subtitle">
+                        A production-grade media mix modeling platform that blends Bayesian inference with
+                        enterprise-grade data connectors, automated hygiene checks, and budget scenario modeling
+                        to quantify marketing impact with confidence.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Stats -->
+            <div class="project-stats">
+                <div class="stat-card">
+                    <div class="stat-value">Bayesian</div>
+                    <div class="stat-label">Causal Modeling</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">Multi-Platform</div>
+                    <div class="stat-label">Data Connectors</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">Automated</div>
+                    <div class="stat-label">Data Hygiene</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">Budget</div>
+                    <div class="stat-label">Scenario Planning</div>
+                </div>
+            </div>
+
+            <!-- Problem / Solution -->
+            <div class="project-overview">
+                <div class="overview-card">
+                    <h3>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <line x1="12" y1="8" x2="12" y2="12"/>
+                            <line x1="12" y1="16" x2="12.01" y2="16"/>
+                        </svg>
+                        The Problem
+                    </h3>
+                    <p>
+                        Marketing teams juggle fragmented data sources, inconsistent attribution, and shifting
+                        budgets across channels. They need a trustworthy, end-to-end system that reconciles
+                        spend, performance, and outcomes while accounting for uncertainty and lagged effects.
+                    </p>
+                </div>
+                <div class="overview-card">
+                    <h3>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                            <polyline points="22 4 12 14.01 9 11.01"/>
+                        </svg>
+                        The Solution
+                    </h3>
+                    <p>
+                        This MMM platform unifies cross-channel data ingestion, validation, and Bayesian modeling
+                        into a single workflow, producing transparent lift estimates and scenario-based budget
+                        recommendations that drive confident marketing decisions.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Screenshots -->
+            <div class="screenshots-section">
+                <h3>Workflow Setup & Executive Views</h3>
+                <div class="screenshots-grid">
+                    <div class="screenshot-card">
+                        <div class="screenshot-image">
+                            <video src="assets/recording.webm" controls muted playsinline preload="metadata"></video>
+                        </div>
+                        <div class="screenshot-content">
+                            <div class="screenshot-title">Product Walkthrough</div>
+                            <div class="screenshot-description">
+                                End-to-end walkthrough of data ingestion, model execution, and scenario planning.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="screenshot-card">
+                        <div class="screenshot-image">
+                            <img src="assets/MMMSetup1.png" alt="Media Mix Model workflow setup showing data connectors and pipeline steps" loading="lazy">
+                        </div>
+                        <div class="screenshot-content">
+                            <div class="screenshot-title">Workflow Setup</div>
+                            <div class="screenshot-description">
+                                Connector selection, dataset mapping, and validation checkpoints for MMM pipelines.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="screenshot-card">
+                        <div class="screenshot-image">
+                            <img src="assets/MMMSetup2.png" alt="Media Mix Model workflow configuration with model settings and training inputs" loading="lazy">
+                        </div>
+                        <div class="screenshot-content">
+                            <div class="screenshot-title">Model Configuration</div>
+                            <div class="screenshot-description">
+                                Bayesian priors, lag structures, and training ranges configured for accuracy.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="screenshot-card">
+                        <div class="screenshot-image">
+                            <img src="assets/MMMExecutiveDashboard.png" alt="Executive dashboard summarizing ROI, contribution, and channel efficiency" loading="lazy">
+                        </div>
+                        <div class="screenshot-content">
+                            <div class="screenshot-title">Executive Dashboard</div>
+                            <div class="screenshot-description">
+                                ROI summaries, confidence intervals, and contribution analysis for leadership.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="screenshot-card">
+                        <div class="screenshot-image">
+                            <img src="assets/MMMMarketingPerformance.png" alt="Marketing performance dashboard with channel trends and spend curves" loading="lazy">
+                        </div>
+                        <div class="screenshot-content">
+                            <div class="screenshot-title">Marketing Performance</div>
+                            <div class="screenshot-description">
+                                Channel saturation curves, response metrics, and optimized spend ranges.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="screenshot-card">
+                        <div class="screenshot-image">
+                            <img src="assets/MMMScenarioPlanning.png" alt="Scenario planning view comparing budget allocations and forecasted lift" loading="lazy">
+                        </div>
+                        <div class="screenshot-content">
+                            <div class="screenshot-title">Scenario Planning</div>
+                            <div class="screenshot-description">
+                                Compare multiple budget allocations with modeled lift and payback forecasts.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Capabilities -->
+            <div class="capabilities-section">
+                <h3>Key Capabilities</h3>
+                <div class="capabilities-grid">
+                    <div class="capability-card">
+                        <h4><span>📊</span> Bayesian MMM Core</h4>
+                        <div class="capability-list">
+                            <div class="capability-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M20 6 9 17l-5-5"/>
+                                </svg>
+                                <span><strong>Hierarchical Bayesian models</strong> with shrinkage across channels</span>
+                            </div>
+                            <div class="capability-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M20 6 9 17l-5-5"/>
+                                </svg>
+                                <span><strong>Adstock + saturation curves</strong> to capture lagged effects</span>
+                            </div>
+                            <div class="capability-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M20 6 9 17l-5-5"/>
+                                </svg>
+                                <span><strong>Transparent uncertainty</strong> with posterior intervals and diagnostics</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="capability-card">
+                        <h4><span>🔌</span> Data Connectors</h4>
+                        <div class="capability-list">
+                            <div class="capability-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M20 6 9 17l-5-5"/>
+                                </svg>
+                                <span><strong>Multi-platform ingestion</strong> for ads, CRM, and analytics sources</span>
+                            </div>
+                            <div class="capability-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M20 6 9 17l-5-5"/>
+                                </svg>
+                                <span><strong>Connector health monitoring</strong> with refresh alerts and sync logs</span>
+                            </div>
+                            <div class="capability-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M20 6 9 17l-5-5"/>
+                                </svg>
+                                <span><strong>Unified schema mapping</strong> across spend, outcomes, and touchpoints</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="capability-card">
+                        <h4><span>🧹</span> Data Validation & Hygiene</h4>
+                        <div class="capability-list">
+                            <div class="capability-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M20 6 9 17l-5-5"/>
+                                </svg>
+                                <span><strong>Automated QA checks</strong> for missing, late, or duplicated data</span>
+                            </div>
+                            <div class="capability-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M20 6 9 17l-5-5"/>
+                                </svg>
+                                <span><strong>Normalization pipelines</strong> with outlier handling and winsorization</span>
+                            </div>
+                            <div class="capability-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M20 6 9 17l-5-5"/>
+                                </svg>
+                                <span><strong>Audit-ready logs</strong> for data lineage and model readiness</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="capability-card">
+                        <h4><span>💡</span> Budget Scenario Modeling</h4>
+                        <div class="capability-list">
+                            <div class="capability-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M20 6 9 17l-5-5"/>
+                                </svg>
+                                <span><strong>What-if simulators</strong> for reallocations across channels</span>
+                            </div>
+                            <div class="capability-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M20 6 9 17l-5-5"/>
+                                </svg>
+                                <span><strong>Marginal ROI curves</strong> to highlight efficiency thresholds</span>
+                            </div>
+                            <div class="capability-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M20 6 9 17l-5-5"/>
+                                </svg>
+                                <span><strong>Scenario comparison</strong> with forecasted lift and payback periods</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Meta -->
+            <div class="project-meta">
+                <p class="project-date">Project completed March 2026</p>
             </div>
         </div>
     </section>
