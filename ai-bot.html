@@ -538,6 +538,263 @@
                 grid-template-columns: 1fr;
             }
         }
+
+        /* Knowledge Expert Section */
+        .knowledge-expert {
+            position: relative;
+            padding: var(--space-5xl) 0;
+            background: linear-gradient(180deg, #0f172a 0%, #1a2744 50%, var(--color-gray-50) 100%);
+            overflow: hidden;
+        }
+
+        .knowledge-expert-grid-pattern {
+            position: absolute;
+            inset: 0;
+            background-image:
+                linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+            background-size: 60px 60px;
+            mask-image: linear-gradient(to bottom, black 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .knowledge-expert .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .knowledge-expert-divider {
+            display: flex;
+            align-items: center;
+            gap: var(--space-lg);
+            margin-bottom: var(--space-3xl);
+        }
+
+        .knowledge-expert-divider-line {
+            flex: 1;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+        }
+
+        .knowledge-expert-divider-label {
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: rgba(255, 255, 255, 0.5);
+            white-space: nowrap;
+        }
+
+        .knowledge-expert-layout {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: var(--space-4xl);
+            align-items: start;
+        }
+
+        .knowledge-expert-copy {
+            padding-top: var(--space-lg);
+        }
+
+        .knowledge-expert-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-sm);
+            background: rgba(168, 85, 247, 0.15);
+            border: 1px solid rgba(168, 85, 247, 0.3);
+            padding: var(--space-sm) var(--space-lg);
+            border-radius: var(--radius-full);
+            font-size: 0.875rem;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: var(--space-xl);
+            backdrop-filter: blur(10px);
+        }
+
+        .knowledge-expert-badge-icon {
+            width: 8px;
+            height: 8px;
+            background: #a855f7;
+            border-radius: 50%;
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        .knowledge-expert-title {
+            font-family: var(--font-display);
+            font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+            font-weight: 600;
+            line-height: 1.2;
+            color: var(--color-white);
+            margin-bottom: var(--space-lg);
+        }
+
+        .knowledge-expert-title-accent {
+            background: linear-gradient(135deg, #a855f7, #06b6d4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .knowledge-expert-description {
+            font-size: 1.0625rem;
+            color: rgba(255, 255, 255, 0.7);
+            line-height: 1.7;
+            margin-bottom: var(--space-xl);
+        }
+
+        .knowledge-expert-features {
+            display: grid;
+            gap: var(--space-md);
+            margin-bottom: var(--space-xl);
+        }
+
+        .knowledge-expert-features li {
+            display: flex;
+            align-items: flex-start;
+            gap: var(--space-md);
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 0.9375rem;
+            line-height: 1.5;
+        }
+
+        .ke-feature-icon {
+            width: 22px;
+            height: 22px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(168, 85, 247, 0.2);
+            border-radius: 50%;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .ke-feature-icon svg {
+            width: 12px;
+            height: 12px;
+            color: #a855f7;
+        }
+
+        .knowledge-expert-note {
+            background: rgba(15, 23, 42, 0.6);
+            border: 1px solid rgba(168, 85, 247, 0.25);
+            border-radius: var(--radius-lg);
+            padding: var(--space-md) var(--space-lg);
+            font-size: 0.875rem;
+            color: rgba(255, 255, 255, 0.65);
+            line-height: 1.6;
+        }
+
+        .knowledge-expert-note strong {
+            color: #a855f7;
+        }
+
+        /* Knowledge Expert Widget Card */
+        .ke-widget-wrapper {
+            background: linear-gradient(135deg, rgba(168, 85, 247, 0.4), rgba(6, 182, 212, 0.3));
+            padding: 2px;
+            border-radius: var(--radius-2xl);
+            box-shadow: var(--shadow-2xl);
+        }
+
+        .ke-widget-card {
+            background: rgba(15, 23, 42, 0.95);
+            border-radius: calc(var(--radius-2xl) - 2px);
+            padding: var(--space-xl);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(16px);
+            min-height: 500px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .ke-widget-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: var(--space-lg);
+            padding-bottom: var(--space-md);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .ke-widget-title {
+            font-weight: 600;
+            color: var(--color-white);
+            font-size: 1.125rem;
+        }
+
+        .ke-widget-subtitle {
+            font-size: 0.8125rem;
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        .ke-widget-status {
+            display: flex;
+            align-items: center;
+            gap: var(--space-xs);
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: #a855f7;
+            background: rgba(168, 85, 247, 0.15);
+            border: 1px solid rgba(168, 85, 247, 0.4);
+            padding: 0.25rem 0.6rem;
+            border-radius: var(--radius-full);
+        }
+
+        .ke-widget-status-dot {
+            width: 6px;
+            height: 6px;
+            background: #a855f7;
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+
+        .ke-widget-body {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .ke-widget-placeholder {
+            text-align: center;
+            color: rgba(255, 255, 255, 0.4);
+            font-size: 0.875rem;
+        }
+
+        .ke-widget-placeholder svg {
+            width: 48px;
+            height: 48px;
+            margin: 0 auto var(--space-md);
+            opacity: 0.3;
+        }
+
+        @media (max-width: 1024px) {
+            .knowledge-expert-layout {
+                grid-template-columns: 1fr;
+                gap: var(--space-2xl);
+            }
+
+            .knowledge-expert-copy {
+                padding-top: 0;
+                text-align: center;
+            }
+
+            .knowledge-expert-features {
+                max-width: 450px;
+                margin: 0 auto var(--space-xl);
+            }
+
+            .knowledge-expert-features li {
+                text-align: left;
+            }
+
+            .knowledge-expert-note {
+                max-width: 500px;
+                margin: 0 auto;
+            }
+        }
     </style>
 </head>
 <body>
@@ -707,6 +964,105 @@
                                     <button type="submit" class="btn btn-primary">Send Message</button>
                                 </div>
                             </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Knowledge Expert Section -->
+        <section class="knowledge-expert" aria-labelledby="ke-heading">
+            <div class="knowledge-expert-grid-pattern"></div>
+            <div class="container">
+                <div class="knowledge-expert-divider">
+                    <span class="knowledge-expert-divider-line"></span>
+                    <span class="knowledge-expert-divider-label">Go Deeper</span>
+                    <span class="knowledge-expert-divider-line"></span>
+                </div>
+
+                <div class="knowledge-expert-layout">
+                    <div class="knowledge-expert-copy">
+                        <div class="knowledge-expert-badge">
+                            <span class="knowledge-expert-badge-icon"></span>
+                            <span>Knowledge Base</span>
+                            <span style="opacity: 0.4;">|</span>
+                            <span>Instant Answers</span>
+                        </div>
+
+                        <h2 id="ke-heading" class="knowledge-expert-title">
+                            Ask the <span class="knowledge-expert-title-accent">Knowledge Expert</span>
+                        </h2>
+
+                        <p class="knowledge-expert-description">
+                            Have a specific question about our services, pricing, or approach? The Knowledge Expert
+                            searches our full knowledge base to give you direct, accurate answers grounded in real
+                            content from our site and documentation.
+                        </p>
+
+                        <ul class="knowledge-expert-features">
+                            <li>
+                                <span class="ke-feature-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </span>
+                                Services, pricing ranges, and what's included
+                            </li>
+                            <li>
+                                <span class="ke-feature-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </span>
+                                How our AI-native process works and timelines
+                            </li>
+                            <li>
+                                <span class="ke-feature-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </span>
+                                Project types, technologies, and integrations
+                            </li>
+                            <li>
+                                <span class="ke-feature-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </span>
+                                Answers sourced directly from our knowledge base
+                            </li>
+                        </ul>
+
+                        <div class="knowledge-expert-note">
+                            <strong>How it works:</strong> Unlike a general AI, the Knowledge Expert retrieves answers
+                            from indexed site content using RAG (retrieval-augmented generation), so responses are
+                            grounded in what we actually offer.
+                        </div>
+                    </div>
+
+                    <!-- Knowledge Expert Widget -->
+                    <div class="ke-widget-wrapper">
+                        <div class="ke-widget-card">
+                            <div class="ke-widget-header">
+                                <div>
+                                    <p class="ke-widget-title">Knowledge Expert</p>
+                                    <p class="ke-widget-subtitle">Services & Pricing Knowledge Base</p>
+                                </div>
+                                <span class="ke-widget-status">
+                                    <span class="ke-widget-status-dot"></span>
+                                    Ready
+                                </span>
+                            </div>
+                            <div class="ke-widget-body" id="knowledge-expert-container">
+                                <div class="ke-widget-placeholder" id="ke-placeholder">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <circle cx="11" cy="11" r="8"></circle>
+                                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                    </svg>
+                                    <p>Loading Knowledge Expert...</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -957,5 +1313,6 @@
             });
         });
     </script>
+<script src="https://knowledge-expert-ntdd.onrender.com/static/js/widget.js" data-api-key="NeYNu7rmR60lspKKWY5SuIg9gS32WYDs6f1DzEjAUSg"></script>
 </body>
 </html>
