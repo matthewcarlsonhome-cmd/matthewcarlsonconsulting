@@ -1,0 +1,622 @@
+Skills & Accomplishments Reference
+Matthew Carlson | Senior Marketing & Business Intelligence Analyst
+Duluth Trading Company | 2014-2025 \(11 Years\
+Matthew Carlson Consulting | 2024-Present
+SECTION 1: APPLICATIONS & TOOLS PROFICIENCY
+Analytics & Reporting Platforms
+\177
+Adobe Analytics \(Omniture/SiteCatalyst\
+Adobe Ad Hoc Analysis - Custom data exploration and deep-dive analytics
+Adobe Experience Platform \(AEP\
+Adobe Audience Manager - Audience segmentation and activation
+Adobe Target - A/B testing, personalization, recommendations engine
+Google Analytics - Web analytics, conversion tracking, attribution
+Incorta - Business intelligence, real-time analytics, custom reporting
+QlikView - Data visualization, interactive dashboards
+SEMRush - SEO tracking, keyword research, competitive analysis
+Screaming Frog SEO Spider - Technical SEO audits, site crawling
+Advertising & Campaign Platforms
+Google Ads \(AdWords\
+Google Merchant Center - Product feed management, Local Inventory Ads
+Meta Business Suite \(Facebook/Instagram\
+Meta Brand Protection - Trademark monitoring, infringement takedowns
+Bing Ads - Search and Shopping campaigns, audience targeting
+Pinterest Ads - Shopping campaigns, audience targeting, catalog management
+TikTok Ads - Shopping campaigns, pixel implementation
+Criteo - Retargeting, Dynamic Product Ads, Shopping campaigns
+RTB House - Display retargeting, prospecting, video campaigns
+The Trade Desk - Programmatic display, streaming audio/video, DSP management
+YouTube Advertising - Video campaigns, store visit optimization
+Kenshoo - Paid media management, bid optimization
+Impact \(Affiliate\
+Avantlink - Affiliate network management
+Data Feed & Integration Tools
+ProductsUp - Feed management, transformation, multi-channel distribution
+Marpipe - Dynamic creative templates, automated ad generation
+Bloomreach - Site search, SEO, product recommendations
+PowerReviews - Review syndication, feed development
+Stylitics - Outfit bundling, product collection feeds
+Salesforce Commerce Cloud - Ecommerce platform, data extraction
+Microsoft Dynamics AX - OMS, promotional code management, catalog setup
+Marketing Measurement & Attribution
+Ovative Marketing Analytics Platform \(MAP\
+Analytic Partners Media Mix Model - Marketing effectiveness, scenario planning
+The Harris Poll - Customer insights, survey development, segmentation
+Google Attribution - Cross-channel attribution analysis
+Facebook Attribution Checkup - Lift testing, conversion measurement
+Technical & Development Tools
+SQL - Query development, data extraction, reporting automation
+Visual Basic for Applications \(VBA\
+Google Tag Manager - Tag deployment, data layer configuration
+Ecometry - Legacy ERP, promotional code creation
+Google My Business - Local listings, posts, store information management
+Yext - Local business listings management
+Search Monitor - Brand protection, trademark monitoring
+Podsights - Podcast advertising attribution
+Certifications & Training
+Google AdWords Certified \(Fundamentals & Shopping\
+PPC Hero Conference - April 2016
+MozCon Conference - SEO best practices
+Search Engine Journal Conference - SEM industry trends
+UWEBC Marketing & Ecommerce Meetings - Peer learning, best practices
+[NEW]
+SECTION 1B: AI & DEVELOPMENT TOOLS PROFICIENCY
+AI Platforms & APIs
+Claude \(Anthropic\
+ChatGPT \(OpenAI\
+Google Gemini - Gemini API, multi-modal capabilities, streaming implementations
+Multi-Provider Architecture - Unified interface for seamless model switching with token management
+Frontend Development
+React 18 - Component architecture, hooks, state management, routing
+TypeScript - Strict mode, type safety, interface design
+Vite - Build tooling, HMR, production bundling, dev server
+Tailwind CSS - Utility-first styling, responsive design, design tokens
+Recharts - Data visualization, interactive dashboards, custom charts
+HTML5 / CSS3 / JavaScript - Custom static site development, SEO optimization
+Backend Development
+Python \(FastAPI\
+Python \(Flask\
+Python \(Pydantic\
+Python \(PyMC / PyMC-Marketing\
+Python \(pandas, numpy\
+Node.js - Server-side JavaScript, npm package ecosystem
+SQLAlchemy - ORM, database schema design, migrations
+Databases & Storage
+Supabase \(PostgreSQL\
+IndexedDB - Client-side storage, offline-first architecture
+Airtable - Low-code data management, API integration
+ChromaDB - Vector database, RAG systems, semantic search
+Deployment & DevOps
+Netlify - Static site hosting, continuous deployment, serverless functions
+Railway - Backend hosting, environment management
+GitHub - Version control, CI/CD pipelines, collaborative development
+GitHub Actions - Automated testing, deployment workflows
+Automation & Integration
+Zapier - Multi-step workflow automation, app integration
+Make \(Integromat\
+n8n - Open-source workflow automation, self-hosted pipelines
+MCP \(Model Context Protocol\
+Custom Python Pipelines - ETL, data processing, API orchestration
+Testing & Quality
+Vitest / Jest - Unit testing, integration testing, test fixtures
+React Testing Library - Component testing, user interaction simulation
+ESLint - Code quality, style enforcement
+TypeScript Strict Mode - Type safety, compile-time error prevention
+SECTION 1C: AI-ASSISTED DEVELOPMENT PROJECTS
+SkillEngine: AI Career Productivity Platform
+Full-stack SaaS application | Solo-developed in 31 days | aicareerskills.netlify.app
+Metric
+Value
+Development Time
+31 days
+Lines of Code
+125,000+
+Application Pages
+48
+AI Skills
+277+
+Multi-Step Workflows
+24
+Professional Role Templates
+27
+Test Files
+316 \(1,790 tests\
+Commits
+311
+Key Technical Innovations
+Multi-Provider AI Architecture:
+Seamless switching between Claude, Gemini, and ChatGPT with model-specific
+token management, unified streaming interface, and error handling
+AI-Native Skill Engine:
+Dynamic skill generation from job descriptions via 3-phase pipeline \(Parse, Recommend,
+Generate\
+1,000-3,000 words each\
+Recursive Self-Improvement System:
+Skills collect user grades across six dimensions; when scores drop below
+threshold, system analyzes feedback patterns, generates targeted prompt improvements, and deploys with
+rollback protection
+Workflow Automation Engine:
+Chained skill execution with state propagation, global inputs with per-step
+customization, template interpolation using previous outputs
+Local-First with Cloud Enhancement:
+Fully functional offline via IndexedDB with optional Supabase sync for
+cross-device persistence and community features
+Comprehensive Testing:
+1,790 tests across 316 files \(29% of codebase\
+Library for components, skill quality validation fixtures
+Tech Stack: React 18, TypeScript, Vite, Tailwind CSS, Supabase, IndexedDB, Claude API, Gemini API, OpenAI API,
+Netlify, GitHub CI/CD
+Media Mix Model Platform
+Enterprise-grade marketing attribution platform | Built in 4 hours
+Bayesian Modeling:
+PyMC-Marketing implementation with MCMC sampling, adstock transformations, saturation
+curves, and uncertainty quantification
+6 Platform Integrations:
+Google Ads, Meta, LinkedIn, Microsoft, TikTok, YouTube with normalized data schemas
+and automated extraction
+7 Dashboard Pages:
+Executive summary, MMM results, channel deep-dive, customer segments, weekly reports,
+settings, admin
+30+ API Endpoints:
+FastAPI backend with interactive Swagger documentation, 12 database tables via
+SQLAlchemy/Supabase
+Customer Segmentation:
+LTV tracking showing Buyers outperform Prospects 4:1; full MQL to SQL to
+Opportunity to Customer funnel
+Test Data Generator:
+2 years of synthetic data with realistic seasonality across 6 platforms
+Enterprise Comparison:
+Comparable functionality to $400K-$600K/year SaaS platforms typically requiring 6-12
+months and teams of 3-8 specialists
+Tech Stack: Python, FastAPI, PyMC-Marketing, SQLAlchemy, Supabase \(PostgreSQL\
+Recharts, Tailwind CSS
+AI-Powered Client CRM with Personalized Prospect Portals
+Portal-first client management system | Built in 7 days
+Personalized Portal Pages:
+Each prospect receives custom URL \(/portal/company-name\
+and workflows; no login required to explore
+Semantic Matching Engine:
+Uses company context + deterministic hash variance to generate truly unique skill
+recommendations per company \(same algorithm, different results based on company fingerprint\
+Dynamic ROI Calculator:
+Real-time projections update based on actual skill/workflow time-savings data as
+selections change
+Multi-Contact Architecture:
+Up to 3 contacts per client with per-contact LinkedIn messaging \(Connect 300-char +
+Follow-up\
+Industry Coverage:
+85+ target companies across 20 industries with tailored recommendations; 9 skills and 3
+workflows curated per client
+Automated Outreach:
+Science-backed persuasive messaging generated per client with intro and follow-up email
+templates
+Hybrid Storage:
+localStorage + Supabase for offline capability with cloud sync across devices
+Tech Stack: React, TypeScript, Supabase \(PostgreSQL\
+Matthew Carlson Consulting Website
+Custom business website | Built in 6 hours | matthewcarlsonconsulting.com
+AI-Assisted Development Methodology:
+Described features in natural language via Claude Code, received
+production-ready HTML/CSS; iterative refinement through conversation
+8-Page Custom Design:
+Home, About, Services, Case Studies, Projects, Contact, and supporting pages with
+consistent design system maintained by AI across all pages
+Strategic Decision - Static over WordPress:
+Eliminated database vulnerabilities, plugin maintenance, and
+security patches; sub-second page loads on basic shared hosting
+SEO Integration:
+Meta tags, Open Graph, local SEO, and semantic HTML generated inline during development
+Traditional Friction Eliminated:
+Theme selection \(2-4 hrs\
+2-3 hrs\
+\(4-8 hrs\
+1-2 hrs\
+Cost Comparison:
+Traditional agency \(2-4 weeks, $3K-$10K, $50-200/mo\
+6 hours, $0, ~$12/mo
+hosting\
+Tech Stack: HTML5, CSS3, JavaScript, custom CSS design tokens, PHP contact forms, Claude Code
+Security Scanner Module
+Automated security audit tooling | Built in 86 minutes \(2 commits, 2,400 lines\
+Reverse-Engineered from Enterprise Audits:
+Took categories from professional security audit frameworks and
+turned them into executable TypeScript code embedded in the application
+16 Automated Security Checks:
+API key pattern detection in localStorage, PII scanning in cached data, cookie
+security flags, CSP header validation, third-party script inventory, DOM clobbering detection, open redirect
+vulnerabilities, mixed content detection, SRI verification
+Living Scanner vs. One-Time Report:
+Weighted scoring with A-F grades, scan history tracking, CSV export;
+embedded in admin panel for on-demand execution
+Development Speed:
+First commit delivered 5 core checks + full React admin panel; second commit \(26 min later\
+tripled coverage to 16 checks
+AI-Assisted Development Velocity Summary
+Project
+Dev Time
+Scale
+Traditional Equivalent
+SkillEngine Platform
+125K lines, 277 skills
+2-3 months, team of 3-4
+Media Mix Model
+4 hours
+7 dashboards, 30+ endpoints
+$400K-$600K/yr SaaS
+Client CRM / Portals
+7 days
+85+ companies, 20 industries
+2-4 weeks agency
+Consulting Website
+6 hours
+8 pages, custom design
+2-4 weeks, $3K-$10K
+Security Scanner
+86 minutes
+16 checks, admin panel
+Days of manual audit
+SECTION 2: KEY IMPLEMENTATIONS & PROJECTS
+Data Feed Infrastructure Development
+Core Product Feed Architecture
+Designed and implemented Salesforce-based product data feed specification serving 15+ downstream platforms
+Built automated daily feed distribution to Google, Bing, Facebook, Criteo, Pinterest, TikTok, RTB House
+Created Google Local Inventory Ads feed integrating real-time store inventory data across 60+ retail locations
+Developed price update and supplementary feeds reducing pricing errors and improving Google Shopping
+compliance
+Reduced Google Shopping feed compilation time from 1.5 hours to 25 minutes through optimization
+Built Dynamic Product Ad feeds for Facebook/Instagram with 245% Y/Y revenue growth \($417K to $1.4M\
+Platform-Specific Feed Implementations
+Google Product Listing Ads \(PLA\
+Facebook/Meta Dynamic Product Ads - Prospect and retargeting feeds with performance optimization
+Criteo Retargeting feed - Gender/category segmentation for audience targeting
+Pinterest Shopping feed - Seasonal refreshes driving $1.1M platform-attributed sales \(10K+ sales\
+Avantlink Affiliate feed - Commission tracking integration
+Bing Shopping feed - Cross-platform sync with Google structure
+PowerReviews feed - Product review syndication for on-site display
+YesMail feeds - Product, SKU-level, and rating feeds for email personalization
+Adobe Target/Recommendations feed - On-site product recommendations
+Adobe SiteCatalyst feed - Product category data for analytics
+Bloomreach feed - Related products widget, site search optimization
+Stylitics feeds - Product collection creation for email/on-site bundling
+RTB House feed - Display advertising product catalog
+Marpipe template feeds - Dynamic creative generation for Meta and Pinterest
+New Channel Launches
+RTB House Retargeting \(2023\
+AMEX Card Linked Offer \(2023\
+Google Performance Max campaigns \(2022\
+Marpipe Dynamic Creative \(2022\
+Facebook Dynamic Product Ads \(2017\
+TikTok Shopping - Feed development and pixel implementation
+Frequency Audio Ads - Location-specific streaming campaigns for store markets
+The Trade Desk - Programmatic display, streaming audio \(iHeartRadio, Spotify\
+Website & Tag Implementations
+Salesforce Commerce Cloud migration - Complete feed rebuild, redirect management, tag updates
+PWA site launch support - Pixel testing, data layer updates across all digital channels
+Facebook Conversion Pixel - Implementation and testing across site
+Bing Conversion tracking - Tag implementation and upgraded URLs
+Impact Affiliate pixel - iOS conversion tracking fix, click ID integration
+Ovative MAP Pixel - Implementation, troubleshooting, URL parameter fixes
+Podsights pixel - Podcast advertising attribution
+TikTok pixel - Shopping campaign tracking
+Google Maps/Geocoding/Timezone APIs - Store page functionality
+Website Robots.txt - Search engine crawl optimization, variant page inclusion
+Testing & Optimization Programs
+Digital Hold Out Test \(2017\
+Facebook Attribution Checkup - Validated 25% revenue lift vs. last-click attribution
+RTB House Incrementality Test \(2023\
+Facebook Incrementality Study - Identified high-incremental prospect audiences
+Criteo/Datapop Shopping Test - Proved internal structure outperformed algorithm
+Criteo Buyers Delay Test - Learnings integrated into retargeting strategy
+Google Discovery Ads effectiveness testing
+Lookalike audience seed testing \(Loyalty Builders data\
+Retention customer set targeting optimization
+PLA category-specific promotions \(Free Ship No Min\
+SECTION 3: SEO SPECIALIST ACCOMPLISHMENTS
+Technical SEO
+Created thousands of URL redirects for old-to-new website migration, resolved redirect issues at launch
+Developed and optimized website Robots.txt file, enabled crawling of thousands of previously excluded product
+variant pages
+Analyzed all category and product pages post-launch using Screaming Frog for missing Titles and H1 mismatches
+Worked with developers to update several hundred pages with corrected metadata
+Reviewed and implemented Ovative SEO team audit recommendations
+Resolved 404 errors, added missing page Title and H1 tag data post-site migration
+Decreased website page load time by working with Bloomreach to optimize image sizes
+Content & Keyword Strategy
+Led SEO keyword research for product naming across hundreds of products for multiple seasons
+Coordinated and led naming review sessions with men's, women's, business, creative, and writing teams
+Built hundreds of thematic pages targeting long-tail organic keyword search traffic using Bloomreach
+Developed SEO tracking capabilities using SEMRush, categorized and tracked 1,400+ keywords \(Brand and
+Prospect\
+Aligned Bloomreach page development with tracked keyword opportunities
+Created Bloomreach feed for related products widget on site
+Local SEO
+Managed Google My Business listings for 60+ retail locations
+Created Google My Business Posts for store events \(Grand Openings, Re-Openings\
+Implemented Google Maps, Geocoding, and Timezone API setup for store pages
+Evaluated Yext Local Business Listings tool for centralized store page content management
+SECTION 4: PPC SPECIALIST ACCOMPLISHMENTS
+Google Ads Management
+Drove doubling of Google Shopping prospect revenue Y/Y; overall Google Search grew ~40% Y/Y
+Built and managed campaigns for all new store locations
+Added hundreds of Brand and Prospect Ad Groups and thousands of new keywords
+Created Responsive Search Ads for leading text ad campaigns
+Built and brought live Branded Expanded Text Ads, rebuilt most Prospect campaign ads
+Implemented Google Performance Max campaigns driving +3% Y/Y new customers \(144K to 148K\
+Reduced Brand CPC spend by nearly $1M Y/Y, reallocating to higher-performing channels
+Led Google Store campaign development and Sitelink scheduling aligned with TV ads
+Built Google Local Campaigns driving estimated 92K store visits during Q4 peak
+Tested regionally specific Store Visit YouTube campaigns showing lift in store visits
+Shopping Campaigns
+Led all data feed build and optimization projects for Shopping channels
+Brought SKUs feed live, obtained GTIN/UPC updates, rolled out Big and Tall product feed
+Segmented Shopping campaigns into buckets focusing spend on most important products
+Tested PLA category-specific promotions \(Free Ship No Min\
+Ported Google Shopping campaign structure to Bing Shopping, synced feeds across platforms
+Designed Local Inventory Ads feed combining local products inventory with store data
+Validated in-store inventory levels with Google team, launched Local Inventory Ads nationally
+Bid & Budget Management
+Built and allocated monthly/weekly budgets for all prospect channels
+Developed pacing reports to control spend, achieved targeted sales goals
+Regularly reviewed bids across all channels to adjust for efficiency and growth
+Worked with keyword match types to increase efficiency
+Added bid multipliers by location for geo-targeting optimization
+Implemented remarketing lists for search and shopping ads \(RLSA\
+Brought Customer Match retargeting audiences live, updated monthly
+Bing Ads
+Implemented Bing Conversion tracking tag on website
+Brought upgraded URLs live across campaigns
+Ported complete Google Shopping campaign structure to Bing
+Maintained cross-platform feed sync between Google and Bing Shopping
+SECTION 5: DIGITAL MARKETING SPECIALIST ACCOMPLISHMENTS
+Social Media Advertising \(Meta/Facebook/Instagram\
+Grew Facebook sales from $3.5M \(2017\
+2019\
+Achieved ~300% Y/Y revenue increase in Facebook \(Q4 2015 vs 2016\
+Reduced Facebook ad ratio from 60% to 35% while growing revenue
+Built Power Editor template enabling quick build of weekly campaigns
+Installed and tested Facebook conversion pixel with web team
+Created Dynamic Product Ad feed using ProductsUp - $400K+ revenue, 80%+ new customers monthly
+Developed Branded DPA campaigns replacing Criteo-managed campaigns for cost savings
+Led development and execution of all Facebook prospect advertising
+Developed and tested new ad units as they became available
+Implemented Meta Brand Protection application - daily infringement review and takedowns
+Created AKHG dedicated feed for Meta campaigns
+Pinterest & Emerging Social
+Created seasonal Pinterest Shopping feeds driving $1.1M platform-attributed sales \(10K+ orders\
+Set up Pinterest campaign structure and provided team training
+Uploaded custom customer sets for category and retention targeting
+Implemented TikTok Shopping feeds and pixel tracking
+Retargeting & Display
+Managed Criteo retargeting - increased efficiency while reducing budget
+Worked with Criteo to segment audiences by gender and category
+Rolled out seasonal creative updates with Criteo and creative teams
+Led RTB House onboarding \(2023\
+Started RTB House Prospecting and Video campaigns
+Conducted RTB House incrementality test proving $6 ROAS
+Built always-on display campaigns in Google Discovery Ads and TradeDesk
+Streaming & Video
+Grew streaming channel spend 700% Y/Y with $4.50 effective ROAS
+Launched YouTube and TradeDesk streaming campaigns for brand awareness
+Supported audio campaigns through TradeDesk to iHeartRadio and Spotify - $8.00 marketing return
+Organized Frequency Audio ads with location-specific callouts for store markets
+Implemented Podsights pixel for podcast advertising attribution
+Tested Indivio video templates for Facebook Dynamic Product Ads
+Affiliate Marketing
+Grew Affiliate channel sales 110%+ Y/Y with decreasing ad ratio
+Impact Affiliate program drove $33M in 2023 \(+13% Y/Y from $29M\
+One-third of Affiliate customers were net new in 2023 \(40.5K new customers\
+Achieved $13.51 return on ad spend in Affiliate channel \(2022\
+Capital One Shopping drove $4.0M in H2 2023; Couponology generated ~$800K
+Completed monthly order and returns reconciliation to reduce spend
+Fixed iOS conversion tracking with Impact and Rakuten teams
+Discovered and documented website error affecting Affiliate attribution, led development fix
+Promotions Management
+Led monthly/weekly digital promotion scheduling and execution
+Created monthly digital promotion calendar coordinating across teams and Ovative
+Executed dozens of promotions annually with near-flawless accuracy
+Built promotion change text into PPC creatives for regular updates
+Led all digital code updates for global events, streaming, influencer campaigns
+Created promotional codes for retail stores during global promotions
+Set up and maintained digital marketing catalogs in Microsoft Dynamics AX
+Provided reliable weekend promotion support \(Memorial Day, Labor Day, Black Friday, etc.\
+Led training session in Ecometry code creation for Web Merchandising team
+SECTION 6: MARKETING ANALYTICS ACCOMPLISHMENTS
+Executive Reporting
+Created Monday Business Insights report used by VPs, Directors, Managers across Marketing, CI, Email teams
+Report described as 'perfectly laid out with the right amount of information, incredibly helpful on Monday mornings'
+Developed weekly reports informing Weekly Report for Directors and executive team
+Provided insights for weekly Analyst Meeting shared with leadership teams
+Built Company Goals tracker for quarterly performance tracking
+Created concise monthly reports for executives on digital program performance
+Developed weekly Digital Marketing program reports covering Ecometry sales, CSE comparison, Y/Y performance
+Performance Analysis & Reporting
+Created weekly, monthly, quarterly reports tracking channel performance, sales, margin
+Maintained reports on store visits, new customer rates, clearance sales, product/collection sales, Y/Y trends
+Built Prospect KPIs report for daily review of prospect program performance
+Developed product sales and margin reports guiding pricing and promotion planning
+Analyzed state-level data identifying CA and NY as emerging markets, ran targeted campaigns
+Created Incorta report for product exclusions from global promotion events
+Regularly provided ad hoc reports for weekly promotion effectiveness analysis
+Attribution & Measurement
+Led implementation of Ovative Marketing Analytics Platform \(MAP\
+Designed and completed digital hold out test proving 25% incremental sales lift
+Partnered with Facebook on Attribution Checkup test validating 25% revenue lift vs. last-click
+Led data gathering for all digital channels for Analytic Partners Media Mix Model
+Built model scenarios and reports using Strategic Planning tool
+Analyzed monthly new customer data to optimize prospect program targeting
+Built New Customer/Order Id data feed importing to Adobe for channel customer type reporting
+Customer Insights & Audience Development
+Discovered and activated unused Harris Poll contract - trained team, gave demonstration
+Led Harris Poll contract renewal for two-year customer insights generation
+Translated Audience Manager audiences to Adobe Experience Platform \(AEP\
+Linked customer audiences to Google, Facebook, and TradeDesk for campaign targeting
+Created and automated distribution of audiences to Google \(RLSA\
+Housefile\
+Built audiences in Facebook, tested segments \(top 10% Housefile\
+Sent monthly Housefile to Criteo as exclusion audience increasing new customers
+Budget & Financial Tracking
+Tracked all digital channel spend weekly, provided monthly actuals to Finance
+Responsible for monthly credit card bill reconciliation and digital program invoice coding
+Met weekly with Ovative and Marketing team to review and update channel budget allocations
+Achieved precise spending to budget through consistent monitoring and adjustment
+Shifted budgets based on MAP insights - more to Google Shopping, less to Facebook
+SECTION 7: TECHNICAL ANALYST ACCOMPLISHMENTS
+Data Integration & ETL
+Designed Salesforce Product data feed specification used across company
+Led development of core data feed serving 15+ external digital partners
+Built query for Google Local Inventory Ads pulling daily store inventory data
+Created query importing New Customer and Order Id data to Adobe
+Drove development of updates to Salesforce query to skip error records and continue build
+Worked to automate promotion update process in AX using scheduled queries
+Website Tag Management
+Created technical documentation and test plans for all Web Marketing program tags
+Led website tag implementation for Salesforce Commerce Cloud migration
+Tested and implemented tags: Kenshoo, Facebook, Bing, Pinterest, Impact, Podsights, TikTok
+Updated website data layer revenue values for major digital marketing tags to match Adobe
+Troubleshot Ovative MAP Pixel issues during PWA site testing, implemented URL fixes
+Worked with development team to update Impact website pixel for iOS conversion tracking
+System Troubleshooting & Problem Solving
+Identified and corrected Price Mismatch and Category Mismatch errors in Google feed
+Found and documented MS AX Promotion Id bug affecting Affiliate attribution, led fix
+Worked with IT to resolve retail kiosk tracking issues
+Resolved incomplete data set issues during peak season requiring manual query rebuild
+Troubleshot Adobe Analytics tracking issues after PWA site launch
+Corrected crawl issues post-website go-live
+Reviewed data to find and correct Local Inventory feed setup error affecting inventory levels
+Compliance & Data Privacy
+Marketing team lead for CCPA and customer privacy issues
+Process weekly Delete and Do Not Sell customer requests across channels
+Automated customer exclusion from marketing channel audiences
+Developed Trademark Infringement SOP for addressing unauthorized use
+Implemented Meta Brand Protection application for trademark monitoring
+Worked with legal team on cease and desist notices for trademark infringement
+Submitted trademark infringement reports to search engines
+SECTION 8: PROJECT MANAGEMENT ACCOMPLISHMENTS
+Major Platform Migrations
+AX OMS rollout - Built digital marketing catalogs, developed promotion scheduling workflow
+Salesforce Website rollout - Led feed specification development, QA testing, partner feed builds
+Daily communication with developers and IT for several months before Salesforce site launch
+PWA site launch - Coordinated pixel testing across all digital channels
+SEM program transition to Ovative team - seamless handoff while maintaining performance
+Social prospect program transition to Ovative - connected creative team, established promotional cadence
+Vendor Management & Evaluation
+Met with Datalogix team - discontinued after performance/cost review
+Evaluated Yelp and Positiontech for online store support - decided against
+Selected and implemented Indivo for Facebook video template development
+Evaluated Teemo for in-app store visit advertising
+Reviewed Yext for Local Business Listings management
+Researched and selected Marpipe for dynamic creative templates
+Managed ongoing relationships with Ovative, Criteo, RTB House, Impact, ProductsUp
+Cross-Functional Collaboration
+Worked with IT, Ecommerce, Direct/Email, Creative, Business, Web teams on digital marketing growth
+Coordinated global promotions with Ecommerce, business, creative, and customer care teams
+Led product naming review sessions with men's, women's, business, creative, and writing teams
+Collaborated with Customer Insights team on audience development and AEP integration
+Worked with Retail Store team on Grand Openings, hours updates, digital code support
+Partnered with Accounting/Finance on monthly expense reconciliation and budget tracking
+Coordinated with Call Center on promotion updates and customer communications
+Team Development & Training
+Helped onboard new team members with tutorials on Incorta reporting, campaign structure, Pinterest
+Provided ChatGPT integration training to marketing team
+Led Ecometry code creation training for Web Merchandising team
+Gave Harris Poll demonstration to Customer Insights team
+Assisted design team in learning Marpipe application
+Maintained open-door policy for questions, tutorials, and planning as senior team member
+Shared insights on market trends and application developments
+Documentation & Process Improvement
+Created technical documentation for all Web Marketing program tags
+Developed Trademark Infringement SOP with complete workflow
+Built testing worksheets for global promotions
+Created documentation for dynamically updating website header information
+Developed clear cross-team communication processes during peak season
+Proactively identified and resolved data quality issues before they impacted campaigns
+SECTION 9: QUANTIFIED RESULTS & METRICS
+Revenue & Sales Impact
+Managed $40M+ annual digital marketing budget driving $200M+ in annual revenue
+Facebook sales: $3.5M \(2017\
+2018\
+Facebook Prospect sales: $1.5M \(2017\
+Facebook Dynamic Product Ads: $417K \(2017\
+RTB House Retargeting: $8.3M in sales \(April 2023 - Jan 2024\
+AMEX Card Linked Offer: 10.7K new customers, $2.7M sales \(2023\
+Impact Affiliate: $19M \(2022\
+2023\
+Google Shopping prospect revenue doubled Y/Y; overall Google Search grew 40% Y/Y
+Pinterest Shopping: $1.1M platform-attributed sales, 10K+ orders
+Capital One Shopping affiliate: $4.0M revenue \(H2 2023\
+Google Local Campaigns: 92K estimated store visits during Q4 peak
+Efficiency & ROI Improvements
+Facebook ad ratio: Reduced from 60% to 35% while growing revenue
+Affiliate ROAS: $13.51 return on ad spend \(2022\
+RTB House ROAS: $6.00 \(independently validated via incrementality test\
+Streaming channels: $4.50 effective ROAS with 700% Y/Y spend growth
+Streaming audio: ~$8.00 marketing return
+Digital prospect programs proved 25% more incremental than attributed \(hold out test\
+Facebook Attribution Checkup: 25% more revenue than last-click attribution credited
+Brand CPC spend: Reduced by ~$1M Y/Y, reallocated to higher-performing channels
+Google feed compilation: Reduced from 1.5 hours to 25 minutes
+Customer Acquisition
+Google Prospect campaigns: +3% Y/Y new customers \(144K to 148K\
+291K to 326K\
+Facebook DPA campaigns: 80%+ new customers acquired monthly
+AMEX Card Linked Offer: 10.7K new customers \(2023\
+RTB House: 1.6K new customers \(2023\
+Affiliate: 40.5K new customers \(2023\
+Affiliate: One-third of customers were net new \(2023\
+Affiliate: ~20% new customers \(2022\
+Scale & Scope
+11 years tenure building and optimizing digital marketing program
+60+ retail store locations supported with Local Inventory Ads and store pages
+15+ downstream platforms served by core product data feed
+1,400+ keywords tracked and categorized in SEMRush for SEO
+Hundreds of thematic pages built targeting long-tail organic keywords
+Hundreds of product naming projects completed across multiple seasons
+Dozens of promotions executed annually with near-flawless accuracy
+10+ tests conducted in Facebook and Google Discovery Ads in single year
+SECTION 10: AI-ASSISTED DEVELOPMENT QUANTIFIED RESULTS
+Development Velocity
+SkillEngine: 125,000+ lines of code, 311 commits, 31 days solo development
+Peak development: 38 commits in a single day during initial architecture build
+Average velocity: ~10 commits/day, 8 skills/day, 2+ pages/day
+Media Mix Model: Full-stack platform with Bayesian modeling in 4 hours of active development
+Client CRM: Concept to production in 7 days with 50+ commits and 6 major UI components
+Consulting Website: 8 pages, custom design, SEO optimization in 6 hours
+Security Scanner: 16 automated checks with admin panel in 86 minutes \(2 commits\
+Platform Scale
+SkillEngine: 277+ AI skills, 24 automated workflows, 27 professional role templates, 48 application pages
+SkillEngine Testing: 1,790 tests across 316 files; 64,602 lines of test code \(29% of codebase\
+SkillEngine Prompts: 44.8% of codebase is prompt templates; one file contains 53K lines with 152 role templates
+Media Mix Model: 30+ API endpoints, 12 database tables, 7 dashboard pages, 6 platform integrations
+Client CRM: 85+ target companies, 20 industries, personalized portal per company
+Marketing Campaign: 80+ personalized prospect emails with industry-specific messaging and portal links
+Cost & Time Comparisons
+What I Built
+My Time/Cost
+Enterprise Equivalent
+SkillEngine \(277-skill platform\
+31 days, $0
+2-3 months, team of 3-4 devs
+4 hours, $0
+Client CRM w/ portals
+7 days, $0
+$15K-$40K agency project
+Business website \(8 pages\
+6 hours, $12/mo
+2-4 weeks, $3K-$10K + $50-200/mo
+Security scanner \(16 checks\
+86 min, $0
+Multi-day manual audit
+80+ personalized campaigns
+1 session
+1-2 weeks agency work
+Novel Technical Innovations
+Recursive self-improvement: Feedback-driven prompt optimization across six quality dimensions with rollback
+protection
+Multi-provider AI: Unified streaming interface across Claude, Gemini, and ChatGPT with model-specific token
+management
+Semantic matching: Deterministic hash variance generating unique skill recommendations per company from
+same algorithm
+Local-first architecture: Full offline functionality via IndexedDB with optional Supabase cloud sync
+Security-as-code: Enterprise audit categories reverse-engineered into executable client-side TypeScript scanner
+Prompt-as-product: 44.8% of SkillEngine codebase is production-grade prompt templates \(1,000-3,000 words
+each\

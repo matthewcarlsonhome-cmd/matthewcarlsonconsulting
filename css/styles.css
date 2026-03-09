@@ -1287,6 +1287,99 @@ section {
 }
 
 /* ========================================
+   Recruiter Highlights
+   ======================================== */
+
+.recruiter-highlight {
+    background: var(--color-gray-50);
+}
+
+.recruiter-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--space-xl);
+    margin-top: var(--space-2xl);
+}
+
+.recruiter-card {
+    background: var(--color-white);
+    border: 1px solid var(--color-gray-200);
+    border-radius: var(--radius-lg);
+    padding: var(--space-xl);
+    box-shadow: var(--shadow-sm);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+}
+
+.recruiter-card-label {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: var(--color-gray-900);
+    margin: 0;
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-xs);
+}
+
+.recruiter-card-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--color-gray-900);
+    margin: 0;
+}
+
+.recruiter-card-description {
+    color: var(--color-gray-600);
+    line-height: 1.7;
+    margin: 0;
+}
+
+.recruiter-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: var(--space-md);
+}
+
+.recruiter-list li {
+    position: relative;
+    padding-left: 1.5rem;
+    color: var(--color-gray-600);
+    line-height: 1.7;
+}
+
+.recruiter-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: var(--color-primary);
+    font-weight: 700;
+}
+
+.recruiter-actions {
+    margin-top: var(--space-2xl);
+    display: flex;
+    justify-content: center;
+    gap: var(--space-md);
+    flex-wrap: wrap;
+}
+
+@media (max-width: 1024px) {
+    .recruiter-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .recruiter-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ========================================
    AI Assistant Promo Section
    ======================================== */
 
@@ -1486,6 +1579,65 @@ section {
     line-height: 1.7;
 }
 
+.process-details {
+    margin-top: var(--space-2xl);
+    background: var(--color-gray-50);
+    border: 1px solid var(--color-gray-200);
+    border-radius: var(--radius-lg);
+    padding: var(--space-2xl);
+    display: grid;
+    grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
+    gap: var(--space-2xl);
+    align-items: center;
+}
+
+.process-details-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-gray-900);
+    margin-bottom: var(--space-md);
+}
+
+.process-details-description {
+    color: var(--color-gray-600);
+    line-height: 1.7;
+    margin: 0;
+}
+
+.process-details-meta {
+    background: var(--color-white);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--color-gray-200);
+    padding: var(--space-xl);
+    display: grid;
+    gap: var(--space-lg);
+    box-shadow: var(--shadow-sm);
+}
+
+.process-meta-item {
+    display: grid;
+    gap: var(--space-xs);
+}
+
+.process-meta-label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--color-gray-500);
+}
+
+.process-meta-value {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--color-gray-900);
+}
+
+@media (max-width: 900px) {
+    .process-details {
+        grid-template-columns: 1fr;
+    }
+}
+
 @media (max-width: 640px) {
     .timeline-line {
         left: 30px;
@@ -1499,6 +1651,10 @@ section {
 
     .process-step {
         gap: var(--space-lg);
+    }
+
+    .process-details {
+        padding: var(--space-xl);
     }
 }
 
