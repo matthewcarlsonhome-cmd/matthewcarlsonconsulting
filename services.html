@@ -153,6 +153,89 @@
     }
     </script>
 
+    <!-- Structured Data - BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://matthewcarlsonconsulting.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Services",
+                "item": "https://matthewcarlsonconsulting.com/services.html"
+            }
+        ]
+    }
+    </script>
+
+    <!-- Structured Data - Service with OfferCatalog -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "serviceType": "AI Automation & Digital Marketing Consulting",
+        "provider": {
+            "@type": "LocalBusiness",
+            "name": "Matthew Carlson Consulting",
+            "@id": "https://matthewcarlsonconsulting.com/#business"
+        },
+        "areaServed": {
+            "@type": "City",
+            "name": "Madison",
+            "containedInPlace": {
+                "@type": "State",
+                "name": "Wisconsin"
+            }
+        },
+        "description": "Comprehensive AI automation and digital marketing services for Madison Wisconsin businesses. Custom AI solutions, workflow automation, Google Shopping feeds, Meta ads, and Performance Max campaigns.",
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "AI & Digital Marketing Services",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "AI Automation Solutions",
+                        "description": "Custom AI implementations including document retrieval, semantic search, and automated report generation"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Google Shopping Feed Development",
+                        "description": "Professional feed development, Local Inventory Ads, and Merchant Center optimization"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Meta Dynamic Product Ads",
+                        "description": "Facebook and Instagram catalog setup, dynamic ad feeds, and campaign optimization"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Workflow Automation",
+                        "description": "n8n workflow automation with 500+ app integrations and self-hosted security options"
+                    }
+                }
+            ]
+        }
+    }
+    </script>
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

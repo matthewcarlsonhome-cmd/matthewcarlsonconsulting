@@ -1,0 +1,67 @@
+# Matthew Carlson Consulting
+
+> AI automation and digital marketing consulting based in Madison, Wisconsin. We specialize in custom AI solutions, workflow automation, Google Shopping feeds, Meta dynamic ads, and Performance Max campaigns.
+
+## Company Information
+
+- **Name:** Matthew Carlson Consulting
+- **Location:** Madison, Wisconsin, USA
+- **Phone:** (608) 284-7333
+- **Email:** contact@matthewcarlsonconsulting.com
+- **Website:** https://matthewcarlsonconsulting.com
+
+## Services
+
+### AI Automation
+Custom AI implementations including n8n workflow automation, document retrieval systems, vector database semantic search, AI-powered research assistants, and automated report generation. We build 20+ pre-built automation frameworks for lead management, customer support, content creation, and business operations.
+
+### Google Shopping Feeds
+Professional Google Shopping feed development, Local Inventory Ad (LIA) feed management, product data optimization, and Merchant Center troubleshooting for retail and e-commerce businesses.
+
+### Meta Dynamic Ads
+Facebook and Instagram dynamic product ad feed development, catalog management, and campaign optimization for e-commerce and retail clients.
+
+### Performance Max Campaigns
+Google Performance Max campaign strategy, asset group creation, audience signal optimization, and ongoing campaign management for maximum ROI.
+
+## Key Projects
+
+### SkillEngine
+AI Career Productivity Platform with 277+ AI skills, 48 application pages, 24 workflows, and 27 role templates. Built in 31 days using Claude Code. Multi-provider AI interface supporting Google Gemini, Anthropic Claude, and OpenAI ChatGPT.
+- Live: https://aicareerskills.netlify.app/
+
+### Enterprise CRM System
+B2B Client Relationship Management Platform with AI research assistant, multi-contact profiles, activity timeline tracking, and 5-stage pipeline management. Supports 21 industries.
+
+### Media Mix Model Platform
+Bayesian Media Mix Modeling with hierarchical models, adstock/saturation curves, multi-platform data connectors, and budget scenario modeling for marketing optimization.
+
+### Security Scanner
+Client-side security and compliance engine with 15 security checks, 33 SPA routes scanned, 12 PII types detected, and 4 redaction modes.
+
+### Resume Intelligence Search
+RAG-powered semantic search application built in under 2 hours. Uses LanceDB vector database, sentence-transformers, and Claude API for synthesis.
+
+## Expertise
+
+- AI Workflow Automation (n8n, Make, Zapier)
+- Vector Databases & Semantic Search (LanceDB, Pinecone)
+- Large Language Model Integration (Claude, GPT-4, Gemini)
+- Google Ads & Shopping Feed Development
+- Meta/Facebook Advertising
+- Marketing Analytics & Attribution
+- React/TypeScript Full-Stack Development
+- Bayesian Media Mix Modeling
+
+## Service Area
+
+Primary: Madison, Wisconsin
+Secondary: Dane County, Milwaukee, Chicago, Minneapolis
+Remote: Nationwide USA
+
+## Contact
+
+For AI automation consulting or digital marketing services in Madison, Wisconsin:
+- Phone: (608) 284-7333
+- Email: contact@matthewcarlsonconsulting.com
+- Website: https://matthewcarlsonconsulting.com/contact.html
