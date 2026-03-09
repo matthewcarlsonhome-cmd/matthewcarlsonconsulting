@@ -161,6 +161,67 @@
     }
     </script>
 
+    <!-- Structured Data - Service with OfferCatalog -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "serviceType": "AI Workflow Automation",
+        "provider": {
+            "@type": "LocalBusiness",
+            "name": "Matthew Carlson Consulting",
+            "@id": "https://matthewcarlsonconsulting.com/#business"
+        },
+        "areaServed": {
+            "@type": "City",
+            "name": "Madison",
+            "containedInPlace": {
+                "@type": "State",
+                "name": "Wisconsin"
+            }
+        },
+        "description": "Custom AI automation solutions for Madison businesses. 20+ pre-built automation frameworks including lead management, customer support, content creation, and business operations. Powered by n8n workflow automation.",
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "AI Automation Services",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Lead Management Automations",
+                        "description": "Automated lead capture, qualification, routing, and follow-up sequences"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Customer Support Automations",
+                        "description": "AI chatbots, ticket routing, FAQ automation, and support analytics"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Content Creation Automations",
+                        "description": "Automated blog writing, social media scheduling, and content repurposing"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Business Operations Automations",
+                        "description": "Invoice processing, appointment scheduling, reporting, and data sync"
+                    }
+                }
+            ]
+        }
+    }
+    </script>
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
