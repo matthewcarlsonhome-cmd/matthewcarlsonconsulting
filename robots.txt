@@ -1,0 +1,34 @@
+# Matthew Carlson Consulting - AI Automation & Digital Marketing
+# Madison, Wisconsin
+
+User-agent: *
+Allow: /
+
+# Block admin/utility paths
+Disallow: /api/
+Disallow: /*.json$
+
+# AI Crawler Permissions (AEO/GEO)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# Sitemap Location
+Sitemap: https://matthewcarlsonconsulting.com/sitemap.xml
+
+# LLMs.txt for AI Crawlers
+# See: https://matthewcarlsonconsulting.com/llms.txt
