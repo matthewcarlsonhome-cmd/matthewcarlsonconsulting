@@ -3,596 +3,334 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-W2PZBSP7J8"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-W2PZBSP7J8');
-    </script>
+    <script>window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-W2PZBSP7J8');</script>
 
-    <!-- SEO Meta Tags -->
-    <title>AI Automation FAQ | Madison WI Consulting Questions</title>
-    <meta name="description" content="Common questions about AI automation consulting in Madison Wisconsin. Pricing, timelines, integrations, and how AI workflows help local businesses grow.">
-    <meta name="keywords" content="AI automation FAQ Madison WI, digital marketing questions Wisconsin, workflow automation Dane County, business automation FAQ, Madison business consulting">
-    <meta name="author" content="Matthew Carlson Consulting">
-    <meta name="robots" content="index, follow">
+    <title>FAQ: AI Agents, Voice AI &amp; Automation | Matthew Carlson</title>
+    <meta name="description" content="Answers on what an AI Solutions Engineer does, how AI agents are kept safe, what AI systems cost to run, pricing, timelines, privacy and the platforms I work with.">
     <link rel="canonical" href="https://matthewcarlsonconsulting.com/faq.html">
+    <meta name="robots" content="index, follow">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="FAQ | Matthew Carlson, AI Solutions Engineer">
+    <meta property="og:description" content="How I build, test, price and secure production AI systems.">
+    <meta property="og:url" content="https://matthewcarlsonconsulting.com/faq.html">
+    <meta property="og:image" content="https://matthewcarlsonconsulting.com/assets/matthew-carlson.jpg">
+    <meta name="twitter:card" content="summary">
 
-    <!-- Local SEO / GEO Tags -->
-    <meta name="geo.region" content="US-WI">
-    <meta name="geo.placename" content="Madison">
-    <meta name="geo.position" content="43.0731;-89.4012">
-    <meta name="ICBM" content="43.0731, -89.4012">
-
-    <!-- FAQ Schema - Comprehensive for AEO -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-            {
-                "@type": "Question",
-                "name": "What types of AI automation do you build?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "We build custom AI solutions including document retrieval systems, semantic search with vector databases, RAG (Retrieval-Augmented Generation) applications, automated research assistants, report generation, AI copywriters, and workflow automation. Each solution is tailored to your specific business processes."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "How long does it take to deploy an AI automation solution?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Most projects deploy within 2-4 weeks. Simple workflow automations can be live in days. Discovery and design typically take 1 week, development 2-3 weeks, with launch and optimization in week 4. Our AI-assisted development methodology enables rapid deployment without sacrificing quality."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Do you serve businesses outside Madison, Wisconsin?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Yes, while we're based in Madison and specialize in serving Dane County businesses, we work with clients throughout Wisconsin and nationally. Local Madison-area clients benefit from in-person consultations, while remote clients receive the same high-quality service through video calls and screen sharing."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What is workflow automation?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Workflow automation connects your business apps and services to eliminate repetitive tasks. We build custom automated workflows that save 1-4 hours of weekly manual work like data entry, report generation, email notifications, and CRM updates. Our solutions integrate with 500+ apps and can be self-hosted for enhanced security."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "How much does AI automation cost for a Madison business?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Project costs vary based on complexity. Simple workflow automations start around $2,000-5,000. Custom AI applications like semantic search or document retrieval systems typically range from $10,000-25,000. Website development projects range from $3,000-10,000. We offer free consultations to scope your specific needs and provide accurate estimates."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Do you work with marketing agencies?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Yes, marketing agencies are a primary focus. We help Wisconsin agencies scale their services through automation—from Google Shopping feed management across client accounts to automated reporting, campaign generation, and client onboarding workflows."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What's included in Google Shopping feed development?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Our feed development includes data source integration, feed transformation and optimization, title/description enhancement, custom label strategy, validation and error monitoring, automated sync with Google Merchant Center, and Local Inventory Ads setup for Wisconsin retailers with physical locations."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Can you build a website for my Madison business?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Yes, we build fast, SEO-optimized websites for Madison and Dane County businesses. Our sites include domain setup, hosting configuration, Google Business Profile integration, local SEO optimization, and mobile-responsive design. Most websites launch within 1-2 weeks, not months."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Do you provide ongoing support after launch?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Yes, we offer ongoing support and optimization packages for all our services. This includes monitoring, performance optimization, updates as platforms change, and expanding automation capabilities over time. Madison-area clients can request in-person support sessions."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What makes Matthew Carlson Consulting different from other Madison agencies?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "We combine 11+ years of enterprise digital marketing experience with cutting-edge AI development capabilities. Unlike traditional agencies, we build custom AI tools and automations rather than just managing campaigns. Our AI-assisted development methodology delivers projects 10-15x faster than traditional approaches, meaning faster time to value for your business."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What is the SkillEngine Assistant?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "The SkillEngine Assistant is our AI-powered tool that demonstrates the kind of intelligent automation we build for clients. It helps with AI workflow automation ideas, campaign strategy, Google Ads setup guidance, and analytics questions. You can try it free on our website. We also build custom AI assistants tailored to your specific business, knowledge base, and brand."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What platforms and tools can you integrate with?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "We integrate with 500+ applications including Google Ads, Meta Ads, Google Merchant Center, Shopify, WooCommerce, Salesforce, HubSpot, Google Analytics, Slack, Microsoft Teams, PostgreSQL, Google Sheets, Airtable, OpenAI, and Anthropic Claude. If you have a specific tool, we can likely integrate it through APIs or custom connectors."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "How do you handle data privacy and security?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Data security is a top priority. We offer self-hosting options to keep data on your infrastructure, use encrypted credential handling, maintain minimal data retention, implement role-based access controls and audit logging, and design solutions with GDPR compliance in mind. For businesses with strict requirements, we can deploy automations entirely within your environment."
-                }
-            }
-        ]
-    }
-    </script>
-
-    <!-- Structured Data - BreadcrumbList -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-            {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Home",
-                "item": "https://matthewcarlsonconsulting.com/"
-            },
-            {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "FAQ",
-                "item": "https://matthewcarlsonconsulting.com/faq.html"
-            }
-        ]
-    }
-    </script>
-
-    <!-- Fonts -->
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/site.css">
 
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does an AI Solutions Engineer do?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "An AI Solutions Engineer designs, builds and runs AI systems that do real work inside a business: agents, voice and chat assistants, automations and reporting pipelines. The job covers the whole path from a business problem to a tested system in production, not only the model or the prompt.In my practice that means writing the specification, building in a test environment, verifying the result, and launching with monitoring and a known cost per run."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Who do you work with?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Mostly marketing agencies, in-house marketing and revenue-operations teams, and professional-services firms. Agencies are a natural fit because I've built AI systems that run across an entire client portfolio."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does a build take?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "An AI Readiness Sprint takes two weeks. Most single-system builds take two to six weeks from approved spec to handoff. Some move faster: a nightly account-health dashboard went live in about a week, and a 20+ page website launched in 30 days."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How is pricing structured?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sprints and builds are fixed-scope and fixed-price after discovery. Ongoing work is a monthly retainer. For systems with running costs, such as voice agents, launch, build and maintenance are priced separately and AI usage is billed at cost. I share a quote after our first call."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you work with businesses outside Madison?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. I'm based in Madison, Wisconsin and work with clients across the U.S. by video. Madison-area clients can meet in person for kickoffs."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the first step?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Book a 30-minute call. Bring the process you'd like AI to handle. We'll talk through the data, the risks and what success is worth, and you'll leave knowing whether it's worth building."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do you make sure an AI agent won't do something wrong?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Several layers: Agents that change things are built and tested in separate test environments first, with checks that confirm where they're working. Reporting systems are read-only by default. Client-facing agents pass a written test suite (50+ cases for a voice agent) and a safety regression before anyone outside the team hears them. When an input looks wrong, the system stops and notifies a person instead of guessing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does it cost to run an AI system after launch?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It depends on volume, and I measure it rather than estimate it. Every pipeline I build tracks its own model and data costs per run. For example, a full AI research pull on a new client costs about $4–8. A 33-agent platform serving an entire agency runs for about $32–42 a month."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do you handle data privacy and security?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "API keys stay on the server, never in the browser. Agents get the minimum access they need, often read-only. Sensitive items such as tax IDs and passwords never go through forms or AI prompts. AI-researched facts are labeled verified, derived or needs input, and unverified details are never presented as fact."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you build voice AI agents?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. I design and test inbound phone agents that answer questions, book appointments, take messages and transfer to a person with a spoken summary. They capture consent before follow-up texts and have clear rules about what they won't say, such as prices or technical advice."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can AI agents build inside a CRM like GoHighLevel?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, with the right method. I write a specification for every object, and Claude or OpenAI Codex builds it directly in the platform. After each phase an API readback and gap report show what was built and what wasn't. One unattended run lasted 3.5 hours, and the two-day build produced 351 custom values, a 12-stage pipeline and a 52-entry knowledge base."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should we build or buy?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Buy the commodity and own the interpretation. If a tool already measures something well, use it. Build where your data, process or judgment is the advantage. An AI Readiness Sprint ends with a clear build-or-buy call for each opportunity."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What platforms do you work with?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "AI: Claude (API, Claude Code, MCP), OpenAI (API, Codex), Gemini CRM & marketing automation: GoHighLevel, HubSpot Data: Supabase/Postgres, Google Sheets, Looker Studio, GA4 Ads: Google Ads API and Scripts, Meta Web: WordPress, static sites, NetlifyIf a tool has an API or webhooks, it can usually be connected."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you automate our Google Ads reporting?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. I built a 15-script Google Ads suite that runs at the manager-account level across a whole agency portfolio: audits, budget pacing, search-term and wasted-spend analysis, and structure checks. It replaced about 12–15 hours of manual reporting a week."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the SkillEngine Assistant?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It's the AI assistant on this site. You can ask it about my work or describe a process and get a first-pass automation plan. I build similar assistants for clients, connected to their own knowledge and tools."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is MCP, and why does it matter?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Model Context Protocol (MCP) is an open standard that lets AI assistants such as Claude securely use your data and tools. I've built an MCP server in production use that gives Claude access to an agency's client profiles, with token authentication and audit logging."
+      }
+    }
+  ]
+}
+    </script>
 </head>
 <body>
-    <a href="#main-content" class="skip-link">Skip to main content</a>
-
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <a href="/" class="nav-logo" aria-label="Matthew Carlson Consulting - Home">
-                <img src="assets/logo.svg" alt="Matthew Carlson Consulting" width="200" height="48">
+    <a href="#main" class="skip-link">Skip to main content</a>
+    <!-- NAV:START -->
+    <header class="site-header" id="site-header">
+        <nav class="container nav" aria-label="Main">
+            <a href="/" class="brand" aria-label="Matthew Carlson Consulting, home">
+                <span class="brand-mark" aria-hidden="true">MC</span>
+                <span>Matthew Carlson<small>AI Solutions Engineer</small></span>
             </a>
-            <div class="nav-menu" id="nav-menu">
-                <a href="/" class="nav-link">Home</a>
-                <a href="ai-bot.html" class="nav-link">AI Assistant</a>
-                <a href="services.html" class="nav-link">Services</a>
-                <a href="automations.html" class="nav-link">Automations</a>
-                <a href="projects.html" class="nav-link">Projects</a>
-                <a href="faq.html" class="nav-link active">FAQ</a>
-                <a href="about.html" class="nav-link">About</a>
-                <a href="contact.html" class="nav-link nav-cta">Contact</a>
-            </div>
-            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
-                <span></span><span></span><span></span>
+            <button class="nav-toggle" id="nav-toggle" aria-controls="nav-menu" aria-expanded="false" aria-label="Open menu">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
             </button>
-        </div>
-    </nav>
-
-    <!-- Page Header -->
-    <header class="page-header" id="main-content">
-        <div class="container">
-            <h1 class="page-title">Frequently Asked Questions</h1>
-            <p class="page-description">
-                Common questions about our AI automation and digital marketing services.
-            </p>
-        </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="/services.html">Solutions</a>
+                <a href="/projects.html">Work</a>
+                <a href="/ai-bot.html">AI Assistant</a>
+                <a href="/about.html">About</a>
+                <a href="/faq.html" aria-current="page">FAQ</a>
+                <a href="/contact.html" class="btn">Book a call</a>
+            </div>
+        </nav>
     </header>
+    <!-- NAV:END -->
 
-    <!-- FAQ Section -->
-    <section class="faq-section">
-        <div class="container">
-            <div class="faq-grid">
-
-                <!-- General Questions -->
-                <div class="faq-category">
-                    <h2 class="section-title mb-3">General Questions</h2>
-
-                    <div class="faq-item">
-                        <button class="faq-question">
-                            <h3>What types of AI automation do you build?</h3>
-                            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <line x1="12" y1="5" x2="12" y2="19"/>
-                                <line x1="5" y1="12" x2="19" y2="12"/>
-                            </svg>
-                        </button>
-                        <div class="faq-answer">
-                            <div class="faq-answer-content">
-                                <p>We build custom AI solutions including:</p>
-                                <ul>
-                                    <li><strong>Document retrieval systems</strong> - Find information across your organization instantly</li>
-                                    <li><strong>Semantic search with vector databases</strong> - Search by meaning, not just keywords</li>
-                                    <li><strong>Automated research assistants</strong> - Accelerate competitive intelligence and market research</li>
-                                    <li><strong>Report generation</strong> - Transform data into insights automatically</li>
-                                    <li><strong>AI copywriters</strong> - Generate on-brand content at scale</li>
-                                    <li><strong>Workflow automation</strong> - Connect systems and eliminate manual handoffs</li>
-                                </ul>
-                                <p>Each solution is tailored to your specific business processes and integrates with your existing tools.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <button class="faq-question">
-                            <h3>How long does it take to deploy an AI automation solution?</h3>
-                            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <line x1="12" y1="5" x2="12" y2="19"/>
-                                <line x1="5" y1="12" x2="19" y2="12"/>
-                            </svg>
-                        </button>
-                        <div class="faq-answer">
-                            <div class="faq-answer-content">
-                                <p>Most projects deploy within <strong>2-4 weeks</strong>. We prioritize speed to market while ensuring quality. Our typical timeline:</p>
-                                <ul>
-                                    <li><strong>Week 1:</strong> Discovery and solution design</li>
-                                    <li><strong>Weeks 2-3:</strong> Development with regular check-ins</li>
-                                    <li><strong>Week 4:</strong> Launch, documentation, and optimization</li>
-                                </ul>
-                                <p>Complex enterprise projects may take longer, but we always provide clear timelines upfront.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <button class="faq-question">
-                            <h3>Do you work with marketing agencies?</h3>
-                            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <line x1="12" y1="5" x2="12" y2="19"/>
-                                <line x1="5" y1="12" x2="19" y2="12"/>
-                            </svg>
-                        </button>
-                        <div class="faq-answer">
-                            <div class="faq-answer-content">
-                                <p>Yes, marketing agencies are a primary focus. We help agencies scale their services through automation:</p>
-                                <ul>
-                                    <li>Feed management across client accounts</li>
-                                    <li>Automated client reporting</li>
-                                    <li>Campaign generation and optimization</li>
-                                    <li>Research and competitive intelligence</li>
-                                    <li>Content production at scale</li>
-                                </ul>
-                                <p>Our solutions help agencies serve more clients without proportionally increasing headcount.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <button class="faq-question">
-                            <h3>What areas do you serve?</h3>
-                            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <line x1="12" y1="5" x2="12" y2="19"/>
-                                <line x1="5" y1="12" x2="19" y2="12"/>
-                            </svg>
-                        </button>
-                        <div class="faq-answer">
-                            <div class="faq-answer-content">
-                                <p>We're based in <strong>Madison, Wisconsin</strong> and work with clients throughout the state and beyond. While we love working with local businesses in the Madison area, our services are delivered remotely—so location isn't a barrier.</p>
-                                <p>For Madison-area clients, we're happy to meet in person for discovery sessions and project kickoffs.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <button class="faq-question">
-                            <h3>What is the SkillEngine Assistant?</h3>
-                            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <line x1="12" y1="5" x2="12" y2="19"/>
-                                <line x1="5" y1="12" x2="19" y2="12"/>
-                            </svg>
-                        </button>
-                        <div class="faq-answer">
-                            <div class="faq-answer-content">
-                                <p>The <strong>SkillEngine Assistant</strong> is our AI-powered tool that demonstrates the kind of intelligent automation we build for clients. You can <a href="ai-bot.html">try it free</a> on our website.</p>
-                                <p>It's designed to help with:</p>
-                                <ul>
-                                    <li><strong>AI workflow automation ideas</strong> - Explore automation possibilities for your business</li>
-                                    <li><strong>Campaign strategy</strong> - Get initial guidance on marketing approaches</li>
-                                    <li><strong>Google Ads setup</strong> - Understand campaign structures and best practices</li>
-                                    <li><strong>Analytics & reporting</strong> - Learn about tracking and measurement</li>
-                                </ul>
-                                <p>Interested in a custom AI assistant for your own business? We can build one tailored to your specific use case, knowledge base, and brand.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <button class="faq-question">
-                            <h3>What platforms and tools can you integrate with?</h3>
-                            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <line x1="12" y1="5" x2="12" y2="19"/>
-                                <line x1="5" y1="12" x2="19" y2="12"/>
-                            </svg>
-                        </button>
-                        <div class="faq-answer">
-                            <div class="faq-answer-content">
-                                <p>We integrate with <strong>500+ applications</strong> including:</p>
-                                <ul>
-                                    <li><strong>Advertising:</strong> Google Ads, Meta Ads, Microsoft Ads, Google Merchant Center</li>
-                                    <li><strong>E-commerce:</strong> Shopify, WooCommerce, BigCommerce, Magento</li>
-                                    <li><strong>CRM:</strong> Salesforce, HubSpot, Pipedrive, Zoho</li>
-                                    <li><strong>Analytics:</strong> Google Analytics, Looker Studio, custom dashboards</li>
-                                    <li><strong>Communication:</strong> Slack, Microsoft Teams, email platforms</li>
-                                    <li><strong>Databases:</strong> PostgreSQL, MySQL, Google Sheets, Airtable</li>
-                                    <li><strong>AI/LLM:</strong> OpenAI, Anthropic Claude, custom models</li>
-                                </ul>
-                                <p>Don't see your tool? We can likely integrate it through APIs or custom connectors.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Google Shopping & Feed Questions -->
-                <div class="faq-category mt-4">
-                    <h2 class="section-title mb-3">Google Shopping & Feeds</h2>
-
-                    <div class="faq-item">
-                        <button class="faq-question">
-                            <h3>What's included in Google Shopping feed development?</h3>
-                            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <line x1="12" y1="5" x2="12" y2="19"/>
-                                <line x1="5" y1="12" x2="19" y2="12"/>
-                            </svg>
-                        </button>
-                        <div class="faq-answer">
-                            <div class="faq-answer-content">
-                                <p>Our feed development includes:</p>
-                                <ul>
-                                    <li><strong>Data source integration</strong> - Connect to your e-commerce platform, PIM, or inventory system</li>
-                                    <li><strong>Feed transformation</strong> - Map and format data to Google's specifications</li>
-                                    <li><strong>Title & description optimization</strong> - Enhance product copy for search visibility</li>
-                                    <li><strong>Custom label strategy</strong> - Segment products for campaign optimization</li>
-                                    <li><strong>Validation & monitoring</strong> - Catch errors before they cause disapprovals</li>
-                                    <li><strong>Automated sync</strong> - Keep Merchant Center current with real-time updates</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <button class="faq-question">
-                            <h3>Can you help with Local Inventory Ads?</h3>
-                            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <line x1="12" y1="5" x2="12" y2="19"/>
-                                <line x1="5" y1="12" x2="19" y2="12"/>
-                            </svg>
-                        </button>
-                        <div class="faq-answer">
-                            <div class="faq-answer-content">
-                                <p>Yes! Local Inventory Ads (LIA) require additional feed setup beyond standard Shopping feeds. We help with:</p>
-                                <ul>
-                                    <li>Local product inventory feed creation</li>
-                                    <li>Store code mapping</li>
-                                    <li>Inventory quantity tracking</li>
-                                    <li>Price and availability by location</li>
-                                    <li>Merchant Center LIA configuration</li>
-                                </ul>
-                                <p>LIA is particularly powerful for retailers in the Madison area looking to drive local foot traffic.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <button class="faq-question">
-                            <h3>How often should my feed update?</h3>
-                            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <line x1="12" y1="5" x2="12" y2="19"/>
-                                <line x1="5" y1="12" x2="19" y2="12"/>
-                            </svg>
-                        </button>
-                        <div class="faq-answer">
-                            <div class="faq-answer-content">
-                                <p>Update frequency depends on your business:</p>
-                                <ul>
-                                    <li><strong>High-velocity inventory:</strong> Every 15-30 minutes</li>
-                                    <li><strong>Dynamic pricing:</strong> Hourly or as changes occur</li>
-                                    <li><strong>Standard catalogs:</strong> Multiple times daily</li>
-                                    <li><strong>Static catalogs:</strong> Daily minimum</li>
-                                </ul>
-                                <p>We design automated sync systems that update at the right frequency for your needs, ensuring Google always has accurate data.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project & Pricing Questions -->
-                <div class="faq-category mt-4">
-                    <h2 class="section-title mb-3">Projects & Pricing</h2>
-
-                    <div class="faq-item">
-                        <button class="faq-question">
-                            <h3>How is pricing structured?</h3>
-                            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <line x1="12" y1="5" x2="12" y2="19"/>
-                                <line x1="5" y1="12" x2="19" y2="12"/>
-                            </svg>
-                        </button>
-                        <div class="faq-answer">
-                            <div class="faq-answer-content">
-                                <p>We typically work on a project basis with clear scope and fixed pricing. This gives you cost certainty and allows us to focus on delivering results rather than tracking hours.</p>
-                                <p>For ongoing services (like feed management or reporting automation), we offer monthly retainer packages. All pricing is discussed during our initial consultation based on your specific needs.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <button class="faq-question">
-                            <h3>Do you provide ongoing support after launch?</h3>
-                            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <line x1="12" y1="5" x2="12" y2="19"/>
-                                <line x1="5" y1="12" x2="19" y2="12"/>
-                            </svg>
-                        </button>
-                        <div class="faq-answer">
-                            <div class="faq-answer-content">
-                                <p>Yes, we offer ongoing support and optimization packages. This includes:</p>
-                                <ul>
-                                    <li>Monitoring and issue resolution</li>
-                                    <li>Performance optimization</li>
-                                    <li>Updates as platforms change</li>
-                                    <li>Expanding automation capabilities over time</li>
-                                    <li>Priority support response</li>
-                                </ul>
-                                <p>Many clients start with a project and transition to ongoing support to maintain and enhance their automations.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <button class="faq-question">
-                            <h3>How do you handle data privacy and security?</h3>
-                            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <line x1="12" y1="5" x2="12" y2="19"/>
-                                <line x1="5" y1="12" x2="19" y2="12"/>
-                            </svg>
-                        </button>
-                        <div class="faq-answer">
-                            <div class="faq-answer-content">
-                                <p>Data security is a top priority in every project we build. Our approach includes:</p>
-                                <ul>
-                                    <li><strong>Self-hosting options</strong> - Keep automations and data on your own infrastructure</li>
-                                    <li><strong>Secure API handling</strong> - Credentials are encrypted and never exposed</li>
-                                    <li><strong>Minimal data retention</strong> - We only store what's necessary for the automation to function</li>
-                                    <li><strong>Access controls</strong> - Role-based permissions and audit logging</li>
-                                    <li><strong>Compliance-ready</strong> - Solutions designed with GDPR and data protection in mind</li>
-                                </ul>
-                                <p>For businesses with strict security requirements, we can deploy automations entirely within your environment—no data leaves your systems.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <button class="faq-question">
-                            <h3>What's the first step to working together?</h3>
-                            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <line x1="12" y1="5" x2="12" y2="19"/>
-                                <line x1="5" y1="12" x2="19" y2="12"/>
-                            </svg>
-                        </button>
-                        <div class="faq-answer">
-                            <div class="faq-answer-content">
-                                <p>Start with a <a href="contact.html">free consultation call</a>. We'll discuss:</p>
-                                <ul>
-                                    <li>Your current challenges and goals</li>
-                                    <li>Potential automation opportunities</li>
-                                    <li>Rough timeline and investment range</li>
-                                    <li>Whether we're a good fit</li>
-                                </ul>
-                                <p>No pressure, no obligation. If we can help, we'll propose a solution. If not, we'll point you in the right direction.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+    <main id="main">
+        <section class="page-hero">
+            <div class="container">
+                <p class="eyebrow">FAQ</p>
+                <h1>Questions about working with me</h1>
+                <p class="lead">How I build, test, price and secure AI systems. Don't see your question? <a href="contact.html">Ask me directly</a>.</p>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- CTA Section -->
-    <section class="cta">
-        <div class="cta-bg">
-            <div class="cta-gradient"></div>
-            <div class="cta-pattern"></div>
-        </div>
-        <div class="container">
-            <div class="cta-content">
-                <h2 class="cta-title">Have More Questions?</h2>
-                <p class="cta-description">
-                    Let's talk. Schedule a free consultation and get answers specific to your situation.
-                </p>
-                <div class="cta-actions">
-                    <a href="contact.html" class="btn btn-white">
-                        Schedule a Call
-                        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M5 12h14M12 5l7 7-7 7"/>
-                        </svg>
-                    </a>
+        <section class="section-tight">
+          <div class="container narrow">
+            <section class="faq-group">
+                <h2>Working together</h2>
+                <details class="faq-item">
+                    <summary>What does an AI Solutions Engineer do?</summary>
+                    <div class="faq-answer"><p>An AI Solutions Engineer designs, builds and runs AI systems that do real work inside a business: agents, voice and chat assistants, automations and reporting pipelines. The job covers the whole path from a business problem to a tested system in production, not only the model or the prompt.</p><p>In my practice that means writing the specification, building in a test environment, verifying the result, and launching with monitoring and a known cost per run.</p></div>
+                </details>
+                <details class="faq-item">
+                    <summary>Who do you work with?</summary>
+                    <div class="faq-answer"><p>Mostly marketing agencies, in-house marketing and revenue-operations teams, and professional-services firms. Agencies are a natural fit because I've built AI systems that run across an entire client portfolio.</p></div>
+                </details>
+                <details class="faq-item">
+                    <summary>How long does a build take?</summary>
+                    <div class="faq-answer"><p>An AI Readiness Sprint takes two weeks. Most single-system builds take two to six weeks from approved spec to handoff. Some move faster: a nightly account-health dashboard went live in about a week, and a 20+ page website launched in 30 days.</p></div>
+                </details>
+                <details class="faq-item">
+                    <summary>How is pricing structured?</summary>
+                    <div class="faq-answer"><p>Sprints and builds are fixed-scope and fixed-price after discovery. Ongoing work is a monthly retainer. For systems with running costs, such as voice agents, launch, build and maintenance are priced separately and AI usage is billed at cost. I share a quote after our first call.</p></div>
+                </details>
+                <details class="faq-item">
+                    <summary>Do you work with businesses outside Madison?</summary>
+                    <div class="faq-answer"><p>Yes. I'm based in Madison, Wisconsin and work with clients across the U.S. by video. Madison-area clients can meet in person for kickoffs.</p></div>
+                </details>
+                <details class="faq-item">
+                    <summary>What&#x27;s the first step?</summary>
+                    <div class="faq-answer"><p><a href="contact.html">Book a 30-minute call</a>. Bring the process you'd like AI to handle. We'll talk through the data, the risks and what success is worth, and you'll leave knowing whether it's worth building.</p></div>
+                </details>
+            </section>
+            <section class="faq-group">
+                <h2>AI systems &amp; safety</h2>
+                <details class="faq-item">
+                    <summary>How do you make sure an AI agent won&#x27;t do something wrong?</summary>
+                    <div class="faq-answer"><p>Several layers:</p><ul><li>Agents that change things are built and tested in separate test environments first, with checks that confirm where they're working.</li><li>Reporting systems are read-only by default.</li><li>Client-facing agents pass a written test suite (50+ cases for a voice agent) and a safety regression before anyone outside the team hears them.</li><li>When an input looks wrong, the system stops and notifies a person instead of guessing.</li></ul></div>
+                </details>
+                <details class="faq-item">
+                    <summary>What does it cost to run an AI system after launch?</summary>
+                    <div class="faq-answer"><p>It depends on volume, and I measure it rather than estimate it. Every pipeline I build tracks its own model and data costs per run. For example, a full AI research pull on a new client costs about $4–8. A 33-agent platform serving an entire agency runs for about $32–42 a month.</p></div>
+                </details>
+                <details class="faq-item">
+                    <summary>How do you handle data privacy and security?</summary>
+                    <div class="faq-answer"><ul><li>API keys stay on the server, never in the browser.</li><li>Agents get the minimum access they need, often read-only.</li><li>Sensitive items such as tax IDs and passwords never go through forms or AI prompts.</li><li>AI-researched facts are labeled verified, derived or needs input, and unverified details are never presented as fact.</li></ul></div>
+                </details>
+                <details class="faq-item">
+                    <summary>Do you build voice AI agents?</summary>
+                    <div class="faq-answer"><p>Yes. I design and test inbound phone agents that answer questions, book appointments, take messages and transfer to a person with a spoken summary. They capture consent before follow-up texts and have clear rules about what they won't say, such as prices or technical advice.</p></div>
+                </details>
+                <details class="faq-item">
+                    <summary>Can AI agents build inside a CRM like GoHighLevel?</summary>
+                    <div class="faq-answer"><p>Yes, with the right method. I write a specification for every object, and Claude or OpenAI Codex builds it directly in the platform. After each phase an API readback and gap report show what was built and what wasn't. One unattended run lasted 3.5 hours, and the two-day build produced 351 custom values, a 12-stage pipeline and a 52-entry knowledge base.</p></div>
+                </details>
+                <details class="faq-item">
+                    <summary>Should we build or buy?</summary>
+                    <div class="faq-answer"><p>Buy the commodity and own the interpretation. If a tool already measures something well, use it. Build where your data, process or judgment is the advantage. An AI Readiness Sprint ends with a clear build-or-buy call for each opportunity.</p></div>
+                </details>
+            </section>
+            <section class="faq-group">
+                <h2>Platforms &amp; integrations</h2>
+                <details class="faq-item">
+                    <summary>What platforms do you work with?</summary>
+                    <div class="faq-answer"><ul><li><strong>AI:</strong> Claude (API, Claude Code, MCP), OpenAI (API, Codex), Gemini</li><li><strong>CRM &amp; marketing automation:</strong> GoHighLevel, HubSpot</li><li><strong>Data:</strong> Supabase/Postgres, Google Sheets, Looker Studio, GA4</li><li><strong>Ads:</strong> Google Ads API and Scripts, Meta</li><li><strong>Web:</strong> WordPress, static sites, Netlify</li></ul><p>If a tool has an API or webhooks, it can usually be connected.</p></div>
+                </details>
+                <details class="faq-item">
+                    <summary>Can you automate our Google Ads reporting?</summary>
+                    <div class="faq-answer"><p>Yes. I built a 15-script Google Ads suite that runs at the manager-account level across a whole agency portfolio: audits, budget pacing, search-term and wasted-spend analysis, and structure checks. It replaced about 12–15 hours of manual reporting a week.</p></div>
+                </details>
+                <details class="faq-item">
+                    <summary>What is the SkillEngine Assistant?</summary>
+                    <div class="faq-answer"><p>It's the AI assistant on this site. You can <a href="ai-bot.html">ask it about my work</a> or describe a process and get a first-pass automation plan. I build similar assistants for clients, connected to their own knowledge and tools.</p></div>
+                </details>
+                <details class="faq-item">
+                    <summary>What is MCP, and why does it matter?</summary>
+                    <div class="faq-answer"><p>The Model Context Protocol (MCP) is an open standard that lets AI assistants such as Claude securely use your data and tools. I've built an MCP server in production use that gives Claude access to an agency's client profiles, with token authentication and audit logging.</p></div>
+                </details>
+            </section>
+          </div>
+        </section>
+
+        <section class="section-tight">
+            <div class="container">
+                <div class="cta-band">
+                    <div>
+                        <h2>Still have questions?</h2>
+                        <p>A 30-minute call gets you answers specific to your situation.</p>
+                    </div>
+                    <a href="contact.html" class="btn btn-primary" data-track="faq-book">Book a call</a>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <!-- Footer -->
-    <footer class="footer">
+    <!-- FOOTER:START -->
+    <footer class="site-footer">
         <div class="container">
             <div class="footer-grid">
-                <div class="footer-brand">
-                    <a href="/" class="footer-logo" aria-label="Matthew Carlson Consulting - Home">
-                        <img src="assets/logo.svg" alt="Matthew Carlson Consulting" width="180" height="44">
+                <div class="footer-about">
+                    <a href="/" class="brand" aria-label="Matthew Carlson Consulting, home">
+                        <span class="brand-mark" aria-hidden="true">MC</span>
+                        <span>Matthew Carlson<small>AI Solutions Engineer</small></span>
                     </a>
-                    <p class="footer-tagline">
-                        AI automation and digital marketing solutions for Madison, Wisconsin
-                        and beyond. Fast deployment. Measurable results.
-                    </p>
-                    <div class="footer-location">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
-                            <circle cx="12" cy="10" r="3"/>
-                        </svg>
-                        <span>Madison, Wisconsin</span>
-                    </div>
-                    <div class="footer-phone">
-                        <a href="tel:+1-608-284-7333">(608) 284-7333</a>
-                    </div>
+                    <p class="mt-2">Production AI systems for marketing teams, agencies and professional-services firms. Based in Madison, Wisconsin; working nationally.</p>
                 </div>
-                <div class="footer-links">
-                    <div class="footer-column">
-                        <h4 class="footer-heading">Services</h4>
-                        <a href="services.html#ai-automation">AI Automation</a>
-                        <a href="services.html#google-shopping">Google Shopping Feeds</a>
-                        <a href="services.html#meta-ads">Meta Dynamic Ads</a>
-                        <a href="services.html#pmax">Performance Max</a>
-                    </div>
-                    <div class="footer-column">
-                        <h4 class="footer-heading">Company</h4>
-                        <a href="about.html">About</a>
-                        <a href="projects.html">Projects</a>
-                        <a href="faq.html">FAQ</a>
-                        <a href="contact.html">Contact</a>
-                    </div>
-                    <div class="footer-column">
-                        <h4 class="footer-heading">Connect</h4>
-                        <a href="https://www.linkedin.com/in/matthewcarlsonconsulting/" target="_blank" rel="noopener">LinkedIn</a>
-                        <a href="mailto:contact@matthewcarlsonconsulting.com">Email Us</a>
-                    </div>
+                <div>
+                    <h2>Solutions</h2>
+                    <ul>
+                        <li><a href="/services.html#ai-agents">AI agents &amp; workflows</a></li>
+                        <li><a href="/services.html#voice-chat-ai">Voice &amp; chat AI</a></li>
+                        <li><a href="/services.html#crm-automation">CRM automation</a></li>
+                        <li><a href="/services.html#reporting-automation">Reporting automation</a></li>
+                        <li><a href="/services.html#ai-strategy">AI readiness &amp; roadmaps</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Site</h2>
+                    <ul>
+                        <li><a href="/projects.html">Work</a></li>
+                        <li><a href="/ai-bot.html">AI Assistant</a></li>
+                        <li><a href="/about.html">About</a></li>
+                        <li><a href="/faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Contact</h2>
+                    <ul>
+                        <li><a href="/contact.html">Book a call</a></li>
+                        <li><a href="mailto:contact@matthewcarlsonconsulting.com">contact@matthewcarlsonconsulting.com</a></li>
+                        <li><a href="tel:+1-608-284-7333">(608) 284-7333</a></li>
+                        <li><a href="https://www.linkedin.com/in/matthewcarlsonconsulting/" rel="noopener" target="_blank">LinkedIn</a></li>
+                    </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p class="copyright">&copy; <span id="current-year">2024</span> Matthew Carlson Consulting. All rights reserved.</p>
-                <div class="footer-legal">
-                    <a href="privacy.html">Privacy Policy</a>
-                    <a href="terms.html">Terms of Service</a>
-                </div>
+                <p class="mt-0">&copy; <span data-year>2026</span> Matthew Carlson Consulting. Madison, Wisconsin.</p>
+                <p class="mt-0"><a href="/privacy.html">Privacy</a> &middot; <a href="/terms.html">Terms</a></p>
             </div>
         </div>
     </footer>
-
+    <!-- FOOTER:END -->
     <script src="js/main.js"></script>
 </body>
 </html>

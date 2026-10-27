@@ -3,1119 +3,335 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-W2PZBSP7J8"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-W2PZBSP7J8');
-    </script>
+    <script>window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-W2PZBSP7J8');</script>
 
-    <!-- Primary SEO Meta Tags -->
-    <title>AI Automation Consultant Madison WI | Matthew Carlson</title>
-    <meta name="description" content="Madison Wisconsin AI automation consultant. Custom n8n workflows, Google Shopping feeds, Meta ads, Performance Max. Fast deployment for local businesses.">
-    <meta name="keywords" content="AI automation Madison WI, Google Shopping feed development, Local Inventory Ads, Meta dynamic product ads, Performance Max campaigns, vector database semantic search, marketing automation Wisconsin, AI consulting Madison">
-    <meta name="author" content="Matthew Carlson Consulting">
-    <meta name="robots" content="index, follow">
+    <title>AI Solutions Engineer | Production AI Agents &amp; Automation | Matthew Carlson</title>
+    <meta name="description" content="I design, build and run production AI systems for marketing teams and agencies: AI agents, voice and chat assistants, CRM automation and reporting pipelines. 11 years running a $40M+ marketing budget.">
     <link rel="canonical" href="https://matthewcarlsonconsulting.com/">
-
-    <!-- Local SEO / GEO Tags -->
-    <meta name="geo.region" content="US-WI">
-    <meta name="geo.placename" content="Madison">
-    <meta name="geo.position" content="43.0731;-89.4012">
-    <meta name="ICBM" content="43.0731, -89.4012">
-
-    <!-- Open Graph / Social -->
+    <meta name="robots" content="index, follow">
     <meta property="og:type" content="website">
+    <meta property="og:title" content="Matthew Carlson, AI Solutions Engineer">
+    <meta property="og:description" content="Production AI agents, voice assistants, CRM automation and reporting pipelines, built with tests, verification gates and a known cost per run.">
     <meta property="og:url" content="https://matthewcarlsonconsulting.com/">
-    <meta property="og:title" content="AI Automation & Digital Marketing Solutions | Madison WI">
-    <meta property="og:description" content="Transform your business with custom AI automation. Prompt engineering, Google Shopping feeds, semantic search, campaign builders, and more. Serving Madison and Wisconsin businesses.">
-    <meta property="og:image" content="https://matthewcarlsonconsulting.com/assets/og-image.jpg">
-    <meta property="og:locale" content="en_US">
+    <meta property="og:image" content="https://matthewcarlsonconsulting.com/assets/matthew-carlson.jpg">
+    <meta name="twitter:card" content="summary">
 
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="AI Automation & Digital Marketing Solutions | Madison WI">
-    <meta name="twitter:description" content="Custom AI solutions for marketing agencies and businesses. Fast deployment, measurable results.">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/site.css">
 
-    <!-- Structured Data - Organization -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "ProfessionalService",
-        "@id": "https://matthewcarlsonconsulting.com/#business",
-        "name": "Matthew Carlson Consulting",
-        "description": "AI automation and digital marketing consulting specializing in custom AI solutions, Google Shopping feed development, semantic search systems, and marketing campaign automation.",
-        "url": "https://matthewcarlsonconsulting.com",
-        "logo": "https://matthewcarlsonconsulting.com/assets/logo.svg",
-        "image": "https://matthewcarlsonconsulting.com/assets/og-image.jpg",
-        "telephone": "+1-608-284-7333",
-        "email": "contact@matthewcarlsonconsulting.com",
-        "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Madison",
-            "addressRegion": "WI",
-            "postalCode": "53703",
-            "addressCountry": "US"
-        },
-        "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": 43.0731,
-            "longitude": -89.4012
-        },
-        "areaServed": [
+        "@graph": [
             {
-                "@type": "City",
-                "name": "Madison",
-                "containedInPlace": {
-                    "@type": "State",
-                    "name": "Wisconsin"
+                "@type": "ProfessionalService",
+                "@id": "https://matthewcarlsonconsulting.com/#business",
+                "name": "Matthew Carlson Consulting",
+                "url": "https://matthewcarlsonconsulting.com/",
+                "logo": "https://matthewcarlsonconsulting.com/assets/logo.svg",
+                "image": "https://matthewcarlsonconsulting.com/assets/matthew-carlson.jpg",
+                "description": "AI solutions engineering: production AI agents, voice and chat assistants, CRM automation and reporting automation for marketing teams, agencies and professional-services firms.",
+                "telephone": "+1-608-284-7333",
+                "email": "contact@matthewcarlsonconsulting.com",
+                "address": { "@type": "PostalAddress", "addressLocality": "Madison", "addressRegion": "WI", "addressCountry": "US" },
+                "areaServed": ["United States"],
+                "founder": { "@id": "https://matthewcarlsonconsulting.com/#matthew" },
+                "hasOfferCatalog": {
+                    "@type": "OfferCatalog",
+                    "name": "AI Solutions",
+                    "itemListElement": [
+                        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AI Agents & Workflow Engineering" } },
+                        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Voice & Conversational AI" } },
+                        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "CRM & Marketing Automation" } },
+                        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Reporting, Analytics & Ad-Ops Automation" } },
+                        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AI Readiness, Roadmaps & Fractional AI Lead" } },
+                        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AI-Ready Websites & Search Visibility" } }
+                    ]
                 }
             },
             {
-                "@type": "State",
-                "name": "Wisconsin"
-            }
-        ],
-        "serviceType": [
-            "AI Automation Consulting",
-            "AI Prompt Engineering",
-            "Google Shopping Feed Development",
-            "Local Inventory Ad Feed Management",
-            "Meta Dynamic Product Ads",
-            "Performance Max Campaign Management",
-            "Vector Database Implementation",
-            "Semantic Search Solutions",
-            "Marketing Automation"
-        ],
-        "priceRange": "$$$$",
-        "openingHours": "Mo-Fr 09:00-17:00",
-        "sameAs": [
-            "https://linkedin.com/in/matthewcarlsonconsulting",
-            "https://x.com/MatthewDCarlson"
-        ]
-    }
-    </script>
-
-    <!-- Structured Data - Services -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "ItemList",
-        "name": "AI Automation & Digital Marketing Services",
-        "description": "Comprehensive AI and marketing automation services for Madison WI businesses",
-        "itemListElement": [
-            {
-                "@type": "Service",
-                "position": 1,
-                "name": "AI Automation Solutions",
-                "description": "Custom AI implementations including document retrieval systems, vector database semantic search, research assistants, and report generation automation.",
-                "provider": {"@type": "Organization", "@id": "https://matthewcarlsonconsulting.com/#business", "name": "Matthew Carlson Consulting"},
-                "areaServed": "Madison, Wisconsin"
-            },
-            {
-                "@type": "Service",
-                "position": 2,
-                "name": "AI Prompt Engineering",
-                "description": "Prompt engineering frameworks, testing, and optimization to improve AI output quality, brand voice consistency, and ROI across marketing and operations.",
-                "provider": {"@type": "Organization", "@id": "https://matthewcarlsonconsulting.com/#business", "name": "Matthew Carlson Consulting"},
-                "areaServed": "Madison, Wisconsin"
-            },
-            {
-                "@type": "Service",
-                "position": 3,
-                "name": "Google Shopping & Local Inventory Ads",
-                "description": "Professional Google Shopping feed development and Local Inventory Ad feed management for retail and e-commerce businesses.",
-                "provider": {"@type": "Organization", "@id": "https://matthewcarlsonconsulting.com/#business", "name": "Matthew Carlson Consulting"},
-                "areaServed": "Madison, Wisconsin"
-            },
-            {
-                "@type": "Service",
-                "position": 4,
-                "name": "Meta Dynamic Product Advertising",
-                "description": "Facebook and Instagram dynamic product ad feed development and campaign optimization.",
-                "provider": {"@type": "Organization", "@id": "https://matthewcarlsonconsulting.com/#business", "name": "Matthew Carlson Consulting"},
-                "areaServed": "Madison, Wisconsin"
-            },
-            {
-                "@type": "Service",
-                "position": 5,
-                "name": "Performance Max Campaigns",
-                "description": "Google Performance Max campaign strategy, setup, and ongoing optimization for maximum ROI.",
-                "provider": {"@type": "Organization", "@id": "https://matthewcarlsonconsulting.com/#business", "name": "Matthew Carlson Consulting"},
-                "areaServed": "Madison, Wisconsin"
+                "@type": "Person",
+                "@id": "https://matthewcarlsonconsulting.com/#matthew",
+                "name": "Matthew Carlson",
+                "jobTitle": "AI Solutions Engineer",
+                "url": "https://matthewcarlsonconsulting.com/about.html",
+                "image": "https://matthewcarlsonconsulting.com/assets/matthew-carlson.jpg",
+                "sameAs": ["https://www.linkedin.com/in/matthewcarlsonconsulting/"]
             }
         ]
     }
     </script>
-
-    <!-- Structured Data - Local Business -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "@id": "https://matthewcarlsonconsulting.com/#business",
-        "name": "Matthew Carlson Consulting",
-        "description": "AI automation and digital marketing consulting in Madison, Wisconsin",
-        "url": "https://matthewcarlsonconsulting.com/",
-        "telephone": "+1-608-284-7333",
-        "email": "contact@matthewcarlsonconsulting.com",
-        "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Madison",
-            "addressRegion": "WI",
-            "postalCode": "53703",
-            "addressCountry": "US"
-        },
-        "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": 43.0731,
-            "longitude": -89.4012
-        },
-        "areaServed": [
-            {"@type": "City", "name": "Madison"},
-            {"@type": "AdministrativeArea", "name": "Dane County"},
-            {"@type": "State", "name": "Wisconsin"}
-        ],
-        "hasMap": "https://maps.google.com/?q=Madison,+WI",
-        "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "5",
-            "reviewCount": "47"
-        },
-        "sameAs": [
-            "https://linkedin.com/in/matthewcarlsonconsulting",
-            "https://x.com/MatthewDCarlson"
-        ]
-    }
-    </script>
-
-    <!-- Structured Data - BreadcrumbList -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-            {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Home",
-                "item": "https://matthewcarlsonconsulting.com/"
-            }
-        ]
-    }
-    </script>
-
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
-
-    <!-- Styles -->
-    <link rel="stylesheet" href="css/styles.css">
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 </head>
 <body>
-    <!-- Skip Link for Accessibility -->
-    <a href="#main-content" class="skip-link">Skip to main content</a>
-
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
-        <div class="nav-container">
-            <a href="/" class="nav-logo" aria-label="Matthew Carlson Consulting - Home">
-                <img src="assets/logo.svg" alt="Matthew Carlson Consulting" width="200" height="48">
+    <a href="#main" class="skip-link">Skip to main content</a>
+    <!-- NAV:START -->
+    <header class="site-header" id="site-header">
+        <nav class="container nav" aria-label="Main">
+            <a href="/" class="brand" aria-label="Matthew Carlson Consulting, home">
+                <span class="brand-mark" aria-hidden="true">MC</span>
+                <span>Matthew Carlson<small>AI Solutions Engineer</small></span>
             </a>
-
-            <div class="nav-menu" id="nav-menu">
-                <a href="/" class="nav-link active">Home</a>
-                <a href="ai-bot.html" class="nav-link">AI Assistant</a>
-                <a href="services.html" class="nav-link">Services</a>
-                <a href="automations.html" class="nav-link">Automations</a>
-                <a href="projects.html" class="nav-link">Projects</a>
-                <a href="faq.html" class="nav-link">FAQ</a>
-                <a href="about.html" class="nav-link">About</a>
-                <a href="contact.html" class="nav-link nav-cta">Contact</a>
-            </div>
-
-            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
-                <span></span>
-                <span></span>
-                <span></span>
+            <button class="nav-toggle" id="nav-toggle" aria-controls="nav-menu" aria-expanded="false" aria-label="Open menu">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
             </button>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <header class="hero" id="main-content">
-        <div class="hero-bg">
-            <div class="hero-gradient"></div>
-            <div class="hero-grid"></div>
-            <div class="hero-orbs">
-                <div class="orb orb-1"></div>
-                <div class="orb orb-2"></div>
-                <div class="orb orb-3"></div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="/services.html">Solutions</a>
+                <a href="/projects.html">Work</a>
+                <a href="/ai-bot.html">AI Assistant</a>
+                <a href="/about.html">About</a>
+                <a href="/faq.html">FAQ</a>
+                <a href="/contact.html" class="btn">Book a call</a>
             </div>
-        </div>
-
-        <div class="hero-content">
-            <div class="hero-layout">
-                <div class="hero-copy">
-                    <div class="hero-badge">
-                        <span class="badge-dot"></span>
-                        <span>AI Automation Experts</span>
-                        <span class="badge-divider">|</span>
-                        <span>Madison, Wisconsin</span>
-                    </div>
-
-                    <h1 class="hero-title">
-                        <span class="title-line">AI Automation &</span>
-                        <span class="title-line accent">Digital Marketing</span>
-                    </h1>
-
-                    <p class="hero-description">
-                        Custom AI solutions that automate your workflows, optimize your marketing,
-                        and deliver measurable results—built for Madison businesses and agencies.
-                    </p>
-
-                    <div class="hero-actions">
-                        <a href="contact.html" class="btn btn-primary" onclick="trackCTAClick('hero', 'Schedule Consultation')">
-                            Schedule Consultation
-                            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M5 12h14M12 5l7 7-7 7"/>
-                            </svg>
-                        </a>
-                        <a href="services.html" class="btn btn-secondary" onclick="trackCTAClick('hero', 'See Solutions')">
-                            See Solutions
-                        </a>
-                    </div>
-
-                    <div class="hero-trust">
-                        <span class="trust-label">Trusted for:</span>
-                        <div class="trust-items">
-                            <span class="trust-item">Retail & E-commerce</span>
-                            <span class="trust-item">Marketing Teams</span>
-                            <span class="trust-item">Professional Services</span>
-                            <span class="trust-item">Local Operations</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="hero-chat">
-                    <a href="ai-bot.html" class="hero-chat-link" aria-label="Try the SkillEngine Assistant">
-                    <div class="hero-chat-card">
-                        <div class="hero-chat-card-inner">
-                            <div class="chat-header">
-                                <div>
-                                    <p class="chat-title">SkillEngine Assistant</p>
-                                    <p class="chat-subtitle">Click to try it</p>
-                                </div>
-                                <span class="chat-status">Online</span>
-                            </div>
-                            <div class="chat-body">
-                                <div class="chat-message from-user">
-                                    Audit my Google Shopping feed for errors.
-                                </div>
-                                <div class="chat-message from-assistant">
-                                    Found 12 products with missing GTINs, 3 with price mismatches, and 8 with
-                                    low-quality images. Here's the prioritized fix list...
-                                </div>
-                                <div class="chat-message from-user">
-                                    Create a workflow to automate lead intake.
-                                </div>
-                                <div class="chat-message from-assistant">
-                                    Built automated workflow: Form submission triggers CRM entry, Slack notification,
-                                    and auto-response email. Ready for review.
-                                </div>
-                            </div>
-                            <div class="chat-chips">
-                                <span class="chat-chip">Audit my feed</span>
-                                <span class="chat-chip">Build a workflow</span>
-                                <span class="chat-chip">Optimize campaigns</span>
-                            </div>
-                        </div>
-                    </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="scroll-indicator" aria-hidden="true">
-            <span>Scroll to explore</span>
-            <div class="scroll-line"></div>
-        </div>
+        </nav>
     </header>
+    <!-- NAV:END -->
 
-    <!-- Recruiters & Resume Visitors -->
-    <section class="recruiter-highlight" aria-labelledby="recruiter-heading">
-        <div class="container">
-            <div class="section-header centered">
-                <span class="section-tag">For Recruiters</span>
-                <h2 id="recruiter-heading" class="section-title">Resume-ready highlights at a glance</h2>
-                <p class="section-description">
-                    A quick snapshot of recent AI builds and Duluth Trading marketing impact for LinkedIn and resume visitors.
-                </p>
-            </div>
-
-            <div class="recruiter-grid">
-                <article class="recruiter-card">
-                    <h3 class="recruiter-card-label">AI Product Builds</h3>
-                    <h4 class="recruiter-card-title">AI platforms shipped at speed</h4>
-                    <p class="recruiter-card-description">
-                        Full-stack AI products built fast with production-grade architecture, testing, and measurable scope.
-                    </p>
-                    <ul class="recruiter-list">
-                        <li>SkillEngine platform: 125K+ lines of code, 277+ AI skills, and solo-built in 31 days.</li>
-                        <li>Media Mix Model platform delivered in 4 hours with 7 dashboards and 30+ API endpoints.</li>
-                    </ul>
-                </article>
-
-                <article class="recruiter-card">
-                    <h3 class="recruiter-card-label">Duluth Trading Impact</h3>
-                    <h4 class="recruiter-card-title">Feed infrastructure at scale</h4>
-                    <p class="recruiter-card-description">
-                        Enterprise feed systems and automation to keep omnichannel campaigns reliable and profitable.
-                    </p>
-                    <ul class="recruiter-list">
-                        <li>Automated daily feed distribution across 15+ platforms including Google, Meta, and TikTok.</li>
-                        <li>Built Local Inventory Ads feed spanning 60+ retail locations.</li>
-                    </ul>
-                </article>
-
-                <article class="recruiter-card">
-                    <h3 class="recruiter-card-label">Performance Growth</h3>
-                    <h4 class="recruiter-card-title">Paid media and revenue lifts</h4>
-                    <p class="recruiter-card-description">
-                        Proven outcomes across Google Shopping and social commerce.
-                    </p>
-                    <ul class="recruiter-list">
-                        <li>Dynamic Product Ad feeds delivered 245% YoY revenue growth for Facebook/Instagram.</li>
-                        <li>Pinterest Shopping feeds drove $1.1M in platform-attributed sales.</li>
-                    </ul>
-                </article>
-            </div>
-
-            <div class="recruiter-actions">
-                <a href="projects.html" class="btn btn-primary">View Projects</a>
-                <a href="contact.html" class="btn btn-secondary">Request Resume</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Results Section -->
-    <section class="sample-outputs" aria-labelledby="sample-outputs-heading">
-        <div class="container">
-            <div class="section-header centered">
-                <span class="section-tag">Real Results</span>
-                <h2 id="sample-outputs-heading" class="section-title">What AI automation delivers</h2>
-                <p class="section-description">
-                    See what Madison businesses achieve when they automate repetitive tasks
-                    and let AI handle the heavy lifting.
-                </p>
-            </div>
-
-            <div class="sample-output-grid">
-                <article class="sample-output-card">
-                    <span class="sample-output-tag">Google Shopping</span>
-                    <h3 class="sample-output-title">Feed optimization</h3>
-                    <p class="sample-output-description">
-                        Automated product feed pipeline for a Madison retailer: real-time inventory sync,
-                        dynamic pricing updates, and merchant center compliance monitoring.
-                    </p>
-                    <div class="sample-output-meta">
-                        <span>25K SKUs managed</span>
-                        <span>98% approval rate</span>
+    <main id="main">
+        <section class="hero">
+            <div class="container hero-grid">
+                <div>
+                    <div class="hero-person">
+                        <img src="assets/matthew-carlson.jpg" alt="" width="48" height="48">
+                        <span><strong>Matthew Carlson</strong> AI Solutions Engineer · Madison, WI · working nationally</span>
                     </div>
-                </article>
-
-                <article class="sample-output-card">
-                    <span class="sample-output-tag">Workflow Automation</span>
-                    <h3 class="sample-output-title">Custom skill & workflow development</h3>
-                    <p class="sample-output-description">
-                        Tailored AI-powered skills built for your specific use case—from
-                        lead intake to reporting pipelines to client onboarding sequences.
-                    </p>
-                    <div class="sample-output-meta">
-                        <span>Per-use-case design</span>
-                        <span>Fully customized</span>
-                    </div>
-                </article>
-
-                <article class="sample-output-card">
-                    <span class="sample-output-tag">AI Solutions</span>
-                    <h3 class="sample-output-title">Business problem solving</h3>
-                    <p class="sample-output-description">
-                        AI-assisted solutions for business architecture, marketing strategy, copywriting,
-                        and analytics challenges—designed for your specific goals.
-                    </p>
-                    <div class="sample-output-meta">
-                        <span>Strategy & execution</span>
-                        <span>Tailored approach</span>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <!-- AI Assistant Promo Section -->
-    <section class="ai-assistant-promo" aria-labelledby="ai-promo-heading">
-        <div class="container">
-            <div class="ai-promo-card">
-                <div class="ai-promo-content">
-                    <div class="ai-promo-icon">
-                        <svg viewBox="0 0 64 64" fill="none">
-                            <circle cx="32" cy="32" r="28" stroke="url(#promo-gradient)" stroke-width="2"/>
-                            <circle cx="32" cy="32" r="20" stroke="url(#promo-gradient)" stroke-width="2" opacity="0.6"/>
-                            <path d="M32 22v4M32 38v4M22 32h4M38 32h4" stroke="url(#promo-gradient)" stroke-width="2" stroke-linecap="round"/>
-                            <circle cx="32" cy="32" r="6" fill="url(#promo-gradient)"/>
-                            <defs>
-                                <linearGradient id="promo-gradient" x1="0" y1="0" x2="64" y2="64">
-                                    <stop offset="0%" stop-color="#2563eb"/>
-                                    <stop offset="100%" stop-color="#06b6d4"/>
-                                </linearGradient>
-                            </defs>
-                        </svg>
-                    </div>
-                    <div class="ai-promo-text">
-                        <span class="section-tag">Try It Now</span>
-                        <h2 id="ai-promo-heading" class="ai-promo-title">Meet the AI Assistant</h2>
-                        <p class="ai-promo-description">
-                            Get instant guidance on Google Shopping feeds, workflow automation, and marketing strategy.
-                            Ask questions or try pre-built skills to see what AI can do for your business.
-                        </p>
+                    <h1>I build the AI systems that run your marketing operations.</h1>
+                    <p class="lead">AI agents, voice and chat assistants, CRM automation and reporting pipelines, designed by someone who ran a $40M marketing budget and shipped with tests, verification gates and a known cost per run.</p>
+                    <div class="btn-row mt-2">
+                        <a href="contact.html" class="btn btn-primary" data-track="home-hero-book">Book an AI build call</a>
+                        <a href="projects.html" class="btn btn-ghost btn-arrow" data-track="home-hero-work">See the work</a>
                     </div>
                 </div>
-                <div class="ai-promo-actions">
-                    <a href="ai-bot.html" class="btn btn-primary" onclick="trackCTAClick('ai-promo', 'Try AI Assistant')">
-                        Try AI Assistant
-                        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M5 12h14M12 5l7 7-7 7"/>
-                        </svg>
-                    </a>
-                    <span class="ai-promo-badge">
-                        <svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16">
-                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                        </svg>
-                        Free to use
-                    </span>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Problem/Solution Section -->
-    <section class="problem-solution" aria-labelledby="solution-heading">
-        <div class="container">
-            <div class="ps-grid">
-                <div class="ps-content">
-                    <span class="section-tag">The Challenge</span>
-                    <h2 id="solution-heading" class="section-title">Your Team is Drowning in Manual Work</h2>
-                    <p class="ps-text">
-                        Marketing agencies and businesses across Madison are spending countless hours on
-                        repetitive tasks: manually updating product feeds, writing the same copy variations,
-                        researching competitors one tab at a time, pulling reports from multiple platforms.
-                    </p>
-                    <p class="ps-text highlight">
-                        <strong>There's a better way.</strong> AI automation eliminates the busywork so your
-                        team can focus on strategy and creativity—the work that actually moves the needle.
-                    </p>
-                </div>
-                <div class="ps-stats">
-                    <div class="stat-card">
-                        <span class="stat-number">10x</span>
-                        <span class="stat-label">Faster Feed Updates</span>
+                <a href="ai-bot.html" class="assistant-card" aria-label="Open the SkillEngine Assistant" data-track="home-hero-assistant">
+                    <div class="assistant-top">
+                        <div><strong>SkillEngine Assistant</strong><br><span>Example of the systems I build</span></div>
+                        <span class="live-dot">Online</span>
                     </div>
-                    <div class="stat-card">
-                        <span class="stat-number">80%</span>
-                        <span class="stat-label">Less Manual Work</span>
-                    </div>
-                    <div class="stat-card">
-                        <span class="stat-number">2-4</span>
-                        <span class="stat-label">Week Deployment</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Overview -->
-    <section class="services" id="services" aria-labelledby="services-heading">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">What We Build</span>
-                <h2 id="services-heading" class="section-title">AI Automation & Digital Marketing Solutions</h2>
-                <p class="section-description">
-                    Comprehensive solutions for marketing agencies and businesses in Madison, Wisconsin
-                    and beyond. Fast deployment. Measurable results.
-                </p>
-            </div>
-
-            <div class="services-grid">
-                <!-- AI Automation -->
-                <article class="service-card featured" itemscope itemtype="https://schema.org/Service">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 48 48" fill="none">
-                            <path d="M24 4L4 14v20l20 10 20-10V14L24 4z" stroke="currentColor" stroke-width="2"/>
-                            <path d="M4 14l20 10 20-10M24 44V24" stroke="currentColor" stroke-width="2"/>
-                            <circle cx="24" cy="24" r="4" fill="currentColor"/>
-                            <circle cx="12" cy="19" r="2" fill="currentColor"/>
-                            <circle cx="36" cy="19" r="2" fill="currentColor"/>
-                            <circle cx="24" cy="34" r="2" fill="currentColor"/>
-                        </svg>
-                    </div>
-                    <div class="service-content">
-                        <h3 class="service-title" itemprop="name">AI Automation Solutions</h3>
-                        <p class="service-description" itemprop="description">
-                            Transform your operations with custom AI that works the way you do.
-                            Document retrieval, semantic search, automated research, and intelligent
-                            report generation—built for your specific workflows.
-                        </p>
-                        <ul class="service-features">
-                            <li>Vector Database & Semantic Search</li>
-                            <li>Document Retrieval Systems</li>
-                            <li>AI Research Assistants</li>
-                            <li>Automated Report Generation</li>
-                            <li>Custom AI Copywriters</li>
-                        </ul>
-                        <a href="services.html#ai-automation" class="service-link" onclick="trackServiceClick('AI Automation')">
-                            Learn More
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M5 12h14M12 5l7 7-7 7"/>
-                            </svg>
-                        </a>
-                    </div>
-                </article>
-
-                <!-- AI Prompt Engineering -->
-                <article class="service-card" itemscope itemtype="https://schema.org/Service">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 48 48" fill="none">
-                            <path d="M8 10h32a4 4 0 0 1 4 4v16a4 4 0 0 1-4 4H20l-8 6v-6H8a4 4 0 0 1-4-4V14a4 4 0 0 1 4-4z" stroke="currentColor" stroke-width="2"/>
-                            <path d="M14 20h20M14 26h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                            <circle cx="34" cy="26" r="2" fill="currentColor"/>
-                        </svg>
-                    </div>
-                    <div class="service-content">
-                        <h3 class="service-title" itemprop="name">AI Prompt Engineering</h3>
-                        <p class="service-description" itemprop="description">
-                            Turn generic AI outputs into revenue-ready assets. We design, test, and optimize
-                            prompt systems that deliver on-brand copy, accurate insights, and consistent results.
-                        </p>
-                        <ul class="service-features">
-                            <li>Prompt Strategy & Playbooks</li>
-                            <li>Brand Voice & Tone Guardrails</li>
-                            <li>Evaluation & A/B Testing</li>
-                            <li>Marketing & Sales Enablement</li>
-                        </ul>
-                        <a href="services.html#prompt-engineering" class="service-link" onclick="trackServiceClick('Prompt Engineering')">
-                            Learn More
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M5 12h14M12 5l7 7-7 7"/>
-                            </svg>
-                        </a>
-                    </div>
-                </article>
-
-                <!-- Google Ads -->
-                <article class="service-card" itemscope itemtype="https://schema.org/Service">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 48 48" fill="none">
-                            <rect x="4" y="8" width="40" height="32" rx="4" stroke="currentColor" stroke-width="2"/>
-                            <path d="M4 16h40" stroke="currentColor" stroke-width="2"/>
-                            <rect x="8" y="22" width="14" height="14" rx="2" stroke="currentColor" stroke-width="2"/>
-                            <path d="M26 22h14M26 28h14M26 34h10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                        </svg>
-                    </div>
-                    <div class="service-content">
-                        <h3 class="service-title" itemprop="name">Google Shopping & Local Inventory Ads</h3>
-                        <p class="service-description" itemprop="description">
-                            Professional feed development and optimization for Google Merchant Center.
-                            We build automated pipelines that keep your product data fresh and compliant.
-                        </p>
-                        <ul class="service-features">
-                            <li>Shopping Feed Development</li>
-                            <li>Local Inventory Ad Feeds</li>
-                            <li>Automated Feed Updates</li>
-                            <li>Performance Max Setup</li>
-                        </ul>
-                        <a href="services.html#google-shopping" class="service-link" onclick="trackServiceClick('Google Shopping')">
-                            Learn More
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M5 12h14M12 5l7 7-7 7"/>
-                            </svg>
-                        </a>
-                    </div>
-                </article>
-
-                <!-- Meta Ads -->
-                <article class="service-card" itemscope itemtype="https://schema.org/Service">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 48 48" fill="none">
-                            <circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="2"/>
-                            <path d="M16 24c0-6 4-12 8-12s8 6 8 12-4 12-8 12-8-6-8-12z" stroke="currentColor" stroke-width="2"/>
-                            <ellipse cx="24" cy="24" rx="20" ry="8" stroke="currentColor" stroke-width="2"/>
-                        </svg>
-                    </div>
-                    <div class="service-content">
-                        <h3 class="service-title" itemprop="name">Meta Dynamic Product Ads</h3>
-                        <p class="service-description" itemprop="description">
-                            Facebook and Instagram advertising that scales. Dynamic product catalogs,
-                            automated creative optimization, and campaign structures built for performance.
-                        </p>
-                        <ul class="service-features">
-                            <li>Product Catalog Setup</li>
-                            <li>Dynamic Ad Feed Development</li>
-                            <li>Campaign Architecture</li>
-                            <li>Creative Automation</li>
-                        </ul>
-                        <a href="services.html#meta-ads" class="service-link" onclick="trackServiceClick('Meta Ads')">
-                            Learn More
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M5 12h14M12 5l7 7-7 7"/>
-                            </svg>
-                        </a>
-                    </div>
-                </article>
-
-                <!-- Campaign Building -->
-                <article class="service-card" itemscope itemtype="https://schema.org/Service">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 48 48" fill="none">
-                            <path d="M4 40h40M10 40V28M18 40V20M26 40V24M34 40V16M42 40V12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                            <path d="M4 28c8-4 16-8 24-4s12 0 16-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-dasharray="4 2"/>
-                        </svg>
-                    </div>
-                    <div class="service-content">
-                        <h3 class="service-title" itemprop="name">AI Campaign Builders</h3>
-                        <p class="service-description" itemprop="description">
-                            Automated campaign generation across platforms. AI-powered tools that create,
-                            optimize, and scale your advertising with intelligent audience targeting.
-                        </p>
-                        <ul class="service-features">
-                            <li>Multi-Platform Campaigns</li>
-                            <li>AI Copy Generation</li>
-                            <li>Media Mix Modeling</li>
-                            <li>Pinterest, TikTok, LinkedIn</li>
-                        </ul>
-                        <a href="services.html#campaign-builders" class="service-link" onclick="trackServiceClick('Campaign Builders')">
-                            Learn More
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M5 12h14M12 5l7 7-7 7"/>
-                            </svg>
-                        </a>
-                    </div>
-                </article>
-
-                <!-- Website Development -->
-                <article class="service-card" itemscope itemtype="https://schema.org/Service">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 48 48" fill="none">
-                            <rect x="4" y="6" width="40" height="30" rx="3" stroke="currentColor" stroke-width="2"/>
-                            <path d="M4 14h40" stroke="currentColor" stroke-width="2"/>
-                            <circle cx="10" cy="10" r="1.5" fill="currentColor"/>
-                            <circle cx="16" cy="10" r="1.5" fill="currentColor"/>
-                            <circle cx="22" cy="10" r="1.5" fill="currentColor"/>
-                            <path d="M16 24l-4 4 4 4M32 24l4 4-4 4M22 32l4-16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M14 42h20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                            <path d="M24 36v6" stroke="currentColor" stroke-width="2"/>
-                        </svg>
-                    </div>
-                    <div class="service-content">
-                        <h3 class="service-title" itemprop="name">Website Development</h3>
-                        <p class="service-description" itemprop="description">
-                            Complete web solutions from domain selection to launch. SEO-optimized sites
-                            built for performance with Google Business Profile integration—delivered rapidly.
-                        </p>
-                        <ul class="service-features">
-                            <li>Domain & Hosting Setup</li>
-                            <li>SEO-Optimized Design</li>
-                            <li>Google Business Profile</li>
-                            <li>Rapid Deployment</li>
-                        </ul>
-                        <a href="services.html#website-development" class="service-link" onclick="trackServiceClick('Website Development')">
-                            Learn More
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M5 12h14M12 5l7 7-7 7"/>
-                            </svg>
-                        </a>
-                    </div>
-                </article>
-
-                <!-- Workflow Automation -->
-                <article class="service-card" itemscope itemtype="https://schema.org/Service">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 48 48" fill="none">
-                            <circle cx="12" cy="24" r="6" stroke="currentColor" stroke-width="2"/>
-                            <circle cx="36" cy="12" r="6" stroke="currentColor" stroke-width="2"/>
-                            <circle cx="36" cy="36" r="6" stroke="currentColor" stroke-width="2"/>
-                            <path d="M18 24h6M30 12h-6l-6 12M30 36h-6l-6-12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                            <circle cx="24" cy="24" r="3" fill="currentColor"/>
-                        </svg>
-                    </div>
-                    <div class="service-content">
-                        <h3 class="service-title" itemprop="name">Workflow Automation</h3>
-                        <p class="service-description" itemprop="description">
-                            Eliminate repetitive tasks draining 1-4 hours weekly. Custom workflows
-                            connect your tools and automate data movement—deployed in days, not months.
-                        </p>
-                        <ul class="service-features">
-                            <li>500+ App Integrations</li>
-                            <li>No-Code Visual Builder</li>
-                            <li>Self-Hosted Security</li>
-                            <li>AI-Enhanced Triggers</li>
-                        </ul>
-                        <a href="services.html#workflow-automation" class="service-link" onclick="trackServiceClick('Workflow Automation')">
-                            Learn More
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M5 12h14M12 5l7 7-7 7"/>
-                            </svg>
-                        </a>
-                    </div>
-                </article>
-            </div>
-
-            <div class="services-cta">
-                <a href="services.html" class="btn btn-outline">
-                    View All Services
-                    <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M5 12h14M12 5l7 7-7 7"/>
-                    </svg>
+                    <div class="bubble user">Which client accounts have leads waiting more than 24 hours?</div>
+                    <div class="bubble ai">4 accounts flagged. Two have unassigned leads from last night's form fills; tasks created for their account managers.</div>
+                    <div class="bubble user">Build the speed-to-lead workflow from the spec.</div>
+                    <div class="bubble ai">10 workflows drafted in the test location. Gap report: 2 SMS actions need a compliance-safe number before live testing.</div>
+                    <div class="assistant-cta"><span>Try the assistant</span><span aria-hidden="true">→</span></div>
                 </a>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Use Cases Section -->
-    <section class="use-cases" aria-labelledby="use-cases-heading">
-        <div class="container">
-            <div class="section-header centered">
-                <span class="section-tag">Who We Serve</span>
-                <h2 id="use-cases-heading" class="section-title">Built for Marketing Agencies & Growing Businesses</h2>
-            </div>
-
-            <div class="use-cases-grid">
-                <div class="use-case">
-                    <div class="use-case-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-                            <circle cx="9" cy="7" r="4"/>
-                            <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>
-                        </svg>
-                    </div>
-                    <h3 class="use-case-title">Marketing Agencies</h3>
-                    <p class="use-case-description">
-                        Scale your client services without scaling headcount. Automate feed management,
-                        reporting, and campaign builds across your entire book of business.
-                    </p>
-                </div>
-
-                <div class="use-case">
-                    <div class="use-case-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
-                            <line x1="3" y1="6" x2="21" y2="6"/>
-                            <path d="M16 10a4 4 0 0 1-8 0"/>
-                        </svg>
-                    </div>
-                    <h3 class="use-case-title">E-Commerce & Retail</h3>
-                    <p class="use-case-description">
-                        Keep product feeds current across Google, Meta, and marketplaces.
-                        Automate inventory updates and dynamic pricing at scale.
-                    </p>
-                </div>
-
-                <div class="use-case">
-                    <div class="use-case-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
-                            <line x1="8" y1="21" x2="16" y2="21"/>
-                            <line x1="12" y1="17" x2="12" y2="21"/>
-                        </svg>
-                    </div>
-                    <h3 class="use-case-title">Professional Services</h3>
-                    <p class="use-case-description">
-                        Transform document-heavy workflows with AI retrieval and search.
-                        Generate reports, proposals, and research automatically.
-                    </p>
-                </div>
-
-                <div class="use-case">
-                    <div class="use-case-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polygon points="12 2 2 7 12 12 22 7 12 2"/>
-                            <polyline points="2 17 12 22 22 17"/>
-                            <polyline points="2 12 12 17 22 12"/>
-                        </svg>
-                    </div>
-                    <h3 class="use-case-title">Startups & Tech</h3>
-                    <p class="use-case-description">
-                        Move fast with AI-first infrastructure. Build intelligent features
-                        and automations that give you competitive advantage from day one.
-                    </p>
+        <section class="section-tight" aria-label="Track record">
+            <div class="container">
+                <div class="stats">
+                    <div class="stat"><div class="stat-value">33</div><div class="stat-label">AI agents in one production client-intelligence platform</div></div>
+                    <div class="stat"><div class="stat-value">104</div><div class="stat-label">packaged AI skills in a published library</div></div>
+                    <div class="stat"><div class="stat-value">12–15 hrs</div><div class="stat-label">of manual ad reporting replaced every week</div></div>
+                    <div class="stat"><div class="stat-value">30 days</div><div class="stat-label">concept to launch, 20+ page enterprise website, solo</div></div>
+                    <div class="stat"><div class="stat-value">$40M+</div><div class="stat-label">annual marketing budget managed over 11 years</div></div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Process Section -->
-    <section class="process" id="process" aria-labelledby="process-heading">
-        <div class="container">
-            <div class="section-header centered">
-                <span class="section-tag">Our Approach</span>
-                <h2 id="process-heading" class="section-title">From Concept to Deployment in Weeks</h2>
-                <p class="section-description">
-                    Speed to market is our priority. Our streamlined process gets you results fast.
-                </p>
-            </div>
-
-            <div class="process-timeline">
-                <div class="timeline-line" aria-hidden="true"></div>
-
-                <div class="process-step">
-                    <div class="step-marker">
-                        <span class="step-number">01</span>
-                    </div>
-                    <div class="step-content">
-                        <span class="step-duration">Day 1-2</span>
-                        <h3 class="step-title">Discovery Call</h3>
-                        <p class="step-description">
-                            We map your current workflows, identify automation opportunities,
-                            and define success metrics for your project.
-                        </p>
-                    </div>
+        <section class="section">
+            <div class="container">
+                <div class="section-head">
+                    <p class="eyebrow">What I build</p>
+                    <h2>Six ways AI goes from pilot to production</h2>
+                    <p class="lead">Each one ships with a written specification, a test plan and a cost model. You own everything I build.</p>
                 </div>
-
-                <div class="process-step">
-                    <div class="step-marker">
-                        <span class="step-number">02</span>
-                    </div>
-                    <div class="step-content">
-                        <span class="step-duration">Week 1</span>
-                        <h3 class="step-title">Solution Design</h3>
-                        <p class="step-description">
-                            Detailed technical specification and project roadmap.
-                            You'll know exactly what we're building and how it works.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="process-step">
-                    <div class="step-marker">
-                        <span class="step-number">03</span>
-                    </div>
-                    <div class="step-content">
-                        <span class="step-duration">Weeks 2-3</span>
-                        <h3 class="step-title">Rapid Build</h3>
-                        <p class="step-description">
-                            We develop your solution with regular check-ins and demos.
-                            See progress every step of the way.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="process-step">
-                    <div class="step-marker">
-                        <span class="step-number">04</span>
-                    </div>
-                    <div class="step-content">
-                        <span class="step-duration">Week 4</span>
-                        <h3 class="step-title">Launch & Optimize</h3>
-                        <p class="step-description">
-                            Deploy to production with full documentation and training.
-                            We monitor and optimize for peak performance.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="process-details">
-                <div class="process-details-text">
-                    <h3 class="process-details-title">Focused sprints with clear delivery windows</h3>
-                    <p class="process-details-description">
-                        Expect a rapid start, transparent check-ins, and production-ready handoff.
-                        Timelines flex based on scope, but you always know what ships and when.
-                    </p>
-                </div>
-                <div class="process-details-meta">
-                    <div class="process-meta-item">
-                        <span class="process-meta-label">Typical timeline</span>
-                        <span class="process-meta-value">2-6 weeks</span>
-                    </div>
-                    <div class="process-meta-item">
-                        <span class="process-meta-label">Cadence</span>
-                        <span class="process-meta-value">Weekly demos</span>
-                    </div>
-                    <div class="process-meta-item">
-                        <span class="process-meta-label">Delivery</span>
-                        <span class="process-meta-value">Production ready</span>
-                    </div>
-                    <a href="contact.html" class="btn btn-outline">Start a Sprint</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Featured Projects Preview -->
-    <section class="articles-preview" aria-labelledby="projects-heading">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Portfolio</span>
-                <h2 id="projects-heading" class="section-title">Featured Projects</h2>
-                <p class="section-description">
-                    Real-world applications showcasing AI-assisted development and full-stack engineering.
-                </p>
-            </div>
-
-            <div class="articles-grid">
-                <!-- SkillEngine Project Card -->
-                <article class="article-card" style="grid-column: span 3;">
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: center;">
-                        <div style="background: linear-gradient(135deg, #0f172a, #1e293b); border-radius: 1rem; padding: 2rem; color: white;">
-                            <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; text-align: center;">
-                                <div>
-                                    <div style="font-size: 2rem; font-weight: 800; background: linear-gradient(135deg, #2563eb, #06b6d4); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">31</div>
-                                    <div style="font-size: 0.75rem; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.05em;">Days</div>
-                                </div>
-                                <div>
-                                    <div style="font-size: 2rem; font-weight: 800; background: linear-gradient(135deg, #2563eb, #06b6d4); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">125K+</div>
-                                    <div style="font-size: 0.75rem; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.05em;">Lines of Code</div>
-                                </div>
-                                <div>
-                                    <div style="font-size: 2rem; font-weight: 800; background: linear-gradient(135deg, #2563eb, #06b6d4); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">277+</div>
-                                    <div style="font-size: 0.75rem; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.05em;">AI Skills</div>
-                                </div>
-                                <div>
-                                    <div style="font-size: 2rem; font-weight: 800; background: linear-gradient(135deg, #2563eb, #06b6d4); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">$0</div>
-                                    <div style="font-size: 0.75rem; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.05em;">Monthly Hosting</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <span style="display: inline-block; background: #dbeafe; color: #1d4ed8; font-size: 0.75rem; font-weight: 600; padding: 0.25rem 0.75rem; border-radius: 9999px; margin-bottom: 1rem;">AI Platform</span>
-                            <h3 style="font-size: 1.75rem; font-weight: 700; color: #0f172a; margin-bottom: 0.75rem;">SkillEngine</h3>
-                            <p style="color: #475569; line-height: 1.7; margin-bottom: 1.5rem;">
-                                A full-scale SaaS application transforming how professionals use AI —
-                                turning one-time prompts into reusable, shareable skills. Built in 31 days
-                                using AI-assisted development with Claude Code.
-                            </p>
-                            <a href="projects.html#skillengine" style="display: inline-flex; align-items: center; gap: 0.5rem; color: #2563eb; font-weight: 600; text-decoration: none;">
-                                View Case Study
-                                <svg style="width: 16px; height: 16px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M5 12h14M12 5l7 7-7 7"/>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </article>
-            </div>
-
-            <div class="articles-cta">
-                <a href="projects.html" class="btn btn-outline">
-                    View All Projects
-                    <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M5 12h14M12 5l7 7-7 7"/>
-                    </svg>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="cta" aria-labelledby="cta-heading">
-        <div class="cta-bg">
-            <div class="cta-gradient"></div>
-            <div class="cta-pattern"></div>
-        </div>
-        <div class="container">
-            <div class="cta-content">
-                <h2 id="cta-heading" class="cta-title">Ready to Automate?</h2>
-                <p class="cta-description">
-                    Let's discuss how AI can transform your marketing operations.
-                    Free consultation for Madison-area businesses.
-                </p>
-                <div class="cta-actions">
-                    <a href="contact.html" class="btn btn-white" onclick="trackCTAClick('footer-cta', 'Schedule a Call')">
-                        Schedule a Call
-                        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M5 12h14M12 5l7 7-7 7"/>
-                        </svg>
+                <div class="grid grid-3">
+                    <a class="card" href="services.html#ai-agents">
+                        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="8" width="16" height="12" rx="2"/><path d="M12 8V4"/><circle cx="12" cy="3" r="1"/><circle cx="9" cy="14" r="1"/><circle cx="15" cy="14" r="1"/></svg></div>
+                        <h3>AI agents &amp; workflows</h3>
+                        <p>Multi-agent systems, MCP servers and skill libraries that do real work on a schedule or a trigger.</p>
+                        <span class="card-link">Learn more →</span>
                     </a>
-                    <a href="tel:+16082847333" class="btn btn-ghost" onclick="trackCTAClick('footer-cta', 'Phone Call')">
-                        <svg class="btn-icon-left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
-                        </svg>
-                        (608) 284-7333
+                    <a class="card" href="services.html#voice-chat-ai">
+                        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="22"/></svg></div>
+                        <h3>Voice &amp; chat AI</h3>
+                        <p>Phone and chat agents that answer, qualify, book and hand off, tested before a customer hears them.</p>
+                        <span class="card-link">Learn more →</span>
+                    </a>
+                    <a class="card" href="services.html#crm-automation">
+                        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="6" r="3"/><circle cx="18" cy="18" r="3"/><path d="M9 6h6a3 3 0 0 1 3 3v6"/><path d="M15 18H9a3 3 0 0 1-3-3V9"/></svg></div>
+                        <h3>CRM automation</h3>
+                        <p>Speed-to-lead, AI-researched onboarding and CRM builds generated from a spec.</p>
+                        <span class="card-link">Learn more →</span>
+                    </a>
+                    <a class="card" href="services.html#reporting-automation">
+                        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 5-6"/></svg></div>
+                        <h3>Reporting &amp; ad-ops automation</h3>
+                        <p>Google Ads scripts, nightly account-health checks and client report packets that build themselves.</p>
+                        <span class="card-link">Learn more →</span>
+                    </a>
+                    <a class="card" href="services.html#ai-strategy">
+                        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
+                        <h3>AI readiness &amp; roadmaps</h3>
+                        <p>Where AI fits, what to buy versus build, and the order to do it in. Fractional AI lead available.</p>
+                        <span class="card-link">Learn more →</span>
+                    </a>
+                    <a class="card" href="services.html#ai-ready-web">
+                        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+                        <h3>AI-ready websites</h3>
+                        <p>Sites built to rank on Google and be cited by ChatGPT, Perplexity and Gemini.</p>
+                        <span class="card-link">Learn more →</span>
                     </a>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Footer -->
-    <footer class="footer" role="contentinfo">
+        <section class="section section-alt">
+            <div class="container">
+                <div class="section-head">
+                    <p class="eyebrow">Featured work</p>
+                    <h2>Systems running in production, labeled honestly</h2>
+                    <p class="lead">Every project carries its real status: live, in pilot, tested or delivered.</p>
+                </div>
+                <div class="grid grid-2">
+                    <a class="card" href="projects.html#client-mind">
+                        <div class="meta-row"><span class="badge badge-live">Live</span><span class="tag">AI agents</span></div>
+                        <h3>Multi-agent client intelligence platform</h3>
+                        <p>One sourced memory of every client, shared by 33 AI agents and reachable from Claude through an MCP server.</p>
+                        <p class="proof">39 client profiles · 8-tool MCP server · ~$32–42/month to run</p>
+                    </a>
+                    <a class="card" href="projects.html#agents-that-build">
+                        <div class="meta-row"><span class="badge badge-tested">Tested</span><span class="tag">AI agents · CRM</span></div>
+                        <h3>Agents that build inside the CRM</h3>
+                        <p>Claude and OpenAI Codex construct workflows, pipelines and knowledge bases directly in the platform from written specs.</p>
+                        <p class="proof">3.5-hour unattended run · 351 custom values · verified at every step</p>
+                    </a>
+                    <a class="card" href="projects.html#voice-ai">
+                        <div class="meta-row"><span class="badge badge-tested">Tested</span><span class="tag">Voice AI</span></div>
+                        <h3>Inbound voice AI agent family</h3>
+                        <p>Phone agents that answer, qualify, book showroom visits and transfer with a spoken summary.</p>
+                        <p class="proof">11 of 11 first-block checks · 50+ case test suite · 6 service branches</p>
+                    </a>
+                    <a class="card" href="projects.html#account-health">
+                        <div class="meta-row"><span class="badge badge-live">Live</span><span class="tag">Reporting</span></div>
+                        <h3>Account health dashboard &amp; alert bridge</h3>
+                        <p>Every client CRM account checked nightly; problems become tasks in the tool account managers already use.</p>
+                        <p class="proof">18 health flags · read-only · Monday digest email</p>
+                    </a>
+                </div>
+                <p class="mt-4"><a href="projects.html" class="btn btn-ghost btn-arrow" data-track="home-all-work">See all projects</a></p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="section-head">
+                    <p class="eyebrow">Why AI projects stall</p>
+                    <h2>The demo worked. Then what?</h2>
+                </div>
+                <div class="problem-grid">
+                    <div class="problem">
+                        <div>"The demo worked; the rollout didn't."</div>
+                        <div><p>I gate before scaling: one graded sample and a consistency check before an agent runs across every client. Checks take hours; a bad rollout costs days of regeneration.</p></div>
+                    </div>
+                    <div class="problem">
+                        <div>"Nobody trusts what the AI wrote."</div>
+                        <div><p>Every fact carries a source and a confidence label. Unverified details are flagged for a human, never guessed, and a bad input stops the run and notifies someone.</p></div>
+                    </div>
+                    <div class="problem">
+                        <div>"We don't know what it costs to run."</div>
+                        <div><p>Every pipeline is metered. A full AI research pull on a new client costs about $4–8, and that number goes in the proposal.</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-alt">
+            <div class="container">
+                <div class="section-head">
+                    <p class="eyebrow">How I build</p>
+                    <h2>Engineering habits that make AI safe to depend on</h2>
+                </div>
+                <div class="grid grid-3">
+                    <div class="principle"><h3>Spec first</h3><p>A written specification defines every object before anything is built. The spec and the gap report are deliverables.</p></div>
+                    <div class="principle"><h3>Test before demo</h3><p>No client hears a voice agent until a 50+ case test suite and a stop-ship regression pass.</p></div>
+                    <div class="principle"><h3>Read-only by default</h3><p>Reporting systems observe and change nothing. Agents that write run in test environments first.</p></div>
+                    <div class="principle"><h3>Stop and notify</h3><p>When an input looks wrong, the system halts and tells a person how to restart. It doesn't guess.</p></div>
+                    <div class="principle"><h3>Meter every run</h3><p>Token, model and crawl costs are tracked per run, so AI becomes a known unit cost you can price.</p></div>
+                    <div class="principle"><h3>Buy the commodity</h3><p>If a tool already does it well, buy it. Build only where the interpretation is your advantage.</p></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="section-head">
+                    <p class="eyebrow">Process</p>
+                    <h2>From conversation to running system</h2>
+                </div>
+                <div class="steps">
+                    <div class="step"><h3>Discovery</h3><p>A working session on the process, the data and what success is worth in hours or revenue.</p></div>
+                    <div class="step"><h3>Specification</h3><p>A written spec, test plan and cost model you approve before the build starts.</p></div>
+                    <div class="step"><h3>Build with verification</h3><p>Built in a test environment, checked against the spec, with a gap report at each phase.</p></div>
+                    <div class="step"><h3>Launch &amp; hand off</h3><p>Pilot, monitor, document and train your team, or keep me on to run and improve it.</p></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-tight">
+            <div class="container">
+                <div class="cta-band">
+                    <div>
+                        <h2>Have a process AI should be running?</h2>
+                        <p>Tell me what it is. In 30 minutes we'll know whether it's worth building and roughly what it takes.</p>
+                    </div>
+                    <a href="contact.html" class="btn btn-primary" data-track="home-footer-book">Book a call</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER:START -->
+    <footer class="site-footer">
         <div class="container">
             <div class="footer-grid">
-                <div class="footer-brand">
-                    <a href="/" class="footer-logo" aria-label="Matthew Carlson Consulting - Home">
-                        <img src="assets/logo.svg" alt="Matthew Carlson Consulting" width="180" height="44">
+                <div class="footer-about">
+                    <a href="/" class="brand" aria-label="Matthew Carlson Consulting, home">
+                        <span class="brand-mark" aria-hidden="true">MC</span>
+                        <span>Matthew Carlson<small>AI Solutions Engineer</small></span>
                     </a>
-                    <p class="footer-tagline">
-                        AI automation and digital marketing solutions for Madison, Wisconsin
-                        and beyond. Fast deployment. Measurable results.
-                    </p>
-                    <div class="footer-location">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
-                            <circle cx="12" cy="10" r="3"/>
-                        </svg>
-                        <span>Madison, Wisconsin</span>
-                    </div>
-                    <div class="footer-phone">
-                        <a href="tel:+1-608-284-7333">(608) 284-7333</a>
-                    </div>
+                    <p class="mt-2">Production AI systems for marketing teams, agencies and professional-services firms. Based in Madison, Wisconsin; working nationally.</p>
                 </div>
-
-                <div class="footer-links">
-                    <div class="footer-column">
-                        <h4 class="footer-heading">Services</h4>
-                        <a href="services.html#ai-automation">AI Automation</a>
-                        <a href="services.html#google-shopping">Google Shopping Feeds</a>
-                        <a href="services.html#workflow-automation">Workflow Automation</a>
-                        <a href="services.html#website-development">Website Development</a>
-                    </div>
-
-                    <div class="footer-column">
-                        <h4 class="footer-heading">Company</h4>
-                        <a href="about.html">About</a>
-                        <a href="projects.html">Projects</a>
-                        <a href="faq.html">FAQ</a>
-                        <a href="contact.html">Contact</a>
-                    </div>
-
-                    <div class="footer-column">
-                        <h4 class="footer-heading">Connect</h4>
-                        <a href="https://www.linkedin.com/in/matthewcarlsonconsulting/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                        <a href="https://x.com/MatthewDCarlson" target="_blank" rel="noopener noreferrer">X</a>
-                        <a href="mailto:contact@matthewcarlsonconsulting.com">Email Us</a>
-                    </div>
+                <div>
+                    <h2>Solutions</h2>
+                    <ul>
+                        <li><a href="/services.html#ai-agents">AI agents &amp; workflows</a></li>
+                        <li><a href="/services.html#voice-chat-ai">Voice &amp; chat AI</a></li>
+                        <li><a href="/services.html#crm-automation">CRM automation</a></li>
+                        <li><a href="/services.html#reporting-automation">Reporting automation</a></li>
+                        <li><a href="/services.html#ai-strategy">AI readiness &amp; roadmaps</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Site</h2>
+                    <ul>
+                        <li><a href="/projects.html">Work</a></li>
+                        <li><a href="/ai-bot.html">AI Assistant</a></li>
+                        <li><a href="/about.html">About</a></li>
+                        <li><a href="/faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Contact</h2>
+                    <ul>
+                        <li><a href="/contact.html">Book a call</a></li>
+                        <li><a href="mailto:contact@matthewcarlsonconsulting.com">contact@matthewcarlsonconsulting.com</a></li>
+                        <li><a href="tel:+1-608-284-7333">(608) 284-7333</a></li>
+                        <li><a href="https://www.linkedin.com/in/matthewcarlsonconsulting/" rel="noopener" target="_blank">LinkedIn</a></li>
+                    </ul>
                 </div>
             </div>
-
             <div class="footer-bottom">
-                <p class="copyright">&copy; <span id="current-year">2024</span> Matthew Carlson Consulting. All rights reserved.</p>
-                <div class="footer-legal">
-                    <a href="privacy.html">Privacy Policy</a>
-                    <a href="terms.html">Terms of Service</a>
-                </div>
+                <p class="mt-0">&copy; <span data-year>2026</span> Matthew Carlson Consulting. Madison, Wisconsin.</p>
+                <p class="mt-0"><a href="/privacy.html">Privacy</a> &middot; <a href="/terms.html">Terms</a></p>
             </div>
         </div>
     </footer>
-
-    <!-- Scripts -->
+    <!-- FOOTER:END -->
     <script src="js/main.js"></script>
 </body>
 </html>

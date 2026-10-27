@@ -3,126 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-W2PZBSP7J8"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-W2PZBSP7J8');
-    </script>
+    <script>window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-W2PZBSP7J8');</script>
 
     <title>Privacy Policy | Matthew Carlson Consulting</title>
-    <meta name="description" content="Privacy Policy for Matthew Carlson Consulting. Learn how we collect, use, and protect your information.">
+    <meta name="description" content="How Matthew Carlson Consulting collects, uses and protects information shared through this website.">
     <link rel="canonical" href="https://matthewcarlsonconsulting.com/privacy.html">
+    <meta name="robots" content="index, follow">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Privacy Policy | Matthew Carlson Consulting">
+    <meta property="og:description" content="How Matthew Carlson Consulting collects, uses and protects information shared through this website.">
+    <meta property="og:url" content="https://matthewcarlsonconsulting.com/privacy.html">
+    <meta property="og:image" content="https://matthewcarlsonconsulting.com/assets/matthew-carlson.jpg">
 
-    <!-- Structured Data - BreadcrumbList -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-            {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Home",
-                "item": "https://matthewcarlsonconsulting.com/"
-            },
-            {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "Privacy Policy",
-                "item": "https://matthewcarlsonconsulting.com/privacy.html"
-            }
-        ]
-    }
-    </script>
-
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-
-    <style>
-        .legal-content {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: var(--space-4xl) var(--container-padding);
-        }
-        .legal-content h2 {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: var(--color-gray-900);
-            margin: var(--space-2xl) 0 var(--space-md);
-        }
-        .legal-content h3 {
-            font-size: 1.125rem;
-            font-weight: 600;
-            color: var(--color-gray-800);
-            margin: var(--space-xl) 0 var(--space-sm);
-        }
-        .legal-content p, .legal-content li {
-            font-size: 1rem;
-            line-height: 1.8;
-            color: var(--color-gray-600);
-            margin-bottom: var(--space-md);
-        }
-        .legal-content ul {
-            padding-left: var(--space-xl);
-            margin-bottom: var(--space-lg);
-        }
-        .legal-content ul li {
-            list-style-type: disc;
-            margin-bottom: var(--space-sm);
-        }
-        .legal-content .last-updated {
-            font-size: 0.875rem;
-            color: var(--color-gray-500);
-            margin-bottom: var(--space-2xl);
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/site.css">
 </head>
 <body>
-    <a href="#main-content" class="skip-link">Skip to main content</a>
-
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <a href="/" class="nav-logo" aria-label="Matthew Carlson Consulting - Home">
-                <img src="assets/logo.svg" alt="Matthew Carlson Consulting" width="200" height="48">
+    <a href="#main" class="skip-link">Skip to main content</a>
+    <!-- NAV:START -->
+    <header class="site-header" id="site-header">
+        <nav class="container nav" aria-label="Main">
+            <a href="/" class="brand" aria-label="Matthew Carlson Consulting, home">
+                <span class="brand-mark" aria-hidden="true">MC</span>
+                <span>Matthew Carlson<small>AI Solutions Engineer</small></span>
             </a>
-            <div class="nav-menu" id="nav-menu">
-                <a href="/" class="nav-link">Home</a>
-                <a href="ai-bot.html" class="nav-link">AI Assistant</a>
-                <a href="services.html" class="nav-link">Services</a>
-                <a href="automations.html" class="nav-link">Automations</a>
-                <a href="projects.html" class="nav-link">Projects</a>
-                <a href="faq.html" class="nav-link">FAQ</a>
-                <a href="about.html" class="nav-link">About</a>
-                <a href="contact.html" class="nav-link nav-cta">Contact</a>
-            </div>
-            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
-                <span></span><span></span><span></span>
+            <button class="nav-toggle" id="nav-toggle" aria-controls="nav-menu" aria-expanded="false" aria-label="Open menu">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
             </button>
-        </div>
-    </nav>
-
-    <!-- Page Header -->
-    <header class="page-header" id="main-content">
-        <div class="container">
-            <h1 class="page-title">Privacy Policy</h1>
-            <p class="page-description">
-                How we collect, use, and protect your information.
-            </p>
-        </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="/services.html">Solutions</a>
+                <a href="/projects.html">Work</a>
+                <a href="/ai-bot.html">AI Assistant</a>
+                <a href="/about.html">About</a>
+                <a href="/faq.html">FAQ</a>
+                <a href="/contact.html" class="btn">Book a call</a>
+            </div>
+        </nav>
     </header>
+    <!-- NAV:END -->
 
-    <!-- Privacy Policy Content -->
-    <div class="legal-content">
-        <p class="last-updated">Last Updated: December 30, 2024</p>
+    <main id="main">
+        <section class="page-hero">
+            <div class="container">
+                <p class="eyebrow">Legal</p>
+                <h1>Privacy Policy</h1>
+            </div>
+        </section>
+        <section class="section-tight">
+            <div class="container prose">
+
+        <p class="last-updated">Last updated: October 27, 2026</p>
 
         <p>Matthew Carlson Consulting ("we," "our," or "us") respects your privacy and is committed to protecting the personal information you share with us. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website matthewcarlsonconsulting.com or engage our consulting services.</p>
 
@@ -131,8 +65,8 @@
         <h3>Information You Provide</h3>
         <p>We collect information you voluntarily provide when you:</p>
         <ul>
-            <li>Fill out our contact form (name, email, company, message)</li>
-            <li>Subscribe to our newsletter or articles</li>
+            <li>Fill out our contact form (name, email, company, tools you use, message)</li>
+            <li>Send a message to the AI assistant on our website</li>
             <li>Engage our consulting services</li>
             <li>Communicate with us via email or phone</li>
         </ul>
@@ -156,6 +90,9 @@
             <li>Comply with legal obligations</li>
             <li>Protect against fraudulent or unauthorized activity</li>
         </ul>
+
+        <h2>AI Assistant</h2>
+        <p>Messages you type into the SkillEngine Assistant are sent to a third-party AI provider to generate a reply. We do not use these messages to identify you. Please do not include personal, confidential or sensitive information in your messages.</p>
 
         <h2>Information Sharing</h2>
         <p>We do not sell, trade, or rent your personal information to third parties. We may share information only in the following circumstances:</p>
@@ -198,63 +135,57 @@
             Madison, Wisconsin<br>
             Email: contact@matthewcarlsonconsulting.com
         </p>
-    </div>
+            </div>
+        </section>
+    </main>
 
-    <!-- Footer -->
-    <footer class="footer">
+    <!-- FOOTER:START -->
+    <footer class="site-footer">
         <div class="container">
             <div class="footer-grid">
-                <div class="footer-brand">
-                    <a href="/" class="footer-logo" aria-label="Matthew Carlson Consulting - Home">
-                        <img src="assets/logo.svg" alt="Matthew Carlson Consulting" width="180" height="44">
+                <div class="footer-about">
+                    <a href="/" class="brand" aria-label="Matthew Carlson Consulting, home">
+                        <span class="brand-mark" aria-hidden="true">MC</span>
+                        <span>Matthew Carlson<small>AI Solutions Engineer</small></span>
                     </a>
-                    <p class="footer-tagline">
-                        AI automation and digital marketing solutions for Madison, Wisconsin
-                        and beyond. Fast deployment. Measurable results.
-                    </p>
-                    <div class="footer-location">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
-                            <circle cx="12" cy="10" r="3"/>
-                        </svg>
-                        <span>Madison, Wisconsin</span>
-                    </div>
-                    <div class="footer-phone">
-                        <a href="tel:+1-608-284-7333">(608) 284-7333</a>
-                    </div>
+                    <p class="mt-2">Production AI systems for marketing teams, agencies and professional-services firms. Based in Madison, Wisconsin; working nationally.</p>
                 </div>
-                <div class="footer-links">
-                    <div class="footer-column">
-                        <h4 class="footer-heading">Services</h4>
-                        <a href="services.html#ai-automation">AI Automation</a>
-                        <a href="services.html#google-shopping">Google Shopping Feeds</a>
-                        <a href="services.html#meta-ads">Meta Dynamic Ads</a>
-                        <a href="services.html#pmax">Performance Max</a>
-                    </div>
-                    <div class="footer-column">
-                        <h4 class="footer-heading">Company</h4>
-                        <a href="about.html">About</a>
-                        <a href="projects.html">Projects</a>
-                        <a href="faq.html">FAQ</a>
-                        <a href="contact.html">Contact</a>
-                    </div>
-                    <div class="footer-column">
-                        <h4 class="footer-heading">Connect</h4>
-                        <a href="https://www.linkedin.com/in/matthewcarlsonconsulting/" target="_blank" rel="noopener">LinkedIn</a>
-                        <a href="mailto:contact@matthewcarlsonconsulting.com">Email Us</a>
-                    </div>
+                <div>
+                    <h2>Solutions</h2>
+                    <ul>
+                        <li><a href="/services.html#ai-agents">AI agents &amp; workflows</a></li>
+                        <li><a href="/services.html#voice-chat-ai">Voice &amp; chat AI</a></li>
+                        <li><a href="/services.html#crm-automation">CRM automation</a></li>
+                        <li><a href="/services.html#reporting-automation">Reporting automation</a></li>
+                        <li><a href="/services.html#ai-strategy">AI readiness &amp; roadmaps</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Site</h2>
+                    <ul>
+                        <li><a href="/projects.html">Work</a></li>
+                        <li><a href="/ai-bot.html">AI Assistant</a></li>
+                        <li><a href="/about.html">About</a></li>
+                        <li><a href="/faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Contact</h2>
+                    <ul>
+                        <li><a href="/contact.html">Book a call</a></li>
+                        <li><a href="mailto:contact@matthewcarlsonconsulting.com">contact@matthewcarlsonconsulting.com</a></li>
+                        <li><a href="tel:+1-608-284-7333">(608) 284-7333</a></li>
+                        <li><a href="https://www.linkedin.com/in/matthewcarlsonconsulting/" rel="noopener" target="_blank">LinkedIn</a></li>
+                    </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p class="copyright">&copy; <span id="current-year">2024</span> Matthew Carlson Consulting. All rights reserved.</p>
-                <div class="footer-legal">
-                    <a href="privacy.html">Privacy Policy</a>
-                    <a href="terms.html">Terms of Service</a>
-                </div>
+                <p class="mt-0">&copy; <span data-year>2026</span> Matthew Carlson Consulting. Madison, Wisconsin.</p>
+                <p class="mt-0"><a href="/privacy.html">Privacy</a> &middot; <a href="/terms.html">Terms</a></p>
             </div>
         </div>
     </footer>
-
+    <!-- FOOTER:END -->
     <script src="js/main.js"></script>
 </body>
 </html>

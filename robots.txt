@@ -1,4 +1,4 @@
-# Matthew Carlson Consulting - AI Automation & Digital Marketing
+# Matthew Carlson Consulting - AI Solutions Engineering
 # Madison, Wisconsin
 
 User-agent: *

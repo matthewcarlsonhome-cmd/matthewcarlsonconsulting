@@ -1,18 +1,37 @@
-# Force index.html to load before index.php
-DirectoryIndex index.html index.php
+# Matthew Carlson Consulting: Apache config (GoDaddy)
 
-# Enable rewrite engine
+DirectoryIndex index.html index.php
+ErrorDocument 404 /404.html
+
 RewriteEngine On
 
 # Force HTTPS (uncomment after SSL is confirmed working)
 # RewriteCond %{HTTPS} off
 # RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-# Prevent directory browsing
+# Retired pages
+RewriteRule ^automations\.html$ /services.html#patterns [R=301,NE,L]
+Redirect 301 /bot.html /ai-bot.html
+Redirect 301 /articles.html /projects.html
+Redirect 301 /article.html /projects.html
+
 Options -Indexes
 
-# Set proper MIME types
+# Keep repo-only files private if they are ever uploaded by mistake
+<FilesMatch "\.(md|py|sh|bat|zip|example\.php)$">
+    Require all denied
+</FilesMatch>
+
 AddType text/html .html
 AddType text/css .css
 AddType application/javascript .js
 AddType image/svg+xml .svg
+
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType text/css "access plus 7 days"
+    ExpiresByType application/javascript "access plus 7 days"
+    ExpiresByType image/jpeg "access plus 30 days"
+    ExpiresByType image/png "access plus 30 days"
+    ExpiresByType image/svg+xml "access plus 30 days"
+</IfModule>

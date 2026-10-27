@@ -3,870 +3,256 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-W2PZBSP7J8"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-W2PZBSP7J8');
-    </script>
+    <script>window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-W2PZBSP7J8');</script>
 
-    <!-- SEO Meta Tags -->
-    <title>About Matthew Carlson | Madison AI Automation Expert</title>
-    <meta name="description" content="Matthew Carlson: Madison Wisconsin AI consultant with expertise in workflow automation, Google Ads, and full-stack development. Serving local businesses.">
-    <meta name="keywords" content="Matthew Carlson Madison WI, AI consultant Wisconsin, digital marketing expert Dane County, Duluth Trading Company marketing, Madison automation consultant">
-    <meta name="author" content="Matthew Carlson">
-    <meta name="robots" content="index, follow">
+    <title>About Matthew Carlson | AI Solutions Engineer, Madison WI</title>
+    <meta name="description" content="Matthew Carlson is an AI Solutions Engineer who builds production AI systems for marketing teams and agencies, after 11 years running a $40M+ digital marketing budget at Duluth Trading.">
     <link rel="canonical" href="https://matthewcarlsonconsulting.com/about.html">
-
-    <!-- Local SEO / GEO Tags -->
-    <meta name="geo.region" content="US-WI">
-    <meta name="geo.placename" content="Madison">
-    <meta name="geo.position" content="43.0731;-89.4012">
-    <meta name="ICBM" content="43.0731, -89.4012">
-
-    <!-- Open Graph -->
-    <meta property="og:title" content="About Matthew Carlson | AI & Digital Marketing Expert | Madison WI">
-    <meta property="og:description" content="11+ years of enterprise digital marketing expertise. Now delivering AI automation and rapid web development solutions for Madison, Wisconsin businesses.">
-    <meta property="og:url" content="https://matthewcarlsonconsulting.com/about.html">
+    <meta name="robots" content="index, follow">
     <meta property="og:type" content="profile">
-    <meta property="og:locale" content="en_US">
+    <meta property="og:title" content="About Matthew Carlson, AI Solutions Engineer">
+    <meta property="og:description" content="Former $40M marketing operator who now builds production AI agents, voice assistants and automation.">
+    <meta property="og:url" content="https://matthewcarlsonconsulting.com/about.html">
+    <meta property="og:image" content="https://matthewcarlsonconsulting.com/assets/matthew-carlson.jpg">
+    <meta name="twitter:card" content="summary">
 
-    <!-- Structured Data - Person -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Matthew Carlson",
-        "jobTitle": "AI Automation Consultant & Digital Marketing Expert",
-        "description": "Senior digital marketing strategist with 11+ years experience, now specializing in AI automation, workflow optimization, and rapid web development for Madison, Wisconsin businesses.",
-        "url": "https://matthewcarlsonconsulting.com/about.html",
-        "image": "https://matthewcarlsonconsulting.com/assets/projects/Matthew2.jpg",
-        "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Madison",
-            "addressRegion": "WI",
-            "addressCountry": "US"
-        },
-        "alumniOf": [
-            {
-                "@type": "Organization",
-                "name": "Duluth Trading Company",
-                "address": {"@type": "PostalAddress", "addressLocality": "Madison", "addressRegion": "WI"}
-            },
-            {
-                "@type": "Organization",
-                "name": "Epic Systems",
-                "address": {"@type": "PostalAddress", "addressLocality": "Verona", "addressRegion": "WI"}
-            }
-        ],
-        "knowsAbout": [
-            "AI Automation",
-            "Digital Marketing",
-            "Google Shopping",
-            "Performance Max",
-            "Workflow Automation",
-            "RAG Applications",
-            "Vector Databases",
-            "Website Development"
-        ],
-        "worksFor": {
-            "@type": "LocalBusiness",
-            "name": "Matthew Carlson Consulting",
-            "address": {"@type": "PostalAddress", "addressLocality": "Madison", "addressRegion": "WI"}
-        },
-        "sameAs": [
-            "https://linkedin.com/in/matthewcarlsonconsulting",
-            "https://x.com/MatthewDCarlson"
-        ]
-    }
-    </script>
-
-    <!-- Structured Data - BreadcrumbList -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-            {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Home",
-                "item": "https://matthewcarlsonconsulting.com/"
-            },
-            {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "About",
-                "item": "https://matthewcarlsonconsulting.com/about.html"
-            }
-        ]
-    }
-    </script>
-
-    <!-- Fonts -->
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/site.css">
 
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-
-    <style>
-        .about-hero {
-            background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
-            padding: calc(120px + var(--space-4xl)) 0 var(--space-5xl);
-            position: relative;
-            overflow: hidden;
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ProfilePage",
+        "url": "https://matthewcarlsonconsulting.com/about.html",
+        "mainEntity": {
+            "@type": "Person",
+            "@id": "https://matthewcarlsonconsulting.com/#matthew",
+            "name": "Matthew Carlson",
+            "jobTitle": "AI Solutions Engineer",
+            "image": "https://matthewcarlsonconsulting.com/assets/matthew-carlson.jpg",
+            "worksFor": { "@id": "https://matthewcarlsonconsulting.com/#business" },
+            "address": { "@type": "PostalAddress", "addressLocality": "Madison", "addressRegion": "WI", "addressCountry": "US" },
+            "alumniOf": { "@type": "CollegeOrUniversity", "name": "University of Wisconsin-Madison" },
+            "sameAs": ["https://www.linkedin.com/in/matthewcarlsonconsulting/"],
+            "knowsAbout": [
+                "AI agent development",
+                "Model Context Protocol (MCP)",
+                "Voice AI",
+                "Conversational AI",
+                "GoHighLevel automation",
+                "Marketing automation",
+                "Google Ads scripts and API",
+                "Marketing analytics and attribution",
+                "Retrieval-augmented generation",
+                "Answer engine optimization",
+                "Generative engine optimization"
+            ]
         }
-
-        .about-hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background:
-                radial-gradient(ellipse at 30% 20%, rgba(37, 99, 235, 0.15) 0%, transparent 50%),
-                radial-gradient(ellipse at 70% 80%, rgba(6, 182, 212, 0.1) 0%, transparent 50%);
-            pointer-events: none;
-        }
-
-        .about-hero-grid {
-            display: grid;
-            grid-template-columns: 1fr 300px;
-            gap: var(--space-4xl);
-            align-items: center;
-            position: relative;
-            z-index: 1;
-        }
-
-        @media (max-width: 900px) {
-            .about-hero-grid {
-                grid-template-columns: 1fr;
-                text-align: center;
-            }
-        }
-
-        .about-hero-content h1 {
-            font-family: var(--font-display);
-            font-size: clamp(2.5rem, 5vw, 3.5rem);
-            font-weight: 700;
-            color: var(--color-white);
-            line-height: 1.1;
-            margin-bottom: var(--space-lg);
-        }
-
-        .about-hero-content h1 span {
-            background: var(--gradient-primary);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .about-hero-tagline {
-            font-size: 1.25rem;
-            color: var(--color-gray-300);
-            line-height: 1.7;
-            margin-bottom: var(--space-xl);
-        }
-
-        .about-hero-stats {
-            display: flex;
-            gap: var(--space-2xl);
-            flex-wrap: wrap;
-        }
-
-        @media (max-width: 900px) {
-            .about-hero-stats {
-                justify-content: center;
-            }
-        }
-
-        .hero-stat {
-            text-align: left;
-        }
-
-        @media (max-width: 900px) {
-            .hero-stat {
-                text-align: center;
-            }
-        }
-
-        .hero-stat-value {
-            font-size: 2rem;
-            font-weight: 800;
-            background: var(--gradient-primary);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .hero-stat-label {
-            font-size: 0.875rem;
-            color: var(--color-gray-400);
-        }
-
-        .about-hero-image {
-            position: relative;
-        }
-
-        @media (max-width: 900px) {
-            .about-hero-image {
-                order: -1;
-                max-width: 280px;
-                margin: 0 auto;
-            }
-        }
-
-        .about-hero-image img {
-            width: 100%;
-            height: auto;
-            border-radius: var(--radius-2xl);
-            box-shadow: var(--shadow-2xl);
-            border: 3px solid rgba(37, 99, 235, 0.3);
-        }
-
-        .about-hero-image::before {
-            content: '';
-            position: absolute;
-            top: -10px;
-            right: -10px;
-            bottom: 10px;
-            left: 10px;
-            border: 2px solid var(--color-primary);
-            border-radius: var(--radius-2xl);
-            opacity: 0.3;
-            z-index: -1;
-        }
-
-        /* Quote Section */
-        .quote-section {
-            background: var(--color-gray-50);
-            padding: var(--space-4xl) 0;
-        }
-
-        .quote-card {
-            max-width: 900px;
-            margin: 0 auto;
-            text-align: center;
-        }
-
-        .quote-card blockquote {
-            font-family: var(--font-display);
-            font-size: clamp(1.5rem, 3vw, 2rem);
-            font-weight: 500;
-            font-style: italic;
-            color: var(--color-gray-800);
-            line-height: 1.5;
-            margin-bottom: var(--space-xl);
-        }
-
-        .quote-card blockquote::before {
-            content: '"';
-            display: block;
-            font-size: 4rem;
-            line-height: 1;
-            background: var(--gradient-primary);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            margin-bottom: var(--space-md);
-        }
-
-        .quote-attribution {
-            font-size: 0.9rem;
-            color: var(--color-gray-500);
-        }
-
-        /* Experience Section */
-        .experience-section {
-            padding: var(--space-5xl) 0;
-        }
-
-        .experience-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: var(--space-4xl);
-        }
-
-        @media (max-width: 900px) {
-            .experience-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        .experience-content h2 {
-            font-family: var(--font-display);
-            font-size: clamp(1.75rem, 3vw, 2.5rem);
-            font-weight: 700;
-            color: var(--color-gray-900);
-            margin-bottom: var(--space-xl);
-        }
-
-        .experience-content p {
-            color: var(--color-gray-600);
-            line-height: 1.8;
-            margin-bottom: var(--space-lg);
-        }
-
-        .experience-highlights {
-            display: flex;
-            flex-direction: column;
-            gap: var(--space-lg);
-            margin-top: var(--space-2xl);
-        }
-
-        .highlight-item {
-            display: flex;
-            align-items: flex-start;
-            gap: var(--space-md);
-        }
-
-        .highlight-icon {
-            width: 40px;
-            height: 40px;
-            background: var(--gradient-primary);
-            border-radius: var(--radius-lg);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-shrink: 0;
-        }
-
-        .highlight-icon svg {
-            width: 20px;
-            height: 20px;
-            color: var(--color-white);
-        }
-
-        .highlight-content h4 {
-            font-size: 1rem;
-            font-weight: 600;
-            color: var(--color-gray-900);
-            margin-bottom: var(--space-xs);
-        }
-
-        .highlight-content p {
-            font-size: 0.9rem;
-            color: var(--color-gray-600);
-            margin: 0;
-        }
-
-        /* Timeline */
-        .experience-timeline {
-            position: relative;
-            padding-left: var(--space-2xl);
-        }
-
-        .experience-timeline::before {
-            content: '';
-            position: absolute;
-            left: 0;
-            top: 0;
-            bottom: 0;
-            width: 2px;
-            background: var(--gradient-primary);
-            border-radius: 1px;
-        }
-
-        .timeline-item {
-            position: relative;
-            padding-bottom: var(--space-2xl);
-        }
-
-        .timeline-item:last-child {
-            padding-bottom: 0;
-        }
-
-        .timeline-item::before {
-            content: '';
-            position: absolute;
-            left: calc(-1 * var(--space-2xl) - 5px);
-            top: 6px;
-            width: 12px;
-            height: 12px;
-            background: var(--color-primary);
-            border-radius: 50%;
-            border: 3px solid var(--color-white);
-            box-shadow: var(--shadow-md);
-        }
-
-        .timeline-date {
-            font-size: 0.8rem;
-            font-weight: 600;
-            color: var(--color-primary);
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            margin-bottom: var(--space-xs);
-        }
-
-        .timeline-title {
-            font-size: 1.125rem;
-            font-weight: 700;
-            color: var(--color-gray-900);
-            margin-bottom: var(--space-xs);
-        }
-
-        .timeline-company {
-            font-size: 0.9rem;
-            color: var(--color-gray-500);
-            margin-bottom: var(--space-sm);
-        }
-
-        .timeline-description {
-            font-size: 0.9rem;
-            color: var(--color-gray-600);
-            line-height: 1.7;
-        }
-
-        /* Skills Section */
-        .skills-section {
-            background: var(--color-gray-900);
-            padding: var(--space-5xl) 0;
-            color: var(--color-white);
-        }
-
-        .skills-section .section-header {
-            text-align: center;
-            margin-bottom: var(--space-3xl);
-        }
-
-        .skills-section .section-tag {
-            color: var(--color-accent);
-        }
-
-        .skills-section .section-title {
-            color: var(--color-white);
-        }
-
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: var(--space-lg);
-        }
-
-        @media (max-width: 992px) {
-            .skills-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
-        @media (max-width: 600px) {
-            .skills-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        .skill-category {
-            background: rgba(255, 255, 255, 0.05);
-            border-radius: var(--radius-xl);
-            padding: var(--space-xl);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        .skill-category h4 {
-            font-size: 0.75rem;
-            font-weight: 600;
-            color: var(--color-accent);
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            margin-bottom: var(--space-md);
-        }
-
-        .skill-list {
-            display: flex;
-            flex-direction: column;
-            gap: var(--space-sm);
-        }
-
-        .skill-list span {
-            font-size: 0.9rem;
-            color: var(--color-gray-300);
-        }
-    </style>
+    }
+    </script>
 </head>
 <body>
-    <a href="#main-content" class="skip-link">Skip to main content</a>
-
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <a href="/" class="nav-logo" aria-label="Matthew Carlson Consulting - Home">
-                <img src="assets/logo.svg" alt="Matthew Carlson Consulting" width="200" height="48">
+    <a href="#main" class="skip-link">Skip to main content</a>
+    <!-- NAV:START -->
+    <header class="site-header" id="site-header">
+        <nav class="container nav" aria-label="Main">
+            <a href="/" class="brand" aria-label="Matthew Carlson Consulting, home">
+                <span class="brand-mark" aria-hidden="true">MC</span>
+                <span>Matthew Carlson<small>AI Solutions Engineer</small></span>
             </a>
-            <div class="nav-menu" id="nav-menu">
-                <a href="/" class="nav-link">Home</a>
-                <a href="ai-bot.html" class="nav-link">AI Assistant</a>
-                <a href="services.html" class="nav-link">Services</a>
-                <a href="automations.html" class="nav-link">Automations</a>
-                <a href="projects.html" class="nav-link">Projects</a>
-                <a href="faq.html" class="nav-link">FAQ</a>
-                <a href="about.html" class="nav-link active">About</a>
-                <a href="contact.html" class="nav-link nav-cta">Contact</a>
-            </div>
-            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
-                <span></span><span></span><span></span>
+            <button class="nav-toggle" id="nav-toggle" aria-controls="nav-menu" aria-expanded="false" aria-label="Open menu">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
             </button>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <header class="about-hero" id="main-content">
-        <div class="container">
-            <div class="about-hero-grid">
-                <div class="about-hero-content">
-                    <h1>Matthew <span>Carlson</span></h1>
-                    <p class="about-hero-tagline">
-                        Senior digital marketing strategist turned AI solutions developer. 11+ years
-                        building and scaling paid search programs, now applying that same data-driven
-                        approach to AI automation and rapid web development.
-                    </p>
-                    <div class="about-hero-stats">
-                        <div class="hero-stat">
-                            <div class="hero-stat-value">11+</div>
-                            <div class="hero-stat-label">Years Experience</div>
-                        </div>
-                        <div class="hero-stat">
-                            <div class="hero-stat-value">3</div>
-                            <div class="hero-stat-label">AI Projects Shipped</div>
-                        </div>
-                        <div class="hero-stat">
-                            <div class="hero-stat-value">31</div>
-                            <div class="hero-stat-label">Days to Build SaaS</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-hero-image">
-                    <img src="assets/projects/Matthew2.jpg" alt="Matthew Carlson - AI Solutions Developer and Digital Marketing Expert" loading="eager">
-                </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="/services.html">Solutions</a>
+                <a href="/projects.html">Work</a>
+                <a href="/ai-bot.html">AI Assistant</a>
+                <a href="/about.html" aria-current="page">About</a>
+                <a href="/faq.html">FAQ</a>
+                <a href="/contact.html" class="btn">Book a call</a>
             </div>
-        </div>
+        </nav>
     </header>
+    <!-- NAV:END -->
 
-    <!-- Quote Section -->
-    <section class="quote-section">
-        <div class="container">
-            <div class="quote-card">
-                <blockquote>
-                    The cost and time equation for building software has fundamentally changed.
-                    What once required teams working for months can now be deployed in days.
-                </blockquote>
-                <p class="quote-attribution">— On AI-assisted development and rapid deployment</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section class="experience-section">
-        <div class="container">
-            <div class="experience-grid">
-                <div class="experience-content">
-                    <span class="section-tag">Background</span>
-                    <h2>Where Strategy Meets Execution</h2>
-                    <p>
-                        My career has been defined by turning complex technology into measurable business results.
-                        At Duluth Trading Company, I led digital marketing strategy across paid search, shopping,
-                        and display channels—building programs from the ground up that drove consistent double-digit
-                        growth in customer acquisition year-over-year.
-                    </p>
-                    <p>
-                        Years of managing enterprise-scale digital marketing programs taught me that success isn't about
-                        having the most sophisticated tools—it's about deploying the right solution at the right time
-                        and measuring what matters. That philosophy now drives everything I build.
-                    </p>
-
-                    <div class="experience-highlights">
-                        <div class="highlight-item">
-                            <div class="highlight-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
-                                </svg>
-                            </div>
-                            <div class="highlight-content">
-                                <h4>Full-Stack AI Development</h4>
-                                <p>125,000+ line production codebases with multi-provider AI integration</p>
-                            </div>
-                        </div>
-                        <div class="highlight-item">
-                            <div class="highlight-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
-                                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
-                                </svg>
-                            </div>
-                            <div class="highlight-content">
-                                <h4>E-Commerce Expertise</h4>
-                                <p>Built Google Shopping programs doubling prospect revenue year-over-year</p>
-                            </div>
-                        </div>
-                        <div class="highlight-item">
-                            <div class="highlight-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
-                                </svg>
-                            </div>
-                            <div class="highlight-content">
-                                <h4>Data-Driven Optimization</h4>
-                                <p>Attribution platforms, A/B testing, and media mix modeling</p>
-                            </div>
-                        </div>
+    <main id="main">
+        <section class="section">
+            <div class="container about-grid">
+                <div>
+                    <div class="portrait"><img src="assets/matthew-carlson.jpg" alt="Matthew Carlson" width="400" height="400"></div>
+                    <p class="portrait-caption"><strong>Matthew Carlson</strong>AI Solutions Engineer · Madison, Wisconsin</p>
+                    <div class="btn-row">
+                        <a href="contact.html" class="btn btn-primary" data-track="about-book">Book a call</a>
+                        <a href="https://www.linkedin.com/in/matthewcarlsonconsulting/" class="btn btn-ghost" target="_blank" rel="noopener">LinkedIn</a>
                     </div>
                 </div>
-
-                <div class="experience-timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-date">2024 – Present</div>
-                        <div class="timeline-title">AI Solutions Developer</div>
-                        <div class="timeline-company">Matthew Carlson Consulting • Madison, WI</div>
-                        <div class="timeline-description">
-                            Leading full-stack development of AI-powered applications. Built SkillEngine—a
-                            125,000+ line SaaS platform with 277 AI skills—in 31 days using AI-assisted development.
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-date">2014 – 2025</div>
-                        <div class="timeline-title">Senior Marketing & BI Analyst</div>
-                        <div class="timeline-company">Duluth Trading Company • Madison, WI</div>
-                        <div class="timeline-description">
-                            Led SEM strategy across Google and Bing, managing enterprise-scale paid search programs.
-                            Built shopping and display programs from inception, launched automation initiatives,
-                            and implemented multi-touch attribution.
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-date">2009 – 2014</div>
-                        <div class="timeline-title">Business Solutions Consultant</div>
-                        <div class="timeline-company">Madison Niche Marketing • Madison, WI</div>
-                        <div class="timeline-description">
-                            Managed digital marketing campaigns and e-commerce implementations. Developed
-                            customized analytics dashboards and SEO solutions for diverse client portfolio.
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-date">2006 – 2009</div>
-                        <div class="timeline-title">Technical Services Representative</div>
-                        <div class="timeline-company">Epic Systems Corporation • Madison, WI</div>
-                        <div class="timeline-description">
-                            Supported healthcare software implementations. Conducted requirements gathering,
-                            workflow analysis, and end-user training for hospital IT systems.
-                        </div>
-                    </div>
+                <div>
+                    <p class="eyebrow">About</p>
+                    <h1>AI Solutions Engineer. Former $40M marketing operator.</h1>
+                    <p class="lead">I build production AI systems for marketing teams, agencies and professional-services firms.</p>
+                    <p>Before AI, I spent 11 years at Duluth Trading running a $40M+ digital marketing budget that drove $200M+ in annual revenue, owning analytics, attribution, paid media and data feeds. That's why every system I build is scoped against hours saved, revenue and risk, and why it ships with tests and a cost model instead of a demo.</p>
+                    <p>Since 2024 I've been building production systems with AI. Today I lead AI strategy and implementation for a marketing agency, where the work covers a 33-agent client-intelligence platform, voice agents, nightly monitoring of every client account, and coding agents that build CRM systems from written specs. I also take on independent engagements, most recently a 30-day website launch and AI roadmap for a healthcare IT consultancy.</p>
+                    <p>I work from Madison, Wisconsin, with clients across the U.S.</p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Skills Section -->
-    <section class="skills-section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Expertise</span>
-                <h2 class="section-title">Core Competencies</h2>
-            </div>
-
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h4>AI & Development</h4>
-                    <div class="skill-list">
-                        <span>Claude & Claude Code</span>
-                        <span>ChatGPT & Codex</span>
-                        <span>Google Gemini & Vertex</span>
-                        <span>React, TypeScript, Vite</span>
-                        <span>Full-Stack Development</span>
-                    </div>
+        <section class="section-tight section-alt" aria-label="Operator track record">
+            <div class="container">
+                <div class="section-head">
+                    <p class="eyebrow">Operator track record</p>
+                    <h2>Eleven years on the business side of marketing</h2>
+                    <p class="lead">Results from Duluth Trading, 2014–2025.</p>
                 </div>
-                <div class="skill-category">
-                    <h4>Paid Media</h4>
-                    <div class="skill-list">
-                        <span>Google Ads & Shopping</span>
-                        <span>Performance Max</span>
-                        <span>Meta Ads</span>
-                        <span>Bing Ads</span>
-                        <span>RTB House & Criteo</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h4>Analytics & Attribution</h4>
-                    <div class="skill-list">
-                        <span>Google Analytics 4</span>
-                        <span>Adobe Analytics</span>
-                        <span>Looker Studio</span>
-                        <span>Multi-Touch Attribution</span>
-                        <span>Media Mix Modeling</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h4>E-Commerce & CRM</h4>
-                    <div class="skill-list">
-                        <span>Google Merchant Center</span>
-                        <span>Local Inventory Ads</span>
-                        <span>Salesforce Commerce Cloud</span>
-                        <span>Adobe Experience Platform</span>
-                        <span>Customer Match & RLSA</span>
-                    </div>
+                <div class="stats">
+                    <div class="stat"><div class="stat-value">$200M+</div><div class="stat-label">annual revenue from a $40M+ digital budget</div></div>
+                    <div class="stat"><div class="stat-value">25%</div><div class="stat-label">incremental lift proven with a holdout test</div></div>
+                    <div class="stat"><div class="stat-value">2×</div><div class="stat-label">Facebook revenue growth ($3.5M to $7M+) while cutting ad ratio from 60% to 35%</div></div>
+                    <div class="stat"><div class="stat-value">$33M</div><div class="stat-label">affiliate program revenue in 2023</div></div>
+                    <div class="stat"><div class="stat-value">$8.3M</div><div class="stat-label">in sales from a retargeting channel I launched</div></div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Values Section -->
-    <section class="about-content-section">
-        <div class="container">
-            <div class="about-grid">
-                <div class="about-text">
-                    <span class="section-tag">Philosophy</span>
-                    <h2 class="section-title">How I Work</h2>
-
-                    <p>
-                        I believe the best technology solutions disappear into your workflow—they become the way
-                        things are done, not another tool to manage. That's why I focus on practical implementations
-                        that deliver immediate value rather than impressive demos that never make it to production.
-                    </p>
-
-                    <p>
-                        Every project starts with a clear understanding of the business outcome we're targeting.
-                        Whether it's automating document retrieval, building a high-converting website, or
-                        optimizing ad campaigns—if we can't measure success, we don't build it.
-                    </p>
-
-                    <div class="about-values">
-                        <div class="about-value">
-                            <div class="about-value-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <circle cx="12" cy="12" r="10"/>
-                                    <polyline points="12,6 12,12 16,14"/>
-                                </svg>
-                            </div>
-                            <div>
-                                <h4>Speed to Market</h4>
-                                <p>Most projects launch in days or weeks, not months. Rapid deployment without sacrificing quality.</p>
-                            </div>
-                        </div>
-
-                        <div class="about-value">
-                            <div class="about-value-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
-                                </svg>
-                            </div>
-                            <div>
-                                <h4>Practical Solutions</h4>
-                                <p>Real tools that solve real problems. No theoretical exercises or overengineered systems.</p>
-                            </div>
-                        </div>
-
-                        <div class="about-value">
-                            <div class="about-value-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
-                                    <polyline points="22,4 12,14.01 9,11.01"/>
-                                </svg>
-                            </div>
-                            <div>
-                                <h4>Measurable Results</h4>
-                                <p>Every engagement tied to clear KPIs. Data-driven decisions, not gut feelings.</p>
-                            </div>
-                        </div>
-                    </div>
+        <section class="section">
+            <div class="container grid grid-2" style="gap: clamp(32px, 6vw, 72px);">
+                <div>
+                    <p class="eyebrow">Career</p>
+                    <h2>Path</h2>
+                    <ol class="timeline">
+                        <li>
+                            <span class="when">Mar 2026 – present</span>
+                            <h3>AI Lead Consultant, marketing agency</h3>
+                            <p>AI strategy and implementation with fractional-CTO scope: agent platforms, voice AI, CRM automation, reporting and vendor evaluation.</p>
+                        </li>
+                        <li>
+                            <span class="when">Jun 2026 – present</span>
+                            <h3>Website &amp; AI Consultant, healthcare IT consultancy</h3>
+                            <p>Solo website redesign and launch, post-launch operations and an AI automation roadmap.</p>
+                        </li>
+                        <li>
+                            <span class="when">2024 – present</span>
+                            <h3>Founder, Matthew Carlson Consulting</h3>
+                            <p>Custom AI applications, analytics platforms and automation, including SkillEngine and a media mix model platform.</p>
+                        </li>
+                        <li>
+                            <span class="when">2014 – 2025</span>
+                            <h3>Senior Marketing &amp; BI Analyst, Duluth Trading</h3>
+                            <p>$40M+ budget across 15+ channels; analytics, attribution, data feeds, SEO and executive reporting.</p>
+                        </li>
+                        <li>
+                            <span class="when">2006 – 2009</span>
+                            <h3>Technical Services, Epic Systems</h3>
+                            <p>Healthcare software deployments: workflow analysis, requirements and end-user training.</p>
+                        </li>
+                    </ol>
                 </div>
-
-                <div class="about-visual">
-                    <div class="about-author">
-                        <div class="about-author-info">
-                            <span class="about-author-name">Matthew Carlson</span>
-                            <span class="about-author-title">B.S. Philosophy, University of Wisconsin-Madison</span>
-                        </div>
-                    </div>
+                <div>
+                    <p class="eyebrow">Core competencies</p>
+                    <h2>What I bring</h2>
+                    <ul class="check-list">
+                        <li><strong>Agentic systems &amp; MCP:</strong> multi-agent platforms, skill libraries, orchestration with QA gates</li>
+                        <li><strong>Voice &amp; conversational AI:</strong> dialogue design, knowledge bases, test suites</li>
+                        <li><strong>CRM &amp; marketing automation:</strong> GoHighLevel, HubSpot-class platforms, APIs and webhooks</li>
+                        <li><strong>Analytics &amp; reporting automation:</strong> attribution, incrementality testing, Google Ads scripts</li>
+                        <li><strong>Full-stack development:</strong> Python, TypeScript, React, Supabase, PHP</li>
+                        <li><strong>AI-ready web &amp; search:</strong> accessible builds, SEO, answer-engine and generative-engine optimization</li>
+                    </ul>
+                    <h3 class="mt-4">Credentials</h3>
+                    <ul class="chips">
+                        <li>MCP servers in production</li>
+                        <li>Claude API &amp; skill authoring</li>
+                        <li>GoHighLevel AI Studio &amp; Voice AI</li>
+                        <li>Autonomous coding agents</li>
+                        <li>WCAG AA engineering</li>
+                        <li>Google Ads certified</li>
+                        <li>University of Wisconsin–Madison</li>
+                    </ul>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- CTA Section -->
-    <section class="cta">
-        <div class="cta-bg">
-            <div class="cta-gradient"></div>
-            <div class="cta-pattern"></div>
-        </div>
-        <div class="container">
-            <div class="cta-content">
-                <h2 class="cta-title">Let's Build Something</h2>
-                <p class="cta-description">
-                    Ready to explore what AI automation can do for your business?
-                    Start with a conversation.
-                </p>
-                <div class="cta-actions">
-                    <a href="contact.html" class="btn btn-white">
-                        Get in Touch
-                        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M5 12h14M12 5l7 7-7 7"/>
-                        </svg>
-                    </a>
+        <section class="section section-alt">
+            <div class="container">
+                <div class="section-head">
+                    <p class="eyebrow">How I work</p>
+                    <h2>Principles that came from shipping, not slides</h2>
+                </div>
+                <div class="grid grid-3">
+                    <div class="principle"><h3>Gate before you scale</h3><p>One graded sample and a consistency check cost hours. Regenerating dozens of outputs from a bad source costs days.</p></div>
+                    <div class="principle"><h3>Confidence is a field</h3><p>Every AI-researched fact is labeled verified, derived or needs input, so people know what they can trust.</p></div>
+                    <div class="principle"><h3>Verify the agent's boundary</h3><p>Autonomous builds run only in named test environments, with location checks and API readback every run.</p></div>
+                    <div class="principle"><h3>Report where the work happens</h3><p>Alerts land as tasks in the tool people already use, not in another dashboard they have to remember.</p></div>
+                    <div class="principle"><h3>Test suites make demos safe</h3><p>A voice agent meets a client only after it passes its test cases and the safety regression.</p></div>
+                    <div class="principle"><h3>Price build and run separately</h3><p>Launch, build, maintenance and usage are separate lines, so nobody is surprised later.</p></div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Footer -->
-    <footer class="footer">
+        <section class="section-tight">
+            <div class="container">
+                <div class="cta-band">
+                    <div>
+                        <h2>Let's talk about what you want AI to run.</h2>
+                        <p>A 30-minute call is usually enough to know whether it's worth building.</p>
+                    </div>
+                    <a href="contact.html" class="btn btn-primary" data-track="about-footer-book">Book a call</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER:START -->
+    <footer class="site-footer">
         <div class="container">
             <div class="footer-grid">
-                <div class="footer-brand">
-                    <a href="/" class="footer-logo" aria-label="Matthew Carlson Consulting - Home">
-                        <img src="assets/logo.svg" alt="Matthew Carlson Consulting" width="180" height="44">
+                <div class="footer-about">
+                    <a href="/" class="brand" aria-label="Matthew Carlson Consulting, home">
+                        <span class="brand-mark" aria-hidden="true">MC</span>
+                        <span>Matthew Carlson<small>AI Solutions Engineer</small></span>
                     </a>
-                    <p class="footer-tagline">
-                        AI automation and digital marketing solutions for Madison, Wisconsin
-                        and beyond. Fast deployment. Measurable results.
-                    </p>
-                    <div class="footer-location">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
-                            <circle cx="12" cy="10" r="3"/>
-                        </svg>
-                        <span>Madison, Wisconsin</span>
-                    </div>
-                    <div class="footer-phone">
-                        <a href="tel:+1-608-284-7333">(608) 284-7333</a>
-                    </div>
+                    <p class="mt-2">Production AI systems for marketing teams, agencies and professional-services firms. Based in Madison, Wisconsin; working nationally.</p>
                 </div>
-                <div class="footer-links">
-                    <div class="footer-column">
-                        <h4 class="footer-heading">Services</h4>
-                        <a href="services.html#ai-automation">AI Automation</a>
-                        <a href="services.html#google-shopping">Google Shopping Feeds</a>
-                        <a href="services.html#meta-ads">Meta Dynamic Ads</a>
-                        <a href="services.html#website-development">Website Development</a>
-                    </div>
-                    <div class="footer-column">
-                        <h4 class="footer-heading">Company</h4>
-                        <a href="about.html">About</a>
-                        <a href="projects.html">Projects</a>
-                        <a href="faq.html">FAQ</a>
-                        <a href="contact.html">Contact</a>
-                    </div>
-                    <div class="footer-column">
-                        <h4 class="footer-heading">Connect</h4>
-                        <a href="https://www.linkedin.com/in/matthewcarlsonconsulting/" target="_blank" rel="noopener">LinkedIn</a>
-                        <a href="https://x.com/MatthewDCarlson" target="_blank" rel="noopener">X</a>
-                        <a href="mailto:contact@matthewcarlsonconsulting.com">Email Us</a>
-                    </div>
+                <div>
+                    <h2>Solutions</h2>
+                    <ul>
+                        <li><a href="/services.html#ai-agents">AI agents &amp; workflows</a></li>
+                        <li><a href="/services.html#voice-chat-ai">Voice &amp; chat AI</a></li>
+                        <li><a href="/services.html#crm-automation">CRM automation</a></li>
+                        <li><a href="/services.html#reporting-automation">Reporting automation</a></li>
+                        <li><a href="/services.html#ai-strategy">AI readiness &amp; roadmaps</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Site</h2>
+                    <ul>
+                        <li><a href="/projects.html">Work</a></li>
+                        <li><a href="/ai-bot.html">AI Assistant</a></li>
+                        <li><a href="/about.html">About</a></li>
+                        <li><a href="/faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Contact</h2>
+                    <ul>
+                        <li><a href="/contact.html">Book a call</a></li>
+                        <li><a href="mailto:contact@matthewcarlsonconsulting.com">contact@matthewcarlsonconsulting.com</a></li>
+                        <li><a href="tel:+1-608-284-7333">(608) 284-7333</a></li>
+                        <li><a href="https://www.linkedin.com/in/matthewcarlsonconsulting/" rel="noopener" target="_blank">LinkedIn</a></li>
+                    </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p class="copyright">&copy; <span id="current-year">2024</span> Matthew Carlson Consulting. All rights reserved.</p>
-                <div class="footer-legal">
-                    <a href="privacy.html">Privacy Policy</a>
-                    <a href="terms.html">Terms of Service</a>
-                </div>
+                <p class="mt-0">&copy; <span data-year>2026</span> Matthew Carlson Consulting. Madison, Wisconsin.</p>
+                <p class="mt-0"><a href="/privacy.html">Privacy</a> &middot; <a href="/terms.html">Terms</a></p>
             </div>
         </div>
     </footer>
-
+    <!-- FOOTER:END -->
     <script src="js/main.js"></script>
 </body>
 </html>

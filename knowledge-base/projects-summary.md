@@ -1,345 +1,128 @@
-# Projects & Case Studies — Matthew Carlson Consulting
+# Work — Matthew Carlson, AI Solutions Engineer
 
-Real-world applications demonstrating AI-assisted development, full-stack engineering, and production-ready SaaS platforms. Each project showcases innovative approaches to solving complex problems.
+Generated from projects.html. Client names are confidential.
 
----
+## Multi-agent client intelligence platform (Live)
 
-## Project 1: SkillEngine
+One structured, sourced memory of every client, shared by 33 AI agents and reachable from Claude through an MCP server.
 
-**Type:** AI Career Productivity Platform (Full-scale SaaS)
-**Status:** Completed February 2026
-**Live Application:** https://aicareerskills.netlify.app/
+- **33** specialized AI agents
+- **39** client profiles in production
+- **8 tools** in the MCP server
+- **~$32–42** per month to operate
 
-### Key Stats
+**The problem:** Every AI output at the agency started from a blank prompt. Client facts lived in people's heads and drifted, so content came back generic or wrong.
+**Results:** Commercial alternatives run $49–249 per user per month; this runs the whole agency for about $32–42. Its QA engine has generated 1,504 field-level suggestions for human review.
+**What I built:** A 26-section client schema with field-level provenance; 33 agents reading from that shared memory; A prompt library with versioning: 92 prompts, 94 tracked versions; A document layer with embeddings, and a CRM integration that has cataloged 2,590 assets; An MCP server with token auth and audit logging
+**Stack:** TypeScript; Supabase / Postgres; Claude API (tiered model routing); MCP
 
-| Metric | Value |
-|--------|-------|
-| Days to Build | 31 |
-| Lines of Code | 125,000+ |
-| AI Skills | 277+ |
-| App Pages | 48 |
-| Workflows | 24 |
-| Role Templates | 27 |
-| Git Commits | 311 |
-| Monthly Hosting Cost | $0 |
+## Agents that build: CRM construction from a spec with Claude & Codex (Tested)
 
-### The Problem
+AI coding agents built a marketing agency's CRM systems directly inside the platform from written specifications, verified at every step.
 
-Most people use AI the same way every time: open ChatGPT, explain what they need, get a response, close the tab. Tomorrow they start over with zero memory of what worked. Valuable prompts are lost, and professionals waste time re-explaining context repeatedly.
+- **3.5 hrs** unattended Codex build run
+- **351** custom values built in two days
+- **10** workflows built by Claude from spec
+- **<1 min** first lead response in testing
 
-### The Solution
+**The problem:** Each CRM template (pipelines, workflows, fields, emails, knowledge base, pages) took contract builders weeks at about $500 per template, and quality varied.
+**Results:** A two-day build produced 351 custom values, 20 tags, 21 fields, a 12-stage pipeline, 2 calendars, a 52-entry knowledge base, 11 workflow shells, 28 SMS snippets and 4 pages. The agency put contractor hiring on hold.
+**What I learned:** The platform's own AI created data objects but not workflows, so the agents worked in the workflow builder instead. The specification and the gap report are the real product.
+**What I built:** A specification format that defines every CRM object; A build method where Claude or Codex constructs those objects in the live platform; API readback and a gap report after each phase; Hard boundaries: test locations only, repeated location checks, no live SMS until a compliance-safe number exists; A QA skill that enrolls test contacts across workflows (23 enrollments across 16 workflows)
+**Stack:** Claude Code; OpenAI Codex; GoHighLevel API v2; Python
 
-SkillEngine saves your best prompts as reusable **Skills** — complete with expert personas, structured outputs, and industry-specific context. Run them with one click instead of re-explaining yourself constantly. Build once, use forever.
+## Inbound voice AI agent family (Tested)
 
-### Core Capabilities
+Phone agents that answer, qualify, book and hand off, tested against 50+ cases before any client demo.
 
-#### For Job Seekers
-- **Job Readiness Scorer** — Match analysis for roles
-- **Resume Customizer** — Tailored bullet points
-- **ATS Keyword Optimizer** — Pass screening
-- **Interview Prep** — STAR-format answers
-- **Salary Coach** — Negotiation guidance
+- **11 / 11** first test block passed
+- **50+** test cases plus a stop-ship regression
+- **6** service branches with matched follow-up texts
+- **5** phone agents and a website voice pilot
 
-#### For Professionals (27 Roles)
-- **Software Engineer** — Code review, specs
-- **Financial Analyst** — Reports, forecasts
-- **Marketing Manager** — Campaigns, strategy
-- **Project Manager** — Status, risk assessment
-- **+ 22 more roles** with 4-12 skills each
+**The problem:** A retailer with several showrooms was missing calls and wanted every caller qualified and routed, without an AI that quotes prices or gives risky advice.
+**Results:** Showroom booking verified on a live call. Defects found in testing, including an emergency response that could be interrupted, were fixed before the client heard the agent. Pricing proposed as a launch fee, a prepaid build and monthly maintenance, with usage at cost.
+**What I built:** An agent that books appointments, takes messages and transfers with a spoken summary; A prequalifying flow: full questions for shoppers, two at most for service calls, immediate transfer on request; Consent-gated follow-up texts sent two minutes after the call, matched to the caller's need; Safety rules: no prices, chemical advice or promised dates; the 24-hour number on safety issues
+**Stack:** GoHighLevel Voice AI; Conversation AI; CRM workflows
 
-#### Enterprise Operations
-- **Contract Review** — Risk identification
-- **Compliance** — Program development
-- **AI Governance** — Implementation
-- **Tech Debt** — Assessment & planning
-- **RFP Response** — Automation
+## Account health dashboard & alert bridge (Live)
 
-### Technical Architecture
+Every client CRM account checked nightly; problems become tasks in the tool account managers already use.
 
-**Multi-Provider AI Interface:**
-- Google Gemini (2.0 Flash)
-- Anthropic Claude (Haiku, Sonnet, Opus)
-- OpenAI ChatGPT (GPT-4o, 4o-mini, o1)
-- Switch providers with one click; model-specific token limits and streaming handled automatically
+- **18** health flags per account
+- **Nightly** read-only check of every account
+- **9,600** open deals analyzed across 27 accounts
+- **~1 week** from start to live
 
-**Local-First Data Architecture:**
-- Primary storage: IndexedDB in the user's browser (workspaces, skill history, custom skills, preferences)
-- Optional cloud sync via Supabase (community skills, user profiles)
+**The problem:** Account managers checked client accounts by hand. Silent forms, waiting leads and stalled deals surfaced only when a client complained.
+**Results:** The first portfolio read found 81% of 9,600 open deals idle for over 30 days. The fix was three habits (closing deals out, marking losses, clearing dead deals), not a pipeline redesign.
+**What I built:** A Python engine that reads every account through read-only tokens into Supabase; Flags compared against each account's own baseline and against peers; A severity-sorted view by account manager with a one-click weekly client update; An alert bridge that creates CRM tasks and emails for silent forms, dropped lead sources and stalled pipelines; A Monday digest: every open issue per client in one email
+**Stack:** Python; Supabase; GoHighLevel API; HTML email
 
-### Technology Stack
+## Google Ads automation suite (Live)
 
-| Layer | Technology |
-|-------|------------|
-| Frontend | React 18, TypeScript |
-| Styling | Tailwind CSS |
-| Build | Vite |
-| Routing | React Router |
-| Local DB | IndexedDB |
-| Backend | Supabase |
-| Hosting | Netlify |
-| Testing | Vitest |
+Portfolio-wide Google Ads reporting and optimization running on a schedule at the manager-account level.
 
-### AI-Assisted Development with Claude Code
+- **15** production scripts
+- **~12,666** lines of code
+- **12–15 hrs** of manual reporting saved each week
+- **3 weeks** to build
 
-**Daily Development Velocity:**
-- 4,000+ lines of production code per day
-- 9 new AI skills created daily
-- 10 git commits per day average
-- 1.5 application pages completed daily
+**The problem:** Every account needed audits, pacing checks and search-term reviews each week. Done by hand across a whole portfolio, that work crowded out optimization.
+**Results:** Daily, weekly, monthly and quarterly checks now run on their own, and a companion script builds the 25–29 slide weekly client meeting deck from live data.
+**What I built:** Account audits and health checks; Budget pacing with automatic adjustment; Search-term analysis and wasted-spend ranking; Structure optimization and conversion-tracking checks
+**Stack:** Google Ads Scripts; Google Ads API & GAQL; Google Sheets
 
-**Commit Distribution by Week:**
-- Week 1: 86 commits — Core architecture
-- Week 2: 114 commits — Skills + Roles
-- Week 3: 61 commits — Workflows
-- Week 4: 50 commits — Polish + Keys
+## Research-then-verify client onboarding (Pilot)
 
-### Key Takeaway
+AI researches a new client before kickoff, and the client corrects a pre-filled profile instead of filling out a long questionnaire.
 
-> "The cost and time equation for building software has fundamentally changed."
+- **26** sections in each AI research profile
+- **<20 min** unattended research run
+- **74** fields covered by an automated save test
+- **7** tabs in the client onboarding app
 
-This project — 48 pages, 277 skills, 24 workflows, full authentication, multi-provider AI integration — would traditionally require a team of 3-4 developers working 2-3 months. Built solo in 31 days. Hosting cost: $0/month. The tools are here. The question is who learns to use them effectively.
+**The problem:** Onboarding asked clients for hundreds of fields across long forms. Clients stalled, data arrived incomplete and launches slipped.
+**Results:** In pilot with the agency team. Three client pilots must pass a written checklist before any new features are added.
+**What I built:** A CRM workflow that fires a webhook; a Claude agent researches the business and posts a report back into the CRM; Research that works without a website, using license records, permits and directories; Stop-and-notify when a listed site is broken or belongs to another company; A confidence label on every field (verified, derived or needs input), and a client review and e-sign flow; Automatic sub-account build when onboarding completes
+**Stack:** Claude Routines; Firecrawl; GoHighLevel API & webhooks; Supabase Edge Functions
 
----
+## 104-skill AI library & orchestration pipeline (Live)
 
-## Project 2: Enterprise Client & CRM Management System
+An agency's AI work packaged as versioned, searchable skills, plus a one-prompt pipeline that runs nine of them in a gated sequence.
 
-**Type:** B2B Client Relationship Management Platform
-**Status:** Completed February 2026
+- **104** packaged skills across 12 categories
+- **9** skills in one gated pipeline
+- **17** deliverables per pipeline run
+- **~$4–8** measured cost per run
 
-### Key Stats
-
-| Metric | Value |
-|--------|-------|
-| Industries Supported | 21 |
-| Pipeline Stages | 5 |
-| Contacts per Client | 3 |
-| Activity Types | 15 |
-
-### The Problem
-
-Consulting firms struggled to track multiple stakeholders per client, keep outreach consistent, and demonstrate value with generic follow-ups. Manual CRM systems couldn't keep up with complex pipelines or personalization demands.
-
-### The Solution
-
-A unified CRM that models real B2B relationships with multi-contact profiles, AI-assisted research, and one-click portal creation — ensuring every outreach is personalized, measurable, and aligned to the pipeline.
-
-### Key Capabilities
-
-#### AI Research Assistant
-- **Quick recommendations** based on industry patterns
-- **Full research mode** with pain points and tech stack insights
-- **One-click apply** to update client records and messaging
-
-#### Relationship Management
-- **Multi-contact profiles** with per-contact statuses
-- **Activity timeline** across channels and outcomes
-- **Priority contact queue** to surface next actions
-
-#### Pipeline & Data Ops
-- **5-stage pipeline** with priority tagging and analytics
-- **Bulk CSV import/export** with error reporting
-- **Hybrid storage** for online/offline reliability
-
-### Screenshots & Features
-- Client Portal Page — Personalized prospect portal with branded messaging and curated highlights
-- ROI + Workflow Showcase — ROI calculator and tailored workflow recommendations for each prospect
-- Client Setup — Structured setup flow with industry classification, status, and priority controls
-- Multi-Contact Tracking — Track multiple stakeholders with individual statuses and outreach history
-- Activity Timeline — Consolidated activity timeline across LinkedIn, email, calls, and meetings
-
----
-
-## Project 3: Client-Side Security Scanner & Compliance Engine
-
-**Type:** Browser-based Security & Compliance Application
-**Status:** Completed February 2026
-
-### Key Stats
-
-| Metric | Value |
-|--------|-------|
-| Security Checks | 15 |
-| SPA Routes Scanned | 33 |
-| PII Types Detected | 12 |
-| Redaction Modes | 4 |
-
-### The Problem
-
-Traditional security scanners miss client-side risks like exposed API keys, PII in localStorage, or vulnerable DOM structures. Teams lacked a unified, in-browser view of security posture.
-
-### The Solution
-
-A client-side scanning engine that navigates every route, evaluates 15 security dimensions, and delivers executive-friendly scoring with actionable remediation guidance.
-
-### Key Capabilities
-
-#### Vulnerability Scanning
-- **15 security checks** across storage, headers, and scripts
-- **Multi-page scanning** for SPA route coverage
-- **Deduped reporting** to keep findings actionable
-
-#### PII & Encryption
-- **12 PII types** with confidence scoring
-- **4 redaction modes** (mask, hash, remove, placeholder)
-- **Device-bound encryption** with PBKDF2 + AES-GCM
-
-#### Compliance Controls
-- **Policy framework** for approvals, rate limits, and budgets
-- **Audit trail** with exportable logs
-- **Weighted scoring** with executive-friendly grades
-
-### Screenshots & Features
-- Scanner Dashboard — Weighted security scoring with severity breakdowns and route coverage
-- Findings & Remediation — Detailed findings with evidence, severity, and recommended fixes
-
----
-
-## Project 4: Media Mix Model (MMM) Platform
-
-**Type:** Bayesian Media Mix Modeling & Budget Optimization Platform
-**Status:** Completed March 2026
-
-### Key Stats
-
-| Metric | Value |
-|--------|-------|
-| Modeling Approach | Bayesian (Hierarchical) |
-| Data Sources | Multi-Platform Connectors |
-| Data Quality | Automated Hygiene Checks |
-| Planning | Budget Scenario Modeling |
-
-### The Problem
-
-Marketing teams juggle fragmented data sources, inconsistent attribution, and shifting budgets across channels. They need a trustworthy, end-to-end system that reconciles spend, performance, and outcomes while accounting for uncertainty and lagged effects.
-
-### The Solution
-
-This MMM platform unifies cross-channel data ingestion, validation, and Bayesian modeling into a single workflow, producing transparent lift estimates and scenario-based budget recommendations that drive confident marketing decisions.
-
-### Key Capabilities
-
-#### Bayesian MMM Core
-- **Hierarchical Bayesian models** with shrinkage across channels
-- **Adstock + saturation curves** to capture lagged effects
-- **Transparent uncertainty** with posterior intervals and diagnostics
-
-#### Data Connectors
-- **Multi-platform ingestion** for ads, CRM, and analytics sources
-- **Connector health monitoring** with refresh alerts and sync logs
-- **Unified schema mapping** across spend, outcomes, and touchpoints
-
-#### Data Validation & Hygiene
-- **Automated QA checks** for missing, late, or duplicated data
-- **Normalization pipelines** with outlier handling and winsorization
-- **Audit-ready logs** for data lineage and model readiness
-
-#### Budget Scenario Modeling
-- **What-if simulators** for reallocations across channels
-- **Marginal ROI curves** to highlight efficiency thresholds
-- **Scenario comparison** with forecasted lift and payback periods
-
-### Screenshots & Features
-- Product Walkthrough — End-to-end walkthrough of data ingestion, model execution, and scenario planning
-- Workflow Setup — Connector selection, dataset mapping, and validation checkpoints for MMM pipelines
-- Model Configuration — Bayesian priors, lag structures, and training ranges configured for accuracy
-- Executive Dashboard — ROI summaries, confidence intervals, and contribution analysis for leadership
-- Marketing Performance — Channel saturation curves, response metrics, and optimized spend ranges
-- Scenario Planning — Compare multiple budget allocations with modeled lift and payback forecasts
-
----
-
-## Project 5: Resume Intelligence Search
-
-**Type:** RAG-powered Semantic Search Application
-**Status:** Completed February 2026
-
-### Key Metrics
-
-| Metric | Value |
-|--------|-------|
-| Total Build Time | <2 hours |
-| Architecture | RAG (Retrieval-Augmented Generation) |
-| Lines of Code | ~500 |
-| Vector Database | LanceDB |
-| AI Synthesis | Claude API |
-| Backend | FastAPI |
-
-### Overview
-
-A fully functional RAG (Retrieval-Augmented Generation) application built from scratch in under 2 hours using Claude Code — demonstrating just how fast AI-assisted development can turn ideas into working software.
-
-### Build Timeline
-
-| Phase | Duration | Output |
-|-------|----------|--------|
-| Requirements + Scaffold | 15 min | FastAPI project + LanceDB setup |
-| Embedding pipeline | 20 min | Sentence-transformer to LanceDB table |
-| Search endpoint + Claude synthesis | 25 min | /search API with RAG retrieval |
-| Minimal HTML/JS UI | 30 min | Full working prototype |
-| Testing + bug fixes | 20 min | Production-ready state |
-| **Total** | **110 min** | **Fully functional RAG app** |
-
-### Technology Stack
-
-- **Backend:** FastAPI (Python)
-- **Vector DB:** LanceDB (embedded, ~10MB)
-- **Embeddings:** sentence-transformers (all-MiniLM-L6-v2)
-- **Synthesis:** Claude API (claude-3-haiku)
-- **Frontend:** Vanilla HTML/JS
-
-### AI-Assisted vs. Traditional Development
-
-| Aspect | Traditional Approach | AI-Assisted (Claude Code) |
-|--------|---------------------|---------------------------|
-| Time to MVP | 2-3 days | <2 hours |
-| Library selection | Manual research, trial & error | Claude recommends optimal stack |
-| Boilerplate | Copy-paste from docs | Generated + tested instantly |
-| Debugging | Stack Overflow + trial & error | AI pinpoints & fixes |
-| Verdict | Slow | 10-15x faster |
-
-### Traditional Build Estimate (Without AI)
-
-- Data modeling + API design: 4-8 hours
-- Embedding pipeline + testing: 4-6 hours
-- Search logic + integration: 4-6 hours
-- UI + polish: 4-8 hours
-- **Total: 16-28 hours (2-3 days)**
-
-### Production Path
-
-**Prototype (Current — Completed):**
-- Local LanceDB
-- Single-file codebase
-- Basic HTML/JS UI
-- Claude API key in env
-- Hosting: $0 (runs locally)
-
-**SaaS Version (Potential):**
-- Hosted vector DB (Pinecone/Weaviate)
-- User auth + multi-tenant
-- React/Tailwind UI
-- Stripe integration
-- Estimated build: 2-3 additional days with Claude Code
-
-### Key Takeaway
-
-> "The barrier to building AI-powered applications has collapsed."
-
-What previously required specialized ML expertise and days of development can now be built in under 2 hours. This isn't about replacing developers — it's about removing friction between ideas and working software.
-
----
-
-## About Matthew Carlson Consulting
-
-**Location:** Madison, Wisconsin
-**Phone:** (608) 284-7333
-**Email:** contact@matthewcarlsonconsulting.com
-**Website:** https://matthewcarlsonconsulting.com
-
-### Services
-- AI Automation
-- Google Shopping Feeds
-- Meta Dynamic Ads
-- Performance Max
-
-Additional case studies and development projects are added regularly. Each project demonstrates AI-assisted development methodologies and production-ready solutions.
+**The problem:** Good prompts lived in individual chats. When one early run scaled 43 outputs from an unchecked source, 22 of them had to be regenerated.
+**Results:** The library is published as a searchable site with team and priority filters, so each team starts from an adopt-first list.
+**What I built:** A versioned skill plugin with a manifest for team rollout; A pipeline that builds a source document, validates and freezes it, then runs parallel steps from it; Gates before scale: a validator, a graded voice sample and a capacity check; A quarterly library audit for duplicates and retirement
+**Stack:** Claude skills; Claude Code; Firecrawl; Netlify
+
+## 30-day website launch for a healthcare IT consultancy (Shipped)
+
+Strategy to launch in 30 days as a solo engagement, with accessibility and AI-search groundwork built in.
+
+- **30 days** concept to live
+- **20+** pages designed and built
+- **WCAG AA** audited before launch
+- **1,000+** organic clicks per 28 days within 4 weeks of launch
+
+**The problem:** The firm needed a site that matched its reputation, on a fixed budget of about 60 hours, without losing the search traffic of the old site.
+**Results:** Live in one evening via DNS cutover. Organic clicks rose 33% from the launch month to the following month.
+**What I built:** A hand-coded WordPress theme with no page builders and sub-second page loads; A redirect map, launch runbook and parallel build with instant rollback; Forms with file uploads, consent gating and invisible anti-spam; llms.txt, FAQ patterns and citable claims for AI search; An AI automation roadmap for the firm's leadership
+**Stack:** WordPress (PHP); HTML/CSS/JS; Cloudflare Turnstile; Search Console
+
+## More work
+
+- **Speed-to-lead engine** (Tested): Ten workflows that catch every lead, check business hours and compliance, text first with email fallback and watch response times. First clean test: one text and one email in under a minute
+- **Three-bot chat system with shared knowledge bases** (Live): Chat assistants for three brands drawing on six modular knowledge bases with clean scope separation. 163 FAQs · all bots validated above 85% accuracy
+- **AI visibility audit products** (Live): Four audits, including an LLM visibility audit that queries ChatGPT, Gemini and Claude with web grounding and scores visibility 0–100. Branded HTML reports from one shared standard
+- **Automated monthly client report** (Tested): A Looker Studio dashboard goes in; an internal report, a client-facing report and a pre-filled meeting doc come out. Google Ads, Meta, Analytics and Business Profile in one run
+- **Website asset loader** (Tested): Pulls a client's logo, colors, fonts and photos into an organized folder, then bulk-loads them into the CRM media library. About 350 images loaded in 8 minutes
+- **Fact-locked AI content** (Live): Diagnosed why in-tool AI copy drifted from verified client facts, then built a context block that every research run now produces. Unverified items excluded by rule
+- **AI automation roadmap** (Delivered): A phased automation roadmap and a CRM and HR-system integration readout for a healthcare IT consultancy's leadership and finance teams. Paired with the 30-day website launch
+- **SkillEngine** (Shipped): An AI productivity platform that saves your best prompts as reusable skills, with Claude, Gemini and OpenAI behind one interface. 277 skills · 48 pages · built in 31 days · Open the app
+- **Media mix model platform** (Shipped): Bayesian media mix modeling with data connectors, data-quality checks and budget scenario planning. Adstock and saturation curves · scenario comparison

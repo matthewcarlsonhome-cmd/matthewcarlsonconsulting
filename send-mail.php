@@ -34,6 +34,7 @@ $name = isset($_POST['name']) ? clean_input($_POST['name']) : '';
 $email = isset($_POST['email']) ? clean_input($_POST['email']) : '';
 $company = isset($_POST['company']) ? clean_input($_POST['company']) : '';
 $service = isset($_POST['service']) ? clean_input($_POST['service']) : '';
+$tools = isset($_POST['tools']) ? clean_input($_POST['tools']) : '';
 $message = isset($_POST['message']) ? clean_input($_POST['message']) : '';
 
 // Validate required fields
@@ -69,7 +70,8 @@ $email_body .= "===========================================\n\n";
 $email_body .= "Name: " . $name . "\n";
 $email_body .= "Email: " . $_POST['email'] . "\n"; // Use original email for reply-to
 $email_body .= "Company: " . ($company ?: "Not provided") . "\n";
-$email_body .= "Service Interest: " . ($service ?: "Not specified") . "\n\n";
+$email_body .= "Service Interest: " . ($service ?: "Not specified") . "\n";
+$email_body .= "Tools in use: " . ($tools ?: "Not provided") . "\n\n";
 $email_body .= "===========================================\n";
 $email_body .= "MESSAGE\n";
 $email_body .= "===========================================\n\n";

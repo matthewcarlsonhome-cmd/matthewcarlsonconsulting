@@ -1,6 +1,6 @@
 # Site Repositioning Spec: AI Solutions Engineer
 
-**Date:** 2026-10-14
+**Date:** 2026-10-14 · **Status:** Implemented 2026-10-27 (see the note below)
 **Supersedes:** `docs/SITE-UPDATE-SPEC-CRM-AI-INTEGRATIONS.md` (July 2026). Its project drafts are folded into Part 5 below.
 **Sources:** `Matthew_Carlson_Skills_Reference_MASTER.md` (Sep 22, 2026), `..._CURRENT_2026-08-10_to_09-21.md`, `..._8-13-26.md`, `Website_Build_Skill_Reference.pdf` (Evergreen), and a full audit of this repository, which is the source deployed to matthewcarlsonconsulting.com. The live domain could not be fetched from the build environment (proxy block), so the audit was run against the repo.
 
@@ -443,7 +443,11 @@ Ship Phases 0-2 together (the site stops saying "PPC freelancer" immediately), t
 
 ---
 
-## Part 8. Decisions Needed Before Launch
+## Part 8. Decisions (resolved 2026-10-27)
+
+Matthew's answers: **no named clients** (employers Duluth Trading and Epic remain named), title **AI Solutions Engineer**, headshot supplied (`assets/matthew-carlson.jpg`), RAG resume search removed, full UX refresh. The implementation replaced `css/styles.css` with `css/site.css`, retired `automations.html` and `bot.html` with redirects, and moved deployment to `scripts/package.sh` plus FileZilla (`DEPLOYMENT.md`). The original decision list is kept below for reference.
+
+### Original decision list
 
 1. **Name clients publicly?** Small Screen Producer, Evergreen Healthcare Partners, Duluth Trading, Epic. Recommendation: name **Duluth Trading** and **Epic** (past employers, already on LinkedIn); ask **Evergreen** and **SSP** for written OK. Until then use "a marketing agency" / "a Best in KLAS healthcare IT consultancy". Never name SSP's end clients (Liverpool, Central Jersey Pools, AAA Pools, etc.).
 2. **Title on the site:** "AI Solutions Engineer" (recommended; matches job titles and the query) or "AI Solutions Architect" (more senior, fewer searches) or both ("AI Solutions Engineer & Architect").

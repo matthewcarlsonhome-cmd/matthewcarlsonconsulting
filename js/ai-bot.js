@@ -1,146 +1,105 @@
-const chatForm = document.getElementById('chat-form');
-const chatInput = document.getElementById('chat-input');
-const chatLog = document.getElementById('chat-log');
-const chatStatus = document.getElementById('chat-status');
+/* SkillEngine Assistant chat */
+(function () {
+    'use strict';
 
-const state = {
-    isSending: false
-};
+    var form = document.getElementById('chat-form');
+    if (!form) return;
+    var input = document.getElementById('chat-input');
+    var log = document.getElementById('chat-log');
+    var status = document.getElementById('chat-status');
+    var submit = form.querySelector('button[type="submit"]');
+    var endpoint = form.getAttribute('data-endpoint') || 'api/ai-chat.php';
+    var sending = false;
 
-const setStatus = (message, type = 'info') => {
-    chatStatus.textContent = message;
-    chatStatus.classList.remove('error');
-    if (type === 'error') {
-        chatStatus.classList.add('error');
+    function setStatus(text, isError) {
+        status.textContent = text || '';
+        status.classList.toggle('error', Boolean(isError));
     }
-};
 
-const scrollChatToBottom = () => {
-    chatLog.scrollTop = chatLog.scrollHeight;
-};
-
-const createMessage = (role, text) => {
-    const message = document.createElement('div');
-    message.className = `chat-message ${role}`;
-
-    const avatar = document.createElement('div');
-    avatar.className = 'chat-avatar';
-    avatar.textContent = role === 'user' ? 'You' : 'AI';
-
-    const bubble = document.createElement('div');
-    bubble.className = 'chat-bubble';
-    bubble.textContent = text;
-
-    message.appendChild(avatar);
-    message.appendChild(bubble);
-
-    chatLog.appendChild(message);
-    scrollChatToBottom();
-
-    return bubble;
-};
-
-const updateSendState = (isSending) => {
-    state.isSending = isSending;
-    chatInput.disabled = isSending;
-    chatForm.querySelector('button[type="submit"]').disabled = isSending;
-};
-
-const parseSseLines = (chunk, onData) => {
-    const lines = chunk.split(/\r?\n/);
-    for (const line of lines) {
-        if (!line.startsWith('data:')) {
-            continue;
-        }
-        const payload = line.replace(/^data:\s*/, '');
-        onData(payload);
+    function addMessage(role, text) {
+        var row = document.createElement('div');
+        row.className = 'chat-message ' + role;
+        var avatar = document.createElement('div');
+        avatar.className = 'chat-avatar';
+        avatar.setAttribute('aria-hidden', 'true');
+        avatar.textContent = role === 'user' ? 'You' : 'AI';
+        var bubble = document.createElement('div');
+        bubble.className = 'chat-bubble';
+        bubble.textContent = text;
+        row.appendChild(avatar);
+        row.appendChild(bubble);
+        log.appendChild(row);
+        log.scrollTop = log.scrollHeight;
+        return bubble;
     }
-};
 
-const handleStreamingResponse = async (response, assistantBubble) => {
-    const reader = response.body.getReader();
-    const decoder = new TextDecoder();
-    let buffer = '';
-    let fullText = '';
-
-    while (true) {
-        const { value, done } = await reader.read();
-        if (done) {
-            break;
-        }
-        buffer += decoder.decode(value, { stream: true });
-        const parts = buffer.split(/\n\n/);
-        buffer = parts.pop() || '';
-        for (const part of parts) {
-            parseSseLines(part, (payload) => {
-                if (payload === '[DONE]') {
-                    return;
-                }
-                try {
-                    const data = JSON.parse(payload);
-                    if (data.delta) {
-                        fullText += data.delta;
-                        assistantBubble.textContent = fullText;
-                    }
-                    if (data.error) {
-                        setStatus(data.error, 'error');
-                    }
-                } catch (error) {
-                    console.error('Unable to parse stream chunk', error);
-                }
-            });
-        }
+    function setSending(value) {
+        sending = value;
+        input.disabled = value;
+        submit.disabled = value;
+        log.setAttribute('aria-busy', String(value));
     }
-};
 
-const handleJsonResponse = async (response, assistantBubble) => {
-    const data = await response.json();
-    if (!response.ok) {
-        throw new Error(data.error || 'Unable to process request.');
-    }
-    assistantBubble.textContent = data.message || 'No response available.';
-};
+    function send(prompt) {
+        prompt = (prompt || '').trim();
+        if (!prompt || sending) return;
+        addMessage('user', prompt);
+        input.value = '';
+        autosize();
+        var bubble = addMessage('assistant', 'Thinking…');
+        setSending(true);
+        setStatus('');
+        if (typeof gtag === 'function') gtag('event', 'assistant_message', { event_category: 'engagement' });
 
-const sendPrompt = async (prompt) => {
-    const endpoint = chatForm.dataset.endpoint || 'api/ai-chat.php';
-    const assistantBubble = createMessage('assistant', 'Thinking...');
-    updateSendState(true);
-    setStatus('');
-
-    try {
-        const response = await fetch(endpoint, {
+        fetch(endpoint, {
             method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-                'Accept': 'text/event-stream'
-            },
+            headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
             body: JSON.stringify({ message: prompt })
-        });
+        })
+            .then(function (res) {
+                return res.json().catch(function () { return {}; }).then(function (data) {
+                    if (!res.ok) throw new Error(data.error || 'The assistant is unavailable right now.');
+                    return data;
+                });
+            })
+            .then(function (data) {
+                bubble.textContent = data.message || 'No response received.';
+            })
+            .catch(function (err) {
+                bubble.textContent = 'Sorry, I hit a snag. Please try again in a moment.';
+                setStatus(err.message, true);
+            })
+            .then(function () {
+                setSending(false);
+                input.focus();
+                log.scrollTop = log.scrollHeight;
+            });
+    }
 
-        if (response.headers.get('content-type')?.includes('text/event-stream')) {
-            await handleStreamingResponse(response, assistantBubble);
-        } else {
-            await handleJsonResponse(response, assistantBubble);
+    function autosize() {
+        input.style.height = 'auto';
+        input.style.height = Math.min(input.scrollHeight, 160) + 'px';
+    }
+
+    form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        send(input.value);
+    });
+
+    input.addEventListener('input', autosize);
+    input.addEventListener('keydown', function (e) {
+        if (e.key === 'Enter' && !e.shiftKey) {
+            e.preventDefault();
+            send(input.value);
         }
-    } catch (error) {
-        assistantBubble.textContent = 'Sorry, I hit a snag. Please try again in a moment.';
-        setStatus(error.message || 'Something went wrong.', 'error');
-    } finally {
-        updateSendState(false);
-        scrollChatToBottom();
-    }
-};
+    });
 
-chatForm.addEventListener('submit', (event) => {
-    event.preventDefault();
-    if (state.isSending) {
-        return;
-    }
-    const prompt = chatInput.value.trim();
-    if (!prompt) {
-        return;
-    }
-    createMessage('user', prompt);
-    chatInput.value = '';
-    sendPrompt(prompt);
-});
+    document.querySelectorAll('[data-prompt]').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+            send(btn.getAttribute('data-prompt'));
+            if (window.matchMedia('(max-width: 900px)').matches) {
+                document.getElementById('chat-panel').scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        });
+    });
+})();

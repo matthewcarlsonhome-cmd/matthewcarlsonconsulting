@@ -23,3 +23,6 @@ Thumbs.db
 # Temporary files
 *.tmp
 *.temp
+
+# Built upload folder (scripts/package.sh)
+deploy/
