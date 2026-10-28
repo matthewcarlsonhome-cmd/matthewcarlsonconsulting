@@ -22,7 +22,7 @@
     <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/site.css">
 
     <script type="application/ld+json">
@@ -93,169 +93,146 @@
     <!-- NAV:END -->
 
     <main id="main">
-        <section class="hero">
-            <div class="container hero-grid">
-                <div>
-                    <div class="hero-person">
-                        <img src="assets/matthew-carlson.jpg" alt="" width="48" height="48">
-                        <span><strong>Matthew Carlson</strong> AI Solutions Engineer · Madison, WI · working nationally</span>
+        <section class="hero home-hero">
+            <div class="container">
+                <div class="home-hero-grid">
+                    <div class="home-hero-copy">
+                        <div class="hero-person">
+                            <img src="assets/matthew-carlson.jpg" alt="" width="48" height="48">
+                            <span><strong>Matthew Carlson</strong> AI Solutions Engineer · Madison, WI · working nationally</span>
+                        </div>
+                        <h1>I build the AI systems that run your marketing operations.</h1>
+                        <p class="lead">AI agents, voice and chat assistants, CRM automation and reporting pipelines, designed by someone who ran a $40M marketing budget and shipped with tests, verification gates and a known cost per run.</p>
+                        <div class="btn-row mt-2">
+                            <a href="contact.html" class="btn btn-primary" data-track="home-hero-book">Book an AI build call</a>
+                            <a href="projects.html" class="btn btn-ghost btn-arrow" data-track="home-hero-work">See the work</a>
+                        </div>
                     </div>
-                    <h1>I build the AI systems that run your marketing operations.</h1>
-                    <p class="lead">AI agents, voice and chat assistants, CRM automation and reporting pipelines, designed by someone who ran a $40M marketing budget and shipped with tests, verification gates and a known cost per run.</p>
-                    <div class="btn-row mt-2">
-                        <a href="contact.html" class="btn btn-primary" data-track="home-hero-book">Book an AI build call</a>
-                        <a href="projects.html" class="btn btn-ghost btn-arrow" data-track="home-hero-work">See the work</a>
-                    </div>
+                    <a href="ai-bot.html" class="assistant-card" aria-label="Open the SkillEngine Assistant" data-track="home-hero-assistant">
+                        <div class="assistant-top">
+                            <div><strong>SkillEngine Assistant</strong><br><span>Example of the systems I build</span></div>
+                            <span class="live-dot">Online</span>
+                        </div>
+                        <div class="bubble user">Which client accounts have leads waiting more than 24 hours?</div>
+                        <div class="bubble ai">4 accounts flagged. Two have unassigned leads from last night's form fills; tasks created for their account managers.</div>
+                        <div class="bubble user">Build the speed-to-lead workflow from the spec.</div>
+                        <div class="bubble ai">10 workflows drafted in the test location. Gap report: 2 SMS actions need a compliance-safe number before live testing.</div>
+                        <div class="assistant-cta"><span>Try the assistant</span><span aria-hidden="true">→</span></div>
+                    </a>
                 </div>
-
-                <a href="ai-bot.html" class="assistant-card" aria-label="Open the SkillEngine Assistant" data-track="home-hero-assistant">
-                    <div class="assistant-top">
-                        <div><strong>SkillEngine Assistant</strong><br><span>Example of the systems I build</span></div>
-                        <span class="live-dot">Online</span>
-                    </div>
-                    <div class="bubble user">Which client accounts have leads waiting more than 24 hours?</div>
-                    <div class="bubble ai">4 accounts flagged. Two have unassigned leads from last night's form fills; tasks created for their account managers.</div>
-                    <div class="bubble user">Build the speed-to-lead workflow from the spec.</div>
-                    <div class="bubble ai">10 workflows drafted in the test location. Gap report: 2 SMS actions need a compliance-safe number before live testing.</div>
-                    <div class="assistant-cta"><span>Try the assistant</span><span aria-hidden="true">→</span></div>
-                </a>
+                <ul class="ledger" aria-label="Track record">
+                    <li><strong>33</strong><span>AI agents in one production client-intelligence platform</span></li>
+                    <li><strong>104</strong><span>packaged AI skills in a published library</span></li>
+                    <li><strong>12–15 hrs</strong><span>of manual ad reporting replaced every week</span></li>
+                    <li><strong>30 days</strong><span>concept to launch, 20+ page enterprise website, solo</span></li>
+                    <li><strong>$40M+</strong><span>annual marketing budget managed over 11 years</span></li>
+                </ul>
             </div>
         </section>
 
-        <section class="section-tight" aria-label="Track record">
-            <div class="container">
-                <div class="stats">
-                    <div class="stat"><div class="stat-value">33</div><div class="stat-label">AI agents in one production client-intelligence platform</div></div>
-                    <div class="stat"><div class="stat-value">104</div><div class="stat-label">packaged AI skills in a published library</div></div>
-                    <div class="stat"><div class="stat-value">12–15 hrs</div><div class="stat-label">of manual ad reporting replaced every week</div></div>
-                    <div class="stat"><div class="stat-value">30 days</div><div class="stat-label">concept to launch, 20+ page enterprise website, solo</div></div>
-                    <div class="stat"><div class="stat-value">$40M+</div><div class="stat-label">annual marketing budget managed over 11 years</div></div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section">
-            <div class="container">
-                <div class="section-head">
+        <section class="section index-section">
+            <div class="container index-grid">
+                <div class="index-intro">
                     <p class="eyebrow">What I build</p>
                     <h2>Six ways AI goes from pilot to production</h2>
                     <p class="lead">Each one ships with a written specification, a test plan and a cost model. You own everything I build.</p>
+                    <a href="services.html" class="btn btn-ghost btn-arrow mt-2">All solutions</a>
                 </div>
-                <div class="grid grid-3">
-                    <a class="card" href="services.html#ai-agents">
-                        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="8" width="16" height="12" rx="2"/><path d="M12 8V4"/><circle cx="12" cy="3" r="1"/><circle cx="9" cy="14" r="1"/><circle cx="15" cy="14" r="1"/></svg></div>
-                        <h3>AI agents &amp; workflows</h3>
-                        <p>Multi-agent systems, MCP servers and skill libraries that do real work on a schedule or a trigger.</p>
-                        <span class="card-link">Learn more →</span>
-                    </a>
-                    <a class="card" href="services.html#voice-chat-ai">
-                        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="22"/></svg></div>
-                        <h3>Voice &amp; chat AI</h3>
-                        <p>Phone and chat agents that answer, qualify, book and hand off, tested before a customer hears them.</p>
-                        <span class="card-link">Learn more →</span>
-                    </a>
-                    <a class="card" href="services.html#crm-automation">
-                        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="6" r="3"/><circle cx="18" cy="18" r="3"/><path d="M9 6h6a3 3 0 0 1 3 3v6"/><path d="M15 18H9a3 3 0 0 1-3-3V9"/></svg></div>
-                        <h3>CRM automation</h3>
-                        <p>Speed-to-lead, AI-researched onboarding and CRM builds generated from a spec.</p>
-                        <span class="card-link">Learn more →</span>
-                    </a>
-                    <a class="card" href="services.html#reporting-automation">
-                        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 5-6"/></svg></div>
-                        <h3>Reporting &amp; ad-ops automation</h3>
-                        <p>Google Ads scripts, nightly account-health checks and client report packets that build themselves.</p>
-                        <span class="card-link">Learn more →</span>
-                    </a>
-                    <a class="card" href="services.html#ai-strategy">
-                        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
-                        <h3>AI readiness &amp; roadmaps</h3>
-                        <p>Where AI fits, what to buy versus build, and the order to do it in. Fractional AI lead available.</p>
-                        <span class="card-link">Learn more →</span>
-                    </a>
-                    <a class="card" href="services.html#ai-ready-web">
-                        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
-                        <h3>AI-ready websites</h3>
-                        <p>Sites built to rank on Google and be cited by ChatGPT, Perplexity and Gemini.</p>
-                        <span class="card-link">Learn more →</span>
-                    </a>
-                </div>
+                <ol class="index-list">
+                    <li><a href="services.html#ai-agents" class="cat--agents"><span class="idx">01</span><span class="idx-body"><strong>AI agents &amp; workflows</strong><span>Multi-agent systems, MCP servers and skill libraries that do real work on a schedule or a trigger.</span></span><span class="idx-arrow" aria-hidden="true">→</span></a></li>
+                    <li><a href="services.html#voice-chat-ai" class="cat--voice"><span class="idx">02</span><span class="idx-body"><strong>Voice &amp; chat AI</strong><span>Phone and chat agents that answer, qualify, book and hand off, tested before a customer hears them.</span></span><span class="idx-arrow" aria-hidden="true">→</span></a></li>
+                    <li><a href="services.html#crm-automation" class="cat--crm"><span class="idx">03</span><span class="idx-body"><strong>CRM automation</strong><span>Speed-to-lead, AI-researched onboarding and CRM builds generated from a spec.</span></span><span class="idx-arrow" aria-hidden="true">→</span></a></li>
+                    <li><a href="services.html#reporting-automation" class="cat--reporting"><span class="idx">04</span><span class="idx-body"><strong>Reporting &amp; ad-ops automation</strong><span>Google Ads scripts, nightly account-health checks and client report packets that build themselves.</span></span><span class="idx-arrow" aria-hidden="true">→</span></a></li>
+                    <li><a href="services.html#ai-strategy" class="cat--products"><span class="idx">05</span><span class="idx-body"><strong>AI readiness &amp; roadmaps</strong><span>Where AI fits, what to buy versus build, and the order to do it in. Fractional AI lead available.</span></span><span class="idx-arrow" aria-hidden="true">→</span></a></li>
+                    <li><a href="services.html#ai-ready-web" class="cat--web"><span class="idx">06</span><span class="idx-body"><strong>AI-ready websites</strong><span>Sites built to rank on Google and be cited by ChatGPT, Perplexity and Gemini.</span></span><span class="idx-arrow" aria-hidden="true">→</span></a></li>
+                </ol>
             </div>
         </section>
 
         <section class="section section-alt">
             <div class="container">
-                <div class="section-head">
-                    <p class="eyebrow">Featured work</p>
-                    <h2>AI systems already doing the work</h2>
+                <div class="section-head split">
+                    <div>
+                        <p class="eyebrow">Featured work</p>
+                        <h2>AI systems already doing the work</h2>
+                    </div>
                     <p class="lead">A few of the systems I've built, each marked live, in pilot, tested or delivered.</p>
                 </div>
-                <div class="grid grid-2">
-                    <a class="card" href="projects.html#client-mind">
-                        <div class="meta-row"><span class="badge badge-live">Live</span><span class="tag">AI agents</span></div>
-                        <h3>Multi-agent client intelligence platform</h3>
-                        <p>One sourced memory of every client, shared by 33 AI agents and reachable from Claude through an MCP server.</p>
-                        <p class="proof">39 client profiles · 8-tool MCP server · ~$32–42/month to run</p>
+                <div class="feature-grid">
+                    <a class="feature-main case--agents" href="projects.html#client-mind">
+                        <figure class="case-figure">
+                            <svg class="diagram" viewBox="0 0 440 240" role="img" aria-label="Public sources feed one 26-section client profile, which 33 agents and an MCP server read."><defs><marker id="arr-client-mind" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L8 4L0 8z" class="ah" fill="#64748b"/></marker></defs><g class="edges" fill="none" stroke="#64748b" stroke-width="1.4" style="marker-end:url(#arr-client-mind)"><path class="e" d="M120 44H140V120H156"/><path class="e" d="M120 120H156"/><path class="e" d="M120 196H140V120H156"/><path class="e" d="M282 120H302V69H318"/><path class="e" d="M282 120H302V171H318"/></g><g class="n in"><rect x="8" y="22" width="112" height="44" rx="9" fill="#ffffff" stroke="#94a3b8"/><text x="64" y="41.5" class="t" text-anchor="middle" font-size="12" font-weight="600" fill="#0f1a2b">Website</text><text x="64" y="56.5" class="s" text-anchor="middle" font-size="10" fill="#5b6575">crawled pages</text></g><g class="n in"><rect x="8" y="98" width="112" height="44" rx="9" fill="#ffffff" stroke="#94a3b8"/><text x="64" y="117.5" class="t" text-anchor="middle" font-size="12" font-weight="600" fill="#0f1a2b">Reviews &amp; listings</text><text x="64" y="132.5" class="s" text-anchor="middle" font-size="10" fill="#5b6575">Google, Yelp, BBB</text></g><g class="n in"><rect x="8" y="174" width="112" height="44" rx="9" fill="#ffffff" stroke="#94a3b8"/><text x="64" y="193.5" class="t" text-anchor="middle" font-size="12" font-weight="600" fill="#0f1a2b">Public records</text><text x="64" y="208.5" class="s" text-anchor="middle" font-size="10" fill="#5b6575">licenses, WHOIS</text></g><g class="n core"><rect x="160" y="76" width="122" height="88" rx="9" fill="#4f46e5" stroke="#94a3b8"/><text x="221" y="117.5" class="t" text-anchor="middle" font-size="12" font-weight="600" fill="#ffffff">Client Mind</text><text x="221" y="132.5" class="s" text-anchor="middle" font-size="10" fill="#ffffff">26-section profile</text></g><g class="n out"><rect x="322" y="44" width="110" height="50" rx="9" fill="#ffffff" stroke="#94a3b8"/><text x="377" y="66.5" class="t" text-anchor="middle" font-size="12" font-weight="600" fill="#0f1a2b">33 AI agents</text><text x="377" y="81.5" class="s" text-anchor="middle" font-size="10" fill="#5b6575">content, ads, SEO</text></g><g class="n out"><rect x="322" y="146" width="110" height="50" rx="9" fill="#ffffff" stroke="#94a3b8"/><text x="377" y="168.5" class="t" text-anchor="middle" font-size="12" font-weight="600" fill="#0f1a2b">MCP server</text><text x="377" y="183.5" class="s" text-anchor="middle" font-size="10" fill="#5b6575">Claude reads it</text></g></svg>
+                            <figcaption>Public sources feed one 26-section client profile, which 33 agents and an MCP server read.</figcaption>
+                        </figure>
+                        <div class="feature-main-copy">
+                            <div class="meta-row"><span class="badge badge-live">Live</span><span class="tag">AI agents</span></div>
+                            <h3>Multi-agent client intelligence platform</h3>
+                            <p>One sourced memory of every client, shared by 33 AI agents and reachable from Claude through an MCP server.</p>
+                            <p class="proof">39 client profiles · 8-tool MCP server · ~$32–42/month to run</p>
+                        </div>
                     </a>
-                    <a class="card" href="projects.html#agents-that-build">
-                        <div class="meta-row"><span class="badge badge-tested">Tested</span><span class="tag">AI agents · CRM</span></div>
-                        <h3>Agents that build inside the CRM</h3>
-                        <p>Claude and OpenAI Codex construct workflows, pipelines and knowledge bases directly in the platform from written specs.</p>
-                        <p class="proof">3.5-hour unattended run · 351 custom values · verified at every step</p>
-                    </a>
-                    <a class="card" href="projects.html#voice-ai">
-                        <div class="meta-row"><span class="badge badge-tested">Tested</span><span class="tag">Voice AI</span></div>
-                        <h3>Inbound voice AI agent family</h3>
-                        <p>Phone agents that answer, qualify, book showroom visits and transfer with a spoken summary.</p>
-                        <p class="proof">11 of 11 first-block checks · 50+ case test suite · 6 service branches</p>
-                    </a>
-                    <a class="card" href="projects.html#account-health">
-                        <div class="meta-row"><span class="badge badge-live">Live</span><span class="tag">Reporting</span></div>
-                        <h3>Account health dashboard &amp; alert bridge</h3>
-                        <p>Every client CRM account checked nightly; problems become tasks in the tool account managers already use.</p>
-                        <p class="proof">18 health flags · read-only · Monday digest email</p>
-                    </a>
+                    <div class="feature-side">
+                        <a class="feature-row case--agents" href="projects.html#agents-that-build">
+                            <div class="meta-row"><span class="badge badge-tested">Tested</span><span class="tag">AI agents · CRM</span></div>
+                            <h3>Agents that build inside the CRM</h3>
+                            <p>Claude and OpenAI Codex construct workflows, pipelines and knowledge bases directly in the platform from written specs.</p>
+                            <p class="proof">3.5-hour unattended run · 351 custom values · verified at every step</p>
+                        </a>
+                        <a class="feature-row case--voice" href="projects.html#voice-ai">
+                            <div class="meta-row"><span class="badge badge-tested">Tested</span><span class="tag">Voice AI</span></div>
+                            <h3>Inbound voice AI agent family</h3>
+                            <p>Phone agents that answer, qualify, book showroom visits and transfer with a spoken summary.</p>
+                            <p class="proof">11 of 11 first-block checks · 50+ case test suite · 6 service branches</p>
+                        </a>
+                        <a class="feature-row case--reporting" href="projects.html#account-health">
+                            <div class="meta-row"><span class="badge badge-live">Live</span><span class="tag">Reporting</span></div>
+                            <h3>Account health dashboard &amp; alert bridge</h3>
+                            <p>Every client CRM account checked nightly; problems become tasks in the tool account managers already use.</p>
+                            <p class="proof">18 health flags · read-only · Monday digest email</p>
+                        </a>
+                        <a href="projects.html" class="feature-more" data-track="home-all-work">See all projects <span aria-hidden="true">→</span></a>
+                    </div>
                 </div>
-                <p class="mt-4"><a href="projects.html" class="btn btn-ghost btn-arrow" data-track="home-all-work">See all projects</a></p>
             </div>
         </section>
 
-        <section class="section">
+        <section class="section section-dark">
             <div class="container">
                 <div class="section-head">
                     <p class="eyebrow">Why AI projects stall</p>
                     <h2>The demo worked. Then what?</h2>
                 </div>
-                <div class="problem-grid">
-                    <div class="problem">
-                        <div>"The demo worked; the rollout didn't."</div>
-                        <div><p>I gate before scaling: one graded sample and a consistency check before an agent runs across every client. Checks take hours; a bad rollout costs days of regeneration.</p></div>
+                <div class="objections">
+                    <div class="objection">
+                        <blockquote>"The demo worked; the rollout didn't."</blockquote>
+                        <p>I gate before scaling: one graded sample and a consistency check before an agent runs across every client. Checks take hours; a bad rollout costs days of regeneration.</p>
                     </div>
-                    <div class="problem">
-                        <div>"Nobody trusts what the AI wrote."</div>
-                        <div><p>Every fact carries a source and a confidence label. Unverified details are flagged for a human, never guessed, and a bad input stops the run and notifies someone.</p></div>
+                    <div class="objection">
+                        <blockquote>"Nobody trusts what the AI wrote."</blockquote>
+                        <p>Every fact carries a source and a confidence label. Unverified details are flagged for a human, never guessed, and a bad input stops the run and notifies someone.</p>
                     </div>
-                    <div class="problem">
-                        <div>"We don't know what it costs to run."</div>
-                        <div><p>Every pipeline is metered. A full AI research pull on a new client costs about $4–8, and that number goes in the proposal.</p></div>
+                    <div class="objection">
+                        <blockquote>"We don't know what it costs to run."</blockquote>
+                        <p>Every pipeline is metered. A full AI research pull on a new client costs about $4–8, and that number goes in the proposal.</p>
                     </div>
                 </div>
             </div>
         </section>
 
         <section class="section section-alt">
-            <div class="container">
-                <div class="section-head">
+            <div class="container rules-grid">
+                <div class="index-intro">
                     <p class="eyebrow">How I build</p>
                     <h2>Engineering habits that make AI safe to depend on</h2>
                 </div>
-                <div class="grid grid-3">
-                    <div class="principle"><h3>Spec first</h3><p>A written specification defines every object before anything is built. The spec and the gap report are deliverables.</p></div>
-                    <div class="principle"><h3>Test before demo</h3><p>No client hears a voice agent until a 50+ case test suite and a stop-ship regression pass.</p></div>
-                    <div class="principle"><h3>Read-only by default</h3><p>Reporting systems observe and change nothing. Agents that write run in test environments first.</p></div>
-                    <div class="principle"><h3>Stop and notify</h3><p>When an input looks wrong, the system halts and tells a person how to restart. It doesn't guess.</p></div>
-                    <div class="principle"><h3>Meter every run</h3><p>Token, model and crawl costs are tracked per run, so AI becomes a known unit cost you can price.</p></div>
-                    <div class="principle"><h3>Buy the commodity</h3><p>If a tool already does it well, buy it. Build only where the interpretation is your advantage.</p></div>
-                </div>
+                <ol class="rules">
+                    <li><span class="idx">01</span><div><h3>Spec first</h3><p>A written specification defines every object before anything is built. The spec and the gap report are deliverables.</p></div></li>
+                    <li><span class="idx">02</span><div><h3>Test before demo</h3><p>No client hears a voice agent until a 50+ case test suite and a stop-ship regression pass.</p></div></li>
+                    <li><span class="idx">03</span><div><h3>Read-only by default</h3><p>Reporting systems observe and change nothing. Agents that write run in test environments first.</p></div></li>
+                    <li><span class="idx">04</span><div><h3>Stop and notify</h3><p>When an input looks wrong, the system halts and tells a person how to restart. It doesn't guess.</p></div></li>
+                    <li><span class="idx">05</span><div><h3>Meter every run</h3><p>Token, model and crawl costs are tracked per run, so AI becomes a known unit cost you can price.</p></div></li>
+                    <li><span class="idx">06</span><div><h3>Buy the commodity</h3><p>If a tool already does it well, buy it. Build only where the interpretation is your advantage.</p></div></li>
+                </ol>
             </div>
         </section>
 
@@ -265,12 +242,12 @@
                     <p class="eyebrow">Process</p>
                     <h2>From conversation to running system</h2>
                 </div>
-                <div class="steps">
-                    <div class="step"><h3>Discovery</h3><p>A working session on the process, the data and what success is worth in hours or revenue.</p></div>
-                    <div class="step"><h3>Specification</h3><p>A written spec, test plan and cost model you approve before the build starts.</p></div>
-                    <div class="step"><h3>Build with verification</h3><p>Built in a test environment, checked against the spec, with a gap report at each phase.</p></div>
-                    <div class="step"><h3>Launch &amp; hand off</h3><p>Pilot, monitor, document and train your team, or keep me on to run and improve it.</p></div>
-                </div>
+                <ol class="timeline-h">
+                    <li><span class="tl-dot"></span><h3>Discovery</h3><p>A working session on the process, the data and what success is worth in hours or revenue.</p></li>
+                    <li><span class="tl-dot"></span><h3>Specification</h3><p>A written spec, test plan and cost model you approve before the build starts.</p></li>
+                    <li><span class="tl-dot"></span><h3>Build with verification</h3><p>Built in a test environment, checked against the spec, with a gap report at each phase.</p></li>
+                    <li><span class="tl-dot"></span><h3>Launch &amp; hand off</h3><p>Pilot, monitor, document and train your team, or keep me on to run and improve it.</p></li>
+                </ol>
             </div>
         </section>
 

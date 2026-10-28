@@ -22,7 +22,7 @@
     <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/site.css">
 
     <script type="application/ld+json">
@@ -63,39 +63,52 @@
     <!-- NAV:END -->
 
     <main id="main">
-        <section class="page-hero">
-            <div class="container">
-                <p class="eyebrow">AI Assistant</p>
-                <h1>Try the SkillEngine Assistant</h1>
-                <p class="lead">Ask about my work, or describe a process and get a first-pass plan for automating it. Pick a starting point or type your own question.</p>
+        <section class="hero assistant-hero">
+            <div class="container assistant-hero-grid">
+                <div>
+                    <p class="eyebrow">AI Assistant</p>
+                    <h1>Try the SkillEngine Assistant</h1>
+                    <p class="lead">Ask about my work, or describe a process and get a first-pass plan for automating it. It has read the whole site and remembers the conversation.</p>
+                    <ul class="assistant-facts">
+                        <li><span class="dot dot-live"></span>Runs on Claude Sonnet</li>
+                        <li><span class="dot dot-pilot"></span>Knows every case study on this site</li>
+                        <li><span class="dot dot-tested"></span>Remembers your last 12 messages</li>
+                        <li><span class="dot dot-delivered"></span>No names or IP addresses stored</li>
+                    </ul>
+                </div>
+                <ol class="how-steps" aria-label="How it works">
+                    <li><span class="idx">01</span><strong>Ask</strong><span>Pick a starting point below or type your own question.</span></li>
+                    <li><span class="idx">02</span><strong>It reads the site</strong><span>Every project, number and principle, so answers cite real work.</span></li>
+                    <li><span class="idx">03</span><strong>Get a plan</strong><span>Trigger, data, steps, safety rules and how to test it.</span></li>
+                </ol>
             </div>
         </section>
 
-        <section class="section-tight">
+        <section class="section-tight assistant-section">
             <div class="container chat-shell">
-                <aside aria-label="Example prompts">
-                    <div class="prompt-group">
-                        <h2 class="visually-hidden">Example prompts</h2>
+                <aside aria-label="Example prompts" class="prompt-side">
+                    <h2 class="prompt-side-title">Starting points</h2>
+                    <div class="prompt-group cat--agents">
                         <h3>AI agents</h3>
                         <button type="button" class="prompt-btn" data-prompt="Which repetitive tasks in a marketing agency are the best first candidates for an AI agent? Rank them by hours saved and risk, and say which ones should stay human.">Where should an agency start with AI agents?</button>
                         <button type="button" class="prompt-btn" data-prompt="Design an AI agent that researches a new lead's business when they enter the CRM and briefs the sales team before the first call. Include the trigger, the data sources, what the brief contains and the safety rules.">Design a lead research agent</button>
                     </div>
-                    <div class="prompt-group">
+                    <div class="prompt-group cat--voice">
                         <h3>Voice &amp; chat AI</h3>
                         <button type="button" class="prompt-btn" data-prompt="Outline an inbound voice AI receptionist for a multi-location service business: what it answers, when it books, when it transfers to a person, what it must never say, and how to test it before launch.">Plan a voice receptionist</button>
                         <button type="button" class="prompt-btn" data-prompt="How should I structure knowledge bases for chat assistants that serve several brands, so content is shared without the bots mixing up brands?">Structure chatbot knowledge bases</button>
                     </div>
-                    <div class="prompt-group">
+                    <div class="prompt-group cat--crm">
                         <h3>CRM automation</h3>
                         <button type="button" class="prompt-btn" data-prompt="Design a speed-to-lead system that responds to every new lead in under a minute: lead sources, business-hours and consent checks, SMS and email steps, and how to measure response time.">Build a speed-to-lead system</button>
                         <button type="button" class="prompt-btn" data-prompt="How can AI research a new client's business so onboarding asks the client to confirm a pre-filled profile instead of filling out a long questionnaire?">Shorten client onboarding with AI</button>
                     </div>
-                    <div class="prompt-group">
+                    <div class="prompt-group cat--reporting">
                         <h3>Reporting automation</h3>
                         <button type="button" class="prompt-btn" data-prompt="Which Google Ads reporting and optimization checks are worth automating with scripts across many accounts, and how often should each one run?">Automate Google Ads reporting</button>
                         <button type="button" class="prompt-btn" data-prompt="What health checks should run nightly across client CRM accounts to catch silent forms, waiting leads and stalled deals before the client notices?">Monitor client CRM accounts</button>
                     </div>
-                    <div class="prompt-group">
+                    <div class="prompt-group cat--products">
                         <h3>About Matthew</h3>
                         <button type="button" class="prompt-btn" data-prompt="What kinds of AI systems has Matthew Carlson built, and which one is most relevant to a marketing agency?">What has Matthew built?</button>
                     </div>
@@ -103,7 +116,7 @@
 
                 <div class="chat-panel" id="chat-panel">
                     <div class="chat-panel-head">
-                        <div><strong>SkillEngine Assistant</strong><br><span class="muted" style="font-size:0.88rem;">Powered by Claude</span></div>
+                        <div class="chat-panel-id"><span class="chat-mark" aria-hidden="true">SE</span><div><strong>SkillEngine Assistant</strong><br><span>Powered by Claude Sonnet</span></div></div>
                         <div class="chat-head-actions"><span class="live-dot">Online</span><button type="button" class="chat-reset" id="chat-reset">New chat</button></div>
                     </div>
                     <div class="chat-log" id="chat-log" role="log" aria-live="polite" aria-label="Conversation">
@@ -120,8 +133,21 @@
                     </form>
                 </div>
             </div>
+        </section>
+
+        <section class="section section-alt">
             <div class="container">
-                <p class="chat-disclaimer">General guidance only. Please don't share passwords, API keys or customer data. Messages are sent to Anthropic's Claude to generate replies and are kept in a private log, without your name or IP address, to improve the assistant. For a plan specific to your business, <a href="contact.html">book a call</a>.</p>
+                <div class="section-head">
+                    <p class="eyebrow">Built the same way</p>
+                    <h2>This assistant is one of the systems I build for clients</h2>
+                    <p class="lead">Same pattern, pointed at your own knowledge and tools.</p>
+                </div>
+                <div class="grid grid-3">
+                    <div class="card cat--agents"><div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19V5a1 1 0 0 1 1-1h10l5 5v10a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1z"/><path d="M14 4v5h5"/></svg></div><h3>Grounded in your content</h3><p>It answers only from the site's text, labels what it doesn't know, and never invents numbers or clients.</p></div>
+                    <div class="card cat--voice"><div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><h3>Guardrails built in</h3><p>Rate limits, a server-side key, refusal handling and a private log without names or addresses.</p></div>
+                    <div class="card cat--reporting"><div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 5-6"/></svg></div><h3>Metered per message</h3><p>Every reply records its token use, so the running cost is a known number, not a guess.</p></div>
+                </div>
+                <p class="chat-disclaimer mt-2">General guidance only. Please don't share passwords, API keys or customer data. Messages are sent to Anthropic's Claude to generate replies and are kept in a private log, without your name or IP address, to improve the assistant. For a plan specific to your business, <a href="contact.html">book a call</a>.</p>
             </div>
         </section>
     </main>

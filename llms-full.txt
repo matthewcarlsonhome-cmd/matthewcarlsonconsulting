@@ -28,123 +28,90 @@ AI agents, voice and chat assistants, CRM automation and reporting pipelines, de
 
 Each one ships with a written specification, a test plan and a cost model. You own everything I build.
 
-#### AI agents & workflows
-
-Multi-agent systems, MCP servers and skill libraries that do real work on a schedule or a trigger.
-
-Details: [services.html#ai-agents](https://matthewcarlsonconsulting.com/services.html#ai-agents)
-
-#### Voice & chat AI
-
-Phone and chat agents that answer, qualify, book and hand off, tested before a customer hears them.
-
-Details: [services.html#voice-chat-ai](https://matthewcarlsonconsulting.com/services.html#voice-chat-ai)
-
-#### CRM automation
-
-Speed-to-lead, AI-researched onboarding and CRM builds generated from a spec.
-
-Details: [services.html#crm-automation](https://matthewcarlsonconsulting.com/services.html#crm-automation)
-
-#### Reporting & ad-ops automation
-
-Google Ads scripts, nightly account-health checks and client report packets that build themselves.
-
-Details: [services.html#reporting-automation](https://matthewcarlsonconsulting.com/services.html#reporting-automation)
-
-#### AI readiness & roadmaps
-
-Where AI fits, what to buy versus build, and the order to do it in. Fractional AI lead available.
-
-Details: [services.html#ai-strategy](https://matthewcarlsonconsulting.com/services.html#ai-strategy)
-
-#### AI-ready websites
-
-Sites built to rank on Google and be cited by ChatGPT, Perplexity and Gemini.
-
-Details: [services.html#ai-ready-web](https://matthewcarlsonconsulting.com/services.html#ai-ready-web)
+[All solutions](https://matthewcarlsonconsulting.com/services.html)
+- [01**AI agents & workflows**: Multi-agent systems, MCP servers and skill libraries that do real work on a schedule or a trigger.→](https://matthewcarlsonconsulting.com/services.html#ai-agents)
+- [02**Voice & chat AI**: Phone and chat agents that answer, qualify, book and hand off, tested before a customer hears them.→](https://matthewcarlsonconsulting.com/services.html#voice-chat-ai)
+- [03**CRM automation**: Speed-to-lead, AI-researched onboarding and CRM builds generated from a spec.→](https://matthewcarlsonconsulting.com/services.html#crm-automation)
+- [04**Reporting & ad-ops automation**: Google Ads scripts, nightly account-health checks and client report packets that build themselves.→](https://matthewcarlsonconsulting.com/services.html#reporting-automation)
+- [05**AI readiness & roadmaps**: Where AI fits, what to buy versus build, and the order to do it in. Fractional AI lead available.→](https://matthewcarlsonconsulting.com/services.html#ai-strategy)
+- [06**AI-ready websites**: Sites built to rank on Google and be cited by ChatGPT, Perplexity and Gemini.→](https://matthewcarlsonconsulting.com/services.html#ai-ready-web)
 
 ### AI systems already doing the work
 
 A few of the systems I've built, each marked live, in pilot, tested or delivered.
 
+[Public sources feed one 26-section client profile, which 33 agents and an MCP server read.
 Status: Live. AI agents
 
 #### Multi-agent client intelligence platform
 
 One sourced memory of every client, shared by 33 AI agents and reachable from Claude through an MCP server.
 
-39 client profiles · 8-tool MCP server · ~$32–42/month to run
-
-Details: [projects.html#client-mind](https://matthewcarlsonconsulting.com/projects.html#client-mind)
-
-Status: Tested. AI agents · CRM
+39 client profiles · 8-tool MCP server · ~$32–42/month to run](https://matthewcarlsonconsulting.com/projects.html#client-mind)
+[Status: Tested. AI agents · CRM
 
 #### Agents that build inside the CRM
 
 Claude and OpenAI Codex construct workflows, pipelines and knowledge bases directly in the platform from written specs.
 
-3.5-hour unattended run · 351 custom values · verified at every step
-
-Details: [projects.html#agents-that-build](https://matthewcarlsonconsulting.com/projects.html#agents-that-build)
-
-Status: Tested. Voice AI
+3.5-hour unattended run · 351 custom values · verified at every step](https://matthewcarlsonconsulting.com/projects.html#agents-that-build) [Status: Tested. Voice AI
 
 #### Inbound voice AI agent family
 
 Phone agents that answer, qualify, book showroom visits and transfer with a spoken summary.
 
-11 of 11 first-block checks · 50+ case test suite · 6 service branches
-
-Details: [projects.html#voice-ai](https://matthewcarlsonconsulting.com/projects.html#voice-ai)
-
-Status: Live. Reporting
+11 of 11 first-block checks · 50+ case test suite · 6 service branches](https://matthewcarlsonconsulting.com/projects.html#voice-ai) [Status: Live. Reporting
 
 #### Account health dashboard & alert bridge
 
 Every client CRM account checked nightly; problems become tasks in the tool account managers already use.
 
-18 health flags · read-only · Monday digest email
-
-Details: [projects.html#account-health](https://matthewcarlsonconsulting.com/projects.html#account-health)
-
-[See all projects](https://matthewcarlsonconsulting.com/projects.html)
+18 health flags · read-only · Monday digest email](https://matthewcarlsonconsulting.com/projects.html#account-health) [See all projects →](https://matthewcarlsonconsulting.com/projects.html)
 
 ### The demo worked. Then what?
 
-##### "The demo worked; the rollout didn't."
-
+"The demo worked; the rollout didn't."
 I gate before scaling: one graded sample and a consistency check before an agent runs across every client. Checks take hours; a bad rollout costs days of regeneration.
 
-##### "Nobody trusts what the AI wrote."
-
+"Nobody trusts what the AI wrote."
 Every fact carries a source and a confidence label. Unverified details are flagged for a human, never guessed, and a bad input stops the run and notifies someone.
 
-##### "We don't know what it costs to run."
-
+"We don't know what it costs to run."
 Every pipeline is metered. A full AI research pull on a new client costs about $4–8, and that number goes in the proposal.
 
 ### Engineering habits that make AI safe to depend on
+
+01
 
 #### Spec first
 
 A written specification defines every object before anything is built. The spec and the gap report are deliverables.
 
+02
+
 #### Test before demo
 
 No client hears a voice agent until a 50+ case test suite and a stop-ship regression pass.
+
+03
 
 #### Read-only by default
 
 Reporting systems observe and change nothing. Agents that write run in test environments first.
 
+04
+
 #### Stop and notify
 
 When an input looks wrong, the system halts and tells a person how to restart. It doesn't guess.
 
+05
+
 #### Meter every run
 
 Token, model and crawl costs are tracked per run, so AI becomes a known unit cost you can price.
+
+06
 
 #### Buy the commodity
 

@@ -22,7 +22,7 @@
     <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/site.css">
 
     <script type="application/ld+json">
@@ -196,9 +196,24 @@
         </section>
 
         <section class="section-tight">
-          <div class="container narrow">
-            <section class="faq-group">
+          <div class="container faq-layout">
+            <aside class="faq-side">
+                <nav aria-label="FAQ sections">
+                    <p class="work-index-label">Sections</p>
+                    <a href="#working-together">Working together</a>
+                    <a href="#ai-systems-safety">AI systems &amp; safety</a>
+                    <a href="#platforms-integrations">Platforms &amp; integrations</a>
+                </nav>
+                <div class="side-card">
+                    <h3>Ask it instead</h3>
+                    <p>The SkillEngine Assistant has read the whole site and answers follow-ups.</p>
+                    <a href="ai-bot.html" class="btn btn-ghost btn-arrow">Open the assistant</a>
+                </div>
+            </aside>
+            <div class="faq-main">
+            <section class="faq-group" id="working-together">
                 <h2>Working together</h2>
+                <div class="faq-cols">
                 <details class="faq-item">
                     <summary>What does an AI Solutions Engineer do?</summary>
                     <div class="faq-answer"><p>An AI Solutions Engineer designs, builds and runs AI systems that do real work inside a business: agents, voice and chat assistants, automations and reporting pipelines. The job covers the whole path from a business problem to a tested system in production, not only the model or the prompt.</p><p>In my practice that means writing the specification, building in a test environment, verifying the result, and launching with monitoring and a known cost per run.</p></div>
@@ -223,9 +238,11 @@
                     <summary>What&#x27;s the first step?</summary>
                     <div class="faq-answer"><p><a href="contact.html">Book a 30-minute call</a>. Bring the process you'd like AI to handle. We'll talk through the data, the risks and what success is worth, and you'll leave knowing whether it's worth building.</p></div>
                 </details>
+                </div>
             </section>
-            <section class="faq-group">
+            <section class="faq-group" id="ai-systems-safety">
                 <h2>AI systems &amp; safety</h2>
+                <div class="faq-cols">
                 <details class="faq-item">
                     <summary>How do you make sure an AI agent won&#x27;t do something wrong?</summary>
                     <div class="faq-answer"><p>Several layers:</p><ul><li>Agents that change things are built and tested in separate test environments first, with checks that confirm where they're working.</li><li>Reporting systems are read-only by default.</li><li>Client-facing agents pass a written test suite (50+ cases for a voice agent) and a safety regression before anyone outside the team hears them.</li><li>When an input looks wrong, the system stops and notifies a person instead of guessing.</li></ul></div>
@@ -250,9 +267,11 @@
                     <summary>Should we build or buy?</summary>
                     <div class="faq-answer"><p>Buy the commodity and own the interpretation. If a tool already measures something well, use it. Build where your data, process or judgment is the advantage. An AI Readiness Sprint ends with a clear build-or-buy call for each opportunity.</p></div>
                 </details>
+                </div>
             </section>
-            <section class="faq-group">
+            <section class="faq-group" id="platforms-integrations">
                 <h2>Platforms &amp; integrations</h2>
+                <div class="faq-cols">
                 <details class="faq-item">
                     <summary>What platforms do you work with?</summary>
                     <div class="faq-answer"><ul><li><strong>AI:</strong> Claude (API, Claude Code, MCP), OpenAI (API, Codex), Gemini</li><li><strong>CRM &amp; marketing automation:</strong> GoHighLevel, HubSpot</li><li><strong>Data:</strong> Supabase/Postgres, Google Sheets, Looker Studio, GA4</li><li><strong>Ads:</strong> Google Ads API and Scripts, Meta</li><li><strong>Web:</strong> WordPress, static sites, Netlify</li></ul><p>If a tool has an API or webhooks, it can usually be connected.</p></div>
@@ -269,7 +288,9 @@
                     <summary>What is MCP, and why does it matter?</summary>
                     <div class="faq-answer"><p>The Model Context Protocol (MCP) is an open standard that lets AI assistants such as Claude securely use your data and tools. I've built an MCP server in production use that gives Claude access to an agency's client profiles, with token authentication and audit logging.</p></div>
                 </details>
+                </div>
             </section>
+            </div>
           </div>
         </section>
 

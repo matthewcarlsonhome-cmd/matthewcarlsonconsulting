@@ -26,3 +26,4 @@ Thumbs.db
 
 # Built upload folder (scripts/package.sh)
 deploy/
+deploy-manifest.txt

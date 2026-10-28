@@ -20,12 +20,22 @@ for f in "${FILES[@]}"; do
   cp "$f" "deploy/$f"
 done
 
-# Version-stamp CSS and JS links so browsers fetch the new files after every upload
-# (the server tells browsers to cache them for 7 days).
-STAMP=$(date +%Y%m%d%H%M)
+# Version-stamp CSS and JS links with a hash of each file's contents, so browsers fetch a
+# changed file (the server caches them for 7 days) while unchanged pages stay byte-identical.
+stamp() { md5sum "$1" | cut -c1-8; }
+CSSV=$(stamp css/site.css); MAINV=$(stamp js/main.js); BOTV=$(stamp js/ai-bot.js)
 for f in deploy/*.html; do
-  sed -i -e "s#css/site\.css\"#css/site.css?v=$STAMP\"#" -e "s#js/main\.js\"#js/main.js?v=$STAMP\"#" -e "s#js/ai-bot\.js\"#js/ai-bot.js?v=$STAMP\"#" "$f"
+  sed -i -e "s#css/site\.css\"#css/site.css?v=$CSSV\"#" -e "s#js/main\.js\"#js/main.js?v=$MAINV\"#" -e "s#js/ai-bot\.js\"#js/ai-bot.js?v=$BOTV\"#" "$f"
 done
 
-echo "deploy/ is ready: ${#FILES[@]} files (asset version $STAMP)."
+# Files changed since the last package (tracked in deploy-manifest.txt at the repo root)
+MANIFEST=deploy-manifest.txt
+NEW=$(cd deploy && find . -type f | sort | xargs md5sum)
+if [ -f "$MANIFEST" ]; then
+  echo ""
+  echo "Changed since last package (upload these):"
+  comm -13 <(sort "$MANIFEST") <(echo "$NEW" | sort) | awk '{print "  " $2}' | sed 's#\./##'
+fi
+echo "$NEW" > "$MANIFEST"
+echo "deploy/ is ready: ${#FILES[@]} files ."
 echo "Note: api/config.php (your Anthropic API key) is NOT included. Leave the copy already on the server in place."
