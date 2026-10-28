@@ -76,12 +76,28 @@ while ($total > MAX_TOTAL_CHARS && count($messages) > 1) {
     $total -= array_sum(array_map(fn($m) => mb_strlen($m['content']), $removed));
 }
 
-$apiKey = getenv('ANTHROPIC_API_KEY');
-if (!$apiKey) {
+// The key may be set in config.php as putenv(), define() or a plain variable.
+function setting($name)
+{
+    $value = getenv($name);
+    if (!$value && defined($name)) {
+        $value = constant($name);
+    }
+    if (!$value && isset($GLOBALS[$name])) {
+        $value = $GLOBALS[$name];
+    }
+    if (!$value && isset($_SERVER[$name])) {
+        $value = $_SERVER[$name];
+    }
+    return is_string($value) ? trim($value) : '';
+}
+$apiKey = setting('ANTHROPIC_API_KEY');
+if ($apiKey === '' || strpos($apiKey, 'PASTE') !== false) {
+    error_log('ai-chat: ANTHROPIC_API_KEY missing. config.php ' . (file_exists($configPath) ? 'found' : 'NOT found') . ' at ' . $configPath);
     fail(500, 'The assistant is not configured yet.');
 }
-$model = getenv('ANTHROPIC_MODEL') ?: 'claude-sonnet-5-5';
-$apiUrl = getenv('ANTHROPIC_API_URL') ?: 'https://api.anthropic.com/v1/messages';
+$model = setting('ANTHROPIC_MODEL') ?: 'claude-sonnet-5-5';
+$apiUrl = setting('ANTHROPIC_API_URL') ?: 'https://api.anthropic.com/v1/messages';
 
 // ---- Rate limit (per visitor, by hashed IP) ----
 $clientIp = $_SERVER['HTTP_CF_CONNECTING_IP'] ?? $_SERVER['HTTP_X_FORWARDED_FOR'] ?? $_SERVER['REMOTE_ADDR'] ?? 'unknown';
@@ -238,7 +254,7 @@ emit('[DONE]');
 
 // ---- Private log of questions and answers ----
 // Default location is outside the web root (one level above public_html); override with CHAT_LOG_DIR.
-$logDir = getenv('CHAT_LOG_DIR') ?: dirname(__DIR__, 2) . '/chat-logs';
+$logDir = setting('CHAT_LOG_DIR') ?: dirname(__DIR__, 2) . '/chat-logs';
 if (!is_dir($logDir)) {
     @mkdir($logDir, 0700, true);
 }
