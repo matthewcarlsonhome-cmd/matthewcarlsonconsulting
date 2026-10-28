@@ -4,7 +4,7 @@ Matthew Carlson Consulting website. Positioning: **AI Solutions Engineer**. Back
 
 ## Stack and deploy
 - Static HTML/vanilla JS in the repo root. All styles live in `css/site.css` (design tokens at the top, dark mode via `prefers-color-scheme`). Shared behavior is in `js/main.js`; the assistant chat is in `js/ai-bot.js`.
-- `api/ai-chat.php` (SkillEngine Assistant: Claude Haiku 5.5 via the Messages API over curl, streamed, last 12 turns of memory, site knowledge loaded from `llms-full.txt`, private JSONL log in a `chat-logs` folder above the web root) and `send-mail.php` run on GoDaddy Apache. `api/config.php` holds `ANTHROPIC_API_KEY` and exists only on the server (template: `api/config.example.php`). Redirects and the 404 page are configured in `.htaccess`.
+- `api/ai-chat.php` (SkillEngine Assistant: Claude Sonnet 5.5 (with server-side refusal fallback) via the Messages API over curl, streamed, last 12 turns of memory, site knowledge loaded from `llms-full.txt`, private JSONL log in a `chat-logs` folder above the web root) and `send-mail.php` run on GoDaddy Apache. `api/config.php` holds `ANTHROPIC_API_KEY` and exists only on the server (template: `api/config.example.php`). Redirects and the 404 page are configured in `.htaccess`.
 - Deploy: `bash scripts/package.sh` builds `deploy/`, which is uploaded with FileZilla per `DEPLOYMENT.md`. Add any new public file to the list in `scripts/package.sh`.
 - No build step. Don't add frameworks or bundlers.
 

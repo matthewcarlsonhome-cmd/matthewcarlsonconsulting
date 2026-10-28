@@ -80,7 +80,7 @@ $apiKey = getenv('ANTHROPIC_API_KEY');
 if (!$apiKey) {
     fail(500, 'The assistant is not configured yet.');
 }
-$model = getenv('ANTHROPIC_MODEL') ?: 'claude-haiku-5-5';
+$model = getenv('ANTHROPIC_MODEL') ?: 'claude-sonnet-5-5';
 $apiUrl = getenv('ANTHROPIC_API_URL') ?: 'https://api.anthropic.com/v1/messages';
 
 // ---- Rate limit (per visitor, by hashed IP) ----
@@ -140,6 +140,17 @@ $requestBody = [
     'messages' => $messages,
     'output_config' => ['effort' => 'low'],
 ];
+$headers = [
+    'x-api-key: ' . $apiKey,
+    'anthropic-version: 2026-10-21',
+    'content-type: application/json',
+];
+// If the model declines a message, let the API retry it on Anthropic's recommended model.
+// Haiku has no server-side fallback, so this is only sent for Sonnet and Opus.
+if (preg_match('/^claude-(sonnet|opus)-/', $model)) {
+    $requestBody['fallbacks'] = 'default';
+    $headers[] = 'anthropic-beta: server-side-fallback-2026-07-01';
+}
 
 // ---- Stream the reply ----
 @ini_set('zlib.output_compression', '0');
@@ -162,11 +173,7 @@ $state = ['status' => 0, 'buffer' => '', 'errorBody' => '', 'reply' => '', 'stop
 $ch = curl_init($apiUrl);
 curl_setopt_array($ch, [
     CURLOPT_POST => true,
-    CURLOPT_HTTPHEADER => [
-        'x-api-key: ' . $apiKey,
-        'anthropic-version: 2026-10-21',
-        'content-type: application/json',
-    ],
+    CURLOPT_HTTPHEADER => $headers,
     CURLOPT_POSTFIELDS => json_encode($requestBody),
     CURLOPT_CONNECTTIMEOUT => 10,
     CURLOPT_TIMEOUT => 90,

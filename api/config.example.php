@@ -12,8 +12,8 @@
 // Anthropic API key - REQUIRED
 putenv('ANTHROPIC_API_KEY=sk-ant-your-key-here');
 
-// Model - optional. Default: claude-haiku-5-5 (fast and inexpensive).
-// putenv('ANTHROPIC_MODEL=claude-haiku-5-5');
+// Model - optional. Default: claude-sonnet-5-5.
+// For the cheapest, fastest option use: putenv('ANTHROPIC_MODEL=claude-haiku-5-5');
 
 // Where the private chat log is written - optional.
 // Default: a "chat-logs" folder one level ABOVE public_html, so it can't be opened from the web.
