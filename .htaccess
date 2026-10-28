@@ -17,6 +17,9 @@ Redirect 301 /article.html /projects.html
 
 Options -Indexes
 
+# Never serve version-control or hidden folders (e.g. a .git folder left on the server)
+RedirectMatch 404 /\.(git|svn|hg)(/|$)
+
 # Keep repo-only files private if they are ever uploaded by mistake
 <FilesMatch "\.(md|py|sh|bat|zip|example\.php)$">
     Require all denied
