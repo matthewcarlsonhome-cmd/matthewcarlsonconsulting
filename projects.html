@@ -12,7 +12,7 @@
     <meta name="robots" content="index, follow">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Work | Matthew Carlson, AI Solutions Engineer">
-    <meta property="og:description" content="Production AI systems, labeled honestly: live, in pilot, tested or delivered.">
+    <meta property="og:description" content="AI agents, voice assistants and automation already doing real work for real businesses, with the results to show for it.">
     <meta property="og:url" content="https://matthewcarlsonconsulting.com/projects.html">
     <meta property="og:image" content="https://matthewcarlsonconsulting.com/assets/matthew-carlson.jpg">
     <meta name="twitter:card" content="summary">
@@ -70,17 +70,38 @@
     <!-- NAV:END -->
 
     <main id="main">
-        <section class="page-hero">
-            <div class="container">
-                <p class="eyebrow">Work</p>
-                <h1>Production AI systems, labeled honestly</h1>
-                <p class="lead">Each project carries its real status. <strong>Live</strong> is in daily use, <strong>Pilot</strong> is with a first client, <strong>Tested</strong> has passed a written test plan, and <strong>Delivered</strong> is a finished analysis or plan. Client names are withheld.</p>
+        <section class="hero work-hero">
+            <div class="container work-hero-grid">
+                <div>
+                    <p class="eyebrow">Work</p>
+                    <h1>AI systems already doing the work</h1>
+                    <p class="lead">Agents, voice assistants and automation built for real businesses, with the numbers behind each one. <strong>Live</strong> is in daily use, <strong>Pilot</strong> is with a first client, <strong>Tested</strong> has passed a written test plan, and <strong>Delivered</strong> is a finished analysis or plan. Client names are withheld.</p>
+                    <ul class="status-key" aria-label="Status key">
+                        <li><span class="dot dot-live"></span>Live / Shipped</li>
+                        <li><span class="dot dot-pilot"></span>Pilot</li>
+                        <li><span class="dot dot-tested"></span>Tested</li>
+                        <li><span class="dot dot-delivered"></span>Delivered</li>
+                    </ul>
+                </div>
+                <nav class="work-index" aria-label="Case studies">
+                    <p class="work-index-label">Case studies</p>
+                    <ol>
+                        <li><a href="#client-mind"><span class="toc-num">01</span><span class="toc-title">Multi-agent client intelligence platform</span><span class="dot dot-live" title="Live"></span></a></li>
+                        <li><a href="#agents-that-build"><span class="toc-num">02</span><span class="toc-title">Agents that build: CRM construction from a spec with Claude &amp; Codex</span><span class="dot dot-tested" title="Tested"></span></a></li>
+                        <li><a href="#voice-ai"><span class="toc-num">03</span><span class="toc-title">Inbound voice AI agent family</span><span class="dot dot-tested" title="Tested"></span></a></li>
+                        <li><a href="#account-health"><span class="toc-num">04</span><span class="toc-title">Account health dashboard &amp; alert bridge</span><span class="dot dot-live" title="Live"></span></a></li>
+                        <li><a href="#google-ads-suite"><span class="toc-num">05</span><span class="toc-title">Google Ads automation suite</span><span class="dot dot-live" title="Live"></span></a></li>
+                        <li><a href="#onboarding"><span class="toc-num">06</span><span class="toc-title">Research-then-verify client onboarding</span><span class="dot dot-pilot" title="Pilot"></span></a></li>
+                        <li><a href="#skill-library"><span class="toc-num">07</span><span class="toc-title">104-skill AI library &amp; orchestration pipeline</span><span class="dot dot-live" title="Live"></span></a></li>
+                        <li><a href="#website-launch"><span class="toc-num">08</span><span class="toc-title">30-day website launch for a healthcare IT consultancy</span><span class="dot dot-shipped" title="Shipped"></span></a></li>
+                    </ol>
+                </nav>
             </div>
         </section>
 
         <section class="section-tight">
             <div class="container">
-                <div class="filters" data-filters role="group" aria-label="Filter projects">
+                <div class="filters-bar"><div class="filters" data-filters role="group" aria-label="Filter projects">
                     <button type="button" class="filter" data-filter="all" aria-pressed="true">All</button>
                     <button type="button" class="filter" data-filter="agents" aria-pressed="false">AI agents</button>
                     <button type="button" class="filter" data-filter="voice" aria-pressed="false">Voice &amp; chat AI</button>
@@ -88,17 +109,23 @@
                     <button type="button" class="filter" data-filter="reporting" aria-pressed="false">Reporting &amp; analytics</button>
                     <button type="button" class="filter" data-filter="web" aria-pressed="false">Web &amp; search</button>
                     <button type="button" class="filter" data-filter="products" aria-pressed="false">Products</button>
-                </div>
+                </div></div>
 
                 <div data-filter-group>
-                <h2 class="visually-hidden">Featured case studies</h2>
+                <div class="group-head"><h2>Case studies</h2><p class="muted">Eight systems, each with how it works, what it took and the measured result.</p></div>
                 <div class="case-list">
 
-                    <article class="case" id="client-mind" data-category="agents">
-                        <div class="case-head">
-                            <div class="meta-row"><span class="badge badge-live">Live</span><span class="tag">AI agents · Marketing agency · 2026</span></div>
+                    <article class="case case--agents" id="client-mind" data-category="agents">
+                        <div class="case-cover">
+                            <div class="case-head">
+                                <span class="case-num" aria-hidden="true">01</span><div class="meta-row"><span class="badge badge-live">Live</span><span class="tag">AI agents · Marketing agency · 2026</span></div>
                             <h3>Multi-agent client intelligence platform</h3>
                             <p class="case-outcome">One structured, sourced memory of every client, shared by 33 AI agents and reachable from Claude through an MCP server.</p>
+                            </div>
+                            <figure class="case-figure">
+                                <svg class="diagram" viewBox="0 0 440 240" role="img" aria-label="Public sources feed one 26-section client profile, which 33 agents and an MCP server read."><defs><marker id="arr-client-mind" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L8 4L0 8z" class="ah"/></marker></defs><g class="edges" style="marker-end:url(#arr-client-mind)"><path class="e" d="M120 44H140V120H156"/><path class="e" d="M120 120H156"/><path class="e" d="M120 196H140V120H156"/><path class="e" d="M282 120H302V69H318"/><path class="e" d="M282 120H302V171H318"/></g><g class="n in"><rect x="8" y="22" width="112" height="44" rx="9"/><text x="64" y="41.5" class="t">Website</text><text x="64" y="56.5" class="s">crawled pages</text></g><g class="n in"><rect x="8" y="98" width="112" height="44" rx="9"/><text x="64" y="117.5" class="t">Reviews &amp; listings</text><text x="64" y="132.5" class="s">Google, Yelp, BBB</text></g><g class="n in"><rect x="8" y="174" width="112" height="44" rx="9"/><text x="64" y="193.5" class="t">Public records</text><text x="64" y="208.5" class="s">licenses, WHOIS</text></g><g class="n core"><rect x="160" y="76" width="122" height="88" rx="9"/><text x="221" y="117.5" class="t">Client Mind</text><text x="221" y="132.5" class="s">26-section profile</text></g><g class="n out"><rect x="322" y="44" width="110" height="50" rx="9"/><text x="377" y="66.5" class="t">33 AI agents</text><text x="377" y="81.5" class="s">content, ads, SEO</text></g><g class="n out"><rect x="322" y="146" width="110" height="50" rx="9"/><text x="377" y="168.5" class="t">MCP server</text><text x="377" y="183.5" class="s">Claude reads it</text></g></svg>
+                                <figcaption>Public sources feed one 26-section client profile, which 33 agents and an MCP server read.</figcaption>
+                            </figure>
                         </div>
                         <div class="case-stats">
                             <div><strong>33</strong><span>specialized AI agents</span></div>
@@ -106,7 +133,8 @@
                             <div><strong>8 tools</strong><span>in the MCP server</span></div>
                             <div><strong>~$32–42</strong><span>per month to operate</span></div>
                         </div>
-                        <div>
+                        <div class="case-body">
+                            <div>
                             <h4>The problem</h4>
                             <p>Every AI output at the agency started from a blank prompt. Client facts lived in people's heads and drifted, so content came back generic or wrong.</p>
                             <h4>Results</h4>
@@ -124,13 +152,20 @@
                             <h4>Stack</h4>
                             <ul class="chips"><li>TypeScript</li><li>Supabase / Postgres</li><li>Claude API (tiered model routing)</li><li>MCP</li></ul>
                         </div>
+                        </div>
                     </article>
 
-                    <article class="case" id="agents-that-build" data-category="agents crm">
-                        <div class="case-head">
-                            <div class="meta-row"><span class="badge badge-tested">Tested</span><span class="tag">AI agents · CRM · Marketing agency · 2026</span></div>
+                    <article class="case case--agents" id="agents-that-build" data-category="agents crm">
+                        <div class="case-cover">
+                            <div class="case-head">
+                                <span class="case-num" aria-hidden="true">02</span><div class="meta-row"><span class="badge badge-tested">Tested</span><span class="tag">AI agents · CRM · Marketing agency · 2026</span></div>
                             <h3>Agents that build: CRM construction from a spec with Claude &amp; Codex</h3>
                             <p class="case-outcome">AI coding agents built a marketing agency's CRM systems directly inside the platform from written specifications, verified at every step.</p>
+                            </div>
+                            <figure class="case-figure">
+                                <svg class="diagram" viewBox="0 0 440 240" role="img" aria-label="A written spec is built by Claude or Codex inside a CRM test location, checked by API readback, and gaps loop back to the spec."><defs><marker id="arr-agents-that-build" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L8 4L0 8z" class="ah"/></marker></defs><g class="edges" style="marker-end:url(#arr-agents-that-build)"><path class="e" d="M112 68H146"/><path class="e" d="M266 68H300"/><path class="e" d="M368 96V146"/><path class="e" d="M304 178H270"/><path class="e" d="M150 178H60V100"/></g><g class="n in"><rect x="8" y="40" width="104" height="56" rx="9"/><text x="60" y="65.5" class="t">Written spec</text><text x="60" y="80.5" class="s">every object</text></g><g class="n core"><rect x="150" y="40" width="116" height="56" rx="9"/><text x="208" y="65.5" class="t">Claude / Codex</text><text x="208" y="80.5" class="s">build in the app</text></g><g class="n out"><rect x="304" y="40" width="128" height="56" rx="9"/><text x="368" y="65.5" class="t">CRM test location</text><text x="368" y="80.5" class="s">workflows, fields, KB</text></g><g class="n out"><rect x="304" y="150" width="128" height="56" rx="9"/><text x="368" y="175.5" class="t">API readback</text><text x="368" y="190.5" class="s">verifies each object</text></g><g class="n in"><rect x="150" y="150" width="116" height="56" rx="9"/><text x="208" y="175.5" class="t">Gap report</text><text x="208" y="190.5" class="s">what still needs work</text></g></svg>
+                                <figcaption>A written spec is built by Claude or Codex inside a CRM test location, checked by API readback, and gaps loop back to the spec.</figcaption>
+                            </figure>
                         </div>
                         <div class="case-stats">
                             <div><strong>3.5 hrs</strong><span>unattended Codex build run</span></div>
@@ -138,7 +173,8 @@
                             <div><strong>10</strong><span>workflows built by Claude from spec</span></div>
                             <div><strong>&lt;1 min</strong><span>first lead response in testing</span></div>
                         </div>
-                        <div>
+                        <div class="case-body">
+                            <div>
                             <h4>The problem</h4>
                             <p>Each CRM template (pipelines, workflows, fields, emails, knowledge base, pages) took contract builders weeks at about $500 per template, and quality varied.</p>
                             <h4>Results</h4>
@@ -158,13 +194,20 @@
                             <h4>Stack</h4>
                             <ul class="chips"><li>Claude Code</li><li>OpenAI Codex</li><li>GoHighLevel API v2</li><li>Python</li></ul>
                         </div>
+                        </div>
                     </article>
 
-                    <article class="case" id="voice-ai" data-category="voice">
-                        <div class="case-head">
-                            <div class="meta-row"><span class="badge badge-tested">Tested</span><span class="tag">Voice AI · Multi-location retailer · 2026</span></div>
+                    <article class="case case--voice" id="voice-ai" data-category="voice">
+                        <div class="case-cover">
+                            <div class="case-head">
+                                <span class="case-num" aria-hidden="true">03</span><div class="meta-row"><span class="badge badge-tested">Tested</span><span class="tag">Voice AI · Multi-location retailer · 2026</span></div>
                             <h3>Inbound voice AI agent family</h3>
                             <p class="case-outcome">Phone agents that answer, qualify, book and hand off, tested against 50+ cases before any client demo.</p>
+                            </div>
+                            <figure class="case-figure">
+                                <svg class="diagram" viewBox="0 0 440 240" role="img" aria-label="An inbound call reaches the voice agent, which books, transfers, takes a message or sends a follow-up text."><defs><marker id="arr-voice-ai" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L8 4L0 8z" class="ah"/></marker></defs><g class="edges" style="marker-end:url(#arr-voice-ai)"><path class="e" d="M100 120H130"/><path class="e" d="M252 120H272V32H286"/><path class="e" d="M252 120H272V90H286"/><path class="e" d="M252 120H272V148H286"/><path class="e" d="M252 120H272V206H286"/></g><g class="n in"><rect x="8" y="96" width="92" height="48" rx="9"/><text x="54" y="124" class="t">Inbound call</text></g><g class="n core"><rect x="134" y="82" width="118" height="76" rx="9"/><text x="193" y="117.5" class="t">Voice agent</text><text x="193" y="132.5" class="s">6 service branches</text></g><g class="n out"><rect x="290" y="12" width="142" height="40" rx="9"/><text x="361" y="36" class="t">Book showroom visit</text></g><g class="n out"><rect x="290" y="70" width="142" height="40" rx="9"/><text x="361" y="94" class="t">Transfer with summary</text></g><g class="n out"><rect x="290" y="128" width="142" height="40" rx="9"/><text x="361" y="152" class="t">Take a message</text></g><g class="n out"><rect x="290" y="186" width="142" height="40" rx="9"/><text x="361" y="210" class="t">Follow-up text</text></g></svg>
+                                <figcaption>An inbound call reaches the voice agent, which books, transfers, takes a message or sends a follow-up text.</figcaption>
+                            </figure>
                         </div>
                         <div class="case-stats">
                             <div><strong>11 / 11</strong><span>first test block passed</span></div>
@@ -172,7 +215,8 @@
                             <div><strong>6</strong><span>service branches with matched follow-up texts</span></div>
                             <div><strong>5</strong><span>phone agents and a website voice pilot</span></div>
                         </div>
-                        <div>
+                        <div class="case-body">
+                            <div>
                             <h4>The problem</h4>
                             <p>A retailer with several showrooms was missing calls and wanted every caller qualified and routed, without an AI that quotes prices or gives risky advice.</p>
                             <h4>Results</h4>
@@ -189,13 +233,20 @@
                             <h4>Stack</h4>
                             <ul class="chips"><li>GoHighLevel Voice AI</li><li>Conversation AI</li><li>CRM workflows</li></ul>
                         </div>
+                        </div>
                     </article>
 
-                    <article class="case" id="account-health" data-category="reporting">
-                        <div class="case-head">
-                            <div class="meta-row"><span class="badge badge-live">Live</span><span class="tag">Reporting · Marketing agency · 2026</span></div>
+                    <article class="case case--reporting" id="account-health" data-category="reporting">
+                        <div class="case-cover">
+                            <div class="case-head">
+                                <span class="case-num" aria-hidden="true">04</span><div class="meta-row"><span class="badge badge-live">Live</span><span class="tag">Reporting · Marketing agency · 2026</span></div>
                             <h3>Account health dashboard &amp; alert bridge</h3>
                             <p class="case-outcome">Every client CRM account checked nightly; problems become tasks in the tool account managers already use.</p>
+                            </div>
+                            <figure class="case-figure">
+                                <svg class="diagram" viewBox="0 0 440 240" role="img" aria-label="Every client CRM account is read nightly by a read-only engine with 18 flags, producing CRM tasks, a dashboard and a Monday digest."><defs><marker id="arr-account-health" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L8 4L0 8z" class="ah"/></marker></defs><g class="edges" style="marker-end:url(#arr-account-health)"><path class="e" d="M124 120H154"/><path class="e" d="M276 120H294V52H306"/><path class="e" d="M276 120H306"/><path class="e" d="M276 120H294V188H306"/></g><g class="n in"><rect x="8" y="92" width="116" height="56" rx="9"/><text x="66" y="117.5" class="t">Every client</text><text x="66" y="132.5" class="s">CRM account</text></g><g class="n core"><rect x="158" y="92" width="118" height="56" rx="9"/><text x="217" y="117.5" class="t">Nightly engine</text><text x="217" y="132.5" class="s">18 health flags</text></g><g class="n out"><rect x="310" y="30" width="122" height="44" rx="9"/><text x="371" y="56" class="t">Tasks in the CRM</text></g><g class="n out"><rect x="310" y="98" width="122" height="44" rx="9"/><text x="371" y="124" class="t">Health dashboard</text></g><g class="n out"><rect x="310" y="166" width="122" height="44" rx="9"/><text x="371" y="192" class="t">Monday digest</text></g></svg>
+                                <figcaption>Every client CRM account is read nightly by a read-only engine with 18 flags, producing CRM tasks, a dashboard and a Monday digest.</figcaption>
+                            </figure>
                         </div>
                         <div class="case-stats">
                             <div><strong>18</strong><span>health flags per account</span></div>
@@ -203,7 +254,8 @@
                             <div><strong>9,600</strong><span>open deals analyzed across 27 accounts</span></div>
                             <div><strong>~1 week</strong><span>from start to live</span></div>
                         </div>
-                        <div>
+                        <div class="case-body">
+                            <div>
                             <h4>The problem</h4>
                             <p>Account managers checked client accounts by hand. Silent forms, waiting leads and stalled deals surfaced only when a client complained.</p>
                             <h4>Results</h4>
@@ -221,13 +273,20 @@
                             <h4>Stack</h4>
                             <ul class="chips"><li>Python</li><li>Supabase</li><li>GoHighLevel API</li><li>HTML email</li></ul>
                         </div>
+                        </div>
                     </article>
 
-                    <article class="case" id="google-ads-suite" data-category="reporting">
-                        <div class="case-head">
-                            <div class="meta-row"><span class="badge badge-live">Live</span><span class="tag">Reporting · Ad-ops automation · 2026</span></div>
+                    <article class="case case--reporting" id="google-ads-suite" data-category="reporting">
+                        <div class="case-cover">
+                            <div class="case-head">
+                                <span class="case-num" aria-hidden="true">05</span><div class="meta-row"><span class="badge badge-live">Live</span><span class="tag">Reporting · Ad-ops automation · 2026</span></div>
                             <h3>Google Ads automation suite</h3>
                             <p class="case-outcome">Portfolio-wide Google Ads reporting and optimization running on a schedule at the manager-account level.</p>
+                            </div>
+                            <figure class="case-figure">
+                                <svg class="diagram" viewBox="0 0 440 240" role="img" aria-label="Fifteen scripts run across every account in the manager account and produce audits, pacing, search-term reports and the weekly deck."><defs><marker id="arr-google-ads-suite" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L8 4L0 8z" class="ah"/></marker></defs><g class="edges" style="marker-end:url(#arr-google-ads-suite)"><path class="e" d="M124 120H154"/><path class="e" d="M276 120H294V52H306"/><path class="e" d="M276 120H306"/><path class="e" d="M276 120H294V188H306"/></g><g class="n in"><rect x="8" y="92" width="116" height="56" rx="9"/><text x="66" y="117.5" class="t">Manager account</text><text x="66" y="132.5" class="s">every client</text></g><g class="n core"><rect x="158" y="92" width="118" height="56" rx="9"/><text x="217" y="117.5" class="t">15 scripts</text><text x="217" y="132.5" class="s">daily to quarterly</text></g><g class="n out"><rect x="310" y="30" width="122" height="44" rx="9"/><text x="371" y="56" class="t">Audits &amp; pacing</text></g><g class="n out"><rect x="310" y="98" width="122" height="44" rx="9"/><text x="371" y="124" class="t">Search-term reports</text></g><g class="n out"><rect x="310" y="166" width="122" height="44" rx="9"/><text x="371" y="192" class="t">Weekly client deck</text></g></svg>
+                                <figcaption>Fifteen scripts run across every account in the manager account and produce audits, pacing, search-term reports and the weekly deck.</figcaption>
+                            </figure>
                         </div>
                         <div class="case-stats">
                             <div><strong>15</strong><span>production scripts</span></div>
@@ -235,7 +294,8 @@
                             <div><strong>12–15 hrs</strong><span>of manual reporting saved each week</span></div>
                             <div><strong>3 weeks</strong><span>to build</span></div>
                         </div>
-                        <div>
+                        <div class="case-body">
+                            <div>
                             <h4>The problem</h4>
                             <p>Every account needed audits, pacing checks and search-term reviews each week. Done by hand across a whole portfolio, that work crowded out optimization.</p>
                             <h4>Results</h4>
@@ -252,13 +312,20 @@
                             <h4>Stack</h4>
                             <ul class="chips"><li>Google Ads Scripts</li><li>Google Ads API &amp; GAQL</li><li>Google Sheets</li></ul>
                         </div>
+                        </div>
                     </article>
 
-                    <article class="case" id="onboarding" data-category="crm agents">
-                        <div class="case-head">
-                            <div class="meta-row"><span class="badge badge-pilot">Pilot</span><span class="tag">CRM automation · AI agents · 2026</span></div>
+                    <article class="case case--crm" id="onboarding" data-category="crm agents">
+                        <div class="case-cover">
+                            <div class="case-head">
+                                <span class="case-num" aria-hidden="true">06</span><div class="meta-row"><span class="badge badge-pilot">Pilot</span><span class="tag">CRM automation · AI agents · 2026</span></div>
                             <h3>Research-then-verify client onboarding</h3>
                             <p class="case-outcome">AI researches a new client before kickoff, and the client corrects a pre-filled profile instead of filling out a long questionnaire.</p>
+                            </div>
+                            <figure class="case-figure">
+                                <svg class="diagram" viewBox="0 0 440 240" role="img" aria-label="A new client triggers a webhook, a Claude agent researches the business, the report returns to the CRM, the client verifies it, and the account builds itself."><defs><marker id="arr-onboarding" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L8 4L0 8z" class="ah"/></marker></defs><g class="edges" style="marker-end:url(#arr-onboarding)"><path class="e" d="M116 50H144"/><path class="e" d="M252 50H280"/><path class="e" d="M358 80V154"/><path class="e" d="M284 186H256"/><path class="e" d="M148 186H120"/></g><g class="n in"><rect x="8" y="26" width="108" height="48" rx="9"/><text x="62" y="47.5" class="t">New client</text><text x="62" y="62.5" class="s">in the CRM</text></g><g class="n in"><rect x="148" y="26" width="104" height="48" rx="9"/><text x="200" y="47.5" class="t">Webhook</text><text x="200" y="62.5" class="s">fires the agent</text></g><g class="n core"><rect x="284" y="20" width="148" height="60" rx="9"/><text x="358" y="47.5" class="t">Claude research</text><text x="358" y="62.5" class="s">site, records, reviews</text></g><g class="n out"><rect x="284" y="158" width="148" height="56" rx="9"/><text x="358" y="183.5" class="t">Report in the CRM</text><text x="358" y="198.5" class="s">every field labeled</text></g><g class="n in"><rect x="148" y="158" width="104" height="56" rx="9"/><text x="200" y="183.5" class="t">Client verifies</text><text x="200" y="198.5" class="s">and e-signs</text></g><g class="n out"><rect x="8" y="158" width="108" height="56" rx="9"/><text x="62" y="183.5" class="t">Account builds</text><text x="62" y="198.5" class="s">automatically</text></g></svg>
+                                <figcaption>A new client triggers a webhook, a Claude agent researches the business, the report returns to the CRM, the client verifies it, and the account builds itself.</figcaption>
+                            </figure>
                         </div>
                         <div class="case-stats">
                             <div><strong>26</strong><span>sections in each AI research profile</span></div>
@@ -266,7 +333,8 @@
                             <div><strong>74</strong><span>fields covered by an automated save test</span></div>
                             <div><strong>7</strong><span>tabs in the client onboarding app</span></div>
                         </div>
-                        <div>
+                        <div class="case-body">
+                            <div>
                             <h4>The problem</h4>
                             <p>Onboarding asked clients for hundreds of fields across long forms. Clients stalled, data arrived incomplete and launches slipped.</p>
                             <h4>Results</h4>
@@ -284,13 +352,20 @@
                             <h4>Stack</h4>
                             <ul class="chips"><li>Claude Routines</li><li>Firecrawl</li><li>GoHighLevel API &amp; webhooks</li><li>Supabase Edge Functions</li></ul>
                         </div>
+                        </div>
                     </article>
 
-                    <article class="case" id="skill-library" data-category="agents">
-                        <div class="case-head">
-                            <div class="meta-row"><span class="badge badge-live">Live</span><span class="tag">AI agents · Enablement · 2026</span></div>
+                    <article class="case case--agents" id="skill-library" data-category="agents">
+                        <div class="case-cover">
+                            <div class="case-head">
+                                <span class="case-num" aria-hidden="true">07</span><div class="meta-row"><span class="badge badge-live">Live</span><span class="tag">AI agents · Enablement · 2026</span></div>
                             <h3>104-skill AI library &amp; orchestration pipeline</h3>
                             <p class="case-outcome">An agency's AI work packaged as versioned, searchable skills, plus a one-prompt pipeline that runs nine of them in a gated sequence.</p>
+                            </div>
+                            <figure class="case-figure">
+                                <svg class="diagram" viewBox="0 0 440 240" role="img" aria-label="One source document is built, validated and frozen, then parallel skills read it to produce 17 deliverables."><defs><marker id="arr-skill-library" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L8 4L0 8z" class="ah"/></marker></defs><g class="edges" style="marker-end:url(#arr-skill-library)"><path class="e" d="M94 120H110"/><path class="e" d="M200 120H216"/><path class="e" d="M306 120H320V36H330"/><path class="e" d="M306 120H320V92H330"/><path class="e" d="M306 120H320V148H330"/><path class="e" d="M306 120H320V204H330"/></g><g class="n in"><rect x="8" y="92" width="86" height="56" rx="9"/><text x="51" y="117.5" class="t">Build</text><text x="51" y="132.5" class="s">source doc</text></g><g class="n in"><rect x="114" y="92" width="86" height="56" rx="9"/><text x="157" y="117.5" class="t">Validate</text><text x="157" y="132.5" class="s">go / no-go</text></g><g class="n core"><rect x="220" y="92" width="86" height="56" rx="9"/><text x="263" y="117.5" class="t">Freeze</text><text x="263" y="132.5" class="s">checksummed</text></g><g class="n out"><rect x="334" y="16" width="98" height="40" rx="9"/><text x="383" y="40" class="t">Skill</text></g><g class="n out"><rect x="334" y="72" width="98" height="40" rx="9"/><text x="383" y="96" class="t">Skill</text></g><g class="n out"><rect x="334" y="128" width="98" height="40" rx="9"/><text x="383" y="152" class="t">Skill</text></g><g class="n out"><rect x="334" y="184" width="98" height="40" rx="9"/><text x="383" y="208" class="t">17 deliverables</text></g></svg>
+                                <figcaption>One source document is built, validated and frozen, then parallel skills read it to produce 17 deliverables.</figcaption>
+                            </figure>
                         </div>
                         <div class="case-stats">
                             <div><strong>104</strong><span>packaged skills across 12 categories</span></div>
@@ -298,7 +373,8 @@
                             <div><strong>17</strong><span>deliverables per pipeline run</span></div>
                             <div><strong>~$4–8</strong><span>measured cost per run</span></div>
                         </div>
-                        <div>
+                        <div class="case-body">
+                            <div>
                             <h4>The problem</h4>
                             <p>Good prompts lived in individual chats. When one early run scaled 43 outputs from an unchecked source, 22 of them had to be regenerated.</p>
                             <h4>Results</h4>
@@ -315,13 +391,20 @@
                             <h4>Stack</h4>
                             <ul class="chips"><li>Claude skills</li><li>Claude Code</li><li>Firecrawl</li><li>Netlify</li></ul>
                         </div>
+                        </div>
                     </article>
 
-                    <article class="case" id="website-launch" data-category="web">
-                        <div class="case-head">
-                            <div class="meta-row"><span class="badge badge-shipped">Shipped</span><span class="tag">Web &amp; search · Healthcare IT consultancy · 2026</span></div>
+                    <article class="case case--web" id="website-launch" data-category="web">
+                        <div class="case-cover">
+                            <div class="case-head">
+                                <span class="case-num" aria-hidden="true">08</span><div class="meta-row"><span class="badge badge-shipped">Shipped</span><span class="tag">Web &amp; search · Healthcare IT consultancy · 2026</span></div>
                             <h3>30-day website launch for a healthcare IT consultancy</h3>
                             <p class="case-outcome">Strategy to launch in 30 days as a solo engagement, with accessibility and AI-search groundwork built in.</p>
+                            </div>
+                            <figure class="case-figure">
+                                <svg class="diagram" viewBox="0 0 440 240" role="img" aria-label="Design and build, content and QA, and a one-evening launch led to 1,000 organic clicks per 28 days within four weeks."><defs><marker id="arr-website-launch" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L8 4L0 8z" class="ah"/></marker></defs><g class="edges" style="marker-end:url(#arr-website-launch)"><path class="e" d="M136 64H152"/><path class="e" d="M284 64H300"/><path class="e" d="M368 92V123H294V150"/></g><g class="n in"><rect x="8" y="36" width="128" height="56" rx="9"/><text x="72" y="61.5" class="t">Design &amp; build</text><text x="72" y="76.5" class="s">Jun 5–25</text></g><g class="n in"><rect x="156" y="36" width="128" height="56" rx="9"/><text x="220" y="61.5" class="t">Content &amp; QA</text><text x="220" y="76.5" class="s">Jun 25–Jul 3</text></g><g class="n core"><rect x="304" y="36" width="128" height="56" rx="9"/><text x="368" y="61.5" class="t">Launch</text><text x="368" y="76.5" class="s">Jul 4–5, one evening</text></g><g class="n out"><rect x="156" y="154" width="276" height="56" rx="9"/><text x="294" y="179.5" class="t">1,000+ organic clicks / 28 days</text><text x="294" y="194.5" class="s">within four weeks of launch</text></g></svg>
+                                <figcaption>Design and build, content and QA, and a one-evening launch led to 1,000 organic clicks per 28 days within four weeks.</figcaption>
+                            </figure>
                         </div>
                         <div class="case-stats">
                             <div><strong>30 days</strong><span>concept to live</span></div>
@@ -329,7 +412,8 @@
                             <div><strong>WCAG AA</strong><span>audited before launch</span></div>
                             <div><strong>1,000+</strong><span>organic clicks per 28 days within 4 weeks of launch</span></div>
                         </div>
-                        <div>
+                        <div class="case-body">
+                            <div>
                             <h4>The problem</h4>
                             <p>The firm needed a site that matched its reputation, on a fixed budget of about 60 hours, without losing the search traffic of the old site.</p>
                             <h4>Results</h4>
@@ -347,64 +431,65 @@
                             <h4>Stack</h4>
                             <ul class="chips"><li>WordPress (PHP)</li><li>HTML/CSS/JS</li><li>Cloudflare Turnstile</li><li>Search Console</li></ul>
                         </div>
+                        </div>
                     </article>
                 </div>
                 </div>
 
                 <div data-filter-group class="mt-4">
-                <h2 class="mt-4">More work</h2>
-                <div class="grid grid-3">
-                    <div class="card" data-category="crm">
-                        <div class="meta-row"><span class="badge badge-tested">Tested</span></div>
+                <div class="group-head"><h2>More work</h2><p class="muted">Supporting builds, products and analyses.</p></div>
+                <div class="grid grid-3 work-grid">
+                    <div class="card work-card cat--crm" data-category="crm">
+                        <div class="meta-row"><span class="badge badge-tested">Tested</span><span class="tag">CRM automation</span></div>
                         <h3>Speed-to-lead engine</h3>
                         <p>Ten workflows that catch every lead, check business hours and compliance, text first with email fallback and watch response times.</p>
                         <p class="proof">First clean test: one text and one email in under a minute</p>
                     </div>
-                    <div class="card" data-category="voice">
-                        <div class="meta-row"><span class="badge badge-live">Live</span></div>
+                    <div class="card work-card cat--voice" data-category="voice">
+                        <div class="meta-row"><span class="badge badge-live">Live</span><span class="tag">Voice &amp; chat AI</span></div>
                         <h3>Three-bot chat system with shared knowledge bases</h3>
                         <p>Chat assistants for three brands drawing on six modular knowledge bases with clean scope separation.</p>
                         <p class="proof">163 FAQs · all bots validated above 85% accuracy</p>
                     </div>
-                    <div class="card" data-category="web">
-                        <div class="meta-row"><span class="badge badge-live">Live</span></div>
+                    <div class="card work-card cat--web" data-category="web">
+                        <div class="meta-row"><span class="badge badge-live">Live</span><span class="tag">Web &amp; search</span></div>
                         <h3>AI visibility audit products</h3>
                         <p>Four audits, including an LLM visibility audit that queries ChatGPT, Gemini and Claude with web grounding and scores visibility 0–100.</p>
                         <p class="proof">Branded HTML reports from one shared standard</p>
                     </div>
-                    <div class="card" data-category="reporting">
-                        <div class="meta-row"><span class="badge badge-tested">Tested</span></div>
+                    <div class="card work-card cat--reporting" data-category="reporting">
+                        <div class="meta-row"><span class="badge badge-tested">Tested</span><span class="tag">Reporting &amp; analytics</span></div>
                         <h3>Automated monthly client report</h3>
                         <p>A Looker Studio dashboard goes in; an internal report, a client-facing report and a pre-filled meeting doc come out.</p>
                         <p class="proof">Google Ads, Meta, Analytics and Business Profile in one run</p>
                     </div>
-                    <div class="card" data-category="crm">
-                        <div class="meta-row"><span class="badge badge-tested">Tested</span></div>
+                    <div class="card work-card cat--crm" data-category="crm">
+                        <div class="meta-row"><span class="badge badge-tested">Tested</span><span class="tag">CRM automation</span></div>
                         <h3>Website asset loader</h3>
                         <p>Pulls a client's logo, colors, fonts and photos into an organized folder, then bulk-loads them into the CRM media library.</p>
                         <p class="proof">About 350 images loaded in 8 minutes</p>
                     </div>
-                    <div class="card" data-category="agents">
-                        <div class="meta-row"><span class="badge badge-live">Live</span></div>
+                    <div class="card work-card cat--agents" data-category="agents">
+                        <div class="meta-row"><span class="badge badge-live">Live</span><span class="tag">AI agents</span></div>
                         <h3>Fact-locked AI content</h3>
                         <p>Diagnosed why in-tool AI copy drifted from verified client facts, then built a context block that every research run now produces.</p>
                         <p class="proof">Unverified items excluded by rule</p>
                     </div>
-                    <div class="card" data-category="agents" id="roadmap">
-                        <div class="meta-row"><span class="badge badge-delivered">Delivered</span></div>
+                    <div class="card work-card cat--agents" data-category="agents" id="roadmap">
+                        <div class="meta-row"><span class="badge badge-delivered">Delivered</span><span class="tag">AI agents</span></div>
                         <h3>AI automation roadmap</h3>
                         <p>A phased automation roadmap and a CRM and HR-system integration readout for a healthcare IT consultancy's leadership and finance teams.</p>
                         <p class="proof">Paired with the 30-day website launch</p>
                     </div>
-                    <div class="card" data-category="products">
-                        <div class="meta-row"><span class="badge badge-shipped">Shipped</span></div>
+                    <div class="card work-card cat--products" data-category="products">
+                        <div class="meta-row"><span class="badge badge-shipped">Shipped</span><span class="tag">Products</span></div>
                         <h3>SkillEngine</h3>
                         <p>An AI productivity platform that saves your best prompts as reusable skills, with Claude, Gemini and OpenAI behind one interface.</p>
                         <p class="proof">277 skills · 48 pages · built in 31 days · <a href="https://aicareerskills.netlify.app/" target="_blank" rel="noopener">Open the app</a></p>
                     </div>
-                    <div class="card" data-category="products reporting">
+                    <div class="card work-card cat--products" data-category="products reporting">
                         <img class="shot" src="assets/MMMExecutiveDashboard.png" alt="Media mix model executive dashboard showing ROI and channel contribution" width="1720" height="820" loading="lazy">
-                        <div class="meta-row"><span class="badge badge-shipped">Shipped</span></div>
+                        <div class="meta-row"><span class="badge badge-shipped">Shipped</span><span class="tag">Products</span></div>
                         <h3>Media mix model platform</h3>
                         <p>Bayesian media mix modeling with data connectors, data-quality checks and budget scenario planning.</p>
                         <p class="proof">Adstock and saturation curves · scenario comparison</p>
@@ -413,8 +498,7 @@
                 </div>
 
                 <div data-filter-group class="mt-4">
-                <h2 class="mt-4">Lab</h2>
-                <p class="muted">Smaller builds that show range.</p>
+                <div class="group-head"><h2>Lab</h2><p class="muted">Smaller builds that show range.</p></div>
                 <ul class="lab-list">
                     <li data-category="products"><strong>Client-side security scanner</strong><span>15 security checks, 12 PII types detected, scored A–F</span></li>
                     <li data-category="products"><strong>AI governance platform</strong><span>55 pages built in under a week</span></li>

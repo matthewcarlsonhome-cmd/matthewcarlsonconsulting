@@ -16,7 +16,7 @@ SITE = "https://matthewcarlsonconsulting.com"
 PAGES = ["index.html", "about.html", "services.html", "projects.html", "faq.html"]
 # Containers whose content is navigation, decoration or example UI, not facts.
 SKIP_CLASSES = {"assistant-card", "cta-band", "filters", "btn-row", "hero-person", "visually-hidden",
-                "skip-link", "eyebrow", "card-link", "card-icon", "num", "portrait-caption", "chat-disclaimer"}
+                "skip-link", "case-num", "eyebrow", "card-link", "card-icon", "num", "portrait-caption", "chat-disclaimer"}
 SKIP_TAGS = {"script", "style", "nav", "header", "footer", "button", "svg", "form", "aside", "img"}
 VOID = {"meta", "link", "img", "br", "input", "hr", "source", "area", "base", "col", "embed", "param", "track", "wbr"}
 BLOCK = {"h1", "h2", "h3", "h4", "p", "summary", "li", "div", "section", "article", "ul", "ol", "details"}

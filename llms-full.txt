@@ -64,9 +64,9 @@ Sites built to rank on Google and be cited by ChatGPT, Perplexity and Gemini.
 
 Details: [services.html#ai-ready-web](https://matthewcarlsonconsulting.com/services.html#ai-ready-web)
 
-### Systems running in production, labeled honestly
+### AI systems already doing the work
 
-Every project carries its real status: live, in pilot, tested or delivered.
+A few of the systems I've built, each marked live, in pilot, tested or delivered.
 
 Status: Live. AI agents
 
@@ -443,9 +443,18 @@ Claude API, Claude Code & MCPOpenAI API & CodexGemini GoHighLevelHubSpotSupabase
 
 Source: https://matthewcarlsonconsulting.com/projects.html
 
-## Production AI systems, labeled honestly
+## AI systems already doing the work
 
-Each project carries its real status. **Live** is in daily use, **Pilot** is with a first client, **Tested** has passed a written test plan, and **Delivered** is a finished analysis or plan. Client names are withheld.
+Agents, voice assistants and automation built for real businesses, with the numbers behind each one. **Live** is in daily use, **Pilot** is with a first client, **Tested** has passed a written test plan, and **Delivered** is a finished analysis or plan. Client names are withheld.
+
+- Live / Shipped
+- Pilot
+- Tested
+- Delivered
+
+### Case studies
+
+Eight systems, each with how it works, what it took and the measured result.
 
 Status: Live. AI agents · Marketing agency · 2026
 
@@ -453,6 +462,7 @@ Status: Live. AI agents · Marketing agency · 2026
 
 One structured, sourced memory of every client, shared by 33 AI agents and reachable from Claude through an MCP server.
 
+Public sources feed one 26-section client profile, which 33 agents and an MCP server read.
 - **33**: specialized AI agents
 - **39**: client profiles in production
 - **8 tools**: in the MCP server
@@ -482,6 +492,7 @@ Status: Tested. AI agents · CRM · Marketing agency · 2026
 
 AI coding agents built a marketing agency's CRM systems directly inside the platform from written specifications, verified at every step.
 
+A written spec is built by Claude or Codex inside a CRM test location, checked by API readback, and gaps loop back to the spec.
 - **3.5 hrs**: unattended Codex build run
 - **351**: custom values built in two days
 - **10**: workflows built by Claude from spec
@@ -515,6 +526,7 @@ Status: Tested. Voice AI · Multi-location retailer · 2026
 
 Phone agents that answer, qualify, book and hand off, tested against 50+ cases before any client demo.
 
+An inbound call reaches the voice agent, which books, transfers, takes a message or sends a follow-up text.
 - **11 / 11**: first test block passed
 - **50+**: test cases plus a stop-ship regression
 - **6**: service branches with matched follow-up texts
@@ -543,6 +555,7 @@ Status: Live. Reporting · Marketing agency · 2026
 
 Every client CRM account checked nightly; problems become tasks in the tool account managers already use.
 
+Every client CRM account is read nightly by a read-only engine with 18 flags, producing CRM tasks, a dashboard and a Monday digest.
 - **18**: health flags per account
 - **Nightly**: read-only check of every account
 - **9,600**: open deals analyzed across 27 accounts
@@ -572,6 +585,7 @@ Status: Live. Reporting · Ad-ops automation · 2026
 
 Portfolio-wide Google Ads reporting and optimization running on a schedule at the manager-account level.
 
+Fifteen scripts run across every account in the manager account and produce audits, pacing, search-term reports and the weekly deck.
 - **15**: production scripts
 - **~12,666**: lines of code
 - **12–15 hrs**: of manual reporting saved each week
@@ -600,6 +614,7 @@ Status: Pilot. CRM automation · AI agents · 2026
 
 AI researches a new client before kickoff, and the client corrects a pre-filled profile instead of filling out a long questionnaire.
 
+A new client triggers a webhook, a Claude agent researches the business, the report returns to the CRM, the client verifies it, and the account builds itself.
 - **26**: sections in each AI research profile
 - **<20 min**: unattended research run
 - **74**: fields covered by an automated save test
@@ -629,6 +644,7 @@ Status: Live. AI agents · Enablement · 2026
 
 An agency's AI work packaged as versioned, searchable skills, plus a one-prompt pipeline that runs nine of them in a gated sequence.
 
+One source document is built, validated and frozen, then parallel skills read it to produce 17 deliverables.
 - **104**: packaged skills across 12 categories
 - **9**: skills in one gated pipeline
 - **17**: deliverables per pipeline run
@@ -657,6 +673,7 @@ Status: Shipped. Web & search · Healthcare IT consultancy · 2026
 
 Strategy to launch in 30 days as a solo engagement, with accessibility and AI-search groundwork built in.
 
+Design and build, content and QA, and a one-evening launch led to 1,000 organic clicks per 28 days within four weeks.
 - **30 days**: concept to live
 - **20+**: pages designed and built
 - **WCAG AA**: audited before launch
@@ -682,7 +699,9 @@ Stack: WordPress (PHP), HTML/CSS/JS, Cloudflare Turnstile, Search Console
 
 ### More work
 
-Status: Tested
+Supporting builds, products and analyses.
+
+Status: Tested. CRM automation
 
 #### Speed-to-lead engine
 
@@ -690,7 +709,7 @@ Ten workflows that catch every lead, check business hours and compliance, text f
 
 First clean test: one text and one email in under a minute
 
-Status: Live
+Status: Live. Voice & chat AI
 
 #### Three-bot chat system with shared knowledge bases
 
@@ -698,7 +717,7 @@ Chat assistants for three brands drawing on six modular knowledge bases with cle
 
 163 FAQs · all bots validated above 85% accuracy
 
-Status: Live
+Status: Live. Web & search
 
 #### AI visibility audit products
 
@@ -706,7 +725,7 @@ Four audits, including an LLM visibility audit that queries ChatGPT, Gemini and 
 
 Branded HTML reports from one shared standard
 
-Status: Tested
+Status: Tested. Reporting & analytics
 
 #### Automated monthly client report
 
@@ -714,7 +733,7 @@ A Looker Studio dashboard goes in; an internal report, a client-facing report an
 
 Google Ads, Meta, Analytics and Business Profile in one run
 
-Status: Tested
+Status: Tested. CRM automation
 
 #### Website asset loader
 
@@ -722,7 +741,7 @@ Pulls a client's logo, colors, fonts and photos into an organized folder, then b
 
 About 350 images loaded in 8 minutes
 
-Status: Live
+Status: Live. AI agents
 
 #### Fact-locked AI content
 
@@ -730,7 +749,7 @@ Diagnosed why in-tool AI copy drifted from verified client facts, then built a c
 
 Unverified items excluded by rule
 
-Status: Delivered
+Status: Delivered. AI agents
 
 #### AI automation roadmap
 
@@ -738,7 +757,7 @@ A phased automation roadmap and a CRM and HR-system integration readout for a he
 
 Paired with the 30-day website launch
 
-Status: Shipped
+Status: Shipped. Products
 
 #### SkillEngine
 
@@ -746,7 +765,7 @@ An AI productivity platform that saves your best prompts as reusable skills, wit
 
 277 skills · 48 pages · built in 31 days · [Open the app](https://aicareerskills.netlify.app/)
 
-Status: Shipped
+Status: Shipped. Products
 
 #### Media mix model platform
 
