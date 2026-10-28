@@ -26,6 +26,8 @@ AddType text/html .html
 AddType text/css .css
 AddType application/javascript .js
 AddType image/svg+xml .svg
+AddType "text/plain; charset=UTF-8" .txt
+AddCharset UTF-8 .html .css .js .xml
 
 <IfModule mod_expires.c>
     ExpiresActive On

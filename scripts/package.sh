@@ -8,7 +8,7 @@ cd "$(dirname "$0")/.."
 FILES=(
   index.html services.html projects.html about.html faq.html contact.html ai-bot.html
   privacy.html terms.html 404.html
-  send-mail.php .htaccess robots.txt sitemap.xml llms.txt
+  send-mail.php .htaccess robots.txt sitemap.xml llms.txt llms-full.txt
   css/site.css js/main.js js/ai-bot.js
   assets/favicon.svg assets/logo.svg assets/matthew-carlson.jpg assets/MMMExecutiveDashboard.png
   api/ai-chat.php

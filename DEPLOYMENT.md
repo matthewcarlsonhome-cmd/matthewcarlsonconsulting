@@ -18,7 +18,7 @@ The site is static HTML plus two PHP files, hosted on GoDaddy (Apache). There is
 1. **Get the latest code.**
    - With git: `git pull` in your local copy.
    - Without git: on GitHub open the repo → green **Code** button → **Download ZIP**, then unzip it.
-2. **Build the upload folder.** In the repo folder, run `bash scripts/package.sh`. On Windows, use Git Bash: right-click in the folder → "Open Git Bash here". This creates a `deploy/` folder containing only the files the server needs.
+2. **Build the upload folder.** In the repo folder, run `bash scripts/package.sh`. (It also includes `llms.txt` and `llms-full.txt`; if you changed page text, run `python3 scripts/build-llms.py` first.) On Windows, use Git Bash: right-click in the folder → "Open Git Bash here". This creates a `deploy/` folder containing only the files the server needs.
    - No bash? Upload the files listed in `scripts/package.sh` by hand instead.
 3. **Back up the server (recommended).** In FileZilla, select everything in the site root on the right → right-click → **Download** into a dated local folder, e.g. `site-backup-2026-10-27`.
 4. **Upload.** Left pane: open `deploy/` and select everything inside it, including `.htaccess`. Drag it onto the site root on the right. When asked about existing files, choose **Overwrite**, tick **Always use this action**, then OK.

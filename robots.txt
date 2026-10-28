@@ -30,5 +30,6 @@ Allow: /
 # Sitemap Location
 Sitemap: https://matthewcarlsonconsulting.com/sitemap.xml
 
-# LLMs.txt for AI Crawlers
-# See: https://matthewcarlsonconsulting.com/llms.txt
+# LLM-readable site summaries (llmstxt.org)
+# https://matthewcarlsonconsulting.com/llms.txt
+# https://matthewcarlsonconsulting.com/llms-full.txt

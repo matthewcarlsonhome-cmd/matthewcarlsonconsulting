@@ -1,0 +1,859 @@
+# Matthew Carlson Consulting
+
+> Matthew Carlson is an AI Solutions Engineer in Madison, Wisconsin who designs, builds and runs production AI systems for marketing teams, agencies and professional-services firms across the U.S.: AI agents, voice and chat assistants, CRM automation and reporting pipelines. Before AI he spent 11 years at Duluth Trading running a $40M+ digital marketing budget that drove $200M+ in annual revenue.
+
+Key facts: AI Solutions Engineer; Madison, Wisconsin; works nationally by video; solo practice (Matthew Carlson Consulting, founded 2024); currently AI Lead Consultant for a marketing agency (fractional-CTO scope, since March 2026). Client names are confidential. Every project is labeled Live, Pilot, Tested, Delivered or Shipped.
+
+---
+
+This file is the full text of the site's main pages, generated from the live HTML. A shorter index is at https://matthewcarlsonconsulting.com/llms.txt.
+
+---
+
+# AI Solutions Engineer | Production AI Agents & Automation | Matthew Carlson
+
+Source: https://matthewcarlsonconsulting.com/
+
+## I build the AI systems that run your marketing operations.
+
+AI agents, voice and chat assistants, CRM automation and reporting pipelines, designed by someone who ran a $40M marketing budget and shipped with tests, verification gates and a known cost per run.
+
+- **33**: AI agents in one production client-intelligence platform
+- **104**: packaged AI skills in a published library
+- **12–15 hrs**: of manual ad reporting replaced every week
+- **30 days**: concept to launch, 20+ page enterprise website, solo
+- **$40M+**: annual marketing budget managed over 11 years
+
+### Six ways AI goes from pilot to production
+
+Each one ships with a written specification, a test plan and a cost model. You own everything I build.
+
+#### AI agents & workflows
+
+Multi-agent systems, MCP servers and skill libraries that do real work on a schedule or a trigger.
+
+Details: [services.html#ai-agents](https://matthewcarlsonconsulting.com/services.html#ai-agents)
+
+#### Voice & chat AI
+
+Phone and chat agents that answer, qualify, book and hand off, tested before a customer hears them.
+
+Details: [services.html#voice-chat-ai](https://matthewcarlsonconsulting.com/services.html#voice-chat-ai)
+
+#### CRM automation
+
+Speed-to-lead, AI-researched onboarding and CRM builds generated from a spec.
+
+Details: [services.html#crm-automation](https://matthewcarlsonconsulting.com/services.html#crm-automation)
+
+#### Reporting & ad-ops automation
+
+Google Ads scripts, nightly account-health checks and client report packets that build themselves.
+
+Details: [services.html#reporting-automation](https://matthewcarlsonconsulting.com/services.html#reporting-automation)
+
+#### AI readiness & roadmaps
+
+Where AI fits, what to buy versus build, and the order to do it in. Fractional AI lead available.
+
+Details: [services.html#ai-strategy](https://matthewcarlsonconsulting.com/services.html#ai-strategy)
+
+#### AI-ready websites
+
+Sites built to rank on Google and be cited by ChatGPT, Perplexity and Gemini.
+
+Details: [services.html#ai-ready-web](https://matthewcarlsonconsulting.com/services.html#ai-ready-web)
+
+### Systems running in production, labeled honestly
+
+Every project carries its real status: live, in pilot, tested or delivered.
+
+Status: Live. AI agents
+
+#### Multi-agent client intelligence platform
+
+One sourced memory of every client, shared by 33 AI agents and reachable from Claude through an MCP server.
+
+39 client profiles · 8-tool MCP server · ~$32–42/month to run
+
+Details: [projects.html#client-mind](https://matthewcarlsonconsulting.com/projects.html#client-mind)
+
+Status: Tested. AI agents · CRM
+
+#### Agents that build inside the CRM
+
+Claude and OpenAI Codex construct workflows, pipelines and knowledge bases directly in the platform from written specs.
+
+3.5-hour unattended run · 351 custom values · verified at every step
+
+Details: [projects.html#agents-that-build](https://matthewcarlsonconsulting.com/projects.html#agents-that-build)
+
+Status: Tested. Voice AI
+
+#### Inbound voice AI agent family
+
+Phone agents that answer, qualify, book showroom visits and transfer with a spoken summary.
+
+11 of 11 first-block checks · 50+ case test suite · 6 service branches
+
+Details: [projects.html#voice-ai](https://matthewcarlsonconsulting.com/projects.html#voice-ai)
+
+Status: Live. Reporting
+
+#### Account health dashboard & alert bridge
+
+Every client CRM account checked nightly; problems become tasks in the tool account managers already use.
+
+18 health flags · read-only · Monday digest email
+
+Details: [projects.html#account-health](https://matthewcarlsonconsulting.com/projects.html#account-health)
+
+[See all projects](https://matthewcarlsonconsulting.com/projects.html)
+
+### The demo worked. Then what?
+
+##### "The demo worked; the rollout didn't."
+
+I gate before scaling: one graded sample and a consistency check before an agent runs across every client. Checks take hours; a bad rollout costs days of regeneration.
+
+##### "Nobody trusts what the AI wrote."
+
+Every fact carries a source and a confidence label. Unverified details are flagged for a human, never guessed, and a bad input stops the run and notifies someone.
+
+##### "We don't know what it costs to run."
+
+Every pipeline is metered. A full AI research pull on a new client costs about $4–8, and that number goes in the proposal.
+
+### Engineering habits that make AI safe to depend on
+
+#### Spec first
+
+A written specification defines every object before anything is built. The spec and the gap report are deliverables.
+
+#### Test before demo
+
+No client hears a voice agent until a 50+ case test suite and a stop-ship regression pass.
+
+#### Read-only by default
+
+Reporting systems observe and change nothing. Agents that write run in test environments first.
+
+#### Stop and notify
+
+When an input looks wrong, the system halts and tells a person how to restart. It doesn't guess.
+
+#### Meter every run
+
+Token, model and crawl costs are tracked per run, so AI becomes a known unit cost you can price.
+
+#### Buy the commodity
+
+If a tool already does it well, buy it. Build only where the interpretation is your advantage.
+
+### From conversation to running system
+
+#### Discovery
+
+A working session on the process, the data and what success is worth in hours or revenue.
+
+#### Specification
+
+A written spec, test plan and cost model you approve before the build starts.
+
+#### Build with verification
+
+Built in a test environment, checked against the spec, with a gap report at each phase.
+
+#### Launch & hand off
+
+Pilot, monitor, document and train your team, or keep me on to run and improve it.
+
+---
+
+# About Matthew Carlson | AI Solutions Engineer, Madison WI
+
+Source: https://matthewcarlsonconsulting.com/about.html
+
+## AI Solutions Engineer. Former $40M marketing operator.
+
+I build production AI systems for marketing teams, agencies and professional-services firms.
+
+Before AI, I spent 11 years at Duluth Trading running a $40M+ digital marketing budget that drove $200M+ in annual revenue, owning analytics, attribution, paid media and data feeds. That's why every system I build is scoped against hours saved, revenue and risk, and why it ships with tests and a cost model instead of a demo.
+
+Since 2024 I've been building production systems with AI. Today I lead AI strategy and implementation for a marketing agency, where the work covers a 33-agent client-intelligence platform, voice agents, nightly monitoring of every client account, and coding agents that build CRM systems from written specs. I also take on independent engagements, most recently a 30-day website launch and AI roadmap for a healthcare IT consultancy.
+
+I work from Madison, Wisconsin, with clients across the U.S.
+
+### Eleven years on the business side of marketing
+
+Results from Duluth Trading, 2014–2025.
+
+- **$200M+**: annual revenue from a $40M+ digital budget
+- **25%**: incremental lift proven with a holdout test
+- **2×**: Facebook revenue growth ($3.5M to $7M+) while cutting ad ratio from 60% to 35%
+- **$33M**: affiliate program revenue in 2023
+- **$8.3M**: in sales from a retargeting channel I launched
+
+### Path
+
+Mar 2026 – present
+
+#### AI Lead Consultant, marketing agency
+
+AI strategy and implementation with fractional-CTO scope: agent platforms, voice AI, CRM automation, reporting and vendor evaluation.
+
+Jun 2026 – present
+
+#### Website & AI Consultant, healthcare IT consultancy
+
+Solo website redesign and launch, post-launch operations and an AI automation roadmap.
+
+2024 – present
+
+#### Founder, Matthew Carlson Consulting
+
+Custom AI applications, analytics platforms and automation, including SkillEngine and a media mix model platform.
+
+2014 – 2025
+
+#### Senior Marketing & BI Analyst, Duluth Trading
+
+$40M+ budget across 15+ channels; analytics, attribution, data feeds, SEO and executive reporting.
+
+2006 – 2009
+
+#### Technical Services, Epic Systems
+
+Healthcare software deployments: workflow analysis, requirements and end-user training.
+
+### What I bring
+
+- **Agentic systems & MCP:** multi-agent platforms, skill libraries, orchestration with QA gates
+- **Voice & conversational AI:** dialogue design, knowledge bases, test suites
+- **CRM & marketing automation:** GoHighLevel, HubSpot-class platforms, APIs and webhooks
+- **Analytics & reporting automation:** attribution, incrementality testing, Google Ads scripts
+- **Full-stack development:** Python, TypeScript, React, Supabase, PHP
+- **AI-ready web & search:** accessible builds, SEO, answer-engine and generative-engine optimization
+
+#### Credentials
+
+- MCP servers in production
+- Claude API & skill authoring
+- GoHighLevel AI Studio & Voice AI
+- Autonomous coding agents
+- WCAG AA engineering
+- Google Ads certified
+- University of Wisconsin–Madison
+
+### Principles that came from shipping, not slides
+
+#### Gate before you scale
+
+One graded sample and a consistency check cost hours. Regenerating dozens of outputs from a bad source costs days.
+
+#### Confidence is a field
+
+Every AI-researched fact is labeled verified, derived or needs input, so people know what they can trust.
+
+#### Verify the agent's boundary
+
+Autonomous builds run only in named test environments, with location checks and API readback every run.
+
+#### Report where the work happens
+
+Alerts land as tasks in the tool people already use, not in another dashboard they have to remember.
+
+#### Test suites make demos safe
+
+A voice agent meets a client only after it passes its test cases and the safety regression.
+
+#### Price build and run separately
+
+Launch, build, maintenance and usage are separate lines, so nobody is surprised later.
+
+---
+
+# AI Solutions: Agents, Voice AI, CRM & Reporting Automation | Matthew Carlson
+
+Source: https://matthewcarlsonconsulting.com/services.html
+
+## Six ways I put AI into production
+
+Every engagement ships with a written specification, a test plan and a cost model. You own everything I build.
+
+### AI agents & workflow engineering
+
+Multi-agent systems, skill libraries and orchestration pipelines that do real work on a schedule or a trigger, with shared memory, QA gates and a known cost per run.
+
+Status: Live
+
+A client-intelligence platform with 33 agents, an 8-tool MCP server and 39 client profiles, operating for about $32–42 a month. [Read the case study](https://matthewcarlsonconsulting.com/projects.html#client-mind)
+
+- Multi-agent platforms with a shared, sourced memory of each customer or client
+- MCP servers that connect Claude to your own data and tools
+- Skill libraries with versioning, evaluation and a searchable catalog for your team
+- Orchestration pipelines with validation gates, auto-remediation and cost telemetry
+- Coding agents (Claude Code, OpenAI Codex) building inside SaaS platforms from a written spec
+- Webhook-triggered agents that research, write and post results back into your systems
+
+### Voice & conversational AI
+
+Phone and chat agents that answer, qualify, book and hand off, built around your routing and tested before a customer ever hears them.
+
+Status: Tested
+
+An inbound voice agent family for a multi-location retailer: 11 of 11 first-block checks passed, with live calendar booking verified on a call. [Read the case study](https://matthewcarlsonconsulting.com/projects.html#voice-ai)
+
+- Inbound voice agents with booking, message taking and warm transfer with a spoken summary
+- Website, SMS and social chat assistants writing to the same CRM record
+- Knowledge-base architecture shared cleanly across brands and bots
+- Consent capture, safety rules and clear limits on what the agent will say
+- 50+ case test suites and stop-ship regression checks before launch
+- Pricing that separates launch, build and maintenance, with usage billed at cost
+
+### CRM & marketing automation
+
+GoHighLevel and HubSpot-class systems that respond to leads in under a minute, onboard clients with AI research, and build themselves from a specification.
+
+Status: Tested
+
+A 10-workflow speed-to-lead engine, built by Claude from a written spec; the first clean test sent a text and an email in under a minute. [Read the case study](https://matthewcarlsonconsulting.com/projects.html#agents-that-build)
+
+- Speed-to-lead engines with business-hours, compliance and response-time checks
+- AI-researched client onboarding: the client corrects a profile instead of filling out a questionnaire
+- Sub-account provisioning, snapshots and custom values at scale
+- Lifecycle and purchase-driven campaigns from your order or POS data
+- Webhook, API and MCP integrations between your CRM and AI tools
+- Automated QA that enrolls test contacts and checks every workflow path
+
+### Reporting, analytics & ad-ops automation
+
+The reporting and optimization work your team does by hand every Monday, automated, from someone who ran weekly business reporting for a $40M+ marketing program.
+
+Status: Live
+
+A 15-script Google Ads automation suite running across an agency's whole portfolio, replacing about 12–15 hours of manual reporting a week. [Read the case study](https://matthewcarlsonconsulting.com/projects.html#google-ads-suite)
+
+- Google Ads scripts at manager-account level: audits, budget pacing, search-term and wasted-spend analysis
+- Nightly account-health monitoring with alerts written back into your CRM as tasks
+- Client report packets generated from your Looker Studio dashboards
+- Weekly meeting decks built from live data
+- Attribution architecture: click-ID capture with the CRM as the join point
+- Pipeline and portfolio analysis that turns raw CRM data into decisions
+
+### AI readiness, roadmaps & fractional AI lead
+
+Where AI fits in your business, what to buy versus build, and the order to do it in. Then, if you want, I lead the work.
+
+Status: Delivered
+
+An AI automation roadmap and systems-integration readout for a healthcare IT consultancy's leadership and finance teams. [See the project](https://matthewcarlsonconsulting.com/projects.html#roadmap)
+
+- AI readiness audit scoring 5 operational domains out of 100
+- Opportunity map ranked by hours saved, revenue impact and risk
+- Build-vs-buy evaluations with a clear recommendation
+- Vendor, tool and builder selection, including paid screening tests
+- Team enablement: skill libraries, playbooks and training
+- Fractional AI lead or CTO scope on a monthly basis
+
+### AI-ready websites & search visibility
+
+Websites built to rank on Google and to be cited by ChatGPT, Perplexity and Gemini, with accessibility engineered in from the first component.
+
+Status: Shipped
+
+A 20+ page site for a healthcare IT consultancy, concept to live in 30 days, solo; it passed 1,000 organic clicks per 28 days within four weeks of launch. [Read the case study](https://matthewcarlsonconsulting.com/projects.html#website-launch)
+
+- Hand-coded, fast builds with no page-builder bloat
+- WCAG AA accessibility audited before launch
+- SEO, answer-engine and generative-engine optimization from day one
+- LLM visibility audits across ChatGPT, Gemini and Claude, scored 0–100
+- llms.txt, structured data and citable, question-led content
+- Launch runbooks with redirect maps and instant rollback
+
+### Common starting points
+
+Systems I've already designed and tested. Each one can be scoped in a single call.
+
+#### AI lead research report
+
+A new lead triggers an agent that researches the business and briefs your team before the first call.
+
+#### Speed-to-lead responder
+
+Every form, call and chat answered in under a minute, then qualified and booked.
+
+#### Voice receptionist
+
+Answers, books, takes messages and transfers with a summary when a person is needed.
+
+#### Research-then-verify onboarding
+
+AI pre-fills the client profile; the client corrects it in minutes instead of filling out forms.
+
+#### Nightly account health
+
+Silent forms, stalled deals and waiting leads flagged every morning as tasks.
+
+#### Monthly report packet
+
+Dashboards in; an internal report, a client report and a meeting agenda out.
+
+#### Website asset loader
+
+Logo, colors, fonts and photos pulled from a site and filed into your CRM in minutes.
+
+#### Missed-call text-back
+
+An unanswered call gets a text and an AI qualifier instead of a lost lead.
+
+### Four ways to work together
+
+Launch, build and maintenance are priced separately, and AI usage is billed at cost, so you always know what you're paying for.
+
+Duration: 2 weeks
+
+#### AI Readiness Sprint
+
+Scored audit, opportunity map, build-vs-buy calls and a 90-day roadmap.
+
+Duration: 2–6 weeks
+
+#### Build Sprint
+
+One system specified, built, tested and handed off with documentation.
+
+Duration: Monthly
+
+#### Fractional AI Lead
+
+Ongoing builds, operations and team enablement with a set number of days each month.
+
+Duration: Monthly
+
+#### Managed AI Operations
+
+Monitoring, maintenance and iteration of the systems I built for you.
+
+Claude API, Claude Code & MCPOpenAI API & CodexGemini GoHighLevelHubSpotSupabase / Postgres PythonTypeScript & ReactGoogle Ads API & Scripts GA4 & Looker StudioFirecrawlWordPress
+
+---
+
+# Work: AI Agent, Voice AI & Automation Case Studies | Matthew Carlson
+
+Source: https://matthewcarlsonconsulting.com/projects.html
+
+## Production AI systems, labeled honestly
+
+Each project carries its real status. **Live** is in daily use, **Pilot** is with a first client, **Tested** has passed a written test plan, and **Delivered** is a finished analysis or plan. Client names are withheld.
+
+Status: Live. AI agents · Marketing agency · 2026
+
+#### Multi-agent client intelligence platform
+
+One structured, sourced memory of every client, shared by 33 AI agents and reachable from Claude through an MCP server.
+
+- **33**: specialized AI agents
+- **39**: client profiles in production
+- **8 tools**: in the MCP server
+- **~$32–42**: per month to operate
+
+##### The problem
+
+Every AI output at the agency started from a blank prompt. Client facts lived in people's heads and drifted, so content came back generic or wrong.
+
+##### Results
+
+Commercial alternatives run $49–249 per user per month; this runs the whole agency for about $32–42. Its QA engine has generated 1,504 field-level suggestions for human review.
+
+##### What I built
+
+- A 26-section client schema with field-level provenance
+- 33 agents reading from that shared memory
+- A prompt library with versioning: 92 prompts, 94 tracked versions
+- A document layer with embeddings, and a CRM integration that has cataloged 2,590 assets
+- An MCP server with token auth and audit logging
+
+Stack: TypeScript, Supabase / Postgres, Claude API (tiered model routing), MCP
+
+Status: Tested. AI agents · CRM · Marketing agency · 2026
+
+#### Agents that build: CRM construction from a spec with Claude & Codex
+
+AI coding agents built a marketing agency's CRM systems directly inside the platform from written specifications, verified at every step.
+
+- **3.5 hrs**: unattended Codex build run
+- **351**: custom values built in two days
+- **10**: workflows built by Claude from spec
+- **<1 min**: first lead response in testing
+
+##### The problem
+
+Each CRM template (pipelines, workflows, fields, emails, knowledge base, pages) took contract builders weeks at about $500 per template, and quality varied.
+
+##### Results
+
+A two-day build produced 351 custom values, 20 tags, 21 fields, a 12-stage pipeline, 2 calendars, a 52-entry knowledge base, 11 workflow shells, 28 SMS snippets and 4 pages. The agency put contractor hiring on hold.
+
+##### What I learned
+
+The platform's own AI created data objects but not workflows, so the agents worked in the workflow builder instead. The specification and the gap report are the real product.
+
+##### What I built
+
+- A specification format that defines every CRM object
+- A build method where Claude or Codex constructs those objects in the live platform
+- API readback and a gap report after each phase
+- Hard boundaries: test locations only, repeated location checks, no live SMS until a compliance-safe number exists
+- A QA skill that enrolls test contacts across workflows (23 enrollments across 16 workflows)
+
+Stack: Claude Code, OpenAI Codex, GoHighLevel API v2, Python
+
+Status: Tested. Voice AI · Multi-location retailer · 2026
+
+#### Inbound voice AI agent family
+
+Phone agents that answer, qualify, book and hand off, tested against 50+ cases before any client demo.
+
+- **11 / 11**: first test block passed
+- **50+**: test cases plus a stop-ship regression
+- **6**: service branches with matched follow-up texts
+- **5**: phone agents and a website voice pilot
+
+##### The problem
+
+A retailer with several showrooms was missing calls and wanted every caller qualified and routed, without an AI that quotes prices or gives risky advice.
+
+##### Results
+
+Showroom booking verified on a live call. Defects found in testing, including an emergency response that could be interrupted, were fixed before the client heard the agent. Pricing proposed as a launch fee, a prepaid build and monthly maintenance, with usage at cost.
+
+##### What I built
+
+- An agent that books appointments, takes messages and transfers with a spoken summary
+- A prequalifying flow: full questions for shoppers, two at most for service calls, immediate transfer on request
+- Consent-gated follow-up texts sent two minutes after the call, matched to the caller's need
+- Safety rules: no prices, chemical advice or promised dates; the 24-hour number on safety issues
+
+Stack: GoHighLevel Voice AI, Conversation AI, CRM workflows
+
+Status: Live. Reporting · Marketing agency · 2026
+
+#### Account health dashboard & alert bridge
+
+Every client CRM account checked nightly; problems become tasks in the tool account managers already use.
+
+- **18**: health flags per account
+- **Nightly**: read-only check of every account
+- **9,600**: open deals analyzed across 27 accounts
+- **~1 week**: from start to live
+
+##### The problem
+
+Account managers checked client accounts by hand. Silent forms, waiting leads and stalled deals surfaced only when a client complained.
+
+##### Results
+
+The first portfolio read found 81% of 9,600 open deals idle for over 30 days. The fix was three habits (closing deals out, marking losses, clearing dead deals), not a pipeline redesign.
+
+##### What I built
+
+- A Python engine that reads every account through read-only tokens into Supabase
+- Flags compared against each account's own baseline and against peers
+- A severity-sorted view by account manager with a one-click weekly client update
+- An alert bridge that creates CRM tasks and emails for silent forms, dropped lead sources and stalled pipelines
+- A Monday digest: every open issue per client in one email
+
+Stack: Python, Supabase, GoHighLevel API, HTML email
+
+Status: Live. Reporting · Ad-ops automation · 2026
+
+#### Google Ads automation suite
+
+Portfolio-wide Google Ads reporting and optimization running on a schedule at the manager-account level.
+
+- **15**: production scripts
+- **~12,666**: lines of code
+- **12–15 hrs**: of manual reporting saved each week
+- **3 weeks**: to build
+
+##### The problem
+
+Every account needed audits, pacing checks and search-term reviews each week. Done by hand across a whole portfolio, that work crowded out optimization.
+
+##### Results
+
+Daily, weekly, monthly and quarterly checks now run on their own, and a companion script builds the 25–29 slide weekly client meeting deck from live data.
+
+##### What I built
+
+- Account audits and health checks
+- Budget pacing with automatic adjustment
+- Search-term analysis and wasted-spend ranking
+- Structure optimization and conversion-tracking checks
+
+Stack: Google Ads Scripts, Google Ads API & GAQL, Google Sheets
+
+Status: Pilot. CRM automation · AI agents · 2026
+
+#### Research-then-verify client onboarding
+
+AI researches a new client before kickoff, and the client corrects a pre-filled profile instead of filling out a long questionnaire.
+
+- **26**: sections in each AI research profile
+- **<20 min**: unattended research run
+- **74**: fields covered by an automated save test
+- **7**: tabs in the client onboarding app
+
+##### The problem
+
+Onboarding asked clients for hundreds of fields across long forms. Clients stalled, data arrived incomplete and launches slipped.
+
+##### Results
+
+In pilot with the agency team. Three client pilots must pass a written checklist before any new features are added.
+
+##### What I built
+
+- A CRM workflow that fires a webhook; a Claude agent researches the business and posts a report back into the CRM
+- Research that works without a website, using license records, permits and directories
+- Stop-and-notify when a listed site is broken or belongs to another company
+- A confidence label on every field (verified, derived or needs input), and a client review and e-sign flow
+- Automatic sub-account build when onboarding completes
+
+Stack: Claude Routines, Firecrawl, GoHighLevel API & webhooks, Supabase Edge Functions
+
+Status: Live. AI agents · Enablement · 2026
+
+#### 104-skill AI library & orchestration pipeline
+
+An agency's AI work packaged as versioned, searchable skills, plus a one-prompt pipeline that runs nine of them in a gated sequence.
+
+- **104**: packaged skills across 12 categories
+- **9**: skills in one gated pipeline
+- **17**: deliverables per pipeline run
+- **~$4–8**: measured cost per run
+
+##### The problem
+
+Good prompts lived in individual chats. When one early run scaled 43 outputs from an unchecked source, 22 of them had to be regenerated.
+
+##### Results
+
+The library is published as a searchable site with team and priority filters, so each team starts from an adopt-first list.
+
+##### What I built
+
+- A versioned skill plugin with a manifest for team rollout
+- A pipeline that builds a source document, validates and freezes it, then runs parallel steps from it
+- Gates before scale: a validator, a graded voice sample and a capacity check
+- A quarterly library audit for duplicates and retirement
+
+Stack: Claude skills, Claude Code, Firecrawl, Netlify
+
+Status: Shipped. Web & search · Healthcare IT consultancy · 2026
+
+#### 30-day website launch for a healthcare IT consultancy
+
+Strategy to launch in 30 days as a solo engagement, with accessibility and AI-search groundwork built in.
+
+- **30 days**: concept to live
+- **20+**: pages designed and built
+- **WCAG AA**: audited before launch
+- **1,000+**: organic clicks per 28 days within 4 weeks of launch
+
+##### The problem
+
+The firm needed a site that matched its reputation, on a fixed budget of about 60 hours, without losing the search traffic of the old site.
+
+##### Results
+
+Live in one evening via DNS cutover. Organic clicks rose 33% from the launch month to the following month.
+
+##### What I built
+
+- A hand-coded WordPress theme with no page builders and sub-second page loads
+- A redirect map, launch runbook and parallel build with instant rollback
+- Forms with file uploads, consent gating and invisible anti-spam
+- llms.txt, FAQ patterns and citable claims for AI search
+- An AI automation roadmap for the firm's leadership
+
+Stack: WordPress (PHP), HTML/CSS/JS, Cloudflare Turnstile, Search Console
+
+### More work
+
+Status: Tested
+
+#### Speed-to-lead engine
+
+Ten workflows that catch every lead, check business hours and compliance, text first with email fallback and watch response times.
+
+First clean test: one text and one email in under a minute
+
+Status: Live
+
+#### Three-bot chat system with shared knowledge bases
+
+Chat assistants for three brands drawing on six modular knowledge bases with clean scope separation.
+
+163 FAQs · all bots validated above 85% accuracy
+
+Status: Live
+
+#### AI visibility audit products
+
+Four audits, including an LLM visibility audit that queries ChatGPT, Gemini and Claude with web grounding and scores visibility 0–100.
+
+Branded HTML reports from one shared standard
+
+Status: Tested
+
+#### Automated monthly client report
+
+A Looker Studio dashboard goes in; an internal report, a client-facing report and a pre-filled meeting doc come out.
+
+Google Ads, Meta, Analytics and Business Profile in one run
+
+Status: Tested
+
+#### Website asset loader
+
+Pulls a client's logo, colors, fonts and photos into an organized folder, then bulk-loads them into the CRM media library.
+
+About 350 images loaded in 8 minutes
+
+Status: Live
+
+#### Fact-locked AI content
+
+Diagnosed why in-tool AI copy drifted from verified client facts, then built a context block that every research run now produces.
+
+Unverified items excluded by rule
+
+Status: Delivered
+
+#### AI automation roadmap
+
+A phased automation roadmap and a CRM and HR-system integration readout for a healthcare IT consultancy's leadership and finance teams.
+
+Paired with the 30-day website launch
+
+Status: Shipped
+
+#### SkillEngine
+
+An AI productivity platform that saves your best prompts as reusable skills, with Claude, Gemini and OpenAI behind one interface.
+
+277 skills · 48 pages · built in 31 days · [Open the app](https://aicareerskills.netlify.app/)
+
+Status: Shipped
+
+#### Media mix model platform
+
+Bayesian media mix modeling with data connectors, data-quality checks and budget scenario planning.
+
+Adstock and saturation curves · scenario comparison
+
+### Lab
+
+Smaller builds that show range.
+
+- **Client-side security scanner**: 15 security checks, 12 PII types detected, scored A–F
+- **AI governance platform**: 55 pages built in under a week
+- **B2B CRM with prospect portals**: Multi-contact pipeline, AI research assistant, ROI calculator
+
+---
+
+# FAQ: AI Agents, Voice AI & Automation | Matthew Carlson
+
+Source: https://matthewcarlsonconsulting.com/faq.html
+
+## Questions about working with me
+
+How I build, test, price and secure AI systems. Don't see your question? [Ask me directly](https://matthewcarlsonconsulting.com/contact.html).
+
+### Working together
+
+#### What does an AI Solutions Engineer do?
+
+An AI Solutions Engineer designs, builds and runs AI systems that do real work inside a business: agents, voice and chat assistants, automations and reporting pipelines. The job covers the whole path from a business problem to a tested system in production, not only the model or the prompt.
+
+In my practice that means writing the specification, building in a test environment, verifying the result, and launching with monitoring and a known cost per run.
+
+#### Who do you work with?
+
+Mostly marketing agencies, in-house marketing and revenue-operations teams, and professional-services firms. Agencies are a natural fit because I've built AI systems that run across an entire client portfolio.
+
+#### How long does a build take?
+
+An AI Readiness Sprint takes two weeks. Most single-system builds take two to six weeks from approved spec to handoff. Some move faster: a nightly account-health dashboard went live in about a week, and a 20+ page website launched in 30 days.
+
+#### How is pricing structured?
+
+Sprints and builds are fixed-scope and fixed-price after discovery. Ongoing work is a monthly retainer. For systems with running costs, such as voice agents, launch, build and maintenance are priced separately and AI usage is billed at cost. I share a quote after our first call.
+
+#### Do you work with businesses outside Madison?
+
+Yes. I'm based in Madison, Wisconsin and work with clients across the U.S. by video. Madison-area clients can meet in person for kickoffs.
+
+#### What's the first step?
+
+[Book a 30-minute call](https://matthewcarlsonconsulting.com/contact.html). Bring the process you'd like AI to handle. We'll talk through the data, the risks and what success is worth, and you'll leave knowing whether it's worth building.
+
+### AI systems & safety
+
+#### How do you make sure an AI agent won't do something wrong?
+
+Several layers:
+
+- Agents that change things are built and tested in separate test environments first, with checks that confirm where they're working.
+- Reporting systems are read-only by default.
+- Client-facing agents pass a written test suite (50+ cases for a voice agent) and a safety regression before anyone outside the team hears them.
+- When an input looks wrong, the system stops and notifies a person instead of guessing.
+
+#### What does it cost to run an AI system after launch?
+
+It depends on volume, and I measure it rather than estimate it. Every pipeline I build tracks its own model and data costs per run. For example, a full AI research pull on a new client costs about $4–8. A 33-agent platform serving an entire agency runs for about $32–42 a month.
+
+#### How do you handle data privacy and security?
+
+- API keys stay on the server, never in the browser.
+- Agents get the minimum access they need, often read-only.
+- Sensitive items such as tax IDs and passwords never go through forms or AI prompts.
+- AI-researched facts are labeled verified, derived or needs input, and unverified details are never presented as fact.
+
+#### Do you build voice AI agents?
+
+Yes. I design and test inbound phone agents that answer questions, book appointments, take messages and transfer to a person with a spoken summary. They capture consent before follow-up texts and have clear rules about what they won't say, such as prices or technical advice.
+
+#### Can AI agents build inside a CRM like GoHighLevel?
+
+Yes, with the right method. I write a specification for every object, and Claude or OpenAI Codex builds it directly in the platform. After each phase an API readback and gap report show what was built and what wasn't. One unattended run lasted 3.5 hours, and the two-day build produced 351 custom values, a 12-stage pipeline and a 52-entry knowledge base.
+
+#### Should we build or buy?
+
+Buy the commodity and own the interpretation. If a tool already measures something well, use it. Build where your data, process or judgment is the advantage. An AI Readiness Sprint ends with a clear build-or-buy call for each opportunity.
+
+### Platforms & integrations
+
+#### What platforms do you work with?
+
+- **AI:** Claude (API, Claude Code, MCP), OpenAI (API, Codex), Gemini
+- **CRM & marketing automation:** GoHighLevel, HubSpot
+- **Data:** Supabase/Postgres, Google Sheets, Looker Studio, GA4
+- **Ads:** Google Ads API and Scripts, Meta
+- **Web:** WordPress, static sites, Netlify
+
+If a tool has an API or webhooks, it can usually be connected.
+
+#### Can you automate our Google Ads reporting?
+
+Yes. I built a 15-script Google Ads suite that runs at the manager-account level across a whole agency portfolio: audits, budget pacing, search-term and wasted-spend analysis, and structure checks. It replaced about 12–15 hours of manual reporting a week.
+
+#### What is the SkillEngine Assistant?
+
+It's the AI assistant on this site. You can [ask it about my work](https://matthewcarlsonconsulting.com/ai-bot.html) or describe a process and get a first-pass automation plan. I build similar assistants for clients, connected to their own knowledge and tools.
+
+#### What is MCP, and why does it matter?
+
+The Model Context Protocol (MCP) is an open standard that lets AI assistants such as Claude securely use your data and tools. I've built an MCP server in production use that gives Claude access to an agency's client profiles, with token authentication and audit logging.

@@ -2,6 +2,8 @@
 
 > Matthew Carlson is an AI Solutions Engineer in Madison, Wisconsin who designs, builds and runs production AI systems for marketing teams, agencies and professional-services firms across the U.S.: AI agents, voice and chat assistants, CRM automation and reporting pipelines. Before AI he spent 11 years at Duluth Trading running a $40M+ digital marketing budget that drove $200M+ in annual revenue.
 
+Key facts: AI Solutions Engineer; Madison, Wisconsin; works nationally by video; solo practice (Matthew Carlson Consulting, founded 2024); currently AI Lead Consultant for a marketing agency (fractional-CTO scope, since March 2026). Client names are confidential. Every project is labeled Live, Pilot, Tested, Delivered or Shipped.
+
 ## Contact
 
 - Website: https://matthewcarlsonconsulting.com
@@ -19,6 +21,23 @@
 - [AI readiness, roadmaps & fractional AI lead](https://matthewcarlsonconsulting.com/services.html#ai-strategy): scored readiness audits, automation roadmaps, build-vs-buy evaluations.
 - [AI-ready websites & search visibility](https://matthewcarlsonconsulting.com/services.html#ai-ready-web): accessible hand-coded sites with SEO, answer-engine and generative-engine optimization; LLM visibility audits.
 
+## Engagement models
+
+- AI Readiness Sprint (2 weeks): scored audit, opportunity map, build-vs-buy calls and a 90-day roadmap.
+- Build Sprint (2-6 weeks): one system specified, built, tested and handed off with documentation.
+- Fractional AI Lead (monthly): ongoing builds, operations and team enablement.
+- Managed AI Operations (monthly): monitoring, maintenance and iteration of systems he built.
+- Pricing: sprints and builds are fixed-scope and fixed-price after discovery; launch, build and maintenance are priced separately; AI usage is billed at cost. No public price list.
+
+## How he builds
+
+- Spec first: a written specification defines every object; the spec and the gap report are deliverables.
+- Test before demo: client-facing agents pass a written test suite (50+ cases for a voice agent) and a safety regression first.
+- Read-only by default: reporting systems change nothing; agents that write run in test environments first.
+- Stop and notify: a bad input halts the run and tells a person, instead of guessing.
+- Meter every run: per-run model and data costs are tracked, e.g. about $4-8 per AI research pull on a new client.
+- Buy the commodity, own the interpretation: buy tools that already do the job; build where the business's data or judgment is the advantage.
+
 ## Selected work
 
 Client names are confidential. Status words: Live (in daily use), Pilot (first clients), Tested (passed a written test plan), Delivered, Shipped.
@@ -33,6 +52,22 @@ Client names are confidential. Status words: Live (in daily use), Pilot (first c
 - [30-day website launch for a healthcare IT consultancy](https://matthewcarlsonconsulting.com/projects.html#website-launch) (Shipped): 20+ pages, WCAG AA, 1,000+ organic clicks per 28 days within four weeks of launch.
 - [SkillEngine](https://aicareerskills.netlify.app/) (Shipped): AI productivity platform with 277 skills, built in 31 days.
 
+## Career
+
+- AI Lead Consultant, marketing agency (Mar 2026-present)
+- Website & AI Consultant, healthcare IT consultancy (Jun 2026-present)
+- Founder, Matthew Carlson Consulting (2024-present)
+- Senior Marketing & Business Intelligence Analyst, Duluth Trading (2014-2025): $40M+ digital budget across 15+ channels, $200M+ annual revenue; holdout test proving 25% incremental lift; grew Facebook revenue from $3.5M to $7M+ while cutting ad ratio from 60% to 35%; affiliate program to $33M (2023)
+- Technical Services, Epic Systems (2006-2009)
+- University of Wisconsin-Madison
+
+## Common questions
+
+- [What does an AI Solutions Engineer do?](https://matthewcarlsonconsulting.com/faq.html): designs, builds and runs AI systems that do real work inside a business, from the business problem to a tested system in production.
+- [How are AI agents kept safe?](https://matthewcarlsonconsulting.com/faq.html): test environments, read-only defaults, written test suites before launch, and stop-and-notify on bad inputs.
+- [What does an AI system cost to run?](https://matthewcarlsonconsulting.com/faq.html): measured per run; a 33-agent platform serving an entire agency runs for about $32-42 a month.
+- [Can AI agents build inside a CRM like GoHighLevel?](https://matthewcarlsonconsulting.com/faq.html): yes, from a written spec, with API readback and a gap report after each phase.
+
 ## Pages
 
 - [Home](https://matthewcarlsonconsulting.com/)
@@ -41,3 +76,9 @@ Client names are confidential. Status words: Live (in daily use), Pilot (first c
 - [About](https://matthewcarlsonconsulting.com/about.html)
 - [FAQ](https://matthewcarlsonconsulting.com/faq.html)
 - [AI Assistant](https://matthewcarlsonconsulting.com/ai-bot.html)
+
+## Optional
+
+- [Full site text](https://matthewcarlsonconsulting.com/llms-full.txt): every main page as Markdown, including all case studies and FAQ answers
+- [Privacy policy](https://matthewcarlsonconsulting.com/privacy.html)
+- [Terms of service](https://matthewcarlsonconsulting.com/terms.html)

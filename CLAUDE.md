@@ -16,3 +16,4 @@ Matthew Carlson Consulting website. Positioning: **AI Solutions Engineer**. Back
 - Retired positioning stays retired: no Google Shopping/feeds, Meta DPA, Performance Max or n8n services. Google Ads appears only as reporting and optimization automation.
 - Voice: first person, plain and specific, numbers with units. Avoid "revolutionize", "unlock", "cutting-edge" and "seamless".
 - When projects change, update `projects.html`, `llms.txt`, the system prompt in `api/ai-chat.php` and `knowledge-base/projects-summary.md` together.
+- `llms.txt` is hand-written; `llms-full.txt` is generated. After any page content change run `python3 scripts/build-llms.py`, which rebuilds `llms-full.txt` and fails if a link in `llms.txt` points at a missing page or anchor. Never edit `llms-full.txt` by hand.
