@@ -118,6 +118,21 @@ DIAGRAMS = {
         N("p3", (334, 128, 98, 40), "Skill", None, "out"),
         N("p4", (334, 184, 98, 40), "17 deliverables", None, "out"),
     ], [("b", "v"), ("v", "f"), ("f", "p1", 320), ("f", "p2", 320), ("f", "p3", 320), ("f", "p4", 320)]),
+    "ai-strategy": ("A two-week readiness sprint scores five domains, maps opportunities, decides build versus buy, and ends in a 90-day roadmap.", [
+        N("a", (8, 92, 96, 56), "Readiness audit", "5 domains, /100"),
+        N("b", (124, 92, 96, 56), "Opportunity map", "hours, revenue, risk"),
+        N("c", (240, 92, 96, 56), "Build vs buy", "one call per item", "core"),
+        N("d", (356, 92, 76, 56), "90-day|roadmap", None, "out"),
+    ], [("a", "b"), ("b", "c"), ("c", "d")]),
+    "forward-deployed": ("An outside consultant delivers recommendations and leaves; a forward deployed engineer builds inside the client's systems and hands off a running system.", [
+        N("o1", (8, 30, 126, 44), "Outside consultant", "discovery call"),
+        N("o2", (158, 30, 128, 44), "Recommendations", "a deck"),
+        N("o3", (310, 30, 122, 44), "You build it", "or it stalls"),
+        N("f1", (8, 150, 92, 56), "Discovery", "in your systems", "core"),
+        N("f2", (116, 150, 92, 56), "Spec & build", "in your environment", "core"),
+        N("f3", (224, 150, 92, 56), "Test & gate", "before anyone sees it", "core"),
+        N("f4", (332, 150, 100, 56), "Runs with|your team", "you own it", "out"),
+    ], [("o1", "o2"), ("o2", "o3"), ("f1", "f2"), ("f2", "f3"), ("f3", "f4")]),
     "website-launch": ("Design and build, content and QA, and a one-evening launch led to 1,000 organic clicks per 28 days within four weeks.", [
         N("a", (8, 36, 128, 56), "Design & build", "Jun 5–25"),
         N("b", (156, 36, 128, 56), "Content & QA", "Jun 25–Jul 3"),

@@ -58,6 +58,20 @@ function trackContactFormSubmission(formLocation) {
         if (link) track('cta_click', { event_category: 'engagement', event_label: link.getAttribute('data-track') });
     });
 
+    // Solutions sub-nav: highlight the section in view
+    var subnav = document.querySelector('[data-subnav]');
+    if (subnav && 'IntersectionObserver' in window) {
+        var links = Array.prototype.slice.call(subnav.querySelectorAll('a[href^="#"]'));
+        var sections = links.map(function (a) { return document.querySelector(a.getAttribute('href')); }).filter(Boolean);
+        var setActive = function (id) {
+            links.forEach(function (a) { a.classList.toggle('is-active', a.getAttribute('href') === '#' + id); });
+        };
+        var io = new IntersectionObserver(function (entries) {
+            entries.forEach(function (en) { if (en.isIntersecting) setActive(en.target.id); });
+        }, { rootMargin: '-45% 0px -50% 0px' });
+        sections.forEach(function (s) { io.observe(s); });
+    }
+
     // Work page filters
     var filterBar = document.querySelector('[data-filters]');
     if (filterBar) {

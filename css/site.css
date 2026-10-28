@@ -821,3 +821,57 @@ h2 { font-size: clamp(1.9rem, 3.6vw, 2.7rem); line-height: 1.08; }
 .key-facts dt { font-family: var(--mono); font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); padding-top: 3px; }
 .key-facts dd { margin: 0; color: var(--text); font-size: 0.97rem; }
 @media (max-width: 480px) { .key-facts > div { grid-template-columns: 1fr; gap: 2px; } }
+
+/* ===== Solutions page ===== */
+.sol-hero-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(32px, 5vw, 72px); align-items: center; }
+@media (max-width: 900px) { .sol-hero-grid { grid-template-columns: 1fr; } }
+.sol-index { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.12); border-radius: 18px; padding: 8px; }
+.sol-index ul { list-style: none; margin: 0; padding: 0; }
+.sol-index li { margin: 0; }
+.sol-index a { display: grid; grid-template-columns: 40px 1fr 24px; align-items: center; gap: 12px; padding: 11px 12px; border-radius: 12px; color: #fff; text-decoration: none; transition: background 0.15s ease; }
+.sol-index a:hover { background: rgba(255,255,255,0.08); }
+.sol-index a + a, .sol-index li + li a { border-top: 1px solid rgba(255,255,255,0.07); }
+.sol-ico { width: 40px; height: 40px; border-radius: 10px; display: grid; place-items: center; background: var(--cat); color: #fff; flex: none; }
+.sol-ico svg { width: 20px; height: 20px; }
+.sol-txt strong { display: block; font-size: 1rem; line-height: 1.25; }
+.sol-txt span { display: block; font-size: 0.82rem; color: var(--hero-muted); line-height: 1.35; }
+.sol-index .idx-arrow { color: var(--hero-muted); }
+
+.subnav { position: sticky; top: calc(68px + env(safe-area-inset-top, 0px)); z-index: 50; background: color-mix(in srgb, var(--bg) 90%, transparent); backdrop-filter: saturate(160%) blur(12px); -webkit-backdrop-filter: saturate(160%) blur(12px); border-bottom: 1px solid var(--line); }
+.subnav-track { display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none; padding: 10px 0; }
+.subnav-track::-webkit-scrollbar { display: none; }
+.subnav-link { display: inline-flex; align-items: center; gap: 8px; white-space: nowrap; padding: 8px 14px; border-radius: 999px; border: 1px solid transparent; color: var(--text); text-decoration: none; font-size: 0.9rem; font-weight: 500; }
+.subnav-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--cat); }
+.subnav-link:hover { background: var(--surface-2); }
+.subnav-link.is-active { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.subnav-link.is-active .subnav-dot { box-shadow: 0 0 0 3px rgba(255,255,255,0.25); }
+
+.sol-list { display: grid; gap: 28px; padding-top: clamp(32px, 5vw, 56px); padding-bottom: clamp(32px, 5vw, 56px); }
+.solution { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(24px, 4vw, 56px); padding: 0; border: 1px solid color-mix(in srgb, var(--cat) 22%, var(--line)); border-radius: 22px; overflow: hidden; background: var(--surface); box-shadow: var(--shadow); scroll-margin-top: 140px; }
+.solution:first-of-type { border-top: 1px solid color-mix(in srgb, var(--cat) 22%, var(--line)); }
+.sol-head { padding: clamp(24px, 4vw, 44px); background: radial-gradient(circle at 1px 1px, color-mix(in srgb, var(--cat) 22%, transparent) 1px, transparent 0) 0 0 / 18px 18px, color-mix(in srgb, var(--cat) 7%, var(--surface)); border-right: 1px solid color-mix(in srgb, var(--cat) 18%, var(--line)); }
+.sol-head .case-num { color: var(--cat); }
+.sol-ico-lg { width: 48px; height: 48px; border-radius: 12px; margin-bottom: 16px; }
+.sol-ico-lg svg { width: 24px; height: 24px; }
+.sol-head h2 { font-size: clamp(1.5rem, 2.8vw, 2.1rem); }
+.sol-head > p { color: var(--text); }
+.sol-head .proof-box { background: var(--surface); border-color: color-mix(in srgb, var(--cat) 30%, var(--line)); }
+.sol-checks { padding: clamp(24px, 4vw, 44px); }
+.sol-checks-title { font-family: var(--mono); font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--cat); margin-bottom: 16px; }
+.sol-checks .check-list li::before { background: color-mix(in srgb, var(--cat) 12%, var(--surface)) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E") center / 11px no-repeat; border: 1px solid color-mix(in srgb, var(--cat) 35%, var(--line)); }
+@media (max-width: 860px) { .solution { grid-template-columns: 1fr; } .sol-head { border-right: 0; border-bottom: 1px solid color-mix(in srgb, var(--cat) 18%, var(--line)); } }
+
+.pattern-card { border-top: 4px solid var(--cat); }
+.pattern-card h3 { font-size: 1.02rem; }
+.engagement { border-top: 4px solid var(--accent); }
+.eng-2 { border-top-color: var(--warm); }
+.eng-3 { border-top-color: var(--teal); }
+.eng-4 { border-top-color: var(--cat-crm); }
+.engagement .duration { color: var(--muted); }
+
+.sol-figure { margin-top: 20px; }
+.sol-figure figcaption { font-size: 0.78rem; }
+.fde-figure { margin-top: 16px; background: var(--surface); }
+.fde-figure .diagram .n.core rect { fill: var(--warm); stroke: var(--warm); }
+.fde-figure .diagram .n.core .t, .fde-figure .diagram .n.core .s { fill: #1a1200; }
+.fde-figure .diagram .n.out rect { fill: color-mix(in srgb, var(--warm) 18%, var(--surface)); stroke: var(--warm); }

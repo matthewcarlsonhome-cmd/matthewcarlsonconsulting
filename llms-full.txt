@@ -140,6 +140,7 @@ Since 2024 I've been building production systems with AI. Today I lead AI strate
 
 I work as a **Forward Deployed Engineer**: embedded with your team, in your systems and data, building the solution in your environment and iterating with the people who will run it. The deliverable is a working system your team owns, not a recommendation. [What that means in practice →](https://matthewcarlsonconsulting.com/faq.html#forward-deployed)
 
+An outside consultant delivers recommendations and leaves; a forward deployed engineer builds inside the client's systems and hands off a running system.
 RoleAI Solutions Engineer and Forward Deployed Engineer
 BuildsAI agents, MCP servers, voice and chat assistants, CRM automation, reporting pipelines
 Background11 years at Duluth Trading running a $40M+ digital marketing budget ($200M+ revenue)
@@ -244,6 +245,8 @@ Source: https://matthewcarlsonconsulting.com/services.html
 
 Every engagement ships with a written specification, a test plan and a cost model. You own everything I build.
 
+[AI agents](https://matthewcarlsonconsulting.com/services.html#ai-agents) [Voice & chat AI](https://matthewcarlsonconsulting.com/services.html#voice-chat-ai) [CRM automation](https://matthewcarlsonconsulting.com/services.html#crm-automation) [Reporting](https://matthewcarlsonconsulting.com/services.html#reporting-automation) [AI readiness & roadmaps](https://matthewcarlsonconsulting.com/services.html#ai-strategy) [AI-ready websites](https://matthewcarlsonconsulting.com/services.html#ai-ready-web)
+
 ### AI agents & workflow engineering
 
 Multi-agent systems, skill libraries and orchestration pipelines that do real work on a schedule or a trigger, with shared memory, QA gates and a known cost per run.
@@ -251,6 +254,10 @@ Multi-agent systems, skill libraries and orchestration pipelines that do real wo
 Status: Live
 
 A client-intelligence platform with 33 agents, an 8-tool MCP server and 39 client profiles, operating for about $32–42 a month. [Read the case study](https://matthewcarlsonconsulting.com/projects.html#client-mind)
+
+Public sources feed one 26-section client profile, which 33 agents and an MCP server read.
+
+#### What's included
 
 - Multi-agent platforms with a shared, sourced memory of each customer or client
 - MCP servers that connect Claude to your own data and tools
@@ -267,6 +274,10 @@ Status: Tested
 
 An inbound voice agent family for a multi-location retailer: 11 of 11 first-block checks passed, with live calendar booking verified on a call. [Read the case study](https://matthewcarlsonconsulting.com/projects.html#voice-ai)
 
+An inbound call reaches the voice agent, which books, transfers, takes a message or sends a follow-up text.
+
+#### What's included
+
 - Inbound voice agents with booking, message taking and warm transfer with a spoken summary
 - Website, SMS and social chat assistants writing to the same CRM record
 - Knowledge-base architecture shared cleanly across brands and bots
@@ -281,6 +292,10 @@ GoHighLevel and HubSpot-class systems that respond to leads in under a minute, o
 Status: Tested
 
 A 10-workflow speed-to-lead engine, built by Claude from a written spec; the first clean test sent a text and an email in under a minute. [Read the case study](https://matthewcarlsonconsulting.com/projects.html#agents-that-build)
+
+A written spec is built by Claude or Codex inside a CRM test location, checked by API readback, and gaps loop back to the spec.
+
+#### What's included
 
 - Speed-to-lead engines with business-hours, compliance and response-time checks
 - AI-researched client onboarding: the client corrects a profile instead of filling out a questionnaire
@@ -297,6 +312,10 @@ Status: Live
 
 A 15-script Google Ads automation suite running across an agency's whole portfolio, replacing about 12–15 hours of manual reporting a week. [Read the case study](https://matthewcarlsonconsulting.com/projects.html#google-ads-suite)
 
+Every client CRM account is read nightly by a read-only engine with 18 flags, producing CRM tasks, a dashboard and a Monday digest.
+
+#### What's included
+
 - Google Ads scripts at manager-account level: audits, budget pacing, search-term and wasted-spend analysis
 - Nightly account-health monitoring with alerts written back into your CRM as tasks
 - Client report packets generated from your Looker Studio dashboards
@@ -312,6 +331,10 @@ Status: Delivered
 
 An AI automation roadmap and systems-integration readout for a healthcare IT consultancy's leadership and finance teams. [See the project](https://matthewcarlsonconsulting.com/projects.html#roadmap)
 
+A two-week readiness sprint scores five domains, maps opportunities, decides build versus buy, and ends in a 90-day roadmap.
+
+#### What's included
+
 - AI readiness audit scoring 5 operational domains out of 100
 - Opportunity map ranked by hours saved, revenue impact and risk
 - Build-vs-buy evaluations with a clear recommendation
@@ -326,6 +349,10 @@ Websites built to rank on Google and to be cited by ChatGPT, Perplexity and Gemi
 Status: Shipped
 
 A 20+ page site for a healthcare IT consultancy, concept to live in 30 days, solo; it passed 1,000 organic clicks per 28 days within four weeks of launch. [Read the case study](https://matthewcarlsonconsulting.com/projects.html#website-launch)
+
+Design and build, content and QA, and a one-evening launch led to 1,000 organic clicks per 28 days within four weeks.
+
+#### What's included
 
 - Hand-coded, fast builds with no page-builder bloat
 - WCAG AA accessibility audited before launch
@@ -788,6 +815,22 @@ Yes. I'm based in Madison, Wisconsin and work with clients across the U.S. by vi
 
 [Book a 30-minute call](https://matthewcarlsonconsulting.com/contact.html). Bring the process you'd like AI to handle. We'll talk through the data, the risks and what success is worth, and you'll leave knowing whether it's worth building.
 
+#### What size of company do you work with?
+
+Mostly small and mid-sized businesses: agencies with a few dozen client accounts, in-house marketing teams of five to fifty, and professional-services firms. The systems I build are sized to that scale and priced for it. If you're larger, the same approach works inside one team or business unit.
+
+#### How much of my team's time will this take?
+
+Less than you'd expect. A typical build needs a 60-minute discovery session, a short review of the written spec, access to the systems involved, and 20 to 30 minutes a week for check-ins. The people who will run the system join for the pilot and a handoff session at the end.
+
+#### Can you work alongside our existing developers or agency?
+
+Yes, and I prefer it. I work in your repositories, your CRM and your tools, document everything in writing, and leave your team able to maintain and extend what I built. If you already have an agency, I can take the AI and automation layer while they keep the rest.
+
+#### Who owns the system when the engagement ends?
+
+You do. Code, prompts, workflows, data and documentation are yours, in your accounts, on your infrastructure. There's no platform fee to keep using what I built. If you want me to keep running and improving it, that's the Managed AI Operations retainer, but it's optional.
+
 ### AI systems & safety
 
 #### How do you make sure an AI agent won't do something wrong?
@@ -821,6 +864,14 @@ Yes, with the right method. I write a specification for every object, and Claude
 #### Should we build or buy?
 
 Buy the commodity and own the interpretation. If a tool already measures something well, use it. Build where your data, process or judgment is the advantage. An AI Readiness Sprint ends with a clear build-or-buy call for each opportunity.
+
+#### How do you measure whether an AI system is working?
+
+Each system has a written success measure before it's built: hours saved per week, response time to a lead, leads caught that were missed before, reports produced without a person. During the pilot those numbers are tracked and reviewed with you, and the system logs its own activity and cost so the numbers hold up after handoff.
+
+#### Will AI replace my team?
+
+Not in my experience. The systems I build take the repetitive, time-bound work (first replies to leads, nightly checks, report assembly, research before a call) so your people spend their time on judgment and relationships. Every system I ship keeps a person in control of anything that goes to a customer.
 
 ### Platforms & integrations
 

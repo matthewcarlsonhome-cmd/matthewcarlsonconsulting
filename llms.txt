@@ -69,6 +69,9 @@ Client names are confidential. Status words: Live (in daily use), Pilot (first c
 - [What does an AI system cost to run?](https://matthewcarlsonconsulting.com/faq.html): measured per run; a 33-agent platform serving an entire agency runs for about $32-42 a month.
 - [Can AI agents build inside a CRM like GoHighLevel?](https://matthewcarlsonconsulting.com/faq.html): yes, from a written spec, with API readback and a gap report after each phase.
 
+- [Who owns the system when the engagement ends?](https://matthewcarlsonconsulting.com/faq.html): the client does; code, prompts, workflows, data and documentation stay in the client's accounts with no platform fee.
+- [Will AI replace my team?](https://matthewcarlsonconsulting.com/faq.html): no; the systems take repetitive, time-bound work and keep a person in control of anything customer-facing.
+
 ## Pages
 
 - [Home](https://matthewcarlsonconsulting.com/)

@@ -131,34 +131,61 @@
     <!-- NAV:END -->
 
     <main id="main">
-        <section class="page-hero">
-            <div class="container">
-                <p class="eyebrow">Solutions</p>
-                <h1>Six ways I put AI into production</h1>
-                <p class="lead">Every engagement ships with a written specification, a test plan and a cost model. You own everything I build.</p>
-                <nav class="btn-row mt-2" aria-label="Jump to a solution">
-                    <a class="btn btn-ghost" href="#ai-agents">AI agents</a>
-                    <a class="btn btn-ghost" href="#voice-chat-ai">Voice &amp; chat AI</a>
-                    <a class="btn btn-ghost" href="#crm-automation">CRM automation</a>
-                    <a class="btn btn-ghost" href="#reporting-automation">Reporting</a>
-                    <a class="btn btn-ghost" href="#ai-strategy">Roadmaps</a>
-                    <a class="btn btn-ghost" href="#ai-ready-web">Websites</a>
+        <section class="hero sol-hero">
+            <div class="container sol-hero-grid">
+                <div>
+                    <p class="eyebrow">Solutions</p>
+                    <h1>Six ways I put AI into production</h1>
+                    <p class="lead">Every engagement ships with a written specification, a test plan and a cost model. You own everything I build.</p>
+                    <div class="btn-row mt-2">
+                        <a href="contact.html" class="btn btn-primary" data-track="services-hero-book">Book a call</a>
+                        <a href="#engagements" class="btn btn-ghost btn-arrow">How engagements work</a>
+                    </div>
+                </div>
+                <nav class="sol-index" aria-label="Solutions on this page">
+                    <ul>
+                        <li><a href="#ai-agents" class="cat--agents"><span class="sol-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="8" width="16" height="12" rx="2"/><path d="M12 8V4"/><circle cx="12" cy="3" r="1"/><circle cx="9" cy="14" r="1"/><circle cx="15" cy="14" r="1"/></svg></span><span class="sol-txt"><strong>AI agents &amp; workflows</strong><span>Multi-agent systems, MCP servers, skill libraries</span></span><span class="idx-arrow" aria-hidden="true">→</span></a></li>
+                        <li><a href="#voice-chat-ai" class="cat--voice"><span class="sol-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="22"/></svg></span><span class="sol-txt"><strong>Voice &amp; chat AI</strong><span>Phone and chat agents that book, qualify and hand off</span></span><span class="idx-arrow" aria-hidden="true">→</span></a></li>
+                        <li><a href="#crm-automation" class="cat--crm"><span class="sol-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="6" r="3"/><circle cx="18" cy="18" r="3"/><path d="M9 6h6a3 3 0 0 1 3 3v6"/><path d="M15 18H9a3 3 0 0 1-3-3V9"/></svg></span><span class="sol-txt"><strong>CRM automation</strong><span>Speed-to-lead, AI onboarding, spec-driven CRM builds</span></span><span class="idx-arrow" aria-hidden="true">→</span></a></li>
+                        <li><a href="#reporting-automation" class="cat--reporting"><span class="sol-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 5-6"/></svg></span><span class="sol-txt"><strong>Reporting &amp; ad-ops</strong><span>Google Ads scripts, nightly health checks, report packets</span></span><span class="idx-arrow" aria-hidden="true">→</span></a></li>
+                        <li><a href="#ai-strategy" class="cat--products"><span class="sol-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></span><span class="sol-txt"><strong>AI readiness &amp; roadmaps</strong><span>Scored audits, build-vs-buy, fractional AI lead</span></span><span class="idx-arrow" aria-hidden="true">→</span></a></li>
+                        <li><a href="#ai-ready-web" class="cat--web"><span class="sol-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></span><span class="sol-txt"><strong>AI-ready websites</strong><span>Fast, accessible sites built to be cited by AI search</span></span><span class="idx-arrow" aria-hidden="true">→</span></a></li>
+                    </ul>
                 </nav>
             </div>
         </section>
+        <div class="subnav" data-subnav>
+            <div class="container">
+                <div class="subnav-track">
+                    <a href="#ai-agents" class="subnav-link cat--agents"><span class="subnav-dot"></span>AI agents</a>
+                    <a href="#voice-chat-ai" class="subnav-link cat--voice"><span class="subnav-dot"></span>Voice &amp; chat AI</a>
+                    <a href="#crm-automation" class="subnav-link cat--crm"><span class="subnav-dot"></span>CRM automation</a>
+                    <a href="#reporting-automation" class="subnav-link cat--reporting"><span class="subnav-dot"></span>Reporting</a>
+                    <a href="#ai-strategy" class="subnav-link cat--products"><span class="subnav-dot"></span>AI readiness &amp; roadmaps</a>
+                    <a href="#ai-ready-web" class="subnav-link cat--web"><span class="subnav-dot"></span>AI-ready websites</a>
+                </div>
+            </div>
+        </div>
 
-        <div class="container">
-            <section class="solution" id="ai-agents">
-                <div>
-                    <p class="num">01</p>
+        <div class="container sol-list">
+            <section class="solution sol--agents case--agents" id="ai-agents">
+                <div class="sol-head">
+                    <span class="case-num" aria-hidden="true">01</span>
+                    <span class="sol-ico sol-ico-lg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="8" width="16" height="12" rx="2"/><path d="M12 8V4"/><circle cx="12" cy="3" r="1"/><circle cx="9" cy="14" r="1"/><circle cx="15" cy="14" r="1"/></svg></span>
                     <h2>AI agents &amp; workflow engineering</h2>
                     <p>Multi-agent systems, skill libraries and orchestration pipelines that do real work on a schedule or a trigger, with shared memory, QA gates and a known cost per run.</p>
                     <div class="proof-box">
                         <span class="badge badge-live">Live</span>
                         <p class="mt-0">A client-intelligence platform with 33 agents, an 8-tool MCP server and 39 client profiles, operating for about $32–42 a month. <a href="projects.html#client-mind">Read the case study</a></p>
                     </div>
+                <figure class="case-figure sol-figure">
+                    <svg class="diagram" viewBox="0 0 440 240" role="img" aria-label="Public sources feed one 26-section client profile, which 33 agents and an MCP server read."><defs><marker id="arr-client-mind" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L8 4L0 8z" class="ah" fill="#64748b"/></marker></defs><g class="edges" fill="none" stroke="#64748b" stroke-width="1.4" style="marker-end:url(#arr-client-mind)"><path class="e" d="M120 44H140V120H156"/><path class="e" d="M120 120H156"/><path class="e" d="M120 196H140V120H156"/><path class="e" d="M282 120H302V69H318"/><path class="e" d="M282 120H302V171H318"/></g><g class="n in"><rect x="8" y="22" width="112" height="44" rx="9" fill="#ffffff" stroke="#94a3b8"/><text x="64" y="41.5" class="t" text-anchor="middle" font-size="12" font-weight="600" fill="#0f1a2b">Website</text><text x="64" y="56.5" class="s" text-anchor="middle" font-size="10" fill="#5b6575">crawled pages</text></g><g class="n in"><rect x="8" y="98" width="112" height="44" rx="9" fill="#ffffff" stroke="#94a3b8"/><text x="64" y="117.5" class="t" text-anchor="middle" font-size="12" font-weight="600" fill="#0f1a2b">Reviews &amp; listings</text><text x="64" y="132.5" class="s" text-anchor="middle" font-size="10" fill="#5b6575">Google, Yelp, BBB</text></g><g class="n in"><rect x="8" y="174" width="112" height="44" rx="9" fill="#ffffff" stroke="#94a3b8"/><text x="64" y="193.5" class="t" text-anchor="middle" font-size="12" font-weight="600" fill="#0f1a2b">Public records</text><text x="64" y="208.5" class="s" text-anchor="middle" font-size="10" fill="#5b6575">licenses, WHOIS</text></g><g class="n core"><rect x="160" y="76" width="122" height="88" rx="9" fill="#4f46e5" stroke="#94a3b8"/><text x="221" y="117.5" class="t" text-anchor="middle" font-size="12" font-weight="600" fill="#ffffff">Client Mind</text><text x="221" y="132.5" class="s" text-anchor="middle" font-size="10" fill="#ffffff">26-section profile</text></g><g class="n out"><rect x="322" y="44" width="110" height="50" rx="9" fill="#ffffff" stroke="#94a3b8"/><text x="377" y="66.5" class="t" text-anchor="middle" font-size="12" font-weight="600" fill="#0f1a2b">33 AI agents</text><text x="377" y="81.5" class="s" text-anchor="middle" font-size="10" fill="#5b6575">content, ads, SEO</text></g><g class="n out"><rect x="322" y="146" width="110" height="50" rx="9" fill="#ffffff" stroke="#94a3b8"/><text x="377" y="168.5" class="t" text-anchor="middle" font-size="12" font-weight="600" fill="#0f1a2b">MCP server</text><text x="377" y="183.5" class="s" text-anchor="middle" font-size="10" fill="#5b6575">Claude reads it</text></g></svg>
+                    <figcaption>Public sources feed one 26-section client profile, which 33 agents and an MCP server read.</figcaption>
+                </figure>
                 </div>
-                <ul class="check-list">
+                <div class="sol-checks">
+                    <h3 class="sol-checks-title">What's included</h3>
+                    <ul class="check-list">
                     <li>Multi-agent platforms with a shared, sourced memory of each customer or client</li>
                     <li>MCP servers that connect Claude to your own data and tools</li>
                     <li>Skill libraries with versioning, evaluation and a searchable catalog for your team</li>
@@ -166,19 +193,27 @@
                     <li>Coding agents (Claude Code, OpenAI Codex) building inside SaaS platforms from a written spec</li>
                     <li>Webhook-triggered agents that research, write and post results back into your systems</li>
                 </ul>
+                </div>
             </section>
 
-            <section class="solution" id="voice-chat-ai">
-                <div>
-                    <p class="num">02</p>
+            <section class="solution sol--voice case--voice" id="voice-chat-ai">
+                <div class="sol-head">
+                    <span class="case-num" aria-hidden="true">02</span>
+                    <span class="sol-ico sol-ico-lg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="22"/></svg></span>
                     <h2>Voice &amp; conversational AI</h2>
                     <p>Phone and chat agents that answer, qualify, book and hand off, built around your routing and tested before a customer ever hears them.</p>
                     <div class="proof-box">
                         <span class="badge badge-tested">Tested</span>
                         <p class="mt-0">An inbound voice agent family for a multi-location retailer: 11 of 11 first-block checks passed, with live calendar booking verified on a call. <a href="projects.html#voice-ai">Read the case study</a></p>
                     </div>
+                <figure class="case-figure sol-figure">
+                    <svg class="diagram" viewBox="0 0 440 240" role="img" aria-label="An inbound call reaches the voice agent, which books, transfers, takes a message or sends a follow-up text."><defs><marker id="arr-voice-ai" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L8 4L0 8z" class="ah" fill="#64748b"/></marker></defs><g class="edges" fill="none" stroke="#64748b" stroke-width="1.4" style="marker-end:url(#arr-voice-ai)"><path class="e" d="M100 120H130"/><path class="e" d="M252 120H272V32H286"/><path class="e" d="M252 120H272V90H286"/><path class="e" d="M252 120H272V148H286"/><path class="e" d="M252 120H272V206H286"/></g><g class="n in"><rect x="8" y="96" width="92" height="48" rx="9" fill="#ffffff" stroke="#94a3b8"/><text x="54" y="124" class="t" text-anchor="middle" font-size="12" font-weight="600" fill="#0f1a2b">Inbound call</text></g><g class="n core"><rect x="134" y="82" width="118" height="76" rx="9" fill="#4f46e5" stroke="#94a3b8"/><text x="193" y="117.5" class="t" text-anchor="middle" font-size="12" font-weight="600" fill="#ffffff">Voice agent</text><text x="193" y="132.5" class="s" text-anchor="middle" font-size="10" fill="#ffffff">6 service branches</text></g><g class="n out"><rect x="290" y="12" width="142" height="40" rx="9" fill="#ffffff" stroke="#94a3b8"/><text x="361" y="36" class="t" text-anchor="middle" font-size="12" font-weight="600" fill="#0f1a2b">Book showroom visit</text></g><g class="n out"><rect x="290" y="70" width="142" height="40" rx="9" fill="#ffffff" stroke="#94a3b8"/><text x="361" y="94" class="t" text-anchor="middle" font-size="12" font-weight="600" fill="#0f1a2b">Transfer with summary</text></g><g class="n out"><rect x="290" y="128" width="142" height="40" rx="9" fill="#ffffff" stroke="#94a3b8"/><text x="361" y="152" class="t" text-anchor="middle" font-size="12" font-weight="600" fill="#0f1a2b">Take a message</text></g><g class="n out"><rect x="290" y="186" width="142" height="40" rx="9" fill="#ffffff" stroke="#94a3b8"/><text x="361" y="210" class="t" text-anchor="middle" font-size="12" font-weight="600" fill="#0f1a2b">Follow-up text</text></g></svg>
+                    <figcaption>An inbound call reaches the voice agent, which books, transfers, takes a message or sends a follow-up text.</figcaption>
+                </figure>
                 </div>
-                <ul class="check-list">
+                <div class="sol-checks">
+                    <h3 class="sol-checks-title">What's included</h3>
+                    <ul class="check-list">
                     <li>Inbound voice agents with booking, message taking and warm transfer with a spoken summary</li>
                     <li>Website, SMS and social chat assistants writing to the same CRM record</li>
                     <li>Knowledge-base architecture shared cleanly across brands and bots</li>
@@ -186,19 +221,27 @@
                     <li>50+ case test suites and stop-ship regression checks before launch</li>
                     <li>Pricing that separates launch, build and maintenance, with usage billed at cost</li>
                 </ul>
+                </div>
             </section>
 
-            <section class="solution" id="crm-automation">
-                <div>
-                    <p class="num">03</p>
+            <section class="solution sol--crm case--crm" id="crm-automation">
+                <div class="sol-head">
+                    <span class="case-num" aria-hidden="true">03</span>
+                    <span class="sol-ico sol-ico-lg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="6" r="3"/><circle cx="18" cy="18" r="3"/><path d="M9 6h6a3 3 0 0 1 3 3v6"/><path d="M15 18H9a3 3 0 0 1-3-3V9"/></svg></span>
                     <h2>CRM &amp; marketing automation</h2>
                     <p>GoHighLevel and HubSpot-class systems that respond to leads in under a minute, onboard clients with AI research, and build themselves from a specification.</p>
                     <div class="proof-box">
                         <span class="badge badge-tested">Tested</span>
                         <p class="mt-0">A 10-workflow speed-to-lead engine, built by Claude from a written spec; the first clean test sent a text and an email in under a minute. <a href="projects.html#agents-that-build">Read the case study</a></p>
                     </div>
+                <figure class="case-figure sol-figure">
+                    <svg class="diagram" viewBox="0 0 440 240" role="img" aria-label="A written spec is built by Claude or Codex inside a CRM test location, checked by API readback, and gaps loop back to the spec."><defs><marker id="arr-agents-that-build" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L8 4L0 8z" class="ah" fill="#64748b"/></marker></defs><g class="edges" fill="none" stroke="#64748b" stroke-width="1.4" style="marker-end:url(#arr-agents-that-build)"><path class="e" d="M112 68H146"/><path class="e" d="M266 68H300"/><path class="e" d="M368 96V146"/><path class="e" d="M304 178H270"/><path class="e" d="M150 178H60V100"/></g><g class="n in"><rect x="8" y="40" width="104" height="56" rx="9" fill="#ffffff" stroke="#94a3b8"/><text x="60" y="65.5" class="t" text-anchor="middle" font-size="12" font-weight="600" fill="#0f1a2b">Written spec</text><text x="60" y="80.5" class="s" text-anchor="middle" font-size="10" fill="#5b6575">every object</text></g><g class="n core"><rect x="150" y="40" width="116" height="56" rx="9" fill="#4f46e5" stroke="#94a3b8"/><text x="208" y="65.5" class="t" text-anchor="middle" font-size="12" font-weight="600" fill="#ffffff">Claude / Codex</text><text x="208" y="80.5" class="s" text-anchor="middle" font-size="10" fill="#ffffff">build in the app</text></g><g class="n out"><rect x="304" y="40" width="128" height="56" rx="9" fill="#ffffff" stroke="#94a3b8"/><text x="368" y="65.5" class="t" text-anchor="middle" font-size="12" font-weight="600" fill="#0f1a2b">CRM test location</text><text x="368" y="80.5" class="s" text-anchor="middle" font-size="10" fill="#5b6575">workflows, fields, KB</text></g><g class="n out"><rect x="304" y="150" width="128" height="56" rx="9" fill="#ffffff" stroke="#94a3b8"/><text x="368" y="175.5" class="t" text-anchor="middle" font-size="12" font-weight="600" fill="#0f1a2b">API readback</text><text x="368" y="190.5" class="s" text-anchor="middle" font-size="10" fill="#5b6575">verifies each object</text></g><g class="n in"><rect x="150" y="150" width="116" height="56" rx="9" fill="#ffffff" stroke="#94a3b8"/><text x="208" y="175.5" class="t" text-anchor="middle" font-size="12" font-weight="600" fill="#0f1a2b">Gap report</text><text x="208" y="190.5" class="s" text-anchor="middle" font-size="10" fill="#5b6575">what still needs work</text></g></svg>
+                    <figcaption>A written spec is built by Claude or Codex inside a CRM test location, checked by API readback, and gaps loop back to the spec.</figcaption>
+                </figure>
                 </div>
-                <ul class="check-list">
+                <div class="sol-checks">
+                    <h3 class="sol-checks-title">What's included</h3>
+                    <ul class="check-list">
                     <li>Speed-to-lead engines with business-hours, compliance and response-time checks</li>
                     <li>AI-researched client onboarding: the client corrects a profile instead of filling out a questionnaire</li>
                     <li>Sub-account provisioning, snapshots and custom values at scale</li>
@@ -206,19 +249,27 @@
                     <li>Webhook, API and MCP integrations between your CRM and AI tools</li>
                     <li>Automated QA that enrolls test contacts and checks every workflow path</li>
                 </ul>
+                </div>
             </section>
 
-            <section class="solution" id="reporting-automation">
-                <div>
-                    <p class="num">04</p>
+            <section class="solution sol--reporting case--reporting" id="reporting-automation">
+                <div class="sol-head">
+                    <span class="case-num" aria-hidden="true">04</span>
+                    <span class="sol-ico sol-ico-lg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 5-6"/></svg></span>
                     <h2>Reporting, analytics &amp; ad-ops automation</h2>
                     <p>The reporting and optimization work your team does by hand every Monday, automated, from someone who ran weekly business reporting for a $40M+ marketing program.</p>
                     <div class="proof-box">
                         <span class="badge badge-live">Live</span>
                         <p class="mt-0">A 15-script Google Ads automation suite running across an agency's whole portfolio, replacing about 12–15 hours of manual reporting a week. <a href="projects.html#google-ads-suite">Read the case study</a></p>
                     </div>
+                <figure class="case-figure sol-figure">
+                    <svg class="diagram" viewBox="0 0 440 240" role="img" aria-label="Every client CRM account is read nightly by a read-only engine with 18 flags, producing CRM tasks, a dashboard and a Monday digest."><defs><marker id="arr-account-health" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L8 4L0 8z" class="ah" fill="#64748b"/></marker></defs><g class="edges" fill="none" stroke="#64748b" stroke-width="1.4" style="marker-end:url(#arr-account-health)"><path class="e" d="M124 120H154"/><path class="e" d="M276 120H294V52H306"/><path class="e" d="M276 120H306"/><path class="e" d="M276 120H294V188H306"/></g><g class="n in"><rect x="8" y="92" width="116" height="56" rx="9" fill="#ffffff" stroke="#94a3b8"/><text x="66" y="117.5" class="t" text-anchor="middle" font-size="12" font-weight="600" fill="#0f1a2b">Every client</text><text x="66" y="132.5" class="s" text-anchor="middle" font-size="10" fill="#5b6575">CRM account</text></g><g class="n core"><rect x="158" y="92" width="118" height="56" rx="9" fill="#4f46e5" stroke="#94a3b8"/><text x="217" y="117.5" class="t" text-anchor="middle" font-size="12" font-weight="600" fill="#ffffff">Nightly engine</text><text x="217" y="132.5" class="s" text-anchor="middle" font-size="10" fill="#ffffff">18 health flags</text></g><g class="n out"><rect x="310" y="30" width="122" height="44" rx="9" fill="#ffffff" stroke="#94a3b8"/><text x="371" y="56" class="t" text-anchor="middle" font-size="12" font-weight="600" fill="#0f1a2b">Tasks in the CRM</text></g><g class="n out"><rect x="310" y="98" width="122" height="44" rx="9" fill="#ffffff" stroke="#94a3b8"/><text x="371" y="124" class="t" text-anchor="middle" font-size="12" font-weight="600" fill="#0f1a2b">Health dashboard</text></g><g class="n out"><rect x="310" y="166" width="122" height="44" rx="9" fill="#ffffff" stroke="#94a3b8"/><text x="371" y="192" class="t" text-anchor="middle" font-size="12" font-weight="600" fill="#0f1a2b">Monday digest</text></g></svg>
+                    <figcaption>Every client CRM account is read nightly by a read-only engine with 18 flags, producing CRM tasks, a dashboard and a Monday digest.</figcaption>
+                </figure>
                 </div>
-                <ul class="check-list">
+                <div class="sol-checks">
+                    <h3 class="sol-checks-title">What's included</h3>
+                    <ul class="check-list">
                     <li>Google Ads scripts at manager-account level: audits, budget pacing, search-term and wasted-spend analysis</li>
                     <li>Nightly account-health monitoring with alerts written back into your CRM as tasks</li>
                     <li>Client report packets generated from your Looker Studio dashboards</li>
@@ -226,19 +277,27 @@
                     <li>Attribution architecture: click-ID capture with the CRM as the join point</li>
                     <li>Pipeline and portfolio analysis that turns raw CRM data into decisions</li>
                 </ul>
+                </div>
             </section>
 
-            <section class="solution" id="ai-strategy">
-                <div>
-                    <p class="num">05</p>
+            <section class="solution sol--products case--products" id="ai-strategy">
+                <div class="sol-head">
+                    <span class="case-num" aria-hidden="true">05</span>
+                    <span class="sol-ico sol-ico-lg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></span>
                     <h2>AI readiness, roadmaps &amp; fractional AI lead</h2>
                     <p>Where AI fits in your business, what to buy versus build, and the order to do it in. Then, if you want, I lead the work.</p>
                     <div class="proof-box">
                         <span class="badge badge-delivered">Delivered</span>
                         <p class="mt-0">An AI automation roadmap and systems-integration readout for a healthcare IT consultancy's leadership and finance teams. <a href="projects.html#roadmap">See the project</a></p>
                     </div>
+                <figure class="case-figure sol-figure">
+                    <svg class="diagram" viewBox="0 0 440 240" role="img" aria-label="A two-week readiness sprint scores five domains, maps opportunities, decides build versus buy, and ends in a 90-day roadmap."><defs><marker id="arr-ai-strategy" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L8 4L0 8z" class="ah" fill="#64748b"/></marker></defs><g class="edges" fill="none" stroke="#64748b" stroke-width="1.4" style="marker-end:url(#arr-ai-strategy)"><path class="e" d="M104 120H120"/><path class="e" d="M220 120H236"/><path class="e" d="M336 120H352"/></g><g class="n in"><rect x="8" y="92" width="96" height="56" rx="9" fill="#ffffff" stroke="#94a3b8"/><text x="56" y="117.5" class="t" text-anchor="middle" font-size="12" font-weight="600" fill="#0f1a2b">Readiness audit</text><text x="56" y="132.5" class="s" text-anchor="middle" font-size="10" fill="#5b6575">5 domains, /100</text></g><g class="n in"><rect x="124" y="92" width="96" height="56" rx="9" fill="#ffffff" stroke="#94a3b8"/><text x="172" y="117.5" class="t" text-anchor="middle" font-size="12" font-weight="600" fill="#0f1a2b">Opportunity map</text><text x="172" y="132.5" class="s" text-anchor="middle" font-size="10" fill="#5b6575">hours, revenue, risk</text></g><g class="n core"><rect x="240" y="92" width="96" height="56" rx="9" fill="#4f46e5" stroke="#94a3b8"/><text x="288" y="117.5" class="t" text-anchor="middle" font-size="12" font-weight="600" fill="#ffffff">Build vs buy</text><text x="288" y="132.5" class="s" text-anchor="middle" font-size="10" fill="#ffffff">one call per item</text></g><g class="n out"><rect x="356" y="92" width="76" height="56" rx="9" fill="#ffffff" stroke="#94a3b8"/><text x="394" y="117" class="t" text-anchor="middle" font-size="12" font-weight="600" fill="#0f1a2b">90-day</text><text x="394" y="131" class="t" text-anchor="middle" font-size="12" font-weight="600" fill="#0f1a2b">roadmap</text></g></svg>
+                    <figcaption>A two-week readiness sprint scores five domains, maps opportunities, decides build versus buy, and ends in a 90-day roadmap.</figcaption>
+                </figure>
                 </div>
-                <ul class="check-list">
+                <div class="sol-checks">
+                    <h3 class="sol-checks-title">What's included</h3>
+                    <ul class="check-list">
                     <li>AI readiness audit scoring 5 operational domains out of 100</li>
                     <li>Opportunity map ranked by hours saved, revenue impact and risk</li>
                     <li>Build-vs-buy evaluations with a clear recommendation</li>
@@ -246,19 +305,27 @@
                     <li>Team enablement: skill libraries, playbooks and training</li>
                     <li>Fractional AI lead or CTO scope on a monthly basis</li>
                 </ul>
+                </div>
             </section>
 
-            <section class="solution" id="ai-ready-web">
-                <div>
-                    <p class="num">06</p>
+            <section class="solution sol--web case--web" id="ai-ready-web">
+                <div class="sol-head">
+                    <span class="case-num" aria-hidden="true">06</span>
+                    <span class="sol-ico sol-ico-lg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></span>
                     <h2>AI-ready websites &amp; search visibility</h2>
                     <p>Websites built to rank on Google and to be cited by ChatGPT, Perplexity and Gemini, with accessibility engineered in from the first component.</p>
                     <div class="proof-box">
                         <span class="badge badge-shipped">Shipped</span>
                         <p class="mt-0">A 20+ page site for a healthcare IT consultancy, concept to live in 30 days, solo; it passed 1,000 organic clicks per 28 days within four weeks of launch. <a href="projects.html#website-launch">Read the case study</a></p>
                     </div>
+                <figure class="case-figure sol-figure">
+                    <svg class="diagram" viewBox="0 0 440 240" role="img" aria-label="Design and build, content and QA, and a one-evening launch led to 1,000 organic clicks per 28 days within four weeks."><defs><marker id="arr-website-launch" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L8 4L0 8z" class="ah" fill="#64748b"/></marker></defs><g class="edges" fill="none" stroke="#64748b" stroke-width="1.4" style="marker-end:url(#arr-website-launch)"><path class="e" d="M136 64H152"/><path class="e" d="M284 64H300"/><path class="e" d="M368 92V123H294V150"/></g><g class="n in"><rect x="8" y="36" width="128" height="56" rx="9" fill="#ffffff" stroke="#94a3b8"/><text x="72" y="61.5" class="t" text-anchor="middle" font-size="12" font-weight="600" fill="#0f1a2b">Design &amp; build</text><text x="72" y="76.5" class="s" text-anchor="middle" font-size="10" fill="#5b6575">Jun 5–25</text></g><g class="n in"><rect x="156" y="36" width="128" height="56" rx="9" fill="#ffffff" stroke="#94a3b8"/><text x="220" y="61.5" class="t" text-anchor="middle" font-size="12" font-weight="600" fill="#0f1a2b">Content &amp; QA</text><text x="220" y="76.5" class="s" text-anchor="middle" font-size="10" fill="#5b6575">Jun 25–Jul 3</text></g><g class="n core"><rect x="304" y="36" width="128" height="56" rx="9" fill="#4f46e5" stroke="#94a3b8"/><text x="368" y="61.5" class="t" text-anchor="middle" font-size="12" font-weight="600" fill="#ffffff">Launch</text><text x="368" y="76.5" class="s" text-anchor="middle" font-size="10" fill="#ffffff">Jul 4–5, one evening</text></g><g class="n out"><rect x="156" y="154" width="276" height="56" rx="9" fill="#ffffff" stroke="#94a3b8"/><text x="294" y="179.5" class="t" text-anchor="middle" font-size="12" font-weight="600" fill="#0f1a2b">1,000+ organic clicks / 28 days</text><text x="294" y="194.5" class="s" text-anchor="middle" font-size="10" fill="#5b6575">within four weeks of launch</text></g></svg>
+                    <figcaption>Design and build, content and QA, and a one-evening launch led to 1,000 organic clicks per 28 days within four weeks.</figcaption>
+                </figure>
                 </div>
-                <ul class="check-list">
+                <div class="sol-checks">
+                    <h3 class="sol-checks-title">What's included</h3>
+                    <ul class="check-list">
                     <li>Hand-coded, fast builds with no page-builder bloat</li>
                     <li>WCAG AA accessibility audited before launch</li>
                     <li>SEO, answer-engine and generative-engine optimization from day one</li>
@@ -266,6 +333,7 @@
                     <li>llms.txt, structured data and citable, question-led content</li>
                     <li>Launch runbooks with redirect maps and instant rollback</li>
                 </ul>
+                </div>
             </section>
         </div>
 
@@ -277,19 +345,19 @@
                     <p class="lead">Systems I've already designed and tested. Each one can be scoped in a single call.</p>
                 </div>
                 <div class="grid grid-4">
-                    <div class="card"><h3>AI lead research report</h3><p>A new lead triggers an agent that researches the business and briefs your team before the first call.</p></div>
-                    <div class="card"><h3>Speed-to-lead responder</h3><p>Every form, call and chat answered in under a minute, then qualified and booked.</p></div>
-                    <div class="card"><h3>Voice receptionist</h3><p>Answers, books, takes messages and transfers with a summary when a person is needed.</p></div>
-                    <div class="card"><h3>Research-then-verify onboarding</h3><p>AI pre-fills the client profile; the client corrects it in minutes instead of filling out forms.</p></div>
-                    <div class="card"><h3>Nightly account health</h3><p>Silent forms, stalled deals and waiting leads flagged every morning as tasks.</p></div>
-                    <div class="card"><h3>Monthly report packet</h3><p>Dashboards in; an internal report, a client report and a meeting agenda out.</p></div>
-                    <div class="card"><h3>Website asset loader</h3><p>Logo, colors, fonts and photos pulled from a site and filed into your CRM in minutes.</p></div>
-                    <div class="card"><h3>Missed-call text-back</h3><p>An unanswered call gets a text and an AI qualifier instead of a lost lead.</p></div>
+                    <div class="card pattern-card cat--agents"><h3>AI lead research report</h3><p>A new lead triggers an agent that researches the business and briefs your team before the first call.</p></div>
+                    <div class="card pattern-card cat--crm"><h3>Speed-to-lead responder</h3><p>Every form, call and chat answered in under a minute, then qualified and booked.</p></div>
+                    <div class="card pattern-card cat--voice"><h3>Voice receptionist</h3><p>Answers, books, takes messages and transfers with a summary when a person is needed.</p></div>
+                    <div class="card pattern-card cat--crm"><h3>Research-then-verify onboarding</h3><p>AI pre-fills the client profile; the client corrects it in minutes instead of filling out forms.</p></div>
+                    <div class="card pattern-card cat--reporting"><h3>Nightly account health</h3><p>Silent forms, stalled deals and waiting leads flagged every morning as tasks.</p></div>
+                    <div class="card pattern-card cat--reporting"><h3>Monthly report packet</h3><p>Dashboards in; an internal report, a client report and a meeting agenda out.</p></div>
+                    <div class="card pattern-card cat--crm"><h3>Website asset loader</h3><p>Logo, colors, fonts and photos pulled from a site and filed into your CRM in minutes.</p></div>
+                    <div class="card pattern-card cat--voice"><h3>Missed-call text-back</h3><p>An unanswered call gets a text and an AI qualifier instead of a lost lead.</p></div>
                 </div>
             </div>
         </section>
 
-        <section class="section">
+        <section class="section" id="engagements">
             <div class="container">
                 <div class="section-head">
                     <p class="eyebrow">Engagement models</p>
@@ -297,10 +365,10 @@
                     <p class="lead">Launch, build and maintenance are priced separately, and AI usage is billed at cost, so you always know what you're paying for.</p>
                 </div>
                 <div class="grid grid-4">
-                    <div class="card engagement"><p class="duration">2 weeks</p><h3>AI Readiness Sprint</h3><p>Scored audit, opportunity map, build-vs-buy calls and a 90-day roadmap.</p></div>
-                    <div class="card engagement"><p class="duration">2–6 weeks</p><h3>Build Sprint</h3><p>One system specified, built, tested and handed off with documentation.</p></div>
-                    <div class="card engagement"><p class="duration">Monthly</p><h3>Fractional AI Lead</h3><p>Ongoing builds, operations and team enablement with a set number of days each month.</p></div>
-                    <div class="card engagement"><p class="duration">Monthly</p><h3>Managed AI Operations</h3><p>Monitoring, maintenance and iteration of the systems I built for you.</p></div>
+                    <div class="card engagement eng-1"><p class="duration">2 weeks</p><h3>AI Readiness Sprint</h3><p>Scored audit, opportunity map, build-vs-buy calls and a 90-day roadmap.</p></div>
+                    <div class="card engagement eng-2"><p class="duration">2–6 weeks</p><h3>Build Sprint</h3><p>One system specified, built, tested and handed off with documentation.</p></div>
+                    <div class="card engagement eng-3"><p class="duration">Monthly</p><h3>Fractional AI Lead</h3><p>Ongoing builds, operations and team enablement with a set number of days each month.</p></div>
+                    <div class="card engagement eng-4"><p class="duration">Monthly</p><h3>Managed AI Operations</h3><p>Monitoring, maintenance and iteration of the systems I built for you.</p></div>
                 </div>
             </div>
         </section>
