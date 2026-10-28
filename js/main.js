@@ -92,6 +92,43 @@ function trackContactFormSubmission(formLocation) {
         });
     }
 
+    // AI readiness checklist scoring
+    var checklist = document.getElementById('checklist');
+    if (checklist) {
+        var boxes = checklist.querySelectorAll('input[type="checkbox"]');
+        var num = document.getElementById('score-num'), fill = document.getElementById('score-fill'), text = document.getElementById('score-text');
+        var bands = [
+            [0, 'Tick what\'s true today. A rough answer is fine; this is a starting point, not an exam.'],
+            [5, 'Something upstream isn\'t ready yet. The fix is usually the process or the data, not the AI. A readiness sprint sorts that out first.'],
+            [50, 'You\'re close. Pick the one process with the clearest hours-saved number and pilot it on a small slice.'],
+            [75, 'The inputs, outputs and owners exist. This is ready for a build sprint.']
+        ];
+        var update = function () {
+            var score = 0;
+            boxes.forEach(function (b) { if (b.checked) score += Number(b.value); });
+            num.textContent = score;
+            fill.style.width = score + '%';
+            var msg = bands[0][1];
+            bands.forEach(function (b) { if (score >= b[0]) msg = b[1]; });
+            text.textContent = msg;
+            try { localStorage.setItem('mcc-readiness', JSON.stringify(Array.prototype.map.call(boxes, function (b) { return b.checked; }))); } catch (e) {}
+        };
+        try {
+            var saved = JSON.parse(localStorage.getItem('mcc-readiness') || 'null');
+            if (saved && saved.length === boxes.length) boxes.forEach(function (b, i) { b.checked = saved[i]; });
+        } catch (e) {}
+        boxes.forEach(function (b) { b.addEventListener('change', update); });
+        update();
+    }
+
+    // Preselect the contact form's interest from ?interest=
+    var interest = new URLSearchParams(location.search).get('interest');
+    var serviceSelect = document.getElementById('service');
+    if (interest && serviceSelect) {
+        var map = { readiness: 'AI readiness / roadmap / fractional AI lead', agents: 'AI agents & workflows', voice: 'Voice & chat AI', crm: 'CRM automation', reporting: 'Reporting & ad-ops automation', web: 'AI-ready website & search visibility' };
+        if (map[interest]) serviceSelect.value = map[interest];
+    }
+
     // Contact form result message
     var status = document.getElementById('form-status');
     if (status) {

@@ -133,6 +133,23 @@ DIAGRAMS = {
         N("f3", (224, 150, 92, 56), "Test & gate", "before anyone sees it", "core"),
         N("f4", (332, 150, 100, 56), "Runs with|your team", "you own it", "out"),
     ], [("o1", "o2"), ("o2", "o3"), ("f1", "f2"), ("f2", "f3"), ("f3", "f4")]),
+    "research-pipeline": ("A client research pull crawls and sweeps, builds and freezes one profile, fans out to parallel readers, and reports its cost at the end.", [
+        N("a", (8, 22, 96, 44), "Crawl site", "pages, metered"),
+        N("b", (8, 98, 96, 44), "External sweep", "reviews, records"),
+        N("c", (8, 174, 96, 44), "Competitor scan", "by service type"),
+        N("m", (140, 76, 110, 88), "Client profile", "validated, frozen", "core"),
+        N("r", (286, 44, 68, 152), "4 parallel|readers", None, "in"),
+        N("o", (372, 44, 60, 68), "17|outputs", None, "out"),
+        N("$", (372, 128, 60, 68), "$4–8|per run", None, "out"),
+    ], [("a", "m", 122), ("b", "m", 122), ("c", "m", 122), ("m", "r"), ("r", "o"), ("r", "$")]),
+    "gate-before-fanout": ("A source document passes a validator and a graded voice sample, is frozen with a checksum, and only then fans out to many agents.", [
+        N("s", (8, 92, 90, 56), "Source|document"),
+        N("v", (118, 92, 92, 56), "Validator", "GO / NO-GO", "core"),
+        N("g", (230, 92, 92, 56), "Voice sample", "graded A–F", "core"),
+        N("f", (342, 92, 90, 56), "Freeze", "checksummed", "core"),
+        N("x1", (342, 8, 90, 36), "Agent", None, "out"),
+        N("x2", (342, 196, 90, 36), "Agent ×43", None, "out"),
+    ], [("s", "v"), ("v", "g"), ("g", "f"), ("f", "x1"), ("f", "x2")]),
     "website-launch": ("Design and build, content and QA, and a one-evening launch led to 1,000 organic clicks per 28 days within four weeks.", [
         N("a", (8, 36, 128, 56), "Design & build", "Jun 5–25"),
         N("b", (156, 36, 128, 56), "Content & QA", "Jun 25–Jul 3"),

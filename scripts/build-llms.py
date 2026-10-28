@@ -13,7 +13,8 @@ from html.parser import HTMLParser
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 SITE = "https://matthewcarlsonconsulting.com"
-PAGES = ["index.html", "about.html", "services.html", "projects.html", "faq.html"]
+PAGES = ["index.html", "about.html", "services.html", "projects.html", "faq.html", "ai-readiness-checklist.html",
+         "insights/index.html", "insights/voice-agent-guardrails.html", "insights/cost-per-research-pull.html", "insights/gate-before-fan-out.html"]
 # Containers whose content is navigation, decoration or example UI, not facts.
 SKIP_CLASSES = {"assistant-card", "cta-band", "filters", "btn-row", "hero-person", "visually-hidden",
                 "skip-link", "case-num", "eyebrow", "card-link", "card-icon", "num", "portrait-caption", "chat-disclaimer"}
@@ -120,7 +121,7 @@ def absolute(href, page):
     if href.startswith(("http", "mailto:", "tel:")):
         return href
     if href.startswith("#"):
-        return "%s/%s%s" % (SITE, page, href)
+        return "%s/%s%s" % (SITE, page.replace("insights/index.html", "insights/"), href)
     return SITE + "/" + href.lstrip("/")
 
 
@@ -133,7 +134,7 @@ def page_markdown(name):
     body = re.sub(r"\*\*\s*\*\*", "", body)
     body = re.sub(r"\[\s*([^\]]*?)\s*\]\(", r"[\1](", body)
     body = re.sub(r"\n\s*\n(\s*\n)+", "\n\n", body).strip()
-    url = SITE + "/" + ("" if name == "index.html" else name)
+    url = SITE + "/" + ("" if name == "index.html" else name.replace("insights/index.html", "insights/"))
     return "# %s\n\nSource: %s\n\n%s\n" % (title, url, body)
 
 

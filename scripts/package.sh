@@ -7,7 +7,8 @@ cd "$(dirname "$0")/.."
 
 FILES=(
   index.html services.html projects.html about.html faq.html contact.html ai-bot.html
-  privacy.html terms.html 404.html
+  privacy.html terms.html 404.html ai-readiness-checklist.html
+  insights/index.html insights/voice-agent-guardrails.html insights/cost-per-research-pull.html insights/gate-before-fan-out.html
   send-mail.php .htaccess robots.txt sitemap.xml llms.txt llms-full.txt
   css/site.css js/main.js js/ai-bot.js
   assets/favicon.svg assets/logo.svg assets/matthew-carlson.jpg assets/MMMExecutiveDashboard.png
@@ -24,7 +25,7 @@ done
 # changed file (the server caches them for 7 days) while unchanged pages stay byte-identical.
 stamp() { md5sum "$1" | cut -c1-8; }
 CSSV=$(stamp css/site.css); MAINV=$(stamp js/main.js); BOTV=$(stamp js/ai-bot.js)
-for f in deploy/*.html; do
+for f in deploy/*.html deploy/insights/*.html; do
   sed -i -e "s#css/site\.css\"#css/site.css?v=$CSSV\"#" -e "s#js/main\.js\"#js/main.js?v=$MAINV\"#" -e "s#js/ai-bot\.js\"#js/ai-bot.js?v=$BOTV\"#" "$f"
 done
 

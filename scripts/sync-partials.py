@@ -27,9 +27,9 @@ def fill(html, name, block):
     return html[: match.start()] + replacement + html[match.end():], True
 
 
-for page in sorted(ROOT.glob("*.html")):
+for page in sorted(list(ROOT.glob("*.html")) + list(ROOT.glob("insights/*.html"))):
     html = page.read_text()
-    href = "/" + page.name
+    href = "/insights/" if page.parent.name == "insights" else "/" + page.name
     nav = NAV.replace('href="%s">' % href, 'href="%s" aria-current="page">' % href)
     nav = nav.replace('href="%s" class="btn">' % href, 'href="%s" class="btn" aria-current="page">' % href)
     html, has_nav = fill(html, "NAV", nav)

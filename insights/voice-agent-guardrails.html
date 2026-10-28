@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W2PZBSP7J8"></script>
+    <script>window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-W2PZBSP7J8');</script>
+
+    <title>How do you keep an AI voice agent from quoting prices? | Matthew Carlson</title>
+    <meta name="description" content="You write down what it must never say, test every rule before a customer hears it, and give the agent a graceful way out: transfer to a person.">
+    <link rel="canonical" href="https://matthewcarlsonconsulting.com/insights/voice-agent-guardrails.html">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="How do you keep an AI voice agent from quoting prices? | Matthew Carlson">
+    <meta property="og:description" content="You write down what it must never say, test every rule before a customer hears it, and give the agent a graceful way out: transfer to a person.">
+    <meta property="og:url" content="https://matthewcarlsonconsulting.com/insights/voice-agent-guardrails.html">
+    <meta property="og:image" content="https://matthewcarlsonconsulting.com/assets/matthew-carlson.jpg">
+    <meta property="og:site_name" content="Matthew Carlson Consulting">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:image:width" content="400">
+    <meta property="og:image:height" content="400">
+    <meta property="og:image:alt" content="Matthew Carlson, AI Solutions Engineer">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="How do you keep an AI voice agent from quoting prices? | Matthew Carlson">
+    <meta name="twitter:description" content="You write down what it must never say, test every rule before a customer hears it, and give the agent a graceful way out: transfer to a person.">
+    <meta name="twitter:image" content="https://matthewcarlsonconsulting.com/assets/matthew-carlson.jpg">
+    <meta name="author" content="Matthew Carlson">
+    <meta name="theme-color" content="#0d1233">
+    <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM-readable summary">
+    <link rel="alternate" type="text/plain" href="/llms-full.txt" title="LLM-readable full text">
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/site.css">
+
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "Article",
+            "@id": "https://matthewcarlsonconsulting.com/insights/voice-agent-guardrails.html#article",
+            "headline": "How do you keep an AI voice agent from quoting prices?",
+            "description": "You write down what it must never say, test every rule before a customer hears it, and give the agent a graceful way out: transfer to a person.",
+            "url": "https://matthewcarlsonconsulting.com/insights/voice-agent-guardrails.html",
+            "datePublished": "2026-10-28",
+            "dateModified": "2026-10-28",
+            "inLanguage": "en-US",
+            "author": {
+                "@id": "https://matthewcarlsonconsulting.com/#matthew"
+            },
+            "publisher": {
+                "@id": "https://matthewcarlsonconsulting.com/#business"
+            },
+            "image": "https://matthewcarlsonconsulting.com/assets/matthew-carlson.jpg",
+            "articleSection": "Voice AI",
+            "mainEntityOfPage": {
+                "@id": "https://matthewcarlsonconsulting.com/insights/voice-agent-guardrails.html#webpage"
+            }
+        },
+        {
+            "@type": "WebPage",
+            "@id": "https://matthewcarlsonconsulting.com/insights/voice-agent-guardrails.html#webpage",
+            "url": "https://matthewcarlsonconsulting.com/insights/voice-agent-guardrails.html",
+            "name": "How do you keep an AI voice agent from quoting prices?",
+            "description": "You write down what it must never say, test every rule before a customer hears it, and give the agent a graceful way out: transfer to a person.",
+            "isPartOf": {
+                "@id": "https://matthewcarlsonconsulting.com/#website"
+            },
+            "breadcrumb": {
+                "@id": "https://matthewcarlsonconsulting.com/insights/voice-agent-guardrails.html#breadcrumb"
+            },
+            "dateModified": "2026-10-28"
+        },
+        {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://matthewcarlsonconsulting.com/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Insights",
+                    "item": "https://matthewcarlsonconsulting.com/insights/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "How do you keep an AI voice agent from quoting prices?",
+                    "item": "https://matthewcarlsonconsulting.com/insights/voice-agent-guardrails.html"
+                }
+            ],
+            "@id": "https://matthewcarlsonconsulting.com/insights/voice-agent-guardrails.html#breadcrumb"
+        },
+        {
+            "@type": "FAQPage",
+            "@id": "https://matthewcarlsonconsulting.com/insights/voice-agent-guardrails.html#faq",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "Can an AI voice agent give prices?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "It can, but it shouldn't. A confident wrong number is a customer-service problem and a trust problem. The agent I build declines price questions politely and ends with an action: a transfer, a message, or a text with the right link."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "How do you test a voice agent before launch?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "With a written test plan. The first block was eleven checks including a live booking; the suite is now more than fifty cases plus a regression set of twenty-plus checks, run on every change, and no client demo happens until it passes."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "What should a voice agent do when the caller asks for a person?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Transfer on the first ask, with a spoken summary of the call so far. An agent should never argue with a caller who wants a human."
+                    }
+                }
+            ]
+        }
+    ]
+}
+    </script>
+</head>
+<body>
+    <a href="#main" class="skip-link">Skip to main content</a>
+    <!-- NAV:START -->
+    <header class="site-header" id="site-header">
+        <nav class="container nav" aria-label="Main">
+            <a href="/" class="brand" aria-label="Matthew Carlson Consulting, home">
+                <span class="brand-mark" aria-hidden="true">MC</span>
+                <span>Matthew Carlson<small>AI Solutions Engineer</small></span>
+            </a>
+            <button class="nav-toggle" id="nav-toggle" aria-controls="nav-menu" aria-expanded="false" aria-label="Open menu">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+            </button>
+            <div class="nav-menu" id="nav-menu">
+                <a href="/services.html">Solutions</a>
+                <a href="/projects.html">Work</a>
+                <a href="/insights/" aria-current="page">Insights</a>
+                <a href="/ai-bot.html">AI Assistant</a>
+                <a href="/about.html">About</a>
+                <a href="/faq.html">FAQ</a>
+                <a href="/contact.html" class="btn">Book a call</a>
+            </div>
+        </nav>
+    </header>
+    <!-- NAV:END -->
+
+    <main id="main">
+        <article class="article cat--voice">
+            <header class="hero article-hero">
+                <div class="container narrow">
+                    <p class="eyebrow"><a href="/insights/">Insights</a> · Voice AI</p>
+                    <h1>How do you keep an AI voice agent from quoting prices?</h1>
+                    <p class="lead article-hook">A phone agent that quotes the wrong price is worse than no agent at all.</p>
+                    <p class="article-meta"><img src="/assets/matthew-carlson.jpg" alt="" width="32" height="32"> Matthew Carlson · October 28, 2026 · 6 min read</p>
+                </div>
+            </header>
+            <div class="container narrow article-body">
+                <div class="case-stats article-stats">
+                    <div><strong>50+</strong><span>test cases before any client demo</span></div>
+                    <div><strong>11 / 11</strong><span>checks passed in the first test block</span></div>
+                    <div><strong>6</strong><span>service branches, each with its own follow-up</span></div>
+                    <div><strong>2 min</strong><span>after the call, one consented text</span></div>
+                </div>
+                <figure class="case-figure article-figure">
+                    <svg class="diagram" viewBox="0 0 440 240" role="img" aria-label="An inbound call reaches the voice agent, which books, transfers, takes a message or sends a follow-up text."><defs><marker id="arr-voice-ai" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L8 4L0 8z" class="ah" fill="#64748b"/></marker></defs><g class="edges" fill="none" stroke="#64748b" stroke-width="1.4" style="marker-end:url(#arr-voice-ai)"><path class="e" d="M100 120H130"/><path class="e" d="M252 120H272V32H286"/><path class="e" d="M252 120H272V90H286"/><path class="e" d="M252 120H272V148H286"/><path class="e" d="M252 120H272V206H286"/></g><g class="n in"><rect x="8" y="96" width="92" height="48" rx="9" fill="#ffffff" stroke="#94a3b8"/><text x="54" y="124" class="t" text-anchor="middle" font-size="12" font-weight="600" fill="#0f1a2b">Inbound call</text></g><g class="n core"><rect x="134" y="82" width="118" height="76" rx="9" fill="#4f46e5" stroke="#94a3b8"/><text x="193" y="117.5" class="t" text-anchor="middle" font-size="12" font-weight="600" fill="#ffffff">Voice agent</text><text x="193" y="132.5" class="s" text-anchor="middle" font-size="10" fill="#ffffff">6 service branches</text></g><g class="n out"><rect x="290" y="12" width="142" height="40" rx="9" fill="#ffffff" stroke="#94a3b8"/><text x="361" y="36" class="t" text-anchor="middle" font-size="12" font-weight="600" fill="#0f1a2b">Book showroom visit</text></g><g class="n out"><rect x="290" y="70" width="142" height="40" rx="9" fill="#ffffff" stroke="#94a3b8"/><text x="361" y="94" class="t" text-anchor="middle" font-size="12" font-weight="600" fill="#0f1a2b">Transfer with summary</text></g><g class="n out"><rect x="290" y="128" width="142" height="40" rx="9" fill="#ffffff" stroke="#94a3b8"/><text x="361" y="152" class="t" text-anchor="middle" font-size="12" font-weight="600" fill="#0f1a2b">Take a message</text></g><g class="n out"><rect x="290" y="186" width="142" height="40" rx="9" fill="#ffffff" stroke="#94a3b8"/><text x="361" y="210" class="t" text-anchor="middle" font-size="12" font-weight="600" fill="#0f1a2b">Follow-up text</text></g></svg>
+                    <figcaption>An inbound call reaches the voice agent, which books, transfers, takes a message or sends a follow-up text.</figcaption>
+                </figure>
+<p class="article-short"><strong>Short answer:</strong> the agent gets a written list of things it will not do (quote prices, give technical advice, promise dates, confirm stock), a safe behavior for each one (transfer, take a message, give the emergency number), and a test suite that proves the rules hold before anyone outside the team hears it.</p>
+
+<h2>Why price quoting is the first rule</h2>
+<p>A phone agent for a multi-location retailer gets asked prices constantly. A confident, wrong number from an AI is a customer-service problem the day it happens and a trust problem for every call afterward. The same goes for chemical or technical advice, delivery promises and "is it in stock?" Each one sounds helpful and each one creates a commitment the business didn't make.</p>
+<p>So the agent I built for a multi-location retailer was designed inbound-only and given hard limits. It will retrieve business information, book showroom appointments to the calendar, update contact details, save the conversation to the contact record, take messages, transfer to a person with a spoken summary, roll to voicemail when nobody answers, and give the 24-hour number on anything that sounds like a safety issue. It declines to quote prices, give chemical advice, promise dates or confirm stock. The decline is polite and short, and it always ends with an action: a transfer, a message, or a text with the right link.</p>
+
+<h2>Design the agent around the caller's time</h2>
+<p>The first version answered questions well in testing, but the discovery call changed the design. The client wanted routing to stay with their own people. So the agent became a prequalifying survey that hands off to the main line: it captures a name, a callback number and permission to text, works through one of six service branches, and transfers.</p>
+<p>Three rules came out of that redesign and I now use them on every voice agent:</p>
+<ul>
+<li>Shoppers get the full set of questions. Service callers get at most two.</li>
+<li>"Put me through" is honored on the first ask. No agent should ever argue with a caller who wants a person.</li>
+<li>An upset caller skips everything and goes straight to transfer.</li>
+</ul>
+<p>After the call, a workflow sends one follow-up text matched to the service branch (a buying guide, the online service scheduler, a brochure), two minutes after the call ends, only if the caller agreed to texts. One text per call, no exceptions. A one-line promotions switch lets the client turn seasonal offers on and off without touching the agent.</p>
+
+<h2>Test before anyone hears it</h2>
+<p>None of this reached the client until it passed a written test plan. The first block was eleven checks, and all eleven passed, including booking a showroom visit at the correct time on a live call. Two defects were found and fixed before a demo, one of them an emergency response the caller could interrupt. A later round fixed three more, including a handoff that happened without capturing the caller's details. The full suite is now more than fifty cases, with a regression set of twenty-plus checks that runs on every change and includes every safety behavior.</p>
+<p>The rule I keep: no client demo until the suite passes. A demo that goes wrong costs more trust than a week of delay.</p>
+
+<h2>Price it so the rules stay enforced</h2>
+<p>Voice agents are not a one-time build. Rules change, branches get added, the regression suite has to keep running. So the pricing separates the parts: a launch fee, a prepaid build allowance for changes, a monthly fee for operation and maintenance, and calls and texts billed at cost. The monthly fee is what keeps the test suite running after launch, which is what keeps the agent from quoting prices six months from now.</p>
+
+<h2>What to ask any voice AI vendor</h2>
+<ul>
+<li>Show me the written list of things the agent will not do, and what it does instead.</li>
+<li>Show me the test cases, and the regression set that runs on every change.</li>
+<li>What happens when the caller says "put me through"?</li>
+<li>Who owns the knowledge base, the prompts and the call logs after launch?</li>
+</ul>
+<p>If the answers are specific, the agent is probably safe to put in front of your customers. If they're vague, it isn't yet.</p>
+                <h2 class="article-more-title">Quick answers</h2>
+                    <details class="faq-item">
+                        <summary>Can an AI voice agent give prices?</summary>
+                        <div class="faq-answer"><p>It can, but it shouldn't. A confident wrong number is a customer-service problem and a trust problem. The agent I build declines price questions politely and ends with an action: a transfer, a message, or a text with the right link.</p></div>
+                    </details>
+                    <details class="faq-item">
+                        <summary>How do you test a voice agent before launch?</summary>
+                        <div class="faq-answer"><p>With a written test plan. The first block was eleven checks including a live booking; the suite is now more than fifty cases plus a regression set of twenty-plus checks, run on every change, and no client demo happens until it passes.</p></div>
+                    </details>
+                    <details class="faq-item">
+                        <summary>What should a voice agent do when the caller asks for a person?</summary>
+                        <div class="faq-answer"><p>Transfer on the first ask, with a spoken summary of the call so far. An agent should never argue with a caller who wants a human.</p></div>
+                    </details>
+                <div class="article-cta">
+                    <p><strong>Have a process AI should be running?</strong> Describe it and I'll tell you whether it's worth building. <a href="/contact.html">Book a call</a> or <a href="/ai-bot.html">ask the assistant</a>.</p>
+                </div>
+                <h2 class="article-more-title">More insights</h2>
+                <ul class="article-more">
+                    <li><a href="/insights/cost-per-research-pull.html">What does an AI client research pull cost, and why meter it?</a></li>
+                    <li><a href="/insights/gate-before-fan-out.html">Why gate before you fan out</a></li>
+                </ul>
+            </div>
+        </article>
+    </main>
+
+    <!-- FOOTER:START -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <a href="/" class="brand" aria-label="Matthew Carlson Consulting, home">
+                        <span class="brand-mark" aria-hidden="true">MC</span>
+                        <span>Matthew Carlson<small>AI Solutions Engineer</small></span>
+                    </a>
+                    <p class="mt-2">Production AI systems for marketing teams, agencies and professional-services firms. Based in Madison, Wisconsin; working nationally.</p>
+                </div>
+                <div>
+                    <h2>Solutions</h2>
+                    <ul>
+                        <li><a href="/services.html#ai-agents">AI agents &amp; workflows</a></li>
+                        <li><a href="/services.html#voice-chat-ai">Voice &amp; chat AI</a></li>
+                        <li><a href="/services.html#crm-automation">CRM automation</a></li>
+                        <li><a href="/services.html#reporting-automation">Reporting automation</a></li>
+                        <li><a href="/services.html#ai-strategy">AI readiness &amp; roadmaps</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Site</h2>
+                    <ul>
+                        <li><a href="/projects.html">Work</a></li>
+                        <li><a href="/insights/">Insights</a></li>
+                        <li><a href="/ai-readiness-checklist.html">AI Readiness Checklist</a></li>
+                        <li><a href="/ai-bot.html">AI Assistant</a></li>
+                        <li><a href="/about.html">About</a></li>
+                        <li><a href="/faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Contact</h2>
+                    <ul>
+                        <li><a href="/contact.html">Book a call</a></li>
+                        <li><a href="mailto:contact@matthewcarlsonconsulting.com">contact@matthewcarlsonconsulting.com</a></li>
+                        <li><a href="tel:+1-608-284-7333">(608) 284-7333</a></li>
+                        <li><a href="https://www.linkedin.com/in/matthewcarlsonconsulting/" rel="noopener" target="_blank">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="mt-0">&copy; <span data-year>2026</span> Matthew Carlson Consulting. Madison, Wisconsin.</p>
+                <p class="mt-0"><a href="/privacy.html">Privacy</a> &middot; <a href="/terms.html">Terms</a></p>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER:END -->
+    <script src="/js/main.js"></script>
+</body>
+</html>

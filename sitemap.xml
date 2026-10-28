@@ -54,4 +54,34 @@
         <changefreq>yearly</changefreq>
         <priority>0.2</priority>
     </url>
+    <url>
+        <loc>https://matthewcarlsonconsulting.com/insights/</loc>
+        <lastmod>2026-10-28</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://matthewcarlsonconsulting.com/insights/voice-agent-guardrails.html</loc>
+        <lastmod>2026-10-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://matthewcarlsonconsulting.com/insights/cost-per-research-pull.html</loc>
+        <lastmod>2026-10-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://matthewcarlsonconsulting.com/insights/gate-before-fan-out.html</loc>
+        <lastmod>2026-10-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://matthewcarlsonconsulting.com/ai-readiness-checklist.html</loc>
+        <lastmod>2026-10-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
 </urlset>

@@ -33,12 +33,16 @@ demo_js = '''<script>
 })();
 </script>'''
 bar = '<div class="demo-bar">Preview of the redesigned matthewcarlsonconsulting.com. The contact form and AI Assistant replies are simulated here.</div>'
-for f in ['index.html', 'services.html', 'projects.html', 'about.html', 'faq.html', 'contact.html', 'ai-bot.html', 'privacy.html', 'terms.html']:
+for f in ['index.html', 'services.html', 'projects.html', 'about.html', 'faq.html', 'contact.html', 'ai-bot.html', 'privacy.html', 'terms.html', 'ai-readiness-checklist.html', 'insights/index.html', 'insights/voice-agent-guardrails.html', 'insights/cost-per-research-pull.html', 'insights/gate-before-fan-out.html']:
     s = (R / f).read_text()
     s = re.sub(r'\s*<script async src="https://www.googletagmanager.com[^<]*</script>\s*<script>window.dataLayer[^<]*</script>', '', s)
     s = re.sub(r'\s*<link rel="alternate" type="text/plain"[^>]*>', '', s)
-    s = s.replace('href="/"', 'href="index.html"')
-    s = re.sub(r'href="/([a-z0-9-]+\.html)', 'href="\\1', s)
+    up = '../' if f.startswith('insights/') else ''
+    s = s.replace('href="/"', 'href="%sindex.html"' % up)
+    s = s.replace('href="/insights/"', 'href="%sinsights/index.html"' % up)
+    s = re.sub(r'href="/insights/([a-z0-9-]+\.html)', lambda m: 'href="%sinsights/%s' % (up, m.group(1)), s)
+    s = re.sub(r'href="/([a-z0-9-]+\.html)', lambda m: 'href="%s%s' % (up, m.group(1)), s)
+    s = s.replace('src="/assets/', 'src="assets/').replace('href="/assets/', 'href="assets/').replace('href="/css/site.css"', 'href="css/site.css"').replace('src="/js/main.js"', 'src="js/main.js"')
     s = s.replace('<link rel="stylesheet" href="css/site.css">', '<style>\n' + css + '\n</style>')
     s = s.replace('href="assets/favicon.svg"', 'href="%s"' % fav)
     s = s.replace('src="assets/matthew-carlson.jpg"', 'src="%s"' % head_jpg).replace('src="assets/MMMExecutiveDashboard.png"', 'src="%s"' % mmm)
@@ -53,5 +57,6 @@ for f in ['index.html', 'services.html', 'projects.html', 'about.html', 'faq.htm
         hd = re.sub(r'<title>.*?</title>', '<title>Matthew Carlson Site Preview</title>', hd)
         s = hd.strip() + '\n' + bd
     assert 'css/site.css' not in s and 'googletagmanager' not in s, f
+    (D / f).parent.mkdir(parents=True, exist_ok=True)
     (D / f).write_text(s)
 print('demo built in', D)

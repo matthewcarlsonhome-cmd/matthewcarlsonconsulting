@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W2PZBSP7J8"></script>
+    <script>window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-W2PZBSP7J8');</script>
+
+    <title>Insights: Building Production AI Systems | Matthew Carlson</title>
+    <meta name="description" content="Short, specific answers about building production AI systems: voice AI guardrails, what an AI research pipeline costs, and why to gate before fanning out.">
+    <link rel="canonical" href="https://matthewcarlsonconsulting.com/insights/">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Insights: Building Production AI Systems | Matthew Carlson">
+    <meta property="og:description" content="Short, specific answers about building production AI systems: voice AI guardrails, what an AI research pipeline costs, and why to gate before fanning out.">
+    <meta property="og:url" content="https://matthewcarlsonconsulting.com/insights/">
+    <meta property="og:image" content="https://matthewcarlsonconsulting.com/assets/matthew-carlson.jpg">
+    <meta property="og:site_name" content="Matthew Carlson Consulting">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:image:width" content="400">
+    <meta property="og:image:height" content="400">
+    <meta property="og:image:alt" content="Matthew Carlson, AI Solutions Engineer">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Insights: Building Production AI Systems | Matthew Carlson">
+    <meta name="twitter:description" content="Short, specific answers about building production AI systems: voice AI guardrails, what an AI research pipeline costs, and why to gate before fanning out.">
+    <meta name="twitter:image" content="https://matthewcarlsonconsulting.com/assets/matthew-carlson.jpg">
+    <meta name="author" content="Matthew Carlson">
+    <meta name="theme-color" content="#0d1233">
+    <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM-readable summary">
+    <link rel="alternate" type="text/plain" href="/llms-full.txt" title="LLM-readable full text">
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/site.css">
+
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "CollectionPage",
+            "@id": "https://matthewcarlsonconsulting.com/insights/#webpage",
+            "url": "https://matthewcarlsonconsulting.com/insights/",
+            "name": "Insights",
+            "description": "Short, specific answers about building production AI systems: agents, voice AI, CRM automation and the engineering habits that keep them safe.",
+            "isPartOf": {
+                "@id": "https://matthewcarlsonconsulting.com/#website"
+            },
+            "breadcrumb": {
+                "@id": "https://matthewcarlsonconsulting.com/insights/#breadcrumb"
+            },
+            "hasPart": [
+                {
+                    "@type": "Article",
+                    "@id": "https://matthewcarlsonconsulting.com/insights/voice-agent-guardrails.html#article"
+                },
+                {
+                    "@type": "Article",
+                    "@id": "https://matthewcarlsonconsulting.com/insights/cost-per-research-pull.html#article"
+                },
+                {
+                    "@type": "Article",
+                    "@id": "https://matthewcarlsonconsulting.com/insights/gate-before-fan-out.html#article"
+                }
+            ]
+        },
+        {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://matthewcarlsonconsulting.com/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Insights",
+                    "item": "https://matthewcarlsonconsulting.com/insights/"
+                }
+            ],
+            "@id": "https://matthewcarlsonconsulting.com/insights/#breadcrumb"
+        }
+    ]
+}
+    </script>
+</head>
+<body>
+    <a href="#main" class="skip-link">Skip to main content</a>
+    <!-- NAV:START -->
+    <header class="site-header" id="site-header">
+        <nav class="container nav" aria-label="Main">
+            <a href="/" class="brand" aria-label="Matthew Carlson Consulting, home">
+                <span class="brand-mark" aria-hidden="true">MC</span>
+                <span>Matthew Carlson<small>AI Solutions Engineer</small></span>
+            </a>
+            <button class="nav-toggle" id="nav-toggle" aria-controls="nav-menu" aria-expanded="false" aria-label="Open menu">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+            </button>
+            <div class="nav-menu" id="nav-menu">
+                <a href="/services.html">Solutions</a>
+                <a href="/projects.html">Work</a>
+                <a href="/insights/" aria-current="page">Insights</a>
+                <a href="/ai-bot.html">AI Assistant</a>
+                <a href="/about.html">About</a>
+                <a href="/faq.html">FAQ</a>
+                <a href="/contact.html" class="btn">Book a call</a>
+            </div>
+        </nav>
+    </header>
+    <!-- NAV:END -->
+
+    <main id="main">
+        <section class="page-hero">
+            <div class="container">
+                <p class="eyebrow">Insights</p>
+                <h1>One question, answered properly</h1>
+                <p class="lead">Short articles from the work: how the systems are built, what they cost to run, and the habits that keep them safe. New ones added as the work produces them.</p>
+            </div>
+        </section>
+        <section class="section-tight">
+            <div class="container">
+                <div class="grid grid-3 insight-grid">
+                    <a class="card insight-card cat--voice" href="/insights/voice-agent-guardrails.html">
+                        <div class="meta-row"><span class="tag">Voice AI</span><span class="tag">6 min read</span></div>
+                        <h2>How do you keep an AI voice agent from quoting prices?</h2>
+                        <p>You write down what it must never say, test every rule before a customer hears it, and give the agent a graceful way out: transfer to a person.</p>
+                        <span class="card-link">Read →</span>
+                    </a>
+                    <a class="card insight-card cat--agents" href="/insights/cost-per-research-pull.html">
+                        <div class="meta-row"><span class="tag">AI agents</span><span class="tag">5 min read</span></div>
+                        <h2>What does an AI client research pull cost, and why meter it?</h2>
+                        <p>A full research pull on a new client costs about $4–8 in model and crawl spend, and I know that because every step is metered. That number is what makes AI priceable.</p>
+                        <span class="card-link">Read →</span>
+                    </a>
+                    <a class="card insight-card cat--agents" href="/insights/gate-before-fan-out.html">
+                        <div class="meta-row"><span class="tag">AI agents</span><span class="tag">6 min read</span></div>
+                        <h2>Why gate before you fan out</h2>
+                        <p>Scaling dozens of AI outputs from an unchecked source multiplies every upstream mistake. One graded sample and a consistency check cost hours; regeneration costs days.</p>
+                        <span class="card-link">Read →</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="section-tight">
+            <div class="container">
+                <div class="cta-band">
+                    <div>
+                        <h2>Want the answer for your own process?</h2>
+                        <p>Thirty minutes is usually enough to know whether it's worth building.</p>
+                    </div>
+                    <a href="/contact.html" class="btn btn-primary" data-track="insights-book">Book a call</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER:START -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <a href="/" class="brand" aria-label="Matthew Carlson Consulting, home">
+                        <span class="brand-mark" aria-hidden="true">MC</span>
+                        <span>Matthew Carlson<small>AI Solutions Engineer</small></span>
+                    </a>
+                    <p class="mt-2">Production AI systems for marketing teams, agencies and professional-services firms. Based in Madison, Wisconsin; working nationally.</p>
+                </div>
+                <div>
+                    <h2>Solutions</h2>
+                    <ul>
+                        <li><a href="/services.html#ai-agents">AI agents &amp; workflows</a></li>
+                        <li><a href="/services.html#voice-chat-ai">Voice &amp; chat AI</a></li>
+                        <li><a href="/services.html#crm-automation">CRM automation</a></li>
+                        <li><a href="/services.html#reporting-automation">Reporting automation</a></li>
+                        <li><a href="/services.html#ai-strategy">AI readiness &amp; roadmaps</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Site</h2>
+                    <ul>
+                        <li><a href="/projects.html">Work</a></li>
+                        <li><a href="/insights/">Insights</a></li>
+                        <li><a href="/ai-readiness-checklist.html">AI Readiness Checklist</a></li>
+                        <li><a href="/ai-bot.html">AI Assistant</a></li>
+                        <li><a href="/about.html">About</a></li>
+                        <li><a href="/faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Contact</h2>
+                    <ul>
+                        <li><a href="/contact.html">Book a call</a></li>
+                        <li><a href="mailto:contact@matthewcarlsonconsulting.com">contact@matthewcarlsonconsulting.com</a></li>
+                        <li><a href="tel:+1-608-284-7333">(608) 284-7333</a></li>
+                        <li><a href="https://www.linkedin.com/in/matthewcarlsonconsulting/" rel="noopener" target="_blank">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="mt-0">&copy; <span data-year>2026</span> Matthew Carlson Consulting. Madison, Wisconsin.</p>
+                <p class="mt-0"><a href="/privacy.html">Privacy</a> &middot; <a href="/terms.html">Terms</a></p>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER:END -->
+    <script src="/js/main.js"></script>
+</body>
+</html>

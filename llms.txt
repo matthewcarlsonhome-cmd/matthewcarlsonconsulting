@@ -72,6 +72,13 @@ Client names are confidential. Status words: Live (in daily use), Pilot (first c
 - [Who owns the system when the engagement ends?](https://matthewcarlsonconsulting.com/faq.html): the client does; code, prompts, workflows, data and documentation stay in the client's accounts with no platform fee.
 - [Will AI replace my team?](https://matthewcarlsonconsulting.com/faq.html): no; the systems take repetitive, time-bound work and keep a person in control of anything customer-facing.
 
+## Insights (articles)
+
+- [How do you keep an AI voice agent from quoting prices?](https://matthewcarlsonconsulting.com/insights/voice-agent-guardrails.html): a written list of what the agent must never do, a safe action for each, and a 50+ case test suite before any client hears it.
+- [What does an AI client research pull cost, and why meter it?](https://matthewcarlsonconsulting.com/insights/cost-per-research-pull.html): about $4-8 and 0.8-1.4M tokens per client, measured per step; metering is what makes AI priceable.
+- [Why gate before you fan out](https://matthewcarlsonconsulting.com/insights/gate-before-fan-out.html): validate the source and grade one sample before many agents read it; one ungated run meant regenerating 22 of 43 outputs.
+- [AI Readiness Checklist](https://matthewcarlsonconsulting.com/ai-readiness-checklist.html): 20 yes-or-no questions across process, data, systems, people and risk, scored out of 100.
+
 ## Pages
 
 - [Home](https://matthewcarlsonconsulting.com/)
@@ -80,6 +87,8 @@ Client names are confidential. Status words: Live (in daily use), Pilot (first c
 - [About](https://matthewcarlsonconsulting.com/about.html)
 - [FAQ](https://matthewcarlsonconsulting.com/faq.html)
 - [AI Assistant](https://matthewcarlsonconsulting.com/ai-bot.html)
+- [Insights](https://matthewcarlsonconsulting.com/insights/)
+- [AI Readiness Checklist](https://matthewcarlsonconsulting.com/ai-readiness-checklist.html)
 
 ## Optional
 
