@@ -10,7 +10,7 @@ This file is the full text of the site's main pages, generated from the live HTM
 
 ---
 
-# AI Solutions Engineer | Production AI Agents & Automation | Matthew Carlson
+# Matthew Carlson | AI Solutions Engineer
 
 Source: https://matthewcarlsonconsulting.com/
 
@@ -140,6 +140,11 @@ Since 2024 I've been building production systems with AI. Today I lead AI strate
 
 I work as a **Forward Deployed Engineer**: embedded with your team, in your systems and data, building the solution in your environment and iterating with the people who will run it. The deliverable is a working system your team owns, not a recommendation. [What that means in practice →](https://matthewcarlsonconsulting.com/faq.html#forward-deployed)
 
+RoleAI Solutions Engineer and Forward Deployed Engineer
+BuildsAI agents, MCP servers, voice and chat assistants, CRM automation, reporting pipelines
+Background11 years at Duluth Trading running a $40M+ digital marketing budget ($200M+ revenue)
+CurrentAI Lead Consultant for a marketing agency (fractional-CTO scope); independent engagements
+BasedMadison, Wisconsin; clients across the U.S.
 I work from Madison, Wisconsin, with clients across the U.S.
 
 ### Eleven years on the business side of marketing
@@ -231,7 +236,7 @@ Launch, build, maintenance and usage are separate lines, so nobody is surprised 
 
 ---
 
-# AI Solutions: Agents, Voice AI, CRM & Reporting Automation | Matthew Carlson
+# AI Solutions: Agents, Voice AI, CRM & Reporting Automation
 
 Source: https://matthewcarlsonconsulting.com/services.html
 
@@ -397,7 +402,7 @@ Claude API, Claude Code & MCPOpenAI API & CodexGemini GoHighLevelHubSpotSupabase
 
 ---
 
-# Work: AI Agent, Voice AI & Automation Case Studies | Matthew Carlson
+# Work: AI Agent, Voice AI & Automation Case Studies
 
 Source: https://matthewcarlsonconsulting.com/projects.html
 

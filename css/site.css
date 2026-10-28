@@ -814,3 +814,10 @@ h2 { font-size: clamp(1.9rem, 3.6vw, 2.7rem); line-height: 1.08; }
 .fde-note { margin: 22px 0; padding: 18px 20px; border-left: 3px solid var(--warm); background: linear-gradient(90deg, var(--warm-soft), transparent 80%); border-radius: 0 12px 12px 0; }
 .fde-note .eyebrow { margin-bottom: 8px; }
 .fde-note p:last-child { margin: 0; }
+
+/* Key facts (About) */
+.key-facts { margin: 22px 0; border-top: 1px solid var(--line); }
+.key-facts > div { display: grid; grid-template-columns: 110px 1fr; gap: 12px; padding: 10px 0; border-bottom: 1px solid var(--line); margin: 0; }
+.key-facts dt { font-family: var(--mono); font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); padding-top: 3px; }
+.key-facts dd { margin: 0; color: var(--text); font-size: 0.97rem; }
+@media (max-width: 480px) { .key-facts > div { grid-template-columns: 1fr; gap: 2px; } }

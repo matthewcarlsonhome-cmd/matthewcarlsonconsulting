@@ -40,3 +40,22 @@ AddCharset UTF-8 .html .css .js .xml
     ExpiresByType image/png "access plus 30 days"
     ExpiresByType image/svg+xml "access plus 30 days"
 </IfModule>
+
+<IfModule mod_headers.c>
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set X-Frame-Options "SAMEORIGIN"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
+    # Keep the chat and mail endpoints out of search results
+    <FilesMatch "\.(php)$">
+        Header set X-Robots-Tag "noindex, nofollow"
+    </FilesMatch>
+    # Tell crawlers where the LLM-readable summary lives
+    <FilesMatch "\.html$">
+        Header add Link "<https://matthewcarlsonconsulting.com/llms.txt>; rel=\"alternate\"; type=\"text/plain\"; title=\"LLM summary\""
+    </FilesMatch>
+</IfModule>
+
+# Canonical host: send www to the bare domain (uncomment once HTTPS is forced)
+# RewriteCond %{HTTP_HOST} ^www\.matthewcarlsonconsulting\.com$ [NC]
+# RewriteRule ^(.*)$ https://matthewcarlsonconsulting.com/$1 [R=301,L]
