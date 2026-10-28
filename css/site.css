@@ -804,3 +804,13 @@ h2 { font-size: clamp(1.9rem, 3.6vw, 2.7rem); line-height: 1.08; }
 .chat-panel { min-height: 0; }
 .chat-log { max-height: none; min-height: 320px; }
 @media (min-width: 901px) { .chat-log { max-height: calc(100vh - 300px); } }
+
+/* Forward Deployed Engineer mark */
+.fde { display: inline-block; padding: 1px 8px; border-radius: 6px; background: var(--warm-soft); color: color-mix(in srgb, var(--warm) 60%, var(--ink)); font-weight: 600; white-space: nowrap; }
+.hero .fde { background: rgba(240, 163, 58, 0.18); color: #ffd48a; }
+.fde-link { color: inherit; font-weight: 600; text-decoration-color: var(--warm); text-decoration-thickness: 2px; }
+.hero .fde-link { color: #fff; }
+.fde-link:hover { color: var(--warm); }
+.fde-note { margin: 22px 0; padding: 18px 20px; border-left: 3px solid var(--warm); background: linear-gradient(90deg, var(--warm-soft), transparent 80%); border-radius: 0 12px 12px 0; }
+.fde-note .eyebrow { margin-bottom: 8px; }
+.fde-note p:last-child { margin: 0; }

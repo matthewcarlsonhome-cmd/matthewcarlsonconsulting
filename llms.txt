@@ -1,8 +1,8 @@
 # Matthew Carlson Consulting
 
-> Matthew Carlson is an AI Solutions Engineer in Madison, Wisconsin who designs, builds and runs production AI systems for marketing teams, agencies and professional-services firms across the U.S.: AI agents, voice and chat assistants, CRM automation and reporting pipelines. Before AI he spent 11 years at Duluth Trading running a $40M+ digital marketing budget that drove $200M+ in annual revenue.
+> Matthew Carlson is an AI Solutions Engineer and Forward Deployed Engineer in Madison, Wisconsin who designs, builds and runs production AI systems for marketing teams, agencies and professional-services firms across the U.S.: AI agents, voice and chat assistants, CRM automation and reporting pipelines. Before AI he spent 11 years at Duluth Trading running a $40M+ digital marketing budget that drove $200M+ in annual revenue.
 
-Key facts: AI Solutions Engineer; Madison, Wisconsin; works nationally by video; solo practice (Matthew Carlson Consulting, founded 2024); currently AI Lead Consultant for a marketing agency (fractional-CTO scope, since March 2026). Client names are confidential. Every project is labeled Live, Pilot, Tested, Delivered or Shipped.
+Key facts: AI Solutions Engineer and Forward Deployed Engineer (he embeds with the client's team and builds inside their systems and data; deliverables are working systems the team owns); Madison, Wisconsin; works nationally by video; solo practice (Matthew Carlson Consulting, founded 2024); currently AI Lead Consultant for a marketing agency (fractional-CTO scope, since March 2026). Client names are confidential. Every project is labeled Live, Pilot, Tested, Delivered or Shipped.
 
 ## Contact
 
@@ -63,6 +63,7 @@ Client names are confidential. Status words: Live (in daily use), Pilot (first c
 
 ## Common questions
 
+- [What is a Forward Deployed Engineer?](https://matthewcarlsonconsulting.com/faq.html#forward-deployed): works inside the client's business, in their systems and data, building and iterating with their team instead of delivering recommendations from outside.
 - [What does an AI Solutions Engineer do?](https://matthewcarlsonconsulting.com/faq.html): designs, builds and runs AI systems that do real work inside a business, from the business problem to a tested system in production.
 - [How are AI agents kept safe?](https://matthewcarlsonconsulting.com/faq.html): test environments, read-only defaults, written test suites before launch, and stop-and-notify on bad inputs.
 - [What does an AI system cost to run?](https://matthewcarlsonconsulting.com/faq.html): measured per run; a 33-agent platform serving an entire agency runs for about $32-42 a month.

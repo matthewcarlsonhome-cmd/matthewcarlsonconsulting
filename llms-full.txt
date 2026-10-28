@@ -1,8 +1,8 @@
 # Matthew Carlson Consulting
 
-> Matthew Carlson is an AI Solutions Engineer in Madison, Wisconsin who designs, builds and runs production AI systems for marketing teams, agencies and professional-services firms across the U.S.: AI agents, voice and chat assistants, CRM automation and reporting pipelines. Before AI he spent 11 years at Duluth Trading running a $40M+ digital marketing budget that drove $200M+ in annual revenue.
+> Matthew Carlson is an AI Solutions Engineer and Forward Deployed Engineer in Madison, Wisconsin who designs, builds and runs production AI systems for marketing teams, agencies and professional-services firms across the U.S.: AI agents, voice and chat assistants, CRM automation and reporting pipelines. Before AI he spent 11 years at Duluth Trading running a $40M+ digital marketing budget that drove $200M+ in annual revenue.
 
-Key facts: AI Solutions Engineer; Madison, Wisconsin; works nationally by video; solo practice (Matthew Carlson Consulting, founded 2024); currently AI Lead Consultant for a marketing agency (fractional-CTO scope, since March 2026). Client names are confidential. Every project is labeled Live, Pilot, Tested, Delivered or Shipped.
+Key facts: AI Solutions Engineer and Forward Deployed Engineer (he embeds with the client's team and builds inside their systems and data; deliverables are working systems the team owns); Madison, Wisconsin; works nationally by video; solo practice (Matthew Carlson Consulting, founded 2024); currently AI Lead Consultant for a marketing agency (fractional-CTO scope, since March 2026). Client names are confidential. Every project is labeled Live, Pilot, Tested, Delivered or Shipped.
 
 ---
 
@@ -16,7 +16,7 @@ Source: https://matthewcarlsonconsulting.com/
 
 ## I build the AI systems that run your marketing operations.
 
-AI agents, voice and chat assistants, CRM automation and reporting pipelines, designed by someone who ran a $40M marketing budget and shipped with tests, verification gates and a known cost per run.
+AI agents, voice and chat assistants, CRM automation and reporting pipelines, designed by someone who ran a $40M marketing budget and shipped with tests, verification gates and a known cost per run. I work [forward deployed](https://matthewcarlsonconsulting.com/faq.html#forward-deployed): inside your systems, with your team, until it runs.
 
 - **33**: AI agents in one production client-intelligence platform
 - **104**: packaged AI skills in a published library
@@ -67,17 +67,6 @@ Phone agents that answer, qualify, book showroom visits and transfer with a spok
 Every client CRM account checked nightly; problems become tasks in the tool account managers already use.
 
 18 health flags · read-only · Monday digest email](https://matthewcarlsonconsulting.com/projects.html#account-health) [See all projects →](https://matthewcarlsonconsulting.com/projects.html)
-
-### The demo worked. Then what?
-
-"The demo worked; the rollout didn't."
-I gate before scaling: one graded sample and a consistency check before an agent runs across every client. Checks take hours; a bad rollout costs days of regeneration.
-
-"Nobody trusts what the AI wrote."
-Every fact carries a source and a confidence label. Unverified details are flagged for a human, never guessed, and a bad input stops the run and notifies someone.
-
-"We don't know what it costs to run."
-Every pipeline is metered. A full AI research pull on a new client costs about $4–8, and that number goes in the proposal.
 
 ### Engineering habits that make AI safe to depend on
 
@@ -148,6 +137,8 @@ I build production AI systems for marketing teams, agencies and professional-ser
 Before AI, I spent 11 years at Duluth Trading running a $40M+ digital marketing budget that drove $200M+ in annual revenue, owning analytics, attribution, paid media and data feeds. That's why every system I build is scoped against hours saved, revenue and risk, and why it ships with tests and a cost model instead of a demo.
 
 Since 2024 I've been building production systems with AI. Today I lead AI strategy and implementation for a marketing agency, where the work covers a 33-agent client-intelligence platform, voice agents, nightly monitoring of every client account, and coding agents that build CRM systems from written specs. I also take on independent engagements, most recently a 30-day website launch and AI roadmap for a healthcare IT consultancy.
+
+I work as a **Forward Deployed Engineer**: embedded with your team, in your systems and data, building the solution in your environment and iterating with the people who will run it. The deliverable is a working system your team owns, not a recommendation. [What that means in practice →](https://matthewcarlsonconsulting.com/faq.html#forward-deployed)
 
 I work from Madison, Wisconsin, with clients across the U.S.
 
@@ -765,6 +756,12 @@ How I build, test, price and secure AI systems. Don't see your question? [Ask me
 An AI Solutions Engineer designs, builds and runs AI systems that do real work inside a business: agents, voice and chat assistants, automations and reporting pipelines. The job covers the whole path from a business problem to a tested system in production, not only the model or the prompt.
 
 In my practice that means writing the specification, building in a test environment, verifying the result, and launching with monitoring and a known cost per run.
+
+#### What is a Forward Deployed Engineer?
+
+A Forward Deployed Engineer works inside the client's business rather than from the outside. Instead of handing over recommendations or a product and leaving, I embed with your team, work in your actual systems and data, build the solution in your environment, and iterate with the people who will run it. Deliverables are working systems, not slide decks.
+
+It's the way I work with my agency clients today: building inside their CRM, reviewing results with the account managers each day, and handing off documentation and tests so the team owns what was built.
 
 #### Who do you work with?
 
