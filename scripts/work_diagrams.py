@@ -12,11 +12,11 @@ def node(n):
     total = len(lines) * lh + (13 if sub else 0)
     ty = y + h / 2 - total / 2 + 11
     out = ['<g class="n %s">' % n.get("k", "in"),
-           '<rect x="%g" y="%g" width="%g" height="%g" rx="9"/>' % (x, y, w, h)]
+           '<rect x="%g" y="%g" width="%g" height="%g" rx="9" fill="%s" stroke="#94a3b8"/>' % (x, y, w, h, "#4f46e5" if n.get("k") == "core" else "#ffffff")]
     for i, line in enumerate(lines):
-        out.append('<text x="%g" y="%g" class="t">%s</text>' % (x + w / 2, ty + i * lh, html.escape(line)))
+        out.append('<text x="%g" y="%g" class="t" text-anchor="middle" font-size="12" font-weight="600" fill="%s">%s</text>' % (x + w / 2, ty + i * lh, "#ffffff" if n.get("k") == "core" else "#0f1a2b", html.escape(line)))
     if sub:
-        out.append('<text x="%g" y="%g" class="s">%s</text>' % (x + w / 2, ty + len(lines) * lh + 1, html.escape(sub)))
+        out.append('<text x="%g" y="%g" class="s" text-anchor="middle" font-size="10" fill="%s">%s</text>' % (x + w / 2, ty + len(lines) * lh + 1, "#ffffff" if n.get("k") == "core" else "#5b6575", html.escape(sub)))
     out.append("</g>")
     return "".join(out)
 
@@ -46,8 +46,8 @@ def edge(a, b, mid=None):
 def svg(key, label, nodes, edges, extra=""):
     ids = {n["id"]: n for n in nodes}
     parts = ['<svg class="diagram" viewBox="0 0 %d %d" role="img" aria-label="%s">' % (W, H, html.escape(label)),
-             '<defs><marker id="arr-%s" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L8 4L0 8z" class="ah"/></marker></defs>' % key,
-             '<g class="edges" style="marker-end:url(#arr-%s)">' % key]
+             '<defs><marker id="arr-%s" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L8 4L0 8z" class="ah" fill="#64748b"/></marker></defs>' % key,
+             '<g class="edges" fill="none" stroke="#64748b" stroke-width="1.4" style="marker-end:url(#arr-%s)">' % key]
     for e in edges:
         if len(e) > 2 and isinstance(e[2], str):
             parts.append('<path class="e" d="%s"/>' % e[2])

@@ -20,5 +20,12 @@ for f in "${FILES[@]}"; do
   cp "$f" "deploy/$f"
 done
 
-echo "deploy/ is ready: ${#FILES[@]} files."
-echo "Note: api/config.php (your OpenAI key) is NOT included. Leave the copy already on the server in place."
+# Version-stamp CSS and JS links so browsers fetch the new files after every upload
+# (the server tells browsers to cache them for 7 days).
+STAMP=$(date +%Y%m%d%H%M)
+for f in deploy/*.html; do
+  sed -i -e "s#css/site\.css\"#css/site.css?v=$STAMP\"#" -e "s#js/main\.js\"#js/main.js?v=$STAMP\"#" -e "s#js/ai-bot\.js\"#js/ai-bot.js?v=$STAMP\"#" "$f"
+done
+
+echo "deploy/ is ready: ${#FILES[@]} files (asset version $STAMP)."
+echo "Note: api/config.php (your Anthropic API key) is NOT included. Leave the copy already on the server in place."
