@@ -22,7 +22,7 @@ The site is static HTML plus two PHP files, hosted on GoDaddy (Apache). There is
    - No bash? Upload the files listed in `scripts/package.sh` by hand instead.
 3. **Back up the server (recommended).** In FileZilla, select everything in the site root on the right → right-click → **Download** into a dated local folder, e.g. `site-backup-2026-10-27`.
 4. **Upload.** Left pane: open `deploy/` and select everything inside it, including `.htaccess`. Drag it onto the site root on the right. When asked about existing files, choose **Overwrite**, tick **Always use this action**, then OK.
-5. **Don't touch `api/config.php` on the server.** It holds the OpenAI API key and isn't in the repo. The package never includes it, so it's safe as long as you don't delete it.
+5. **Don't overwrite or delete `api/config.php` on the server.** It holds the Anthropic API key and is never in the repo or the package. See "Assistant setup" below for creating it.
 6. **Check the site** in a private browser window (or press Ctrl+Shift+R):
    - Home, Work, About (headshot shows), FAQ (questions expand)
    - Submit the contact form once; the email should arrive at contact@matthewcarlsonconsulting.com
@@ -40,6 +40,22 @@ After uploading, delete these from the **server** if they exist (right-click →
 - In `assets/`: `Client Image *.png`, `Client Portal Page *.png`, `Security1.png`, `Security2.png`, `recording.webm`, `MMMSetup1.png`, `MMMSetup2.png`, `MMMMarketingPerformance.png`, `MMMScenarioPlanning.png`
 
 Keep `api/config.php`, any `cgi-bin` folder, and anything GoDaddy created (such as `.well-known`).
+
+## Assistant setup (api/config.php)
+
+The SkillEngine Assistant needs an Anthropic API key in `api/config.php` on the server.
+
+1. Create a key at https://platform.claude.com → Settings → API keys, and add a payment method / credits under Billing.
+2. Make a file named `config.php` on your computer containing:
+
+   ```php
+   <?php
+   putenv('ANTHROPIC_API_KEY=sk-ant-PASTE-YOUR-KEY-HERE');
+   ```
+3. In FileZilla, upload it into `/public_html/api/` (overwrite the old one if there is one; the old OpenAI key is no longer used).
+4. Test: send a message on the AI Assistant page.
+
+**Reading the chat log:** the assistant saves questions and answers to `chat-logs/chat-YYYY-MM.jsonl` in the folder *above* `public_html` (not reachable from the web). Download it with FileZilla; each line is one question and answer. Files older than 12 months are deleted automatically.
 
 ## Optional: force HTTPS
 

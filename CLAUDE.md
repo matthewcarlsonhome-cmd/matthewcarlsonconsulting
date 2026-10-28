@@ -4,7 +4,7 @@ Matthew Carlson Consulting website. Positioning: **AI Solutions Engineer**. Back
 
 ## Stack and deploy
 - Static HTML/vanilla JS in the repo root. All styles live in `css/site.css` (design tokens at the top, dark mode via `prefers-color-scheme`). Shared behavior is in `js/main.js`; the assistant chat is in `js/ai-bot.js`.
-- `api/ai-chat.php` (assistant proxy; the system prompt inside it holds the assistant's facts) and `send-mail.php` run on GoDaddy Apache. `api/config.php` with the OpenAI key exists only on the server. Redirects and the 404 page are configured in `.htaccess`.
+- `api/ai-chat.php` (SkillEngine Assistant: Claude Haiku 5.5 via the Messages API over curl, streamed, last 12 turns of memory, site knowledge loaded from `llms-full.txt`, private JSONL log in a `chat-logs` folder above the web root) and `send-mail.php` run on GoDaddy Apache. `api/config.php` holds `ANTHROPIC_API_KEY` and exists only on the server (template: `api/config.example.php`). Redirects and the 404 page are configured in `.htaccess`.
 - Deploy: `bash scripts/package.sh` builds `deploy/`, which is uploaded with FileZilla per `DEPLOYMENT.md`. Add any new public file to the list in `scripts/package.sh`.
 - No build step. Don't add frameworks or bundlers.
 
@@ -15,5 +15,5 @@ Matthew Carlson Consulting website. Positioning: **AI Solutions Engineer**. Back
 - **No named clients.** Describe them generically ("a marketing agency", "a healthcare IT consultancy", "a multi-location retailer"). Past employers (Duluth Trading, Epic Systems) may be named. No client screenshots.
 - Retired positioning stays retired: no Google Shopping/feeds, Meta DPA, Performance Max or n8n services. Google Ads appears only as reporting and optimization automation.
 - Voice: first person, plain and specific, numbers with units. Avoid "revolutionize", "unlock", "cutting-edge" and "seamless".
-- When projects change, update `projects.html`, `llms.txt`, the system prompt in `api/ai-chat.php` and `knowledge-base/projects-summary.md` together.
+- When projects change, update `projects.html` and `llms.txt`, then run `python3 scripts/build-llms.py`. The assistant reads `llms-full.txt`, so it picks up the change automatically.
 - `llms.txt` is hand-written; `llms-full.txt` is generated. After any page content change run `python3 scripts/build-llms.py`, which rebuilds `llms-full.txt` and fails if a link in `llms.txt` points at a missing page or anchor. Never edit `llms-full.txt` by hand.

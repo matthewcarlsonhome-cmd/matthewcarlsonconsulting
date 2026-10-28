@@ -1,17 +1,20 @@
 <?php
 /**
- * API Configuration - Matthew Carlson Consulting
+ * SkillEngine Assistant configuration - Matthew Carlson Consulting
  *
- * SETUP INSTRUCTIONS:
- * 1. Copy this file to 'config.php' in the same directory
- * 2. Replace 'your-api-key-here' with your actual OpenAI API key
- * 3. NEVER commit config.php to version control (it's in .gitignore)
+ * SETUP:
+ * 1. Copy this file to api/config.php ON THE SERVER (never commit config.php; it's in .gitignore).
+ * 2. Paste your Anthropic API key below. Create one at https://platform.claude.com (Settings -> API keys).
  *
- * Get your API key at: https://platform.openai.com/api-keys
+ * The OpenAI key is no longer used; the old OPENAI_* lines can be deleted.
  */
 
-// OpenAI API Key - REQUIRED
-putenv('OPENAI_API_KEY=your-api-key-here');
+// Anthropic API key - REQUIRED
+putenv('ANTHROPIC_API_KEY=sk-ant-your-key-here');
 
-// Model to use (optional - defaults to gpt-4o-mini)
-// putenv('OPENAI_MODEL=gpt-4o-mini');
+// Model - optional. Default: claude-haiku-5-5 (fast and inexpensive).
+// putenv('ANTHROPIC_MODEL=claude-haiku-5-5');
+
+// Where the private chat log is written - optional.
+// Default: a "chat-logs" folder one level ABOVE public_html, so it can't be opened from the web.
+// putenv('CHAT_LOG_DIR=/home/USERNAME/chat-logs');

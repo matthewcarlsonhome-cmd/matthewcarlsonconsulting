@@ -21,7 +21,7 @@ Options -Indexes
 RedirectMatch 404 /\.(git|svn|hg)(/|$)
 
 # Keep repo-only files private if they are ever uploaded by mistake
-<FilesMatch "\.(md|py|sh|bat|zip|example\.php)$">
+<FilesMatch "\.(md|py|sh|bat|zip|jsonl|log|example\.php)$">
     Require all denied
 </FilesMatch>
 
