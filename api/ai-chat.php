@@ -10,8 +10,14 @@
  */
 
 $configPath = __DIR__ . '/config.php';
+$configError = '';
 if (file_exists($configPath)) {
-    require_once $configPath;
+    try {
+        require_once $configPath;
+    } catch (\Throwable $e) {
+        // A typo in config.php shouldn't take the assistant down; the key is recovered below.
+        $configError = $e->getMessage();
+    }
 }
 
 const MAX_TURNS = 12;            // most recent messages sent to Claude
@@ -92,7 +98,16 @@ function setting($name)
     return is_string($value) ? trim($value) : '';
 }
 $apiKey = setting('ANTHROPIC_API_KEY');
+if (($apiKey === '' || strpos($apiKey, 'PASTE') !== false) && file_exists($configPath)) {
+    // Fallback: pull the first Anthropic key found anywhere in config.php, whatever the line looks like.
+    if (preg_match('/sk-ant-[A-Za-z0-9_\-]{20,}/', (string)file_get_contents($configPath), $m)) {
+        $apiKey = $m[0];
+    }
+}
 if ($apiKey === '' || strpos($apiKey, 'PASTE') !== false) {
+    if ($configError !== '') {
+        error_log('ai-chat: config.php failed to load: ' . $configError);
+    }
     error_log('ai-chat: ANTHROPIC_API_KEY missing. config.php ' . (file_exists($configPath) ? 'found' : 'NOT found') . ' at ' . $configPath);
     fail(500, 'The assistant is not configured yet.');
 }
